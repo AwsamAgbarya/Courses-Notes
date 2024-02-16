@@ -1,11 +1,15 @@
-# DeepLearning 1 Notes including:
+# Courses' Notes
 
-1. Basics
-2. Optimization
-3. Regularization
-4. Loss Functions
-5. CNN
-6. RNN
-7. Auto-Encoders
-8. Energy Based Models
-9. Explainable AI
+Notes and summaries of the lectures I am currently partaking in including:
+
+1. Deep Learning
+2. Machine Learning
+3. Computer graphics
+4. Database Technologies
+
+You need to install obsidian and the following community plugins in order to view these canvases properly:
+1. Excalidraw
+2. Git
+3. Latex Suite
+   
+If you notice any mistakes or want to contribute to it please let me know :]
