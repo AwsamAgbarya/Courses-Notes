@@ -154,6 +154,36 @@
     "Statistics/Gaussian Distribution.md",
     "Statistics/Bayes Theorem.md",
     "Statistics",
+<<<<<<< HEAD
+=======
+    "Machine Learning/Subjects/Trees.md",
+    "Machine Learning/Subjects/SVM.md",
+    "Machine Learning/Subjects/Regression Models.md",
+    "Machine Learning/Subjects/PCA.md",
+    "Machine Learning/Subjects/Model Selection.md",
+    "Machine Learning/Subjects/Maximum Liklihood.md",
+    "Machine Learning/Subjects/Forests.md",
+    "Machine Learning/Subjects/Fischer Discriminant.md",
+    "Machine Learning/Subjects/Expectation Maximization.md",
+    "Machine Learning/Subjects/Boosting.md",
+    "Machine Learning/Subjects/Bayes Estimator.md",
+    "Machine Learning/Subjects/Bayes Decision Theory.md",
+    "Machine Learning/Subjects",
+    "Machine Learning/MLRoadmap.md",
+    "Machine Learning/Attachments/Pasted Image 20240207141136_406.png",
+    "Machine Learning/Cookbook.md",
+    "Machine Learning/Attachments/Pasted Image 20240207141021_401.png",
+    "Machine Learning/Attachments/Pasted Image 20240207140951_398.png",
+    "Machine Learning/Attachments/Pasted Image 20240207140921_387.png",
+    "Machine Learning/Attachments/Pasted Image 20240207140741_343.png",
+    "Machine Learning/Attachments/Pasted Image 20240207140811_360.png",
+    "Machine Learning/Attachments/Pasted Image 20240204195055_227.png",
+    "Machine Learning/Attachments/Pasted Image 20240204195024_209.png",
+    "Machine Learning/Attachments/Pasted Image 20240204194215_967.png",
+    "Machine Learning/Attachments/Pasted Image 20240204194053_952.png",
+    "Machine Learning/Attachments",
+    "Machine Learning",
+>>>>>>> MachineLearning
     "Linear Algebra/Vectors.md",
     "Linear Algebra/Subspaces.md",
     "Linear Algebra/Quarternions.md",
@@ -163,6 +193,7 @@
     "Linear Algebra/Hilbert Space.md",
     "Linear Algebra/EigenVectors.md",
     "Linear Algebra/Dot Products.md",
+<<<<<<< HEAD
     "Linear Algebra/Cross-Product.md",
     "Linear Algebra/Cramer's Rule.md",
     "Linear Algebra/Barycentric co-ordinates.md",
@@ -196,6 +227,14 @@
     "DeepLearning/Attachments",
     "DeepLearning",
     "Machine Learning/Subjects",
+=======
+    "Linear Algebra",
+    "Excalidraw/Scripts/Downloaded",
+    "Excalidraw/Scripts",
+    "Excalidraw",
+    "Calculus",
+    "DeepLearning/Subjects",
+>>>>>>> MachineLearning
     "Untitled.canvas"
   ]
 }
