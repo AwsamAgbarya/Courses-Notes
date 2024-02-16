@@ -1,0 +1,201 @@
+{
+  "main": {
+    "id": "5618f3b4296949a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "669c8c2443883dfb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f16fdb42bc81091b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "58db49ef8f6173fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "abccd71e7979adf2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a8255b7a02a35325",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5a83f85408a63af8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4c42f38a9b8b2d42",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 451.5
+  },
+  "right": {
+    "id": "b768007119fec93f",
+    "type": "split",
+    "children": [
+      {
+        "id": "25f224b613de2a1c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d543b174f46a53b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c4df746a68d9a75d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4c4b3d8829aae18e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1f8f4a90b7221fb3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "0dce904dbc0176ab",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "f16fdb42bc81091b",
+  "lastOpenFiles": [
+    "DeepLearning/Subjects/Regularization.md",
+    "DeepLearning/Subjects/RNN.md",
+    "DeepLearning/Subjects/Optimization.md",
+    "DeepLearning/Subjects/Loss Functions.md",
+    "DeepLearning/Subjects/Explainable AI.md",
+    "DeepLearning/Subjects/Energy Based Models.md",
+    "DeepLearning/Subjects/CNN.md",
+    "DeepLearning/Subjects/Basics.md",
+    "DeepLearning/Subjects/Auto-encoders.md",
+    "DeepLearning/Subjects",
+    "DeepLearning/DLRoadMap.md",
+    "DeepLearning/CookBook.md",
+    "DeepLearning/Attachments/cropped_Pasted Image 20240215192355_400 1.md",
+    "DeepLearning/Attachments/cropped_Pasted Image 20240215191602_590 1.md",
+    "DeepLearning/Attachments/cropped_Pasted Image 20240213154942_477 1.md",
+    "DeepLearning/Attachments/Pasted Image 20240216154632_695.png",
+    "DeepLearning/Attachments/Pasted Image 20240216144022_994.png",
+    "DeepLearning/Attachments/Pasted Image 20240216144339_015.png",
+    "DeepLearning/Attachments/Pasted Image 20240216144223_008.png",
+    "DeepLearning/Attachments/Pasted Image 20240216144038_002.png",
+    "DeepLearning/Attachments/Pasted Image 20240216141649_827.png",
+    "DeepLearning/Attachments/Pasted Image 20240216141619_812.png",
+    "DeepLearning/Attachments/Pasted Image 20240215192355_400.png",
+    "DeepLearning/Attachments/Pasted Image 20240215192235_660.png",
+    "DeepLearning/Attachments/Pasted Image 20240213154826_460.png",
+    "DeepLearning/Attachments",
+    "DeepLearning",
+    "Machine Learning/MLRoadmap.md",
+    "Courses' Notes/README.md",
+    "Courses' Notes",
+    "Machine Learning/Cookbook.md",
+    "Machine Learning/Subjects/Trees.md",
+    "Machine Learning/Subjects/SVM.md",
+    "Machine Learning/Subjects/Regression Models.md",
+    "Machine Learning/Subjects/PCA.md",
+    "Machine Learning/Subjects/Model Selection.md",
+    "Machine Learning/Subjects/Maximum Liklihood.md",
+    "Machine Learning/Subjects/Forests.md",
+    "Machine Learning/Subjects/Fischer Discriminant.md",
+    "Machine Learning/Subjects/Boosting.md",
+    "Computer Graphics/Attachments/Li_et_al_2023.mp4",
+    "Deep Learning/Subjects/XAI.zip",
+    "Deep Learning/Subjects/ExplainableAI.zip",
+    "Deep Learning/Subjects/explanableAI.zip",
+    "Deep Learning/Subjects/regularization_updated.zip",
+    "Deep Learning/Exercises",
+    "Untitled.canvas"
+  ]
+}
