@@ -93,3 +93,67 @@ for epoch in range(num_epochs):
 * $$|1\cdot v|^2 \leq \|1\|^2 \|v\|^2$$
 
 ### Loss Functions
+
+* $$\theta = (\mu,\sigma) \rightarrow \frac{\partial J}{\partial \theta} = \frac{\partial J}{\partial \mu} \frac{\partial \mu}{\partial \theta} + \frac{\partial J}{\partial \sigma} \frac{\partial \sigma}{\partial \theta}$$
+### CNN
+* Convolution dimension calculation:
+* $$\frac{(input - kernal + padding +stride)}{stide}$$
+* Receptive field calculation from one layer to another:
+* $$r_{l−1}=s_l⋅r_l+(k_l−s_l)$$
+* Receptive field calculation using L layers:
+* $$RF = \sum_{l=1}^L ((k_l - 1)\Pi_{i=1}^{l-1}S_i) + 1$$
+* parameter sharing in convolutional neural nets allow:
+	* It reduces the total number of parameters, thus reducing overfitting
+	* It enables for convolutional layers to be translation invariant.
+	* It allows parameters trained for one task to be shared even for a different image-related tasks.
+
+* Convolution Layer:
+```python
+def forward(self, x:torch.Tensor):
+	# Initialize the parameters
+	W = self.W
+	b = self.b
+	k = W.shape[0]
+	# calculate output size
+	steps = int((x.shape[1]-k))+1
+	y = torch.empty((1,steps,steps))
+	
+	for i in range(steps):
+		for j in range(steps):
+			# one output of a convolution is =
+			# x from 0->k * W summed up + b
+			y[0,i,j] = (x[0,i:i+k,j:j+k]*W).sum() + b
+	return y
+```
+* Max pooling layer:
+```python
+def forward(self, x:torch.Tensor):
+	# Calculate output size
+	steps = int((x.shape[0]-self.kernel_size)/self.stride)+1
+	# over both dimensions, take x 0*s->kernel*s and take the max
+	y = torch.tensor([x[i*self.stride:i*self.stride+self.kernel_size,j*self.stride:j*self.stride+self.kernel_size].max() for i in range(0,steps) for j in range(0,steps)])
+	return y.reshape(steps,steps)
+```
+* Self Attention Layer:
+```python
+def forward(self, x, y):
+	# Get the matrices
+	K, Q, V = self.get_key_query_value(x, y)
+	d = (self.w_kq.shape[1])**0.5
+	# Comput the weights (normalized)
+	qk = Q@(K.T)/d
+	# Use softmax to turn into probability
+	attention_weights = nn.functional.softmax(qk,dim=1)
+	# compute weighted sum
+	output=attention_weights@V
+	return output, attention_weights
+
+def get_key_query_value(self, x, y):
+	# K = x*W
+	K = x@self.w_kq
+	# Q = y*W
+	Q = y@self.w_kq
+	# V = x
+	V = x
+	return K, Q, V
+```
