@@ -157,3 +157,8 @@ def get_key_query_value(self, x, y):
 	V = x
 	return K, Q, V
 ```
+
+### RNNs
+* Backwards Pass:
+* $$\frac{\partial \mathcal{E}}{\partial \theta} = \sum^T \frac{\partial \mathcal{E}}{\partial y} (\frac{\partial^+y}{\partial \theta} + \frac{\partial y}{\partial h_{t-1}}\frac{\partial h_{t-1}}{\partial \theta})$$
+* 
