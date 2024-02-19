@@ -13,6 +13,7 @@
 * $$\frac{\partial sigmoid(x)}{\partial x} = sigmoid(x)-sigmoid(x)^2$$
 * $$\frac{\partial Softmax(z_{j})}{\partial z_{i}} = \delta_{ij}S(z_{i}) - S(z_{i})S(z_{j})$$
 * $$\frac{\partial \tanh(x)}{\partial x} = 1 - \tanh(x)^2$$
+### Backwards Pass
 ```python
  def forward(self, x):
 	"""Computes the forward pass layer by layer. Stores the activation after every layer in self.A.
