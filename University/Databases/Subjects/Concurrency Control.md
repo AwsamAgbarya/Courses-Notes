@@ -174,7 +174,7 @@ conflict ^p7wMHCpz
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.18",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.20",
 	"elements": [
 		{
 			"type": "text",
@@ -696,8 +696,8 @@ conflict ^p7wMHCpz
 		},
 		{
 			"type": "frame",
-			"version": 1792,
-			"versionNonce": 1899423488,
+			"version": 1793,
+			"versionNonce": 1478875537,
 			"isDeleted": false,
 			"id": "fgMQFMIBF88HENUer2F3v",
 			"fillStyle": "solid",
@@ -717,14 +717,14 @@ conflict ^p7wMHCpz
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1707838544651,
+			"updated": 1708272069732,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"frameColor": {
 					"stroke": "#D4D4D4",
 					"fill": "#ADADAD",
-					"nameColor": "#949494"
+					"nameColor": "#7A7A7A"
 				}
 			},
 			"name": "CC"
@@ -953,8 +953,8 @@ conflict ^p7wMHCpz
 		},
 		{
 			"type": "frame",
-			"version": 1945,
-			"versionNonce": 1823394048,
+			"version": 1946,
+			"versionNonce": 305561457,
 			"isDeleted": false,
 			"id": "5jHjrEGA1gyCAeexN6OpQ",
 			"fillStyle": "solid",
@@ -974,54 +974,17 @@ conflict ^p7wMHCpz
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1707838555274,
+			"updated": 1708272069732,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"frameColor": {
 					"stroke": "#D4D4D4",
 					"fill": "#ADADAD",
-					"nameColor": "#949494"
+					"nameColor": "#7A7A7A"
 				}
 			},
 			"name": "CC"
-		},
-		{
-			"id": "8H5OXXwo",
-			"type": "text",
-			"x": -389.16521852638743,
-			"y": -484.1276051536188,
-			"width": 8.000015258789062,
-			"height": 20,
-			"angle": 0,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1159686400,
-			"version": 2,
-			"versionNonce": 135972608,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1707838532251,
-			"link": null,
-			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 16,
-			"fontFamily": 1,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"baseline": 14,
-			"containerId": null,
-			"originalText": "",
-			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -1039,10 +1002,10 @@ conflict ^p7wMHCpz
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1684.5358038234435,
-		"scrollY": 97.64868578867043,
+		"scrollX": 3129.268659203358,
+		"scrollY": 873.9605512108292,
 		"zoom": {
-			"value": 0.5499999999999999
+			"value": 0.25
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

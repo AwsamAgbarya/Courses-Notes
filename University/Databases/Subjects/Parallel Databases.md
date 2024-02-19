@@ -10,7 +10,7 @@ tags: [excalidraw]
 # Text Elements
 Parallel Databases ^dWmjNYeP
 
-* So far we have only considered single-Threaded/Serial System that manages all the data, now we 
+%%***>>>text element-link:[[Computations]]<<<***%%* So far we have only considered single-Threaded/Serial System that manages all the data, now we 
   are upgrading our ideas to extend beyond that into parallel databases.
 *                    : the machines are homogeneous and tightly coupled, clusters with direct network
   connection, multi-processor system, everything works together. (Optimized for performance)
@@ -185,8 +185,8 @@ b2af7350275e9e863a564247117a4423ca06f7f1: $$SpeedUp = \frac{1}{1 - P + \frac{P}{
 		},
 		{
 			"type": "text",
-			"version": 4112,
-			"versionNonce": 1622402816,
+			"version": 4113,
+			"versionNonce": 902954698,
 			"isDeleted": false,
 			"id": "uaETZVbv",
 			"fillStyle": "solid",
@@ -206,8 +206,8 @@ b2af7350275e9e863a564247117a4423ca06f7f1: $$SpeedUp = \frac{1}{1 - P + \frac{P}{
 			"frameId": "7UzCFPUWxGl_zXCVxUreN",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1707834779819,
-			"link": null,
+			"updated": 1708272098566,
+			"link": "[[Computations]]",
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 1,
@@ -929,7 +929,7 @@ b2af7350275e9e863a564247117a4423ca06f7f1: $$SpeedUp = \frac{1}{1 - P + \frac{P}{
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1802.339752458335,
+		"scrollX": 1986.089752458335,
 		"scrollY": 632.1983943261132,
 		"zoom": {
 			"value": 0.4
