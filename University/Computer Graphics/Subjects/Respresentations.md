@@ -87,7 +87,7 @@ b6123f92de7b773bed03deac67a19b858509d351: [[Pasted Image 20231215182647_525.png]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.3",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.20",
 	"elements": [
 		{
 			"type": "ellipse",
@@ -1251,8 +1251,8 @@ b6123f92de7b773bed03deac67a19b858509d351: [[Pasted Image 20231215182647_525.png]
 		},
 		{
 			"type": "frame",
-			"version": 390,
-			"versionNonce": 1029043939,
+			"version": 391,
+			"versionNonce": 1798307893,
 			"isDeleted": false,
 			"id": "DHLZ_Mhn62vmIJv-mqYFv",
 			"fillStyle": "solid",
@@ -1281,14 +1281,14 @@ b6123f92de7b773bed03deac67a19b858509d351: [[Pasted Image 20231215182647_525.png]
 					"type": "arrow"
 				}
 			],
-			"updated": 1702667001642,
+			"updated": 1708378188520,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"frameColor": {
 					"stroke": "#F1A7C4",
 					"fill": "#E76598",
-					"nameColor": "#E0397A"
+					"nameColor": "#C71F60"
 				}
 			},
 			"name": null
@@ -1357,8 +1357,8 @@ b6123f92de7b773bed03deac67a19b858509d351: [[Pasted Image 20231215182647_525.png]
 		},
 		{
 			"type": "frame",
-			"version": 864,
-			"versionNonce": 1910186627,
+			"version": 865,
+			"versionNonce": 1175204245,
 			"isDeleted": false,
 			"id": "Be15QnSlhhHAfqN0UY3Bz",
 			"fillStyle": "solid",
@@ -1387,14 +1387,14 @@ b6123f92de7b773bed03deac67a19b858509d351: [[Pasted Image 20231215182647_525.png]
 					"type": "arrow"
 				}
 			],
-			"updated": 1702667001642,
+			"updated": 1708378188520,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"frameColor": {
 					"stroke": "#F1A7C4",
 					"fill": "#E76598",
-					"nameColor": "#E0397A"
+					"nameColor": "#C71F60"
 				}
 			},
 			"name": null
@@ -16694,8 +16694,8 @@ b6123f92de7b773bed03deac67a19b858509d351: [[Pasted Image 20231215182647_525.png]
 		},
 		{
 			"type": "arrow",
-			"version": 315,
-			"versionNonce": 1327123421,
+			"version": 319,
+			"versionNonce": 831124987,
 			"isDeleted": false,
 			"id": "HvOGAtSqXMmacBCgSNCe4",
 			"fillStyle": "cross-hatch",
@@ -16704,12 +16704,12 @@ b6123f92de7b773bed03deac67a19b858509d351: [[Pasted Image 20231215182647_525.png]
 			"roughness": 2,
 			"opacity": 100,
 			"angle": 0,
-			"x": 231.49381908213286,
-			"y": -914.641990912224,
+			"x": 231.49382211792226,
+			"y": -914.6419908381936,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffec99",
-			"width": 5.935574477899763,
-			"height": 211.30508285490646,
+			"width": 5.935576346758921,
+			"height": 211.30508279264905,
 			"seed": 836642851,
 			"groupIds": [],
 			"frameId": null,
@@ -16717,7 +16717,7 @@ b6123f92de7b773bed03deac67a19b858509d351: [[Pasted Image 20231215182647_525.png]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1704374317740,
+			"updated": 1708378188564,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -16739,8 +16739,8 @@ b6123f92de7b773bed03deac67a19b858509d351: [[Pasted Image 20231215182647_525.png]
 					0
 				],
 				[
-					-5.935574477899763,
-					211.30508285490646
+					-5.935576346758921,
+					211.30508279264905
 				]
 			]
 		},
@@ -16783,41 +16783,41 @@ b6123f92de7b773bed03deac67a19b858509d351: [[Pasted Image 20231215182647_525.png]
 			"locked": false
 		},
 		{
-			"id": "J2VLgkUR",
 			"type": "text",
-			"x": 158.94763262336667,
-			"y": -1085.7749321815304,
-			"width": 153.3960418701172,
-			"height": 45,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#ffec99",
+			"version": 38,
+			"versionNonce": 2132403613,
+			"isDeleted": false,
+			"id": "J2VLgkUR",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 2,
 			"opacity": 100,
+			"angle": 0,
+			"x": 158.94763262336667,
+			"y": -1085.7749321815304,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#ffec99",
+			"width": 153.3960418701172,
+			"height": 45,
+			"seed": 1037569875,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1037569875,
-			"version": 38,
-			"versionNonce": 2132403613,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1704374311631,
 			"link": null,
 			"locked": false,
-			"text": "Roadmap",
-			"rawText": "Roadmap",
 			"fontSize": 36,
 			"fontFamily": 1,
+			"text": "Roadmap",
+			"rawText": "Roadmap",
 			"textAlign": "center",
 			"verticalAlign": "middle",
-			"baseline": 32,
 			"containerId": "BmuHYoXO",
 			"originalText": "Roadmap",
-			"lineHeight": 1.25
+			"lineHeight": 1.25,
+			"baseline": 32
 		}
 	],
 	"appState": {
@@ -16835,10 +16835,10 @@ b6123f92de7b773bed03deac67a19b858509d351: [[Pasted Image 20231215182647_525.png]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 348.478505777805,
-		"scrollY": 1537.1841263516426,
+		"scrollX": 852.0071854314849,
+		"scrollY": 1675.2145139328113,
 		"zoom": {
-			"value": 0.55
+			"value": 0.4
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

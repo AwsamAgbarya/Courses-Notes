@@ -32,7 +32,7 @@ Expectation Maximization ^zuGuH9md
 
 [[Bayes Decision Theory]] ^8nM6JRu6
 
-[[Maximum Liklihood]] ^KucyRvoV
+[[Maximum Likelihood]] ^KucyRvoV
 
 [[PCA]] ^dkurVb3x
 

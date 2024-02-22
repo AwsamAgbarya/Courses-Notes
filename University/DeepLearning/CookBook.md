@@ -115,7 +115,7 @@ for epoch in range(num_epochs):
 ### Optimization
 * ##### To help reduce getting stuck at plateaus/ local minima/ saddle points:
 	* Avoid parameter symmetry, we will not be able to learn meaningful features
-	* Dont initialize weights to 0, we will get stuck at plateaus
+	* Dont initialize weights to 0, we will get stuck at saddlepoints
 	* Dont set the scale of the weights too high due to saturated points in non-linear functions
 	* Retrain model multiple times with different initializations and get the best model
 	* Preform some sort of learning rate decay in order to jump out of local minima
