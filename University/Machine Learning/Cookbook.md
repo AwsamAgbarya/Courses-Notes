@@ -20,3 +20,25 @@
 * Between Class matrix: $$S_B =(\mu_2 - \mu_1)(\mu_2 - \mu_1)^T $$
 * Within Class matrix: $$S_W = S_1+S_2 = \sum_i \sum_k(x_k - \mu_j)(x_k - \mu_j)^T$$
 * Final w solution if S_w is inveritble: $$w = S_w^{-1}(\mu_2 - \mu_1)$$
+### Principal Component Analysis
+*  PCA can be interpreted as a linear Auto-encoder
+* Data needs to be centered and cleared of outliers for this method to work
+* Minimum noise min distance(original-projection): $$\arg\min_w \left[\frac{1}{N}\sum_{k=1}^N \|x-ww^t\|^2 \right]$$
+* Maximum variance of projected data max sum( positive length of projection): $$\arg\max_{\|w\|^2=1} \left[w^T \hat{\Sigma}w\right]$$
+* Covariance is a Gram matrix:
+	* All its eigenvalues are positive
+	* Its trace is the sum of its eigenvalues
+	* its diagonizable
+	* all its eigenvectors are orthogonal to each other
+	* symmetrical
+* SVD Is factorizing a matrix M as UAV such that U contains the eigenvectors of MM^T and U contains the roots corresponding eigenvectors on the diagonal
+* PCA using POWIT:
+```
+Cov = 1/N * Data * Data^T
+for i in k:
+	w = random_unit_norm
+	for i in t:
+		w = (Cov*w).normalize()
+	save w
+	Cov = Cov - w*w.T*Cov
+```
