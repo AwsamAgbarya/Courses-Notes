@@ -42,3 +42,31 @@ for i in k:
 	save w
 	Cov = Cov - w*w.T*Cov
 ```
+
+### SVM:
+* Hinge Loss: $$max( 0,1-y_i(wx_i +b))$$
+* Primal problem: $$min_{w,b} \frac{1}{2} \|w\|^2 \text{ such that } y_i(wx_i+b) \geq 1 \text{ }\forall i \in \{1...N\}$$
+* Dual problem Formulation: $$\max_{\alpha_i \geq 0} min_{w,b} \mathcal{L}(w,b,\alpha)$$
+* Initial Dual problem reformulation: $$ \max_{\alpha_i \geq0} \left[-\frac{1}{2} \sum_{\text{ Pair of SV }} \alpha_i \alpha_j y_i y_j x_i^T x_j + \sum_{SV} \alpha_i\right]$$
+* Conditions of the dual problem without slack: $$\sum_i^N \alpha_i y_i = 0 $$
+* Recovering w: $$w = \sum_i^N \alpha_i y_i x_i$$
+* Primal Problem in Kernel space + Slack: $$min_{w,b} \frac{1}{2} \|w\|^2 +C\sum_i^N \epsilon_i\text{ such that } y_i(wx_i+b) \geq 1-\epsilon_i \text{ and } \epsilon_i \geq 0 \text{ }\forall i \in \{1...N\}$$
+* Dual problem reforumlation: $$ \max_{\alpha_i \geq0} \left[-\frac{1}{2} \sum_{\text{ Pair of SV }} \alpha_i \alpha_j y_i y_j k(x_i,x_j) + \sum_{SV} \alpha_i\right]$$
+* Conditions of the dual problem with slack: $$\sum_i^N \alpha_i y_i = 0 \text{ and } C \geq \alpha_i \geq 0$$
+* Recovering b: $$b = y_i - w^T\phi(x_i)$$
+* Classifier: $$f(x) = sign \left(\sum_i^N \alpha_i y_i k(x,x_i) + b \right)$$
+* VC dimension: $$d \leq min\{[R^2 \|w\|^2] + 1 , n+1 \}$$
+* Mercer Kernels / Representer theorem: $$k(x,y) = \langle \phi(x) , \phi(y) \rangle$$
+* Mercer's condition: $$\sum_i^n \sum_j^n c_i c_j k(x_i,x_j) \geq 0$$
+* Inner product properties:
+	* Positive definite  <x,x> >= 0 for every x and only is 0 if x=0
+	* conjugate symmetric <x,y> = <y,x> if we are dealing with real numbers
+	* conjugate Linear <x,y1 +y2> = <x,y1> + <x,y2> or <x,cy> = c<x,y>
+
+### Model Selection
+* Holdout selection:
+	* design multiple models with multiple complexities, decide on the simplest model that has the highest accuracy by testing it on some validation test to simulate the true accuracy
+	* partition data in k partitions, iterate over partitions, train the model on the rest of the data and test it with that partition, then combine all the losses from all the partition tests
+* Bias: $$E[\hat{\mu} - \mu]$$
+* Variance: $$E[(\hat{\mu} - E[\hat{\mu}])^2] = E[\hat{\mu}^2] - E[\hat{\mu}]^2$$
+* MSE: $$E[(\hat{\mu} - \mu)^2] = Var + Bias^2$$
