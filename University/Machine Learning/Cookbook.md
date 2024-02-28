@@ -70,3 +70,65 @@ for i in k:
 * Bias: $$E[\hat{\mu} - \mu]$$
 * Variance: $$E[(\hat{\mu} - E[\hat{\mu}])^2] = E[\hat{\mu}^2] - E[\hat{\mu}]^2$$
 * MSE: $$E[(\hat{\mu} - \mu)^2] = Var + Bias^2$$
+### Neural Networks [[DeepLearning/CookBook|CookBook]]
+
+### Trees and Forests
+*  Gini Index: $$\sum_i^{\text{\#children}} \frac{\text{\#Total Records going to that child}}{\text{\#Total Records}} * \left(1 - \sum_j^{\text{\#Classes in node}} \frac{\text{\#Belonging to class j}}{\text{\#Total records in child}}^2 \right)$$
+* Entropy: $$\sum log(\frac{1}{p(X)})p(x)$$
+* Information Gain: $$IG(T) = H(T) - \sum_{children}\frac{\text{points in child}}{\text{total}}H(\text{child}) $$
+* Building a tree:
+	* Build a very complex tree according to your splitting metric
+	* Trim the trees that contribute the least in reducing the cost to get lower complexity
+
+* Build a forest: (Bagging)
+	* Draw random samples with duplicates from training data
+	* Build a minimum size tree:
+		* pick m features at random
+		* pick best split variable
+		* split accordingly
+	* Combine their predictions!
+
+### Boosting
+* Adaboost:
+	* start with 1/N weights
+	* Train a weak base learner which gives you your initial hypothesis h1
+	* calculate the error by summing over all the weights of the incorrectly classified points
+	* the influence of this hypothesis is then $$\alpha_t = \frac{1}{2} log\frac{1-\epsilon_t}{\epsilon_t}$$
+	* Update the weights and normalize them: $$w_i^{(t+1)} = \frac{W_i^{t} e^{-\alpha_i y_i h_t(x_i)}}{\sum W_i^{t} e^{-\alpha_i y_i h_t(x_i)}}$$
+	* make a prediction: $$f_{\alpha}(x_i) = \sum_t \alpha_t h_t(x_i)$$
+	* Add slack variables (Optional): $$C_n = C(\sum_r \frac{\alpha_r}{\|\alpha\|_1} W_n^r)$$
+
+### Clustering
+* Cluster algorithm:
+	1) Firstly we initialize the initial cluster means (by assigning them to K random points)
+	2) We split up all datapoints according to the closest center to it$$S_k = \{ x_n : \|x_n - \mu_k\|^2 \leq \|x_n - \mu_l \|^2, \text{for every l} \in \{1..K\} \} $$
+	3) we calculate the means of the resulting clusters and update our mean values $$\mu_k = \frac{1}{\|S_k\|} \sum_{x_n \in S_k} x_n $$
+	4) Iterate over 2 and 3 until we converge to a local minimum
+
+* Likelihood of the data given GMM model: $$\prod_{n=1}^N \sum_{k=1}^K \mathcal{T}_k p_k(x_n | \mu_k \Sigma_k)$$
+## Expectation Maximization
+* Algorithm:
+	* Firstly we initialize the initial cluster variables
+	*  EXPECTATION: we try to optimally find our latent variable Z by computing the membership probabilities given the current parameters which are treated as constant for this step $$q^{(t)} (z_{nk}) = p (z_{nk} = 1 | x_n, \theta^{(t)} ) = \frac{p (x_n | z_{nk} , \theta^{(t)}) p( z_{nk}, \theta^{(t)} )}{ p{(x_n | \theta{(t)} )}} = \frac{\mathcal{T_k^{(t)}} p_k (x_n | \mu_k^{(t)} , \Sigma_k^{(t)} ) }{\sum_{I=1}^K \mathcal{T_I^{(t)}} p_I (x_n | \mu_k^{(I)} , \Sigma_l^{(I)} ) }$$
+	* MAXIMIZATION: according to our naive assumption of membership, update the parameters theta such that they reflect it better $$\mathcal{T_k^{(t+1)}} = \frac{1}{N} \sum_{(n=1)}^N q^{(t)} (z_{nk})$$ $$ \mu_k^{(t+1)} = \frac{1}{N_{\mathcal{T_k^{(t+1)}}}} \sum_{n=1}^N q^{(t)} (z_{nk}) x_n$$ $$\Sigma_k^{(t+1)} = \frac{1}{N_{\mathcal{T_k^{(t+1)}}}} \sum_{n=1}^N q^{(t)} (z_{nk}) (x_n - \mu_k^{(t+1)})(x_n - \mu_k^{(t+1)})^T$$
+* Lower Bound we are optimizing $$\sum_z q(z) log \left[ \frac{p(X,z|\theta)}{q(z)} \right]$$
+### Linear Regession
+* Linear Regression model $$y = w^T x$$
+* minimizing error $$ w = (XX^T)^{-1} Xy$$
+### Kernel Ridge Regression
+* Model $$y = w^T \phi(x)$$
+* Minimizing the error $$w = (\phi(X)\phi(X)^T + \lambda I)^-1 \phi(X)y$$
+* Rewritten as $$y = k^* ( K+\lambda I)^{-1}y$$
+### Gaussian Process:
+* Prior: $$p(x) = \mathcal{N}(0,k(x_i,x_j) +\sigma^2 \delta_{ij})$$
+* Training Process $$\begin{bmatrix} y \\ y^* \end{bmatrix} = \mathcal{N}(0, \begin{bmatrix}k(X,X)+ \sigma^2 I & k(X,x^*) \\ k(x^*,X) & k(x^*,x^*) \end{bmatrix})$$
+* Predicting: $$p(y*|y) = \mathcal{N}\left(k^* (K+ \sigma^2 I)^{-1}y , k^{**} - k^* (K+ \sigma^2 I)^{-1} k^{*T} \right)$$
+
+### Explainable AI
+##### Activation maximization:
+* Generate the datapoints from the distribution of points that is most likely to activate the neurons that give us the highest probability of the class we want $$\arg\max_x log(p(w_c|x)) + log(p(x))$$
+* ##### Attribution Using shapley Vlaues:
+	* Use the rewritten shapley value formula $$ \phi_i = \frac{!}{d!}\sum [f(x_{afterEqual(S,i)} - f(x_{After(S,i)}]$$
+	* To sample t times for the set of all possible subsets S
+* ##### Taylor Expansions $$f(x) = f(\hat{x}) + \sum_i^d [\nabla f(\hat{x})]_i \cdot (x_i - \hat{x}_i) + ....$$
+* ##### Attribution Using LRP $$R_j = \sum_k \frac{a_jw_{jk}}{\sum_{0,j} a_j w_{jk}} R_k$$
