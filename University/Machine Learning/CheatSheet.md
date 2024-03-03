@@ -9,7 +9,7 @@
 - Gaussian:  $\frac{\partial p(x)}{\partial x} = −p(x)Σ^{−1}(x − m)$   or   $\frac{\partial p(x)}{\partial\sigma}\;=\;p(x)\frac{1}{\sigma}\left[\frac{(x-\mu)^{2}}{\sigma^{2}}-1\right]$
 ***
 # Integration:
-* Integration by parts:  $\int_{a}^{b}u(x)v^{'} =\left[u(x)v(x)\right]_{a}^{b}-\int_{a}^{b}u^{\prime}(x)v(x)\,d x$
+* Integration by parts:  $\int_{a}^{b}u(x)v(x)^{'} =\left[u(x)v(x)\right]_{a}^{b}-\int_{a}^{b}u^{\prime}(x)v(x)\,d x$
 *** 
 # Matrix Properties:
 - #### Positive Semi-definite: 
@@ -62,6 +62,12 @@
 	6. Additivity for second term:   $〈x , z+ y〉 = 〈x, z〉 + 〈x, y〉$
 	7. Orthogonality: $\langle x,y \rangle = 0$
 	8. Cauchy Schwarz:   $|〈x, y〉| ≤ ||x|| ||y||$
+-  Kernels: 
+	1. Summation of two Kernels is also a kernel
+		$c^{T}(K_{1}+ K_{2})=c^{T}K_{1}c + c^{T}K_{2}c$
+	2. Product of two Kernels is also a kernel
+		$\phi_{1}(X)^{T}\phi_{1}(Y) \cdot \phi_{2}(X)^{T}\phi_{2}(Y) = \phi_{1}(X)^{T}\phi_{2}(X) \cdot \phi_{1}(Y)^{T}\phi_{2}(Y) = (\phi_{1}(X)^{T}\phi_{2}(X))^{2}$ 
+	
 ***
 # Statistics and Probability:
 - $Var[Ax] = AVar[x]A^T$
@@ -82,3 +88,52 @@
 	- Stationary: $\frac{\partial L(\theta)}{\partial \theta} = 0$
 	- Dual feasibility: $\forall_{i=1}^{l}: \lambda_{i}\geq 0$
 	- Complementary slackness: $\forall_{i=1}^{l}:\ \lambda_{i}h_{i}(\theta)=0$
+***
+# Programming:
+```python
+# Numpy Functions to initilaze arrays
+	np.zeros(size)
+	np.ones(size)
+	np.full(size,val)
+	np.empty(size)
+	np.arange(start:end:step)
+	np.linspace(startval,endval,size)
+	np.repeat(containee,times,axis)
+	np.identity(size)/np.eye(size)
+# Numpy useful operations
+	np.cumsum(arr,axis) #Cumulative sum
+	np.vstack(a,b) #appends 2 arrays while keeping the objects
+	np.hstack(a,b) #appends 2 arrays horizontally 
+	np.argmin/max(a)  #returns index of min/max
+	np.Unique(arr, return_index, return_inverse, return_counts) #returning unique elements of arrays
+	np.expand_dims(arr, axis) #expanding the dimension of an array
+	np.argwhere(a>c).flatten() #returns indices of non-zero elements
+	np.where(cond, x,y) #returns elements that match the condition (returns x otherwise y)
+	np.put(a,indices,values) #replaces indices in a with values
+	np.hsplit(a,number) #splits array horizontally given a number of elements
+# Shaping
+	A.T #flips the axis 
+	A.transpose(indices) #transposes the arrays axis according to the indices of the original axis
+	A.reshape(shape) #keeps the data in the same order but changes the dimensions accordingly, You are allowed to use '...' to indicate all previous indexes
+	A.Flatten() #turns the array into one dimensional
+#Linear Agebra operations
+	np.linalg.norm(point1-point2) #Used to calculate euclidean distances or l2 norm
+	np.linalg.inv(A) #inverse matrix
+	np.linalg.eig(A) #returns eigen values vectors
+	np.linalg.det(A) #returns determinant
+	np.linalg.einsum('ii->i',a) #returns the diagonal einsum('ii',a) returns sum of diagonal
+# Randomizing
+	random.randint(low,high,size) # random integer
+	np.shuffle(array) #shuffle the sequence around randomly
+	random.uniform(low,high,size) #all samples have equal probability
+	rng.normal(mean,cov,size) #is a gaussian distribution
+# Tips and Tricks
+	pad_shape = (
+	    (0, 0),  # Add no row at the top and no row at the bottom
+	    (1, 0),  # Add one column at the left and no column at the right
+	)
+	transition = np.pad(arr,pad_shape,constant_values=0) 
+	A[:,None] #To add a new dimensions (usually for broadcasting)
+	A[A>c] #filter out all the elements in A that dont apply to the condition
+	np.linalg.norm(x - (w.dot(x)/np.linalg.norm(w)) # calculating distance of x from hyperplane w
+```
