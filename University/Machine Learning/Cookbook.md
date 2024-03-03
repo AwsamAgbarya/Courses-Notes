@@ -64,6 +64,12 @@ for i in k:
 	* conjugate Linear <x,y1 +y2> = <x,y1> + <x,y2> or <x,cy> = c<x,y>
 
 ### Model Selection
+- Bias Variance Tradeoff:
+	- High Bias = a lot of assumptions = Underfitting data
+	- Linear models have higher bias than nonlinear models
+	- High Variance = a lot of variations in the output = does not generalize = leads to overfitting
+	- Biased estimator can be used in high dimensional data to trade off lower variance
+	- Biased estimator make the model less sensitive to training data
 * Holdout selection:
 	* design multiple models with multiple complexities, decide on the simplest model that has the highest accuracy by testing it on some validation test to simulate the true accuracy
 	* partition data in k partitions, iterate over partitions, train the model on the rest of the data and test it with that partition, then combine all the losses from all the partition tests
@@ -117,7 +123,7 @@ for i in k:
 * minimizing error $$ w = (XX^T)^{-1} Xy$$
 ### Kernel Ridge Regression
 * Model $$y = w^T \phi(x)$$
-* Minimizing the error $$w = (\phi(X)\phi(X)^T + \lambda I)^-1 \phi(X)y$$
+* Minimizing the error $$w = (\phi(X)\phi(X)^T + \lambda I)^{-1} \phi(X)y$$
 * Rewritten as $$y = k^* ( K+\lambda I)^{-1}y$$
 ### Gaussian Process:
 * Prior: $$p(x) = \mathcal{N}(0,k(x_i,x_j) +\sigma^2 \delta_{ij})$$

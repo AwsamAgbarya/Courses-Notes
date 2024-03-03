@@ -584,7 +584,7 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.22",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23",
 	"elements": [
 		{
 			"type": "image",
@@ -7561,8 +7561,8 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 		},
 		{
 			"type": "text",
-			"version": 303,
-			"versionNonce": 1296937050,
+			"version": 304,
+			"versionNonce": 95231890,
 			"isDeleted": false,
 			"id": "j5SsCjOq",
 			"fillStyle": "hachure",
@@ -7575,14 +7575,14 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 			"y": 2149.887744689351,
 			"strokeColor": "#e03131",
 			"backgroundColor": "#da77f2",
-			"width": 13.328033447265625,
+			"width": 13.295657885969463,
 			"height": 20,
 			"seed": 225691298,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708877454108,
+			"updated": 1709465828871,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -7594,7 +7594,7 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 			"containerId": null,
 			"originalText": "x1",
 			"lineHeight": 1.25,
-			"baseline": 14
+			"baseline": 12
 		},
 		{
 			"type": "text",
@@ -20446,7 +20446,7 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 			"y": 4207.450861727846,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 34.059967041015625,
+			"width": 34.06013488769531,
 			"height": 25,
 			"seed": 1337047842,
 			"groupIds": [],
@@ -20945,8 +20945,8 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 		},
 		{
 			"type": "arrow",
-			"version": 129,
-			"versionNonce": 987063322,
+			"version": 130,
+			"versionNonce": 128723986,
 			"isDeleted": false,
 			"id": "k_MTFnyVnR1xT93hegcL9",
 			"fillStyle": "solid",
@@ -20968,7 +20968,7 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708894424247,
+			"updated": 1709465724743,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -20993,8 +20993,8 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 		},
 		{
 			"type": "arrow",
-			"version": 335,
-			"versionNonce": 3664794,
+			"version": 339,
+			"versionNonce": 1740873106,
 			"isDeleted": false,
 			"id": "scepq4wUdSj8t_nACnghF",
 			"fillStyle": "solid",
@@ -21016,7 +21016,7 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708894424248,
+			"updated": 1709465724745,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -21045,8 +21045,8 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 		},
 		{
 			"type": "arrow",
-			"version": 328,
-			"versionNonce": 1069942938,
+			"version": 332,
+			"versionNonce": 294942354,
 			"isDeleted": false,
 			"id": "IJima5rrXrUZP4T-rkghV",
 			"fillStyle": "solid",
@@ -21068,7 +21068,7 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708894424248,
+			"updated": 1709465724744,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -21097,8 +21097,8 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 		},
 		{
 			"type": "arrow",
-			"version": 371,
-			"versionNonce": 1041321242,
+			"version": 375,
+			"versionNonce": 476242194,
 			"isDeleted": false,
 			"id": "NbXZ91I2N3dseWcQ83pRV",
 			"fillStyle": "solid",
@@ -21120,7 +21120,7 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708894424248,
+			"updated": 1709465724746,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -26166,10 +26166,10 @@ fbea924d65df54259293319891e9c4c7512a29ba: [[Pasted Image 20240225172556_817.png]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": -215.9821207394507,
-		"scrollY": -3508.8180698497463,
+		"scrollX": 6355.357036018822,
+		"scrollY": 1428.7191090916135,
 		"zoom": {
-			"value": 0.8000000000000002
+			"value": 0.15000000000000002
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
