@@ -136,4 +136,5 @@
 	A[:,None] #To add a new dimensions (usually for broadcasting)
 	A[A>c] #filter out all the elements in A that dont apply to the condition
 	np.linalg.norm(x - (w.dot(x)/np.linalg.norm(w)) # calculating distance of x from hyperplane w
+	((A - B)**2).mean(axis=0) # performs mean squared error
 ```
