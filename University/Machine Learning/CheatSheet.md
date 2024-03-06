@@ -27,7 +27,7 @@
 - #### Symmetric:
 	- Whenever we consider a quadratic form $x^T Ax$, we can assume without loss of generality that the matrix A is symmetric
 	- The eigenvalues of a symmetric real-valued matrix A are real
-	- The eigenvalues of a symmetric Matrix are orthogonal to each other
+	- The eigenvectors of a symmetric Matrix are orthogonal to each other
 	- Can be diagonalized (decomposed) into $VUV^T$
 - #### Orthogonal:
 	- $A^T A = AA^T = I$
@@ -64,7 +64,7 @@
 	8. Cauchy Schwarz:   $|〈x, y〉| ≤ ||x|| ||y||$
 -  Kernels: 
 	1. Summation of two Kernels is also a kernel
-		$c^{T}(K_{1}+ K_{2})=c^{T}K_{1}c + c^{T}K_{2}c$
+		$c^{T}(K_{1}+ K_{2})c=c^{T}K_{1}c + c^{T}K_{2}c$
 	2. Product of two Kernels is also a kernel
 		$\phi_{1}(X)^{T}\phi_{1}(Y) \cdot \phi_{2}(X)^{T}\phi_{2}(Y) = \phi_{1}(X)^{T}\phi_{2}(X) \cdot \phi_{1}(Y)^{T}\phi_{2}(Y) = (\phi_{1}(X)^{T}\phi_{2}(X))^{2}$ 
 	
@@ -91,7 +91,7 @@
 ***
 # Programming:
 ```python
-# Numpy Functions to initilaze arrays
+# Numpy Functions to initialize arrays
 	np.zeros(size)
 	np.ones(size)
 	np.full(size,val)
@@ -105,7 +105,7 @@
 	np.vstack(a,b) #appends 2 arrays while keeping the objects
 	np.hstack(a,b) #appends 2 arrays horizontally 
 	np.argmin/max(a)  #returns index of min/max
-	np.Unique(arr, return_index, return_inverse, return_counts) #returning unique elements of arrays
+	np.unique(arr, return_index, return_inverse, return_counts) #returning unique elements of arrays
 	np.expand_dims(arr, axis) #expanding the dimension of an array
 	np.argwhere(a>c).flatten() #returns indices of non-zero elements
 	np.where(cond, x,y) #returns elements that match the condition (returns x otherwise y)

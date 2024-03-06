@@ -30,7 +30,7 @@
 
 * Representation of orientation in 2D:
 	We use Euler angles in order to represent orientation in 2D
-	$$x + iy = \cos\theta +i\sin\theta = e^i\theta$$
+	$$x + iy = \cos\theta +i\sin\theta = e^{i\theta}$$
 * Representation of rotation in 3D:
 	$$v = \text{ Rotation Axis such that } \|v\|=\theta $$
 * Representation of Orientation in 3D:
@@ -94,4 +94,4 @@ e_{1} \\ e_{2} \\ e_{3}
 	$$\begin{cases} \text{set diffuse and specular to 0},& \text{if } \|\beta\|> \pi/2 \\ L_{spec}==value,& \text{if } \|\gamma\| < \pi/2\end{cases}$$
 * Cook-Torrance:
 	$$L_{out} = (\frac{k_{d}}{2}+\frac{DGF}{4\|n^Tl\|\|n^Tv\|})max(0,n^Tl)L_{in} $$
-	
+***
