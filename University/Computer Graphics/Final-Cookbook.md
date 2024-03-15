@@ -1,3 +1,9 @@
+---
+tags:
+  - Cookbook
+  - ComputerGraphics
+---
+
 # [[Color]] 
 * #### Light Spectrum
 	- Light wave's wavelength/frequency determines what color it represents
@@ -251,7 +257,7 @@
 	* Facial animations are a weighted sum of 48 different facial expressions (assuming all blendshapes have same triangulation and vertices)
 	* Or by performing expression displacement such that we get the distance between each expression and the neutral face
 ***
-# [[SImulation]]
+# [[Simulation]]
 * #### Differential equations:
 	* relates an unknown function to its derivative in order to be able to simulate function of states over time
 	* We start off by defining the initial state at t=0

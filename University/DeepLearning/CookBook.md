@@ -1,3 +1,8 @@
+---
+tags:
+  - Cookbook
+  - DeepLearning
+---
 ### Back-propagation
 * Error Back-propagation w.r.t a specific neuron:
 * $$\delta_j =  \frac{\partial \mathcal{E} }{\partial a_j} = \sum_k \frac{\partial \mathcal{E} }{\partial a_k} \frac{\partial a_k}{\partial z_k} \frac{\partial z_k}{ \partial a_j} = \sum_k \delta_k a_k'(z_k)w_{jk}$$

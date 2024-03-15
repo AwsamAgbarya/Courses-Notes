@@ -1,3 +1,9 @@
+---
+tags:
+  - python
+---
+
+Child of [[Python Basics]]
 ```python
 import matplotlib.pyplot as plt
 ```

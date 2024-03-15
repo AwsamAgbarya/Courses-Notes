@@ -1,3 +1,8 @@
+---
+tags:
+  - python
+---
+Parent of [[NumPy]] and [[Matplotlib]]
 ## Basic Operations:
 - x\*\*y = x^y
 - x//y = floor(x/y)

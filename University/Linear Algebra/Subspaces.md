@@ -1,8 +1,8 @@
 ---
-
 excalidraw-plugin: parsed
-tags: [excalidraw]
-
+tags:
+  - excalidraw
+  - LinearAlgebra
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
@@ -85,13 +85,18 @@ Going back to normal coords only requires division by w. ^1jQtHZM8
 * Vectors usually have 0 as w
 * Points usually have 1 as w ^1I8y0Bz3
 
+%%***>>>text element-link:[[Vectors]]<<<***%%Its good to also
+refresh yourself on
+what vector
+subspaces are ^SFItg8RO
+
 %%
 # Drawing
 ```json
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.3",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23",
 	"elements": [
 		{
 			"type": "ellipse",
@@ -2056,14 +2061,51 @@ Going back to normal coords only requires division by w. ^1jQtHZM8
 			"baseline": 74
 		},
 		{
-			"id": "1I8y0Bz3",
 			"type": "text",
+			"version": 95,
+			"versionNonce": 1931571211,
+			"isDeleted": false,
+			"id": "1I8y0Bz3",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"angle": 0,
 			"x": 160.11963252771727,
 			"y": -122.73440780518729,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
 			"width": 244.04849243164062,
 			"height": 40,
+			"seed": 1890006027,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1702754415623,
+			"link": null,
+			"locked": false,
+			"fontSize": 16,
+			"fontFamily": 1,
+			"text": "* Vectors usually have 0 as w\n* Points usually have 1 as w",
+			"rawText": "* Vectors usually have 0 as w\n* Points usually have 1 as w",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "* Vectors usually have 0 as w\n* Points usually have 1 as w",
+			"lineHeight": 1.25,
+			"baseline": 34
+		},
+		{
+			"id": "SFItg8RO",
+			"type": "text",
+			"x": -59.67735094893192,
+			"y": 193.0298683157918,
+			"width": 105.05710989705875,
+			"height": 56.13213186412186,
 			"angle": 0,
-			"strokeColor": "#1e1e1e",
+			"strokeColor": "#e03131",
 			"backgroundColor": "#a5d8ff",
 			"fillStyle": "solid",
 			"strokeWidth": 4,
@@ -2073,30 +2115,30 @@ Going back to normal coords only requires division by w. ^1jQtHZM8
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1890006027,
-			"version": 95,
-			"versionNonce": 1931571211,
+			"seed": 1900772262,
+			"version": 184,
+			"versionNonce": 155888265,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1702754415623,
-			"link": null,
+			"updated": 1710513938972,
+			"link": "[[Vectors]]",
 			"locked": false,
-			"text": "* Vectors usually have 0 as w\n* Points usually have 1 as w",
-			"rawText": "* Vectors usually have 0 as w\n* Points usually have 1 as w",
-			"fontSize": 16,
+			"text": "Its good to also\nrefresh yourself on\nwhat vector\nsubspaces are",
+			"rawText": "Its good to also\nrefresh yourself on\nwhat vector\nsubspaces are",
+			"fontSize": 11.226426372824372,
 			"fontFamily": 1,
-			"textAlign": "left",
+			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 34,
+			"baseline": 49.99999999999999,
 			"containerId": null,
-			"originalText": "* Vectors usually have 0 as w\n* Points usually have 1 as w",
+			"originalText": "Its good to also\nrefresh yourself on\nwhat vector\nsubspaces are",
 			"lineHeight": 1.25
 		}
 	],
 	"appState": {
 		"theme": "light",
 		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#1e1e1e",
+		"currentItemStrokeColor": "#e03131",
 		"currentItemBackgroundColor": "#a5d8ff",
 		"currentItemFillStyle": "solid",
 		"currentItemStrokeWidth": 4,
@@ -2105,13 +2147,13 @@ Going back to normal coords only requires division by w. ^1jQtHZM8
 		"currentItemOpacity": 100,
 		"currentItemFontFamily": 1,
 		"currentItemFontSize": 16,
-		"currentItemTextAlign": "left",
+		"currentItemTextAlign": "center",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 441.02773889217053,
-		"scrollY": 576.2567304154759,
+		"scrollX": 438.5234224539018,
+		"scrollY": 237.7377947322766,
 		"zoom": {
-			"value": 1.1211892990699386
+			"value": 1.7460917500666813
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

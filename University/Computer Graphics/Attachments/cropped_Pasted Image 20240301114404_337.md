@@ -1,11 +1,11 @@
 ---
-
 excalidraw-mask: true
 excalidraw-export-dark: false
 excalidraw-export-padding: 0
 excalidraw-export-transparent: true
 excalidraw-plugin: parsed
-
+tags:
+  - cropped
 ---
 # Text Elements
 [[Computer Graphics/Attachments/Pasted Image 20240301114404_337.png]] ^ltYt7mbC[[Computer Graphics/Attachments/Pasted Image 20240301114404_337.png]] ^xB3YdUJ5

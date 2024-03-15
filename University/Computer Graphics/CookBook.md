@@ -1,6 +1,11 @@
-### [[Representation]]:
-- To find a point in space via triangulation [[Triangulation.png]]:
-	$$ X = \frac{ Y * \sin{\alpha}}{\sin{(180-2\alpha)}} $$
+---
+tags:
+  - Cookbook
+  - ComputerGraphics
+---
+
+### [[Representations]]:
+- To find a point in space via triangulation 	$$ X = \frac{ Y * \sin{\alpha}}{\sin{(180-2\alpha)}} $$
 
 ### [[Transformation]]:
 * Scaling Matrix:

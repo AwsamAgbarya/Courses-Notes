@@ -1,3 +1,9 @@
+---
+tags:
+  - Cookbook
+  - MachineLearning
+---
+Child of [[MLRoadmap]]
 *** 
 # Derivatives:
 - Vector Norm Squared: $\frac{\partial}{\partial w} \|w\|^{2}= 2w$

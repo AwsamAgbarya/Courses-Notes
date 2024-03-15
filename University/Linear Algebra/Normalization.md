@@ -1,8 +1,8 @@
 ---
-
 excalidraw-plugin: parsed
-tags: [excalidraw]
-
+tags:
+  - excalidraw
+  - LinearAlgebra
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
@@ -85,6 +85,10 @@ as a vector, apply p norm on it, then
 take each vector norm and apply q norm
 on it ^3lsjXSlx
 
+Norms abide by the following properties ^yO5znNjD
+
+[[CheatSheet#Norms]] ^Q8toUtCO
+
 
 # Embedded files
 e24ed798e0c63531148d3488e85837bf61751598: $$\|v\|_1 = \sum_i | v_i |
@@ -115,110 +119,115 @@ $$
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.18",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23",
 	"elements": [
 		{
-			"id": "5kL9KcIT",
 			"type": "text",
-			"x": -61.75,
-			"y": -405.2578125,
-			"width": 78.5123291015625,
-			"height": 35,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 2048169756,
 			"version": 52,
 			"versionNonce": 243212580,
 			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1707762636335,
-			"link": null,
-			"locked": false,
-			"text": "Norms",
-			"rawText": "Norms",
-			"fontSize": 28,
-			"fontFamily": 1,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"baseline": 25,
-			"containerId": null,
-			"originalText": "Norms",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "K3B0p7vy",
-			"type": "text",
-			"x": -328.75,
-			"y": -351.2578125,
-			"width": 619.619384765625,
-			"height": 250,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"id": "5kL9KcIT",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
+			"angle": 0,
+			"x": -61.75,
+			"y": -405.2578125,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 78.5123291015625,
+			"height": 35,
+			"seed": 2048169756,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 928077852,
-			"version": 657,
-			"versionNonce": 1968829212,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1707762636335,
 			"link": null,
 			"locked": false,
-			"text": "Norms are just mathematical ways to quantify size\nof different objects in linear algebra (vectors, matrices etc...)\n\nit is often important for us to know which one of\nthe two objects is bigger in size, and thus came\na few different ways to quantify magnitude!\n\nNote: this norm idea can also be applied to real numbers\nwith absolute value, the idea is simple but technically it is\na way to quantify the \"length\" of a number.",
-			"rawText": "Norms are just mathematical ways to quantify size\nof different objects in linear algebra (vectors, matrices etc...)\n\nit is often important for us to know which one of\nthe two objects is bigger in size, and thus came\na few different ways to quantify magnitude!\n\nNote: this norm idea can also be applied to real numbers\nwith absolute value, the idea is simple but technically it is\na way to quantify the \"length\" of a number.",
-			"fontSize": 20,
+			"fontSize": 28,
 			"fontFamily": 1,
-			"textAlign": "center",
+			"text": "Norms",
+			"rawText": "Norms",
+			"textAlign": "left",
 			"verticalAlign": "top",
-			"baseline": 243,
 			"containerId": null,
-			"originalText": "Norms are just mathematical ways to quantify size\nof different objects in linear algebra (vectors, matrices etc...)\n\nit is often important for us to know which one of\nthe two objects is bigger in size, and thus came\na few different ways to quantify magnitude!\n\nNote: this norm idea can also be applied to real numbers\nwith absolute value, the idea is simple but technically it is\na way to quantify the \"length\" of a number.",
-			"lineHeight": 1.25
+			"originalText": "Norms",
+			"lineHeight": 1.25,
+			"baseline": 25
 		},
 		{
-			"id": "CYNfpZA-_vRhxt5e7kziC",
-			"type": "line",
-			"x": 123.25,
-			"y": -359.2578125,
-			"width": 294,
-			"height": 12,
+			"type": "text",
+			"version": 657,
+			"versionNonce": 1968829212,
+			"isDeleted": false,
+			"id": "K3B0p7vy",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
 			"angle": 0,
+			"x": -328.75,
+			"y": -351.2578125,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
+			"width": 619.619384765625,
+			"height": 250,
+			"seed": 928077852,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1707762636335,
+			"link": null,
+			"locked": false,
+			"fontSize": 20,
+			"fontFamily": 1,
+			"text": "Norms are just mathematical ways to quantify size\nof different objects in linear algebra (vectors, matrices etc...)\n\nit is often important for us to know which one of\nthe two objects is bigger in size, and thus came\na few different ways to quantify magnitude!\n\nNote: this norm idea can also be applied to real numbers\nwith absolute value, the idea is simple but technically it is\na way to quantify the \"length\" of a number.",
+			"rawText": "Norms are just mathematical ways to quantify size\nof different objects in linear algebra (vectors, matrices etc...)\n\nit is often important for us to know which one of\nthe two objects is bigger in size, and thus came\na few different ways to quantify magnitude!\n\nNote: this norm idea can also be applied to real numbers\nwith absolute value, the idea is simple but technically it is\na way to quantify the \"length\" of a number.",
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Norms are just mathematical ways to quantify size\nof different objects in linear algebra (vectors, matrices etc...)\n\nit is often important for us to know which one of\nthe two objects is bigger in size, and thus came\na few different ways to quantify magnitude!\n\nNote: this norm idea can also be applied to real numbers\nwith absolute value, the idea is simple but technically it is\na way to quantify the \"length\" of a number.",
+			"lineHeight": 1.25,
+			"baseline": 243
+		},
+		{
+			"type": "line",
+			"version": 83,
+			"versionNonce": 466050212,
+			"isDeleted": false,
+			"id": "CYNfpZA-_vRhxt5e7kziC",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 2,
 			"opacity": 100,
+			"angle": 0,
+			"x": 123.25,
+			"y": -359.2578125,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 294,
+			"height": 12,
+			"seed": 1784193052,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1784193052,
-			"version": 83,
-			"versionNonce": 466050212,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1707762636336,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -228,41 +237,41 @@ $$
 					-294,
 					-12
 				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
+			]
 		},
 		{
-			"id": "waGgk4uL2COO7TAKTSZIH",
 			"type": "line",
-			"x": -167.75,
-			"y": -361.2578125,
-			"width": 291,
-			"height": 10,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 77,
+			"versionNonce": 1818570652,
+			"isDeleted": false,
+			"id": "waGgk4uL2COO7TAKTSZIH",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 2,
 			"opacity": 100,
+			"angle": 0,
+			"x": -167.75,
+			"y": -361.2578125,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 291,
+			"height": 10,
+			"seed": 499952548,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 499952548,
-			"version": 77,
-			"versionNonce": 1818570652,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1707762636336,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -272,86 +281,81 @@ $$
 					291,
 					-10
 				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
+			]
 		},
 		{
-			"id": "k6WDB4gh",
 			"type": "text",
-			"x": -603.8399963378906,
-			"y": -50.2578125,
-			"width": 101.66842651367188,
-			"height": 70,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 2,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 206489124,
 			"version": 174,
 			"versionNonce": 1534863396,
 			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1707762636336,
-			"link": null,
-			"locked": false,
-			"text": "Level 1\nL1 Norm",
-			"rawText": "Level 1\nL1 Norm",
-			"fontSize": 28,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"baseline": 60,
-			"containerId": null,
-			"originalText": "Level 1\nL1 Norm",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "vJ6poqsk",
-			"type": "text",
-			"x": -713.9398193359375,
-			"y": 45.7421875,
-			"width": 318.379638671875,
-			"height": 100,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"id": "k6WDB4gh",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 2,
 			"opacity": 100,
+			"angle": 0,
+			"x": -603.8399963378906,
+			"y": -50.2578125,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 101.66842651367188,
+			"height": 70,
+			"seed": 206489124,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 388697244,
-			"version": 238,
-			"versionNonce": 1205132316,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1707762636336,
 			"link": null,
 			"locked": false,
-			"text": "L1 Norm is a norm of a vector\nthat simply adds up the \"length\"\nof each of its components\ni.e",
-			"rawText": "L1 Norm is a norm of a vector\nthat simply adds up the \"length\"\nof each of its components\ni.e",
-			"fontSize": 20,
+			"fontSize": 28,
 			"fontFamily": 1,
+			"text": "Level 1\nL1 Norm",
+			"rawText": "Level 1\nL1 Norm",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 93,
+			"containerId": null,
+			"originalText": "Level 1\nL1 Norm",
+			"lineHeight": 1.25,
+			"baseline": 60
+		},
+		{
+			"type": "text",
+			"version": 238,
+			"versionNonce": 1205132316,
+			"isDeleted": false,
+			"id": "vJ6poqsk",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 2,
+			"opacity": 100,
+			"angle": 0,
+			"x": -713.9398193359375,
+			"y": 45.7421875,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 318.379638671875,
+			"height": 100,
+			"seed": 388697244,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1707762636336,
+			"link": null,
+			"locked": false,
+			"fontSize": 20,
+			"fontFamily": 1,
+			"text": "L1 Norm is a norm of a vector\nthat simply adds up the \"length\"\nof each of its components\ni.e",
+			"rawText": "L1 Norm is a norm of a vector\nthat simply adds up the \"length\"\nof each of its components\ni.e",
+			"textAlign": "center",
+			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "L1 Norm is a norm of a vector\nthat simply adds up the \"length\"\nof each of its components\ni.e",
-			"lineHeight": 1.25
+			"lineHeight": 1.25,
+			"baseline": 93
 		},
 		{
 			"type": "image",
@@ -387,29 +391,29 @@ $$
 			]
 		},
 		{
-			"id": "HmQB9AmROdKhk87Py32VU",
 			"type": "rectangle",
-			"x": -730.75,
-			"y": -59.2578125,
-			"width": 349,
-			"height": 318,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 144,
+			"versionNonce": 1637546140,
+			"isDeleted": false,
+			"id": "HmQB9AmROdKhk87Py32VU",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 2,
 			"opacity": 100,
+			"angle": 0,
+			"x": -730.75,
+			"y": -59.2578125,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 349,
+			"height": 318,
+			"seed": 494173092,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 3
 			},
-			"seed": 494173092,
-			"version": 144,
-			"versionNonce": 1637546140,
-			"isDeleted": false,
 			"boundElements": [
 				{
 					"id": "_YRQVt7pzEFvm1gLJ63IG",
@@ -421,47 +425,33 @@ $$
 			"locked": false
 		},
 		{
-			"id": "_YRQVt7pzEFvm1gLJ63IG",
 			"type": "arrow",
-			"x": -378.75,
-			"y": 85.2971824980845,
-			"width": 183.67001342773432,
-			"height": 2.194910011452464,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 191,
+			"versionNonce": 1411608356,
+			"isDeleted": false,
+			"id": "_YRQVt7pzEFvm1gLJ63IG",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 2,
 			"opacity": 100,
+			"angle": 0,
+			"x": -378.75,
+			"y": 85.2971824980845,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 183.67001342773432,
+			"height": 2.194910011452464,
+			"seed": 1658885020,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1658885020,
-			"version": 191,
-			"versionNonce": 1411608356,
-			"isDeleted": false,
 			"boundElements": [],
 			"updated": 1707762636336,
 			"link": null,
 			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					183.67001342773432,
-					2.194910011452464
-				]
-			],
-			"lastCommittedPoint": [
-				184,
-				5
-			],
 			"startBinding": {
 				"elementId": "HmQB9AmROdKhk87Py32VU",
 				"focus": -0.10284103465043666,
@@ -472,8 +462,19 @@ $$
 				"focus": 0.13117861637220346,
 				"gap": 2.829986572265682
 			},
+			"lastCommittedPoint": null,
 			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			"endArrowhead": "arrow",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					183.67001342773432,
+					2.194910011452464
+				]
+			]
 		},
 		{
 			"type": "text",
@@ -566,12 +567,12 @@ $$
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -100.9808116300735,
-			"y": 190.66529597420532,
+			"x": -104.73287085786782,
+			"y": 191.9146663658392,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 189.71162326014704,
-			"height": 65.66940805158936,
+			"width": 197.21574171573567,
+			"height": 63.17066726832159,
 			"seed": 359076,
 			"groupIds": [],
 			"frameId": null,
@@ -630,47 +631,33 @@ $$
 			"locked": false
 		},
 		{
-			"id": "1lbD3HBa1OCdSQC_Ai_Hv",
 			"type": "arrow",
-			"x": 161.5,
-			"y": 90.17227457579007,
-			"width": 189.19989776611328,
-			"height": 0.8566285906684925,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 189,
+			"versionNonce": 44559900,
+			"isDeleted": false,
+			"id": "1lbD3HBa1OCdSQC_Ai_Hv",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 2,
 			"opacity": 100,
+			"angle": 0,
+			"x": 161.5,
+			"y": 90.17227457579007,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 189.19989776611328,
+			"height": 0.8566285906684925,
+			"seed": 75589916,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 75589916,
-			"version": 189,
-			"versionNonce": 44559900,
-			"isDeleted": false,
 			"boundElements": [],
 			"updated": 1707762636336,
 			"link": null,
 			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					189.19989776611328,
-					0.8566285906684925
-				]
-			],
-			"lastCommittedPoint": [
-				166.25,
-				2.5
-			],
 			"startBinding": {
 				"elementId": "L0jgfhVsMFc3FzieE4Eog",
 				"focus": -0.1330609251754162,
@@ -681,8 +668,19 @@ $$
 				"focus": 0.14601928361111757,
 				"gap": 20.05010223388672
 			},
+			"lastCommittedPoint": null,
 			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			"endArrowhead": "arrow",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					189.19989776611328,
+					0.8566285906684925
+				]
+			]
 		},
 		{
 			"type": "text",
@@ -775,12 +773,12 @@ $$
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 458.26712914213215,
-			"y": 196.4146663658392,
+			"x": 455.2836364543776,
+			"y": 197.3422512377116,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 197.21574171573567,
-			"height": 63.17066726832159,
+			"width": 203.18272709124477,
+			"height": 61.31549752457682,
 			"seed": 880280604,
 			"groupIds": [],
 			"frameId": null,
@@ -835,47 +833,33 @@ $$
 			"locked": false
 		},
 		{
-			"id": "bl0Wac1WbAc2oyolMWHNs",
 			"type": "arrow",
-			"x": 546.428388106643,
-			"y": 283.4969810994028,
-			"width": 1.0174694878221544,
-			"height": 171.8449435664209,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 347,
+			"versionNonce": 1927641252,
+			"isDeleted": false,
+			"id": "bl0Wac1WbAc2oyolMWHNs",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 2,
 			"opacity": 100,
+			"angle": 0,
+			"x": 546.428388106643,
+			"y": 283.4969810994028,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 1.0174694878221544,
+			"height": 171.8449435664209,
+			"seed": 1604035364,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1604035364,
-			"version": 347,
-			"versionNonce": 1927641252,
-			"isDeleted": false,
 			"boundElements": [],
 			"updated": 1707762636336,
 			"link": null,
 			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					1.0174694878221544,
-					171.8449435664209
-				]
-			],
-			"lastCommittedPoint": [
-				2.7062195837231684,
-				188.08226106875998
-			],
 			"startBinding": {
 				"elementId": "0zhLyfQ8AQjwJfD2JDJGi",
 				"focus": -0.0008116534114139541,
@@ -886,8 +870,19 @@ $$
 				"focus": 0.004947163304142687,
 				"gap": 13.72628481525146
 			},
+			"lastCommittedPoint": null,
 			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			"endArrowhead": "arrow",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					1.0174694878221544,
+					171.8449435664209
+				]
+			]
 		},
 		{
 			"type": "text",
@@ -966,84 +961,70 @@ $$
 			"locked": false
 		},
 		{
-			"id": "rxizHu1y",
 			"type": "text",
-			"x": 318.28197394714164,
-			"y": 543.3090578699725,
-			"width": 446.13946533203125,
-			"height": 150,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 2,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 745186980,
 			"version": 311,
 			"versionNonce": 886218660,
 			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1707762636336,
-			"link": null,
-			"locked": false,
-			"text": "We can think of matrices as transformations\naccording to linear algebra, which means\nwe should be able to quantify how big of a\ntransformation a certain matrix is\ni.e given any unit vector whats the maximum\nl2 norm of that vector after applying M",
-			"rawText": "We can think of matrices as transformations\naccording to linear algebra, which means\nwe should be able to quantify how big of a\ntransformation a certain matrix is\ni.e given any unit vector whats the maximum\nl2 norm of that vector after applying M",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"baseline": 143,
-			"containerId": null,
-			"originalText": "We can think of matrices as transformations\naccording to linear algebra, which means\nwe should be able to quantify how big of a\ntransformation a certain matrix is\ni.e given any unit vector whats the maximum\nl2 norm of that vector after applying M",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "Ed86kAy_jtKM8KF7y8tPZ",
-			"type": "arrow",
-			"x": -24.665346137386997,
-			"y": 274.3609371477829,
-			"width": 3.235670146940951,
-			"height": 152.67355725207,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"id": "rxizHu1y",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 2,
 			"opacity": 100,
+			"angle": 0,
+			"x": 318.28197394714164,
+			"y": 543.3090578699725,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 446.13946533203125,
+			"height": 150,
+			"seed": 745186980,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1707762636336,
+			"link": null,
+			"locked": false,
+			"fontSize": 20,
+			"fontFamily": 1,
+			"text": "We can think of matrices as transformations\naccording to linear algebra, which means\nwe should be able to quantify how big of a\ntransformation a certain matrix is\ni.e given any unit vector whats the maximum\nl2 norm of that vector after applying M",
+			"rawText": "We can think of matrices as transformations\naccording to linear algebra, which means\nwe should be able to quantify how big of a\ntransformation a certain matrix is\ni.e given any unit vector whats the maximum\nl2 norm of that vector after applying M",
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "We can think of matrices as transformations\naccording to linear algebra, which means\nwe should be able to quantify how big of a\ntransformation a certain matrix is\ni.e given any unit vector whats the maximum\nl2 norm of that vector after applying M",
+			"lineHeight": 1.25,
+			"baseline": 143
+		},
+		{
+			"type": "arrow",
+			"version": 138,
+			"versionNonce": 786668700,
+			"isDeleted": false,
+			"id": "Ed86kAy_jtKM8KF7y8tPZ",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 2,
+			"opacity": 100,
+			"angle": 0,
+			"x": -24.665346137386997,
+			"y": 274.3609371477829,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 3.235670146940951,
+			"height": 152.67355725207,
+			"seed": 442730140,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 442730140,
-			"version": 138,
-			"versionNonce": 786668700,
-			"isDeleted": false,
 			"boundElements": [],
 			"updated": 1707762636336,
 			"link": null,
 			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					3.235670146940951,
-					152.67355725207
-				]
-			],
-			"lastCommittedPoint": [
-				4.044332642439031,
-				152.67355725206994
-			],
 			"startBinding": {
 				"elementId": "L0jgfhVsMFc3FzieE4Eog",
 				"focus": 0.05835118133484788,
@@ -1054,8 +1035,19 @@ $$
 				"focus": 0.039962300007353554,
 				"gap": 12.784388858167404
 			},
+			"lastCommittedPoint": null,
 			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			"endArrowhead": "arrow",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					3.235670146940951,
+					152.67355725207
+				]
+			]
 		},
 		{
 			"type": "text",
@@ -1336,47 +1328,33 @@ $$
 			]
 		},
 		{
-			"id": "BWl-cXEcByjyzVZ4kaLEj",
 			"type": "arrow",
-			"x": 152.33319398777428,
-			"y": 1108.2405750138448,
-			"width": 133.89830508474597,
-			"height": 3.389830508474688,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 48,
+			"versionNonce": 1736588060,
+			"isDeleted": false,
+			"id": "BWl-cXEcByjyzVZ4kaLEj",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 2,
 			"opacity": 100,
+			"angle": 0,
+			"x": 152.33319398777428,
+			"y": 1108.2405750138448,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 133.89830508474597,
+			"height": 3.389830508474688,
+			"seed": 245695132,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 245695132,
-			"version": 48,
-			"versionNonce": 1736588060,
-			"isDeleted": false,
 			"boundElements": [],
 			"updated": 1707762636337,
 			"link": null,
 			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					133.89830508474597,
-					3.389830508474688
-				]
-			],
-			"lastCommittedPoint": [
-				133.89830508474597,
-				3.389830508474688
-			],
 			"startBinding": {
 				"elementId": "DFYL7UWW",
 				"focus": -0.04538189426012474,
@@ -1387,51 +1365,48 @@ $$
 				"focus": 0.022124721970009406,
 				"gap": 26.5064616499227
 			},
+			"lastCommittedPoint": null,
 			"startArrowhead": null,
-			"endArrowhead": "arrow"
-		},
-		{
-			"id": "OXQmepSEAC1Q4hxcvhOjV",
-			"type": "arrow",
-			"x": 548.9433634792998,
-			"y": 781.1219309460483,
-			"width": 0,
-			"height": 162.71186440677968,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 2,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"seed": 1710548516,
-			"version": 52,
-			"versionNonce": 1965528228,
-			"isDeleted": false,
-			"boundElements": [],
-			"updated": 1707762636337,
-			"link": null,
-			"locked": false,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
 					0
 				],
 				[
-					0,
-					162.71186440677968
+					133.89830508474597,
+					3.389830508474688
 				]
-			],
-			"lastCommittedPoint": [
-				0,
-				162.71186440677968
-			],
+			]
+		},
+		{
+			"type": "arrow",
+			"version": 52,
+			"versionNonce": 1965528228,
+			"isDeleted": false,
+			"id": "OXQmepSEAC1Q4hxcvhOjV",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 2,
+			"opacity": 100,
+			"angle": 0,
+			"x": 548.9433634792998,
+			"y": 781.1219309460483,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 0,
+			"height": 162.71186440677968,
+			"seed": 1710548516,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"boundElements": [],
+			"updated": 1707762636337,
+			"link": null,
+			"locked": false,
 			"startBinding": {
 				"elementId": "czfJwOOl2V0L_rluPtiO5",
 				"focus": -0.006429387076758273,
@@ -1442,8 +1417,19 @@ $$
 				"focus": 0.022000395070010982,
 				"gap": 18.966101694915324
 			},
+			"lastCommittedPoint": null,
 			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			"endArrowhead": "arrow",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					0,
+					162.71186440677968
+				]
+			]
 		},
 		{
 			"type": "text",
@@ -1690,37 +1676,84 @@ $$
 			]
 		},
 		{
-			"type": "image",
-			"version": 471,
-			"versionNonce": 793848732,
-			"isDeleted": true,
-			"id": "DDoI8YF_SU57NqmM8rVFE",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
+			"id": "yO5znNjD",
+			"type": "text",
+			"x": -716.9085361045875,
+			"y": 370.12985689478637,
+			"width": 382.67950439453125,
+			"height": 25,
 			"angle": 0,
-			"x": -158.03448481744414,
-			"y": 1189.9687930302448,
-			"strokeColor": "#000000",
+			"strokeColor": "#e03131",
 			"backgroundColor": "transparent",
-			"width": 294.066169024432,
-			"height": 42.36546502894359,
-			"seed": 239192612,
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 2,
+			"opacity": 100,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"boundElements": [],
-			"updated": 1707763008827,
+			"seed": 939901683,
+			"version": 217,
+			"versionNonce": 1398454173,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1710169856742,
 			"link": null,
 			"locked": false,
-			"status": "pending",
-			"fileId": "1d280b3ef4768a7eca0179893e29efc2f1518954",
+			"text": "Norms abide by the following properties",
+			"rawText": "Norms abide by the following properties",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"baseline": 18,
+			"containerId": null,
+			"originalText": "Norms abide by the following properties",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "Q8toUtCO",
+			"type": "embeddable",
+			"x": -768.2925021406119,
+			"y": 412.04431692380354,
+			"width": 500,
+			"height": 500,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 31999,
+			"version": 73,
+			"versionNonce": 1043171283,
+			"updated": 1710169999170,
+			"isDeleted": false,
+			"groupIds": [],
+			"boundElements": [],
+			"link": "[[CheatSheet#Norms]]",
+			"locked": false,
 			"scale": [
 				1,
 				1
-			]
+			],
+			"customData": {
+				"mdProps": {
+					"useObsidianDefaults": false,
+					"backgroundMatchCanvas": false,
+					"backgroundMatchElement": true,
+					"backgroundColor": "#fff",
+					"backgroundOpacity": 60,
+					"borderMatchElement": true,
+					"borderColor": "#fff",
+					"borderOpacity": 0,
+					"filenameVisible": false
+				}
+			}
 		}
 	],
 	"appState": {
@@ -1729,7 +1762,7 @@ $$
 		"currentItemStrokeColor": "#1e1e1e",
 		"currentItemBackgroundColor": "transparent",
 		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
+		"currentItemStrokeWidth": 4,
 		"currentItemStrokeStyle": "solid",
 		"currentItemRoughness": 2,
 		"currentItemOpacity": 100,
@@ -1738,10 +1771,10 @@ $$
 		"currentItemTextAlign": "center",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 572.5982195574799,
-		"scrollY": -709.2420462444036,
+		"scrollX": 1427.5344633613383,
+		"scrollY": -117.44222159433274,
 		"zoom": {
-			"value": 1.2425656385139658
+			"value": 0.7528249126129273
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

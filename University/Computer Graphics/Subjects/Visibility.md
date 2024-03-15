@@ -1,9 +1,11 @@
 ---
-
 excalidraw-plugin: parsed
-tags: [excalidraw]
-
+tags:
+  - excalidraw
+  - Subject
+  - ComputerGraphics
 ---
+Child of  [[Clipping and Culling]]
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 

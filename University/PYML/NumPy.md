@@ -1,4 +1,12 @@
-- Various ways of initializing npArrays:
+---
+tags:
+  - python
+---
+
+Child of [[Python Basics]]
+### Numpy functions:
+
+ - Various ways of initializing npArrays:
 	- np.zeros(size)
 	- np.ones(size)
 	- np.full(size,val)
@@ -9,7 +17,6 @@
 - numpy casting with array.astype(type)
 - All basic operations are element wise operations OR used with scalars
 - Supports slicing and smart indexing like arr[0,1,2]
-### Numpy functions:
 ##### Random: 
 - randint (low high size) returns random integers
 - rand(dimensions) returns a random value in a certain shape
