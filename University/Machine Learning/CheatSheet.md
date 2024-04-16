@@ -3,7 +3,7 @@ tags:
   - Cookbook
   - MachineLearning
 ---
-Child of [[MLRoadmap]]
+ Child of [[MLRoadmap]]
 *** 
 # Derivatives:
 - Vector Norm Squared: $\frac{\partial}{\partial w} \|w\|^{2}= 2w$
@@ -30,11 +30,13 @@ Child of [[MLRoadmap]]
 	- Positive definite matrices are also Positive Semi-definite
 	- $X^T AX = 0 ⇒ AX = 0$
 	- If X is $n × r$, where $n ≤ r$ and $rank(X) = n$, then $XX^T$ is positive definite
-- #### Symmetric:
+- #### Symmetric :
+	- Covariance matrices are symmetric :BoBxsSmile:
+	- Symmetric $A^{T}= A$ and anti symmetric if $A = -A^{T}$
 	- Whenever we consider a quadratic form $x^T Ax$, we can assume without loss of generality that the matrix A is symmetric
 	- The eigenvalues of a symmetric real-valued matrix A are real
 	- The eigenvectors of a symmetric Matrix are orthogonal to each other
-	- Can be diagonalized (decomposed) into $VUV^T$
+	- Can be diagonalized (decomposed) into $VUV^T$ if it has full rank
 - #### Orthogonal:
 	- $A^T A = AA^T = I$
 	- Its eigenvalues are placed on the unit circle
@@ -44,8 +46,32 @@ Child of [[MLRoadmap]]
 	- is Symmetric
 	- is PSD
 	- can be Written as $XX^T$
+- #### Invertible:
+	- A square matrix A is invertible (non-singular) if there exists a matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A=I$
+	- A is invertible if and only if rank(A) = n
+	- A is invertible if and only if $det(A) \neq 0$
+	- $(A · B)^{−1} = B^{−1} · A^{−1}$
+	- $(A^{T})^{−1} = (A^{−1})^{T}$
+	- $\begin{bmatrix} a & b \\ c & d \end{bmatrix}^{-1} = \frac{1}{ad-bc}\begin{bmatrix} d & -b \\ -c & a \end{bmatrix}$
+- #### Diagonizable:
+	- The eigen decomposition of a diagonizable matrix is $A = UVU^{-1}$ such that V is a diagonal matrix and U is an invertible matrix
+	- If its symmetric, its decomposition is $A = UVU^{T}$
+	- A of dimensions $R^{nxn}$ has n linearly independent eigenvectors (n different eigenvalues) ⇔ A is diagonalizable
+	- The columns of U are the eigenvectors of A, the diagonal of V contains the corresponding eigenvalues.
+	- All eigenvalues nonzero ⇔ A is invertible ⇔ rank(A) = n ⇔  $det(A) \neq 0$
+	- We can also infer that The determinant of A is the product of its eigenvalues.
+	- This properly makes it easier to exponentiate $A^{p} = UV^{p}U^{-1}$ 
+	- The trace of A is the sum of its eigenvalues
 
 *** 
+# Determinant:
+- if A is trinagular, its determinant is the product of the coefficients on its main diagonal
+- If rank(A) < n then det(A) = 0
+- $det(AB) = det(A) det(B)$
+- $det(A^{-1}) = det(A)^{-1}$
+- $det(A) = det(A^{T})$
+- $det(λA) = λ^{n} det(A)$
+***
 # Norms:
 - #### Types:
 	-  The 2-norm: $||x|| = \sqrt{\sum_{i} x_i^2}$
@@ -73,7 +99,10 @@ Child of [[MLRoadmap]]
 		$c^{T}(K_{1}+ K_{2})c=c^{T}K_{1}c + c^{T}K_{2}c$
 	2. Product of two Kernels is also a kernel
 		$\phi_{1}(X)^{T}\phi_{1}(Y) \cdot \phi_{2}(X)^{T}\phi_{2}(Y) = \phi_{1}(X)^{T}\phi_{2}(X) \cdot \phi_{1}(Y)^{T}\phi_{2}(Y) = (\phi_{1}(X)^{T}\phi_{2}(X))^{2}$ 
-	
+***
+# Projections:
+- a linear transformation P, is called a projection if it holds that $P \cdot P = P$
+- let $u_{1}....u_{n}$ be an orthonormal basis of U, $P_{U}(x) = \sum^{n}x^{T}u_{i}u_{i}$
 ***
 # Statistics and Probability:
 - $Var[Ax] = AVar[x]A^T$

@@ -90,6 +90,11 @@ refresh yourself on
 what vector
 subspaces are ^SFItg8RO
 
+a linear transformation is a transformation
+that satisfies:
+f(v+w) = f(v) + f(w)
+f(av) = af(v)  ^hs1SB0a1
+
 %%
 # Drawing
 ```json
@@ -2098,14 +2103,51 @@ subspaces are ^SFItg8RO
 			"baseline": 34
 		},
 		{
-			"id": "SFItg8RO",
 			"type": "text",
+			"version": 184,
+			"versionNonce": 155888265,
+			"isDeleted": false,
+			"id": "SFItg8RO",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"angle": 0,
 			"x": -59.67735094893192,
 			"y": 193.0298683157918,
-			"width": 105.05710989705875,
-			"height": 56.13213186412186,
-			"angle": 0,
 			"strokeColor": "#e03131",
+			"backgroundColor": "#a5d8ff",
+			"width": 104.98539733886719,
+			"height": 56.13213186412186,
+			"seed": 1900772262,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1710513938972,
+			"link": "[[Vectors]]",
+			"locked": false,
+			"fontSize": 11.226426372824372,
+			"fontFamily": 1,
+			"text": "Its good to also\nrefresh yourself on\nwhat vector\nsubspaces are",
+			"rawText": "Its good to also\nrefresh yourself on\nwhat vector\nsubspaces are",
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Its good to also\nrefresh yourself on\nwhat vector\nsubspaces are",
+			"lineHeight": 1.25,
+			"baseline": 52
+		},
+		{
+			"id": "hs1SB0a1",
+			"type": "text",
+			"x": -319.7240939014132,
+			"y": 86.34433895261611,
+			"width": 141.33783042080353,
+			"height": 32.59177777256639,
+			"angle": 0,
+			"strokeColor": "#1971c2",
 			"backgroundColor": "#a5d8ff",
 			"fillStyle": "solid",
 			"strokeWidth": 4,
@@ -2115,30 +2157,30 @@ subspaces are ^SFItg8RO
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1900772262,
-			"version": 184,
-			"versionNonce": 155888265,
+			"seed": 425413780,
+			"version": 300,
+			"versionNonce": 13036180,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1710513938972,
-			"link": "[[Vectors]]",
+			"updated": 1710919762696,
+			"link": null,
 			"locked": false,
-			"text": "Its good to also\nrefresh yourself on\nwhat vector\nsubspaces are",
-			"rawText": "Its good to also\nrefresh yourself on\nwhat vector\nsubspaces are",
-			"fontSize": 11.226426372824372,
+			"text": "a linear transformation is a transformation\nthat satisfies:\nf(v+w) = f(v) + f(w)\nf(av) = af(v) ",
+			"rawText": "a linear transformation is a transformation\nthat satisfies:\nf(v+w) = f(v) + f(w)\nf(av) = af(v) ",
+			"fontSize": 6.51835555451327,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 49.99999999999999,
+			"baseline": 30.000000000000036,
 			"containerId": null,
-			"originalText": "Its good to also\nrefresh yourself on\nwhat vector\nsubspaces are",
+			"originalText": "a linear transformation is a transformation\nthat satisfies:\nf(v+w) = f(v) + f(w)\nf(av) = af(v) ",
 			"lineHeight": 1.25
 		}
 	],
 	"appState": {
 		"theme": "light",
 		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#e03131",
+		"currentItemStrokeColor": "#1971c2",
 		"currentItemBackgroundColor": "#a5d8ff",
 		"currentItemFillStyle": "solid",
 		"currentItemStrokeWidth": 4,
@@ -2150,10 +2192,10 @@ subspaces are ^SFItg8RO
 		"currentItemTextAlign": "center",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 438.5234224539018,
-		"scrollY": 237.7377947322766,
+		"scrollX": 443.2634993545457,
+		"scrollY": 635.0734931873646,
 		"zoom": {
-			"value": 1.7460917500666813
+			"value": 1.0160936957858528
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
