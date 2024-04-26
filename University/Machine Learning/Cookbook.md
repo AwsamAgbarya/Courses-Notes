@@ -143,4 +143,4 @@ for i in k:
 	* Use the rewritten shapley value formula $$ \phi_i = \frac{!}{d!}\sum [f(x_{afterEqual(S,i)} - f(x_{After(S,i)}]$$
 	* To sample t times for the set of all possible subsets S
 * ##### Taylor Expansions $$f(x) = f(\hat{x}) + \sum_i^d [\nabla f(\hat{x})]_i \cdot (x_i - \hat{x}_i) + ....$$
-* ##### Attribution Using LRP $$R_j = \sum_k \frac{a_jw_{jk}}{\sum_{0,j} a_j w_{jk}} R_k$$
+* ##### Attribution Using LRP $R_j = \sum_k \frac{a_jw_{jk}}{\sum_{0,j} a_j w_{jk}} R_k$
