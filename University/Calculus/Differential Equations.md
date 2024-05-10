@@ -13,7 +13,7 @@ Differential Equations ^KzhliL1O
 Differential equations are often used
 when its easier to describe the situation
 with relative change than absolute amounts.
-
+it relates the functions to their derivatives.
 for example: population size ^cZYFpBc5
 
 There are two types of Differential equations ^EiglZFOr
@@ -47,6 +47,28 @@ If the function has state x(t) at time t, what is the state x(t+dt)? ^9YOSTCam
 
 In other words, given the derivative (rate of change), what is our function x(t)? ^6uXKRvTX
 
+Theres actually a third variant called
+Stochastic Differential equations which are
+partial differential equations (multivariate functions)
+with some stochastic processes like Gaussian noise ^X3cByndF
+
+Among ODEs are different types ^WQXnSioB
+
+Linearity ^aYWi100x
+
+Whether the unknown function
+is linear or not (and its derivatives) ^YxrxTySo
+
+Autonomousity ^iPOK5QOR
+
+Whether the ODE depends on
+time variable or not for its evaluation
+(also called time invariant) ^pcYiDIm0
+
+Homogenousity ^PYC0QeCW
+
+Whether all variables involved
+have the same degree ^SXiSNlkd
 
 # Embedded files
 8869b5aad0371eee672906a2e1d351f5393f1366: [[Pasted Image 20240201172340_374.png]]
@@ -62,7 +84,7 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.18",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.6",
 	"elements": [
 		{
 			"type": "image",
@@ -164,13 +186,12 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Differential Equations",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 395,
-			"versionNonce": 1505724450,
+			"version": 443,
+			"versionNonce": 1136103280,
 			"isDeleted": false,
 			"id": "cZYFpBc5",
 			"fillStyle": "solid",
@@ -179,30 +200,29 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -227.08910399689142,
+			"x": -230.2690814138836,
 			"y": -568.2414660434698,
 			"strokeColor": "#ffffff",
 			"backgroundColor": "transparent",
-			"width": 440.0994873046875,
+			"width": 446.4594421386719,
 			"height": 125,
 			"seed": 1750723070,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1706804790837,
+			"updated": 1715187788335,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 1,
-			"text": "Differential equations are often used\nwhen its easier to describe the situation\nwith relative change than absolute amounts.\n\nfor example: population size",
-			"rawText": "Differential equations are often used\nwhen its easier to describe the situation\nwith relative change than absolute amounts.\n\nfor example: population size",
+			"text": "Differential equations are often used\nwhen its easier to describe the situation\nwith relative change than absolute amounts.\nit relates the functions to their derivatives.\nfor example: population size",
+			"rawText": "Differential equations are often used\nwhen its easier to describe the situation\nwith relative change than absolute amounts.\nit relates the functions to their derivatives.\nfor example: population size",
 			"textAlign": "center",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Differential equations are often used\nwhen its easier to describe the situation\nwith relative change than absolute amounts.\n\nfor example: population size",
-			"lineHeight": 1.25,
-			"baseline": 118
+			"originalText": "Differential equations are often used\nwhen its easier to describe the situation\nwith relative change than absolute amounts.\nit relates the functions to their derivatives.\nfor example: population size",
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -271,8 +291,7 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "There are two types of Differential equations",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -420,8 +439,7 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Ordinary Differential equations",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -457,8 +475,7 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Partial Differential equations",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -494,8 +511,7 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Differential equations that only take in\na single variables (Time)",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -532,8 +548,8 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 		},
 		{
 			"type": "text",
-			"version": 74,
-			"versionNonce": 1656661438,
+			"version": 75,
+			"versionNonce": 1073265040,
 			"isDeleted": false,
 			"id": "3vd64joK",
 			"fillStyle": "solid",
@@ -552,8 +568,13 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"boundElements": [],
-			"updated": 1706805007828,
+			"boundElements": [
+				{
+					"id": "LN-F9vyFAAvoxu-N8dYmu",
+					"type": "arrow"
+				}
+			],
+			"updated": 1715188198589,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -564,8 +585,7 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Dealing with functions that have multiple\ninputs",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -602,8 +622,8 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 		},
 		{
 			"type": "arrow",
-			"version": 514,
-			"versionNonce": 1825859106,
+			"version": 516,
+			"versionNonce": 1004864400,
 			"isDeleted": false,
 			"id": "i2E-jkfoKsCRnOhG2Wxa5",
 			"fillStyle": "solid",
@@ -613,7 +633,7 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 			"opacity": 100,
 			"angle": 0,
 			"x": -395.08743759713195,
-			"y": -16.01192843397874,
+			"y": -17.15107932500635,
 			"strokeColor": "#ffffff",
 			"backgroundColor": "transparent",
 			"width": 211.50067082336557,
@@ -625,14 +645,14 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1706805476794,
+			"updated": 1715188321906,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
 			"endBinding": {
 				"elementId": "2lwUzIuR",
-				"focus": -0.024526839552369742,
-				"gap": 10.772488751607312
+				"focus": -0.02477967108264181,
+				"gap": 11.911639642634924
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -691,8 +711,7 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Take for example the force of gravity\nGravity of earth applies 9.8 m/s per second on objects that are\naffected by it.\n\nMeaning we know that the rate of change of velocity of an object is\n9.8 m/s (Acceleration)\n\nThis is obviously assuming that the object being affected is insignificantly small\nin comparsion to the planet where its mass and its own gravity do not\ncontribute much. this is however different for two planets affecting each other\nthe equations becomes inversely proportional to the distance between them\nin the direction of the other, proportional to their mass as well.",
-			"lineHeight": 1.25,
-			"baseline": 234
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -728,49 +747,84 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 			]
 		},
 		{
-			"id": "9YOSTCam",
 			"type": "text",
-			"x": -903.9193150263944,
-			"y": 431.4282319231274,
-			"width": 562.3851318359375,
-			"height": 60,
-			"angle": 0,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
+			"version": 216,
+			"versionNonce": 1573249406,
+			"isDeleted": false,
+			"id": "9YOSTCam",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
+			"angle": 0,
+			"x": -903.9193150263944,
+			"y": 431.4282319231274,
+			"strokeColor": "#1971c2",
+			"backgroundColor": "transparent",
+			"width": 562.3851318359375,
+			"height": 60,
+			"seed": 1124702398,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1124702398,
-			"version": 216,
-			"versionNonce": 1573249406,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1706810803268,
 			"link": null,
 			"locked": false,
-			"text": "This is a description of how a function evolves over time!\n\nIf the function has state x(t) at time t, what is the state x(t+dt)?",
-			"rawText": "This is a description of how a function evolves over time!\n\nIf the function has state x(t) at time t, what is the state x(t+dt)?",
 			"fontSize": 16,
 			"fontFamily": 1,
+			"text": "This is a description of how a function evolves over time!\n\nIf the function has state x(t) at time t, what is the state x(t+dt)?",
+			"rawText": "This is a description of how a function evolves over time!\n\nIf the function has state x(t) at time t, what is the state x(t+dt)?",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 54,
 			"containerId": null,
 			"originalText": "This is a description of how a function evolves over time!\n\nIf the function has state x(t) at time t, what is the state x(t+dt)?",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "6uXKRvTX",
 			"type": "text",
+			"version": 94,
+			"versionNonce": 1553059134,
+			"isDeleted": false,
+			"id": "6uXKRvTX",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
 			"x": -933.3642991046606,
 			"y": 501.64898252107946,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
 			"width": 639.937255859375,
 			"height": 20,
+			"seed": 1899050302,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1706811006429,
+			"link": null,
+			"locked": false,
+			"fontSize": 16,
+			"fontFamily": 1,
+			"text": "In other words, given the derivative (rate of change), what is our function x(t)?",
+			"rawText": "In other words, given the derivative (rate of change), what is our function x(t)?",
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "In other words, given the derivative (rate of change), what is our function x(t)?",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "LN-F9vyFAAvoxu-N8dYmu",
+			"type": "arrow",
+			"x": 369.51073739163974,
+			"y": -22.751419492872174,
+			"width": 152.32230381000215,
+			"height": 2.1058383015207482,
 			"angle": 0,
 			"strokeColor": "#e03131",
 			"backgroundColor": "transparent",
@@ -781,31 +835,616 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 			"opacity": 100,
 			"groupIds": [],
 			"frameId": null,
-			"roundness": null,
-			"seed": 1899050302,
-			"version": 94,
-			"versionNonce": 1553059134,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1286966640,
+			"version": 68,
+			"versionNonce": 324958608,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1706811006429,
+			"updated": 1715188200792,
 			"link": null,
 			"locked": false,
-			"text": "In other words, given the derivative (rate of change), what is our function x(t)?",
-			"rawText": "In other words, given the derivative (rate of change), what is our function x(t)?",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					152.32230381000215,
+					2.1058383015207482
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "3vd64joK",
+				"focus": -0.5454440478969894,
+				"gap": 13.677842185264922
+			},
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "X3cByndF",
+			"type": "text",
+			"x": 511.8111185559177,
+			"y": -55.742886216697514,
+			"width": 422.9609069824219,
+			"height": 80,
+			"angle": 0,
+			"strokeColor": "#f08c00",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 353981840,
+			"version": 261,
+			"versionNonce": 1264065392,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1715188274211,
+			"link": null,
+			"locked": false,
+			"text": "Theres actually a third variant called\nStochastic Differential equations which are\npartial differential equations (multivariate functions)\nwith some stochastic processes like Gaussian noise",
+			"rawText": "Theres actually a third variant called\nStochastic Differential equations which are\npartial differential equations (multivariate functions)\nwith some stochastic processes like Gaussian noise",
 			"fontSize": 16,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 14,
 			"containerId": null,
-			"originalText": "In other words, given the derivative (rate of change), what is our function x(t)?",
+			"originalText": "Theres actually a third variant called\nStochastic Differential equations which are\npartial differential equations (multivariate functions)\nwith some stochastic processes like Gaussian noise",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "ioLSFKHMbW8GHCfXg4GPr",
+			"type": "arrow",
+			"x": -595.9770345560786,
+			"y": 603.2412823880982,
+			"width": 231.74159788655038,
+			"height": 162.89857741694527,
+			"angle": 0,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 3247984,
+			"version": 99,
+			"versionNonce": 1845701520,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1715188457180,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					231.74159788655038,
+					162.89857741694527
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "WQXnSioB",
+				"focus": 0.004386743503176479,
+				"gap": 9.39622494877267
+			},
+			"endBinding": {
+				"elementId": "iPOK5QOR",
+				"focus": -0.28133253003306036,
+				"gap": 4.556603564110219
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "WQXnSioB",
+			"type": "text",
+			"x": -787.6115411600384,
+			"y": 568.8450574393255,
+			"width": 322.2196350097656,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 676537744,
+			"version": 50,
+			"versionNonce": 797314960,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"id": "ioLSFKHMbW8GHCfXg4GPr",
+					"type": "arrow"
+				},
+				{
+					"id": "rn0pY2Lum1Q4yvYoAT9ri",
+					"type": "arrow"
+				},
+				{
+					"id": "3__UOtncZ858DVuQIWJ-B",
+					"type": "arrow"
+				}
+			],
+			"updated": 1715188531139,
+			"link": null,
+			"locked": false,
+			"text": "Among ODEs are different types",
+			"rawText": "Among ODEs are different types",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Among ODEs are different types",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "rn0pY2Lum1Q4yvYoAT9ri",
+			"type": "arrow",
+			"x": -639.032383456459,
+			"y": 603.241282388098,
+			"width": 2.2783017820551095,
+			"height": 174.29008632722105,
+			"angle": 0,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1918160272,
+			"version": 66,
+			"versionNonce": 1714850160,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1715188374079,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-2.2783017820551095,
+					174.29008632722105
+				]
+			],
+			"lastCommittedPoint": [
+				-2.2783017820551095,
+				174.29008632722105
+			],
+			"startBinding": {
+				"elementId": "WQXnSioB",
+				"focus": 0.07592354717825413,
+				"gap": 9.396224948772556
+			},
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "aYWi100x",
+			"type": "text",
+			"x": -687.6872427210816,
+			"y": 796.8969338627882,
+			"width": 83.63990783691406,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 49790832,
+			"version": 29,
+			"versionNonce": 1037323152,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1715188454451,
+			"link": null,
+			"locked": false,
+			"text": "Linearity",
+			"rawText": "Linearity",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Linearity",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "YxrxTySo",
+			"type": "text",
+			"x": -788.0693031826787,
+			"y": 828.0974043564227,
+			"width": 288.96063232421875,
+			"height": 40,
+			"angle": 0,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1558788464,
+			"version": 126,
+			"versionNonce": 316812144,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1715188521891,
+			"link": null,
+			"locked": false,
+			"text": "Whether the unknown function\nis linear or not (and its derivatives)",
+			"rawText": "Whether the unknown function\nis linear or not (and its derivatives)",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Whether the unknown function\nis linear or not (and its derivatives)",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "iPOK5QOR",
+			"type": "text",
+			"x": -384.6634556365574,
+			"y": 770.6964633691537,
+			"width": 138.2998504638672,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1419044752,
+			"version": 16,
+			"versionNonce": 1638256528,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"id": "ioLSFKHMbW8GHCfXg4GPr",
+					"type": "arrow"
+				}
+			],
+			"updated": 1715188457177,
+			"link": null,
+			"locked": false,
+			"text": "Autonomousity",
+			"rawText": "Autonomousity",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Autonomousity",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "pcYiDIm0",
+			"type": "text",
+			"x": -457.68235474630114,
+			"y": 802.1186320807328,
+			"width": 307.12066650390625,
+			"height": 60,
+			"angle": 0,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 742528400,
+			"version": 147,
+			"versionNonce": 1230259056,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1715188517460,
+			"link": null,
+			"locked": false,
+			"text": "Whether the ODE depends on\ntime variable or not for its evaluation\n(also called time invariant)",
+			"rawText": "Whether the ODE depends on\ntime variable or not for its evaluation\n(also called time invariant)",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Whether the ODE depends on\ntime variable or not for its evaluation\n(also called time invariant)",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "3__UOtncZ858DVuQIWJ-B",
+			"type": "arrow",
+			"x": -744.9734163220247,
+			"y": 608.9370368432359,
+			"width": 207.3254621670211,
+			"height": 117.3325417758416,
+			"angle": 0,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 820945264,
+			"version": 41,
+			"versionNonce": 351093616,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1715188540598,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-207.3254621670211,
+					117.3325417758416
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "WQXnSioB",
+				"focus": 0.3805567683908378,
+				"gap": 15.091979403910386
+			},
+			"endBinding": {
+				"elementId": "PYC0QeCW",
+				"focus": -0.058135266839238975,
+				"gap": 9.113207128220779
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "PYC0QeCW",
+			"type": "text",
+			"x": -1049.166725361818,
+			"y": 732.8827857472983,
+			"width": 134.49984741210938,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1892903824,
+			"version": 65,
+			"versionNonce": 951105904,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"id": "3__UOtncZ858DVuQIWJ-B",
+					"type": "arrow"
+				}
+			],
+			"updated": 1715188542363,
+			"link": null,
+			"locked": false,
+			"text": "Homogenousity",
+			"rawText": "Homogenousity",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Homogenousity",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "SXiSNlkd",
+			"type": "text",
+			"x": -1098.3010484819351,
+			"y": 773.1964633691535,
+			"width": 232.76849365234375,
+			"height": 40,
+			"angle": 0,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 2029303664,
+			"version": 75,
+			"versionNonce": 2137046384,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1715188886929,
+			"link": null,
+			"locked": false,
+			"text": "Whether all variables involved\nhave the same degree",
+			"rawText": "Whether all variables involved\nhave the same degree",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Whether all variables involved\nhave the same degree",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "59jHYYk2",
+			"type": "text",
+			"x": -625.9451277204397,
+			"y": 559.9535485290496,
+			"width": 8.000015258789062,
+			"height": 20,
+			"angle": 0,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 578710928,
+			"version": 2,
+			"versionNonce": 1996817776,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1715188340657,
+			"link": null,
+			"locked": false,
+			"text": "",
+			"rawText": "",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "nqV5A4vd",
+			"type": "text",
+			"x": -645.1715267180921,
+			"y": 677.8863255517085,
+			"width": 9.999984741210938,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1665145744,
+			"version": 2,
+			"versionNonce": 327408496,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1715188374080,
+			"link": null,
+			"locked": false,
+			"text": "",
+			"rawText": "",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "rn0pY2Lum1Q4yvYoAT9ri",
+			"originalText": "",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "QOlN3OKH",
+			"type": "text",
+			"x": -985.777643135341,
+			"y": 787.7837267345673,
+			"width": 9.999984741210938,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 242024336,
+			"version": 2,
+			"versionNonce": 434033520,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1715188711800,
+			"link": null,
+			"locked": false,
+			"text": "",
+			"rawText": "",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "",
 			"lineHeight": 1.25
 		}
 	],
 	"appState": {
 		"theme": "light",
 		"viewBackgroundColor": "#000000",
-		"currentItemStrokeColor": "#e03131",
+		"currentItemStrokeColor": "#ffffff",
 		"currentItemBackgroundColor": "transparent",
 		"currentItemFillStyle": "solid",
 		"currentItemStrokeWidth": 2,
@@ -817,10 +1456,10 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 		"currentItemTextAlign": "center",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1343.09890589909,
-		"scrollY": -127.97767065369506,
+		"scrollX": 1246.1998083741637,
+		"scrollY": -1.769611925531235,
 		"zoom": {
-			"value": 1.2190835773318727
+			"value": 0.8778468312463282
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
@@ -835,7 +1474,8 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 			"clip": true,
 			"name": true,
 			"outline": true
-		}
+		},
+		"objectsSnapModeEnabled": false
 	},
 	"files": {}
 }

@@ -395,3 +395,4 @@ def get_squared_loss_denoising(x, model, noise=0.1):
 		* Model has to actually solve the function properly
 		* not adaptive to new architecture
 		* need to choose hyper parameters correctly
+

@@ -42,7 +42,7 @@ have different lifespans.
 theyre usually rendered as screen-aligned transparent
 quads. ^ZQ2cnIYK
 
-%%***>>>text element-link:[[Differential Equations]]<<<***%%To Understand The process of simulating physical laws we must first understand
+To Understand The process of simulating physical laws we must first understand
 Differential equations ^rsEKoM2z
 
 We can encode relevant physical attributes into a vector x  ^YAwDLdq5
@@ -185,7 +185,7 @@ Newtons Method ^gLTFjzPK
 
 solving g(x) = 0 ^4BlapFP7
 
-%%***>>>text element-link:[[Partial Derivatives]]<<<***%%Note that if this is Multidimensional we use the
+Note that if this is Multidimensional we use the
 Jacobian matrix instead ^jwEY9M3R
 
 Apply Newtons method ^AC4QXiR0
@@ -269,12 +269,27 @@ of the angular momentum ^IgjS9LqM
 
 moment of inertia ^UHtGw2xB
 
-[[rigid_body_example.mp4]] ^5Fx9oHhi
+Runge Kutta ^ijAExZTw
 
-[[Li_et_al_2023.mp4]] ^BwETZSjv
+This is a 4th order method so the error decreases
+with O(h^4) ^b2vXUhrG
 
-[[particles_sprinkler2.mp4]] ^c8DXuN7T
+Runge-Kutta methods can be used for adaptive step sizes which is
+really useful for example
 
+Runge-Kutta 45 method
+Uses 4th order solution to estimate error and set step size
+Then uses a 5th order solution using that 4th order step size
+WHich is great because for larger curvature we preferably want less
+step size for more accuracy, wheres over smooth/straight lines we can
+jump further and save on computation ^inveRmbY
+
+# Element Links
+5Fx9oHhi: [[rigid_body_example.mp4]]
+BwETZSjv: [[Li_et_al_2023.mp4]]
+c8DXuN7T: [[particles_sprinkler2.mp4]]
+rsEKoM2z: [[Differential Equations]]
+jwEY9M3R: [[Partial Derivatives]]
 
 # Embedded files
 8e44a6637e7522c18661934dc1a730883c094095: [[Pasted Image 20240201165058_801.png]]
@@ -319,6 +334,9 @@ efc48163263554e28209ab02ec50894c2c8fcfa0: [[Pasted Image 20240201210300_967.png]
 2d0dc2146836f71cecdab04226eca94a8b6142e9: [[Pasted Image 20240201210551_011.png]]
 fb3a54225cdf65e7ef171b55d57840fac7fe23ee: [[Pasted Image 20240201211119_093.png]]
 ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]]
+4d03c16fe10c6313c99f05d602e32e7a5a2be078: [[Pasted Image 20240508200938_951.png]]
+ad4c59cb1c8122d56ab21332f4fad1246a000f76: [[Pasted Image 20240508200957_962.png]]
+929929208084b872a8447fffcebef941a50415f5: [[Pasted Image 20240508201012_963.png]]
 
 %%
 # Drawing
@@ -326,7 +344,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.6",
 	"elements": [
 		{
 			"type": "image",
@@ -462,8 +480,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "middle",
 			"containerId": "PBDZJCF_j2nkAqECR9u7M",
 			"originalText": "Physical simulation",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -499,8 +516,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "What is Physical Simulation?",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -541,8 +557,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "It is the simulation of physical properties acting upon\na collection of objects and controlling the outcome of its\nmovement.\nThe end position is not specified like key-frame animation, thus\nthis is harder to control and requires solving some physics linear system\nof equations over time in order to progress through time",
-			"lineHeight": 1.25,
-			"baseline": 143
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -630,8 +645,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Examples of collections\nof objects",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -668,8 +682,8 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 		},
 		{
 			"type": "embeddable",
-			"version": 348,
-			"versionNonce": 1587762810,
+			"version": 349,
+			"versionNonce": 1587762811,
 			"isDeleted": false,
 			"id": "5Fx9oHhi",
 			"fillStyle": "hachure",
@@ -712,8 +726,8 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 		},
 		{
 			"type": "embeddable",
-			"version": 694,
-			"versionNonce": 1354688038,
+			"version": 695,
+			"versionNonce": 1354688039,
 			"isDeleted": false,
 			"id": "BwETZSjv",
 			"fillStyle": "hachure",
@@ -788,8 +802,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Rigid Body\nCollisions, Fractures etc..",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -825,8 +838,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Particle Systems\nFire, Sprinklers, Sparks, Smoke",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -862,13 +874,12 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Continuum Mechanics\nFluids",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "embeddable",
-			"version": 315,
-			"versionNonce": 1093407910,
+			"version": 316,
+			"versionNonce": 1093407911,
 			"isDeleted": false,
 			"id": "c8DXuN7T",
 			"fillStyle": "hachure",
@@ -943,8 +954,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Simple Point Dynamics",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -980,8 +990,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "There often is an emitter which produces those\nparticles, driven by a distribution or physics law.\neach particle is independent of the other and can\nhave different lifespans.\ntheyre usually rendered as screen-aligned transparent\nquads.",
-			"lineHeight": 1.25,
-			"baseline": 143
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -1066,8 +1075,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "To Understand The process of simulating physical laws we must first understand\nDifferential equations",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -1155,8 +1163,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We can encode relevant physical attributes into a vector x ",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -1192,8 +1199,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "For particles we encode position and velocity\nFor rigid-bodies we encode position, momentum, and orientation",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -1234,8 +1240,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Typically in order to solve differential equations and simulate physics we do numeric integration",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -1328,8 +1333,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Numeric Integration om a function",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -1365,8 +1369,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We first need to be able to describe the initial state/positions!\n\nThe next step is to be able to compute the following state given a step dt",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -1450,8 +1453,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Definition",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -1487,8 +1489,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Phase space",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -1562,8 +1563,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Phase space is a vector field describing the rate of change\nas small vectors (normalized for less clutter when visualizing)\nits a visual way of describing what would happen if we dropped\na point in the field and let flow according to the vector field",
-			"lineHeight": 1.25,
-			"baseline": 74
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -1651,8 +1651,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We first need to define our\nfunction of course",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -1693,8 +1692,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Newtonian Mechanics",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -1763,8 +1761,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Velocity is the change of position\nAcceleration is the change of Velocity!",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -1800,8 +1797,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We know F (such as gravity) and the mass describing our scene",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -1837,8 +1833,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Now we need to be able to compute p from our ODE",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -1940,8 +1935,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "There are many ways to do answer this question!",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -2030,8 +2024,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Euler's Method",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -2067,8 +2060,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "simple\napproach",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -2104,8 +2096,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Idea: Replace dt by a very small (tweakable) step h and compute",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -2174,8 +2165,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "This will obviously be only an approximation!\nand this method is quite sensitive to h!\nProblem: too big will cause explosion and inaccurate behaviour!",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "freedraw",
@@ -2459,8 +2449,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Usually forces we have\ngood physical models for",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -2562,8 +2551,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "earth gravity",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -2599,8 +2587,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "general gravity",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -2817,8 +2804,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Dampening",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -2972,8 +2958,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Spring force",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -3057,8 +3042,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "rest state",
-			"lineHeight": 1.25,
-			"baseline": 6
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -3142,8 +3126,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "distance length",
-			"lineHeight": 1.25,
-			"baseline": 5
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -3212,8 +3195,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Problem 2: Inaccurate behaviour!",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -3282,8 +3264,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Consider the following function simulating a rotation\nin a circle",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -3385,8 +3366,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Eulers method will Spiral outwards given enough time no matter\nthe value of t",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -3422,8 +3402,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Using the taylor expansion of this function we can see that the error\nscales with h, meaning if we take 10x smaller h we will be 10 times more accurate",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -3459,8 +3438,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Also called First Order Method",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -3544,8 +3522,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Alternative method",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -3581,8 +3558,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Trapezoid Method",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -3627,8 +3603,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "the function varies within each step of t\nwhat if we can look ahead at next step of\nf and compensate for the variation",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -3684,8 +3659,8 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 		},
 		{
 			"type": "image",
-			"version": 96,
-			"versionNonce": 1159432998,
+			"version": 97,
+			"versionNonce": 2023580048,
 			"isDeleted": false,
 			"id": "7DN4FA_8nIZRuti06-1gF",
 			"fillStyle": "solid",
@@ -3704,8 +3679,13 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"boundElements": [],
-			"updated": 1710511727515,
+			"boundElements": [
+				{
+					"id": "rkBnyeQYOxvFRRm5RsWwS",
+					"type": "arrow"
+				}
+			],
+			"updated": 1715191690004,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -3782,8 +3762,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Idea: Average your first and second step\ngradients in order to arrive at a better\napproximation",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -3819,8 +3798,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "This improves the approximation and scales\nquadratically with the error",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -3856,8 +3834,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "also called Second Order Method",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -3893,8 +3870,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "The problem still presists... but perhaps more accurate...\nis there a way to get rid of the method??",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -3979,8 +3955,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "So far we have only looked at one type of\nequations, lets split this up into a more general sense",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -4072,8 +4047,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Explicit Euler Method\n(Forward Euler)",
-			"lineHeight": 1.25,
-			"baseline": 60
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -4109,8 +4083,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "(What we have covered so far)",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -4240,8 +4213,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Implicit Euler Method\n(Backwards Euler)",
-			"lineHeight": 1.25,
-			"baseline": 60
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -4310,8 +4282,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "This is more computationally difficult to compute\nsometimes we have a closed form solution\nBUT\nmore often than not we need an interative method for such things",
-			"lineHeight": 1.25,
-			"baseline": 93
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -4347,8 +4318,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "The intuition behind this method comes from \"looking ahead\"\nand then saying \"if we were to walk backwards using the current gradient,\nwe would end up at the past step\"",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -4450,8 +4420,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "This still does not solve the issue of inaccuracy\nas the error is still O(h)!\nBUT\nthis allows our problem to no longer explode with varying\nvalues of h (instead it always decays)!\nbecause Xi is now divided by 1+h",
-			"lineHeight": 1.25,
-			"baseline": 114
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -4535,8 +4504,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "In order to solve\nthis implicit equation\nwe can use Newtons\nMethod",
-			"lineHeight": 1.25,
-			"baseline": 74
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -4572,8 +4540,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Newtons Method",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -4609,8 +4576,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "1) start from an initial x0 guess\n\n2) Iterate over the following\n\n\n\n\n3) This will converge quadratically ",
-			"lineHeight": 1.25,
-			"baseline": 154
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -4646,8 +4612,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "solving g(x) = 0",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -4769,8 +4734,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Note that if this is Multidimensional we use the\nJacobian matrix instead",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -4921,8 +4885,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Apply Newtons method",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -5156,8 +5119,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "0",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -5193,8 +5155,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We then update our parameter",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -5263,8 +5224,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "often one step is enough but you can iterate\nmultiple times for better accuracy",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -5344,8 +5304,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Rigid body Simulation",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -5381,8 +5340,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We define points in a rigid body relative to the distance of their center of mass!",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -5528,8 +5486,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "the bar indicating\nrest state",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -5565,8 +5522,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Under rotation and translation we can treat the points\nin a body as a system of particles and we only translate the\ncenter of mass and rotate the points around their center of mass",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -5635,8 +5591,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Translation",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -5760,8 +5715,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Rotation",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "freedraw",
@@ -6653,8 +6607,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "This splits up our Velocity into two components\nLinear and Angular",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -6742,8 +6695,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Linear Velocity\nis the Velocity of the center of mass",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -6864,8 +6816,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Angular Velocity\nis the Rotation velocity of points around their COM",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -7015,8 +6966,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "chain rule",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -7100,8 +7050,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "derivative of\nrotation matrix",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -7185,8 +7134,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "rotation by 90",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -7222,8 +7170,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Angular velocity is the change of angle!",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -7303,8 +7250,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "How do we update Those velocities\nin our simulation according to some force?",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -7373,8 +7319,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We have two components to keep in mind",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -7495,8 +7440,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Momentum",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -7584,8 +7528,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Force",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -7654,8 +7597,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "To Compute the total Linear Momentum",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -7772,8 +7714,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "sum over \nindividual\nparticles",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -7857,8 +7798,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Sum of the differences\nto the center of mass\nincluding the pass\nwhich is exactly how we define the\ncenter of mass!!",
-			"lineHeight": 1.25,
-			"baseline": 94
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -7927,8 +7867,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "The Linear dynamics of the object and the Angular\ndynamics of the object!\nEach of which gets a contribution from two things",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -7964,8 +7903,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Linear",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -8113,8 +8051,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Momentum",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -8150,8 +8087,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Angular",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -8187,8 +8123,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Torque\n(Force that affects the angular state)",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -8257,8 +8192,7 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Which is the projection\nof the angular momentum",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -8371,8 +8305,262 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "moment of inertia",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
+		},
+		{
+			"type": "arrow",
+			"version": 85,
+			"versionNonce": 948851600,
+			"isDeleted": false,
+			"id": "rkBnyeQYOxvFRRm5RsWwS",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"angle": 0,
+			"x": 1910.9767352610204,
+			"y": 1048.1583531557483,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
+			"width": 244.70588235294122,
+			"height": 2.352941176470722,
+			"seed": 1837841776,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"boundElements": [],
+			"updated": 1715191690004,
+			"link": null,
+			"locked": false,
+			"startBinding": {
+				"elementId": "7DN4FA_8nIZRuti06-1gF",
+				"focus": -0.120512449310094,
+				"gap": 23.67228958217936
+			},
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					244.70588235294122,
+					2.352941176470722
+				]
+			]
+		},
+		{
+			"type": "text",
+			"version": 60,
+			"versionNonce": 1328079248,
+			"isDeleted": false,
+			"id": "ijAExZTw",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"angle": 0,
+			"x": 2324.0836372198896,
+			"y": 936.0838727439836,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
+			"width": 174.6927490234375,
+			"height": 35,
+			"seed": 364789136,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1715191702739,
+			"link": null,
+			"locked": false,
+			"fontSize": 28,
+			"fontFamily": 1,
+			"text": "Runge Kutta",
+			"rawText": "Runge Kutta",
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Runge Kutta",
+			"lineHeight": 1.25
+		},
+		{
+			"type": "image",
+			"version": 169,
+			"versionNonce": 244440432,
+			"isDeleted": false,
+			"id": "KYVRhUaJgTjT3Y8VNuZGp",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"angle": 0,
+			"x": 2561.223275226167,
+			"y": 966.1277304055095,
+			"strokeColor": "transparent",
+			"backgroundColor": "#a5d8ff",
+			"width": 270.089502270414,
+			"height": 209.28577103789547,
+			"seed": 1934009200,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1715191797527,
+			"link": null,
+			"locked": false,
+			"status": "pending",
+			"fileId": "4d03c16fe10c6313c99f05d602e32e7a5a2be078",
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"type": "image",
+			"version": 133,
+			"versionNonce": 1017016176,
+			"isDeleted": false,
+			"id": "8b3D1fgKOpfcQMDbt1Y-1",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"angle": 0,
+			"x": 2288.393397327881,
+			"y": 993.7661729456572,
+			"strokeColor": "transparent",
+			"backgroundColor": "#a5d8ff",
+			"width": 261.6091205554873,
+			"height": 154.17857104902433,
+			"seed": 211905424,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1715191796043,
+			"link": null,
+			"locked": false,
+			"status": "pending",
+			"fileId": "ad4c59cb1c8122d56ab21332f4fad1246a000f76",
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"type": "image",
+			"version": 136,
+			"versionNonce": 466458992,
+			"isDeleted": false,
+			"id": "H8550k_PV-cVboCAD4gaD",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"angle": 0,
+			"x": 2214.2995654186943,
+			"y": 1144.7691899644874,
+			"strokeColor": "transparent",
+			"backgroundColor": "#a5d8ff",
+			"width": 371.20972033874887,
+			"height": 44.40546385772667,
+			"seed": 1787393904,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1715191817450,
+			"link": null,
+			"locked": false,
+			"status": "pending",
+			"fileId": "929929208084b872a8447fffcebef941a50415f5",
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"type": "text",
+			"version": 91,
+			"versionNonce": 770192784,
+			"isDeleted": false,
+			"id": "b2vXUhrG",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"angle": 0,
+			"x": 2166.4513414952203,
+			"y": 1209.190294961116,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
+			"width": 511.37939453125,
+			"height": 50,
+			"seed": 891866992,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1715191861047,
+			"link": null,
+			"locked": false,
+			"fontSize": 20,
+			"fontFamily": 1,
+			"text": "This is a 4th order method so the error decreases\nwith O(h^4)",
+			"rawText": "This is a 4th order method so the error decreases\nwith O(h^4)",
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "This is a 4th order method so the error decreases\nwith O(h^4)",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "inveRmbY",
+			"type": "text",
+			"x": 2083.874033238647,
+			"y": 1285.4786145936564,
+			"width": 702.1792602539062,
+			"height": 225,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
+			"fillStyle": "solid",
+			"strokeWidth": 4,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1862047632,
+			"version": 401,
+			"versionNonce": 124333456,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1715192296963,
+			"link": null,
+			"locked": false,
+			"text": "Runge-Kutta methods can be used for adaptive step sizes which is\nreally useful for example\n\nRunge-Kutta 45 method\nUses 4th order solution to estimate error and set step size\nThen uses a 5th order solution using that 4th order step size\nWHich is great because for larger curvature we preferably want less\nstep size for more accuracy, wheres over smooth/straight lines we can\njump further and save on computation",
+			"rawText": "Runge-Kutta methods can be used for adaptive step sizes which is\nreally useful for example\n\nRunge-Kutta 45 method\nUses 4th order solution to estimate error and set step size\nThen uses a 5th order solution using that 4th order step size\nWHich is great because for larger curvature we preferably want less\nstep size for more accuracy, wheres over smooth/straight lines we can\njump further and save on computation",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Runge-Kutta methods can be used for adaptive step sizes which is\nreally useful for example\n\nRunge-Kutta 45 method\nUses 4th order solution to estimate error and set step size\nThen uses a 5th order solution using that 4th order step size\nWHich is great because for larger curvature we preferably want less\nstep size for more accuracy, wheres over smooth/straight lines we can\njump further and save on computation",
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -8386,14 +8574,14 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 		"currentItemRoughness": 0,
 		"currentItemOpacity": 100,
 		"currentItemFontFamily": 1,
-		"currentItemFontSize": 16,
+		"currentItemFontSize": 20,
 		"currentItemTextAlign": "center",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 815.5051425008842,
-		"scrollY": -808.0924288971577,
+		"scrollX": -1207.1858855878222,
+		"scrollY": -428.53417014921223,
 		"zoom": {
-			"value": 1.3724192071623258
+			"value": 0.7200000000000002
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
@@ -8408,7 +8596,8 @@ ca3399f96d8f05129aa01f7b14f7779104425851: [[Pasted Image 20240201211234_106.png]
 			"clip": true,
 			"name": true,
 			"outline": true
-		}
+		},
+		"objectsSnapModeEnabled": false
 	},
 	"files": {}
 }
