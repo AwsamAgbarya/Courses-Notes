@@ -55,7 +55,7 @@ Networks that are based off of a bunch of distributions that represent the outpu
 such that we want to learn more about those distributions and the likelihood
 of our point belonging to it ^jZrpKEuC
 
-%%***>>>text element-link:[[Expectation Maximization]]<<<***%%Think GMM in
+Think GMM in
 Expectation Maximization ^q3BX2cRo
 
 Vector x ^ldQLf7N6
@@ -971,10 +971,10 @@ training algorithms
 and their denoising
 (highlighted with color) ^UoZ6qNwc
 
-[[Learning_to_Relate_Images.pdf]] ^ttsCezLQ
-
-[[CRBM.pdf]] ^2opmKlJE
-
+# Element Links
+ttsCezLQ: [[Learning_to_Relate_Images.pdf]]
+2opmKlJE: [[CRBM.pdf]]
+q3BX2cRo: [[Expectation Maximization]]
 
 # Embedded files
 0edd9c2d94201837a21fb4a0d69930b86e0f8193: $$p(h|x) = \Pi_j p(h_j|x)$$
@@ -1039,31 +1039,31 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.20",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.6",
 	"elements": [
 		{
-			"id": "FwRPPkZIhd17JPmSnYYw6",
 			"type": "image",
-			"x": 454.19428296883797,
-			"y": 4476.166743282112,
-			"width": 341,
-			"height": 133.90620031796504,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
+			"version": 125,
+			"versionNonce": 1733445037,
+			"isDeleted": false,
+			"id": "FwRPPkZIhd17JPmSnYYw6",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 454.19428296883797,
+			"y": 4476.166743282112,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"width": 341,
+			"height": 133.90620031796504,
+			"seed": 1520653539,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1520653539,
-			"version": 125,
-			"versionNonce": 1733445037,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266416394,
 			"link": null,
 			"locked": false,
@@ -1075,28 +1075,28 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			]
 		},
 		{
-			"id": "0HlVKPpLoDBXtTru2WobQ",
 			"type": "image",
-			"x": 382.5948200941724,
-			"y": 3525.9065741054474,
-			"width": 393,
-			"height": 229,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
+			"version": 74,
+			"versionNonce": 1494259661,
+			"isDeleted": false,
+			"id": "0HlVKPpLoDBXtTru2WobQ",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 382.5948200941724,
+			"y": 3525.9065741054474,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"width": 393,
+			"height": 229,
+			"seed": 1510947117,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1510947117,
-			"version": 74,
-			"versionNonce": 1494259661,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406441,
 			"link": null,
 			"locked": false,
@@ -2244,8 +2244,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "middle",
 			"containerId": "afUXP3smGWzx7gKHB0aMm",
 			"originalText": "Structured Prediction and EBMs",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -2281,8 +2280,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Motivation",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -2327,8 +2325,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "So far we have trained neural networks to output something quite\nuniform and simple i.e Class index/probability, Number prediction\n\nIn other cases we want to output a structure that is much more complex\nor even a sequence of complex structures (e.g machine translation does not have a fixed\nlength uniform output, Question/answer etc...)\nThose outputs are not random, theyre structured and follow certain constraints, rules or\nunderlying dynamics such as energy functions",
-			"lineHeight": 1.25,
-			"baseline": 193
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -2426,8 +2423,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Forward v.s Inverse",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -2472,8 +2468,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Consider the following situation where we are trying to predict a possible value\nand there are multiple plausible outputs that can be the outcome of such\nprediction (this is quite often the case when dealing with inverse problems)",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -2601,8 +2596,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Solution 1",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "freedraw",
@@ -4530,8 +4524,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Solution 2",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "freedraw",
@@ -6635,8 +6628,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "What we get\nfrom NN",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -6716,8 +6708,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "averaged over\nboth solutions",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -6753,8 +6744,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "f(x) + noise",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -6790,8 +6780,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "f is not invertible",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -6827,8 +6816,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We need to change our view of the task\nsuch that it is now \nlearning the conditional probability model\np(t | x)\n\nsuch that we need to minimize the divergence between\nthe true probability and the learned probability model",
-			"lineHeight": 1.25,
-			"baseline": 168
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -6925,8 +6913,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Mixture density networks",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -6962,8 +6949,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Networks that are based off of a bunch of distributions that represent the outputs\nsuch that we want to learn more about those distributions and the likelihood\nof our point belonging to it",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -7056,8 +7042,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Think GMM in\nExpectation Maximization",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -7439,8 +7424,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Vector x",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -7476,8 +7460,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "NN",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -7522,8 +7505,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Parameter\nvector",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -7559,8 +7541,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Mixture model",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -7596,8 +7577,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Conditional\nprobability\ndensity",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -7780,8 +7760,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Prior of\ndistribution",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -7963,8 +7942,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Optimize the Likelihood\nof this model",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -8103,8 +8081,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "These parameters are subject\nto certain constraints which can be\nmodeled in the output layer",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -8211,8 +8188,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "The problem with GMMs",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -8338,8 +8314,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Gaussian mixture models capture localized\nhigh density spots in our space and identify them\nas a distribution, but this gets rather out of\nhand with global effects and spaces where\nour data is distributed across every possible\ncorner of our space IN HIGH DIMENSIONAL space\nfor example when using pictures",
-			"lineHeight": 1.25,
-			"baseline": 134
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -8375,8 +8350,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Thus it is better to use Boltzmann machines\nBMs or rather RBMs are quite good at understanding\nglobal effects by drawing conclusions between inputs and outputs\nwithout learning features specific to that input... only the transitions that\nlead to the output aka Global effects",
-			"lineHeight": 1.25,
-			"baseline": 94
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -8477,8 +8451,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Conditional Restricted Boltzmann Machines\n(CRBM)",
-			"lineHeight": 1.25,
-			"baseline": 60
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -8669,8 +8642,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Can be interpreted as a two-layer neural network.\nThe lower the free energy the more likely the joint configuration\n(x,y) is to occur in the wild!\n\nWhich leads us to learn about the conditional probability of x | y\nas in if we have an occurrence of random x in our model's distribution (which will\nhopefully match the dataset's distribution), what would be the most likely y\nto be associated with it?\n\nWe can conditionally sample x or y according to the other's value using",
-			"lineHeight": 1.25,
-			"baseline": 243
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -8739,8 +8711,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We would like to proceed with a stochastic gradient descent procedure\nWe update the weights and both biases via the LR and gradient,\nthe gradient of our objective is given by",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -8781,8 +8752,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Standard CRBM",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -8818,8 +8788,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Higher order CRBM",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -8921,8 +8890,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Additive",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -9024,8 +8992,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Multiplicative",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -9099,8 +9066,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We notice that we can represent the\nconditional distributions in a much\neasier way than the joint distribution\nof the latent and in the input.\n\nRemember that that their distributions are Bernoulli so the process\nof sampling from the conditional goes as follows:\n\nWe sample from a uniform distribution a value between 0 and 1\n\nwe compute the probability that our jth hidden value is 1 given our input x\n\nif this value is greater than the uniform we set the jth unit to 1 else we set it to 0\n\n\nwhich leads our jth unit to be equal to 1 with a probability of p(hj==1 | xi)",
-			"lineHeight": 1.25,
-			"baseline": 393
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -9226,8 +9192,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "the hidden units are\nconditionally independent\ngiven x due to a local markov\nproperty (the restriction)",
-			"lineHeight": 1.25,
-			"baseline": 74
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -9329,8 +9294,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Since h and x are given via bernoulli distributions, we can\nderive the following",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -9366,8 +9330,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "note that the conditional relation is symmetric between\nthe latent and the input",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -9403,8 +9366,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CRBMS are a special kind of RBM that specializes in working with structured output\nsomething that the RBMs have never been able to tackle.\n\nThe difficulty in structured output prediction is that the output space typically has an exponential\nnumber of possible configuration, exact gradients are intractable,\ninstead approximations like Contrastive divergence will be used (or even better algorithms).",
-			"lineHeight": 1.25,
-			"baseline": 143
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -9484,8 +9446,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "examples of structured output",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -9521,8 +9482,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "the output space has arbitrary\nstructure but the set of likely\noutput configurations is relatively\nsmall, such as in multi-label classification",
-			"lineHeight": 1.25,
-			"baseline": 74
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -9885,8 +9845,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "house",
-			"lineHeight": 1.25,
-			"baseline": 10
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -9922,8 +9881,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "horse",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -9959,8 +9917,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "tree",
-			"lineHeight": 1.25,
-			"baseline": 10
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -9996,8 +9953,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "human",
-			"lineHeight": 1.25,
-			"baseline": 8
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -10033,8 +9989,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "grass",
-			"lineHeight": 1.25,
-			"baseline": 10
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -10070,8 +10025,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "1    0   1    0    1",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -10164,8 +10118,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "the output space is arbitrarily\nstructured but where the variability \nin it is much greater than multi-label\nclassification, such as in image\ndenoising or pixel labeling.",
-			"lineHeight": 1.25,
-			"baseline": 94
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -10206,8 +10159,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Before moving forward to CRBMs, lets get a very very quick overview of RBM and training such models",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -10295,8 +10247,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Restricted Boltzmann machines",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -10332,8 +10283,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "A Restricted Boltzmann Machine is an undirected graphical model for unsupervised learning.\nthat is used to discover hidden structures in data\nThe task of an RBM is to define a probability distribution over a vector of observed\nbinary variables v and a vector of binary hidden variables h.\ni.e we want a model that after looking at a dataset would generate\nsimilarly looking data through the probability of them being \"plausible\" scenarios",
-			"lineHeight": 1.25,
-			"baseline": 143
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -10422,8 +10372,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Normalization Term\nwhich is the sum of all possible\nconfigurations over all values of h and v\nThis is generally intractable in this form\nbecause it needs to find all combinations\nof a variable that is high dimensional",
-			"lineHeight": 1.25,
-			"baseline": 114
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -10507,8 +10456,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Energy functions are functions\nthat get as an input the current\nscenario of v and h and through the current\nstate of the system (weights, biases etc..)\noutput its energy.\nJust view it as a score function that can\nbe positive or negative to signify two things\nattracting or repelling each other....",
-			"lineHeight": 1.25,
-			"baseline": 154
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -10592,8 +10540,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "a matrix containing\npairwise weights\nlinking elements in v\nand elements in h",
-			"lineHeight": 1.25,
-			"baseline": 93
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -10673,8 +10620,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "bias of visible\nvariable/layer",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -10754,8 +10700,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "bias of hidden\nvariable/layer",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -10824,8 +10769,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "W",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -10861,8 +10805,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "V",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -10898,8 +10841,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "h",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -10983,8 +10925,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Binary values\nplus bias for each\nelement",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -11053,8 +10994,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "No two elements from V, h are connected to\neach other which is where the \"restricted\" comes into play\notherwise fully connected between every component of v and h",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -11072,7 +11012,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"y": 2212.119848160528,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 516.8687590080037,
+			"width": 516.8687590080038,
 			"height": 41.436735954228155,
 			"seed": 10034,
 			"groupIds": [],
@@ -11161,8 +11101,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "The energy in our case correlates to probability.\nOur energy function uses dot products,\nwhich are a measure of similarities of two vectors\nW's values signify positively or negatively if we want our v and h to be similar.\nLow energy in our context symbolizes high probability and vice versa.\n\nThis concludes that given a real input from the dataset,\nhow similar is it to the features saved in h that are learned from our\ndistribution of inputs (which means how plausible that this sample x was drawn from our dist)",
-			"lineHeight": 1.25,
-			"baseline": 218
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -11198,8 +11137,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "For the sake of understanding lets defined a very simple example and walk through it\nwhile explaining",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -11292,8 +11230,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "V is this example is a datapoint from our dataset that describes\nwhether a student attended a ML lecture or not, each element i\ngives 1 if the i-th student attends and 0 if it does not.\nThe bias for v can be thought of as prior knowledge that\ni-th student is more likely to attend classes in general or not.\nif it was negative then the student is less likely to attend in general\nand vice vera\nbut the bias does not mean anything at the start of training.",
-			"lineHeight": 1.25,
-			"baseline": 154
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -11390,8 +11327,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "The hidden layer in this example are factors\nor features of the data\nthat contribute to a student attending\nfor example if j-th unit of h can be 1 if hes in korea\nbragging about his work or 0 if hes not.\nanother unit can describe whether there is a train strike or not\nnote that these states are not something we know in each datapoint\nwhich is why theyre hidden, theyre not available in the dataset.",
-			"lineHeight": 1.25,
-			"baseline": 154
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -11427,8 +11363,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "what this means for our example is that no two events in v or two events in h affect\neach other, i.e students dont attend classes because their friend does. Only factors\nin h affect factors in v, and the weights connecting them are the strength of the effect",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -11464,8 +11399,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Our goal in this example is to learn what are the most plausible scenarios that happen\ni.e learn the probability distribution over h and v that describes what is happening and the patterns\nthat occur in the data often.",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -11501,8 +11435,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We define an energy function to give us a measure of score\nnote that energy = -score in this context and score = likelyness of a scenario",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -11538,8 +11471,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Now since we can measure scores, we can \"easily\" build a probability distribution\nusing the softmax function which maps values to the range 0..1 such that their sum is 1",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -11623,8 +11555,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Lets take for simplified example scenario:\n\nSanad=1 , Awsam=1, Philipp=0\n\n\n\nProfessor=1 , strike=1\nis absent            ",
-			"lineHeight": 1.25,
-			"baseline": 193
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -11708,8 +11639,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Classic philipp\ndoesnt bother\nshowing up",
-			"lineHeight": 1.25,
-			"baseline": 12
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -12009,8 +11939,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "2",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -12046,8 +11975,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "0",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -12083,8 +12011,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "1",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -12120,8 +12047,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "1",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -12157,8 +12083,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "0",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -12194,8 +12119,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "0.5",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -12236,8 +12160,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Concludes in the score of 2.5\nif we calculate every single possible scenario's\nscore then divide by their sum we will get a probability\nof each one",
-			"lineHeight": 1.25,
-			"baseline": 74
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -12325,8 +12248,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Note that the reason we are using Exp\nis because we dont want to map high scores to high\nnumbers and low scores to low numbers without making\nthem sum to 0 (as in no negative numbers) in order\nto not divide by 0\n",
-			"lineHeight": 1.25,
-			"baseline": 114
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -12414,8 +12336,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Problem:\nWe cant compute an exponential number of combinations\nWe need to develop an algorithm that does not require the denominator\nin order to learn the probability distribution",
-			"lineHeight": 1.25,
-			"baseline": 74
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -12451,8 +12372,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Lets explain briefly, the process of contrastive divergence\nGiven a dataset with our data v, what we are trying to do here\nto build p(v,h) is the following:\n\nfor every point vi that occurs in data\nincrease P(vi | h) over all possible values of h\nand decrease all probabilities\nafter a sufficient number of datapoints we will achieve a data\ndistribution such that it mimics the probability distribution of our dataset\nThe end goal is to update the weights and biases such that:\n\n\nWhich translates to the log likelihood of the data",
-			"lineHeight": 1.25,
-			"baseline": 318
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -12532,8 +12452,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "visual explanation",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -12569,8 +12488,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "lets take a scenario of all\npossible combinations of\nthe letters A, B, C\n\nlets also assume we\nhave a dataset over occurances\nof A and B, and C is our hidden\nlayer",
-			"lineHeight": 1.25,
-			"baseline": 154
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -12932,8 +12850,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "probability",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -12971,8 +12888,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "scenario",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13010,8 +12926,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "A",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13049,8 +12964,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "B",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13088,8 +13002,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "C",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13127,8 +13040,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AB",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13166,8 +13078,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13205,8 +13116,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "BC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13244,8 +13154,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ABC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -13323,8 +13232,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "First datapoint samples AB\nso we increase probability\nof all scenarios that include\nAB in them over all values of\nh\nand decrease everything (including\nthose we increased)",
-			"lineHeight": 1.25,
-			"baseline": 78
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -13664,8 +13572,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "probability",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13701,8 +13608,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "scenario",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13738,8 +13644,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "A",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13775,8 +13680,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "B",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13812,8 +13716,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "C",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13849,8 +13752,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AB",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13886,8 +13788,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13923,8 +13824,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "BC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -13960,8 +13860,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ABC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -14039,8 +13938,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "lets say we samples A\nnow so we repeat the\nprocess",
-			"lineHeight": 1.25,
-			"baseline": 41
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -14380,8 +14278,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "probability",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -14422,8 +14319,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "scenario",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -14459,8 +14355,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "A",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -14496,8 +14391,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "B",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -14533,8 +14427,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "C",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -14570,8 +14463,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AB",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -14607,8 +14499,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -14644,8 +14535,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "BC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -14681,8 +14571,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ABC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -14764,8 +14653,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Overtime, points that never occur\nwill result in very low probability\nand things that did occur (or variations of them\ngiven values of the hidden layer) will be\nwith high probability exactly how the distribution\nof the original dataset is",
-			"lineHeight": 1.25,
-			"baseline": 76
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -15105,8 +14993,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "probability",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -15142,8 +15029,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "scenario",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -15179,8 +15065,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "A",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -15216,8 +15101,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "B",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -15253,8 +15137,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "C",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -15290,8 +15173,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AB",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -15327,8 +15209,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -15364,8 +15245,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "BC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -15401,8 +15281,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ABC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -15517,8 +15396,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "A popular use case for RBMs is recommendation systems\nlets say you click on a yt video, which is the input x\nthe hidden layer will be (trained) to contain the structure\nof videos like \"what style is this video?\" \"whats the topic?\"\netc...\nafter enough training, we will understand the patterns\nthat activate the hidden nodes i.e learning the probability distribution\nof the dataset\nby adjusting the weights and biases, this model can figure out\nhow likely is someone who regularly watches cat videos on youtube\nto also watch animal documentaries.\nand this applies to any example where you want to learn more about ur data",
-			"lineHeight": 1.25,
-			"baseline": 293
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -15559,8 +15437,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Task:\nShow to the RBM, samples form a database of visible unit combinations (possible inputs)\nand adjust the parameters (W and the biases) such that the probability distribution\ndefined by the energy function of our RBM p(v,h) encodes the observed probability\ndistribution p(h)\n",
-			"lineHeight": 1.25,
-			"baseline": 143
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -15730,8 +15607,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Fancy words for\nif we take our p(v,h) and theoretically\nmarginalize over all possible values of h\nthen we get something close to p(v)",
-			"lineHeight": 1.25,
-			"baseline": 93
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -15819,8 +15695,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "But that is not something we can do\nbut it turns out its something\nwe can derive",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -15856,8 +15731,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Free energy function",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -15893,8 +15767,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "The probability function correlates to its corresponding Energy function\nmeaning if we can derive the energy function then we can derive the distribution\nthat it builds and thus avoid having to marginalize p(v,h) to p(v) ",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -16040,8 +15913,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "marginalization of p(x,h) over all\nvalues of h",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -16121,8 +15993,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We are using x instead of v\nhere because the derivation I stole\ndoes... deal with it.. ",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -16202,8 +16073,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "unrelated to \ndifferent values\nof h",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -16283,8 +16153,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Exponential of a sum \n=\nproduct of all the eponentiated\nsums",
-			"lineHeight": 1.25,
-			"baseline": 74
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -16364,8 +16233,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We evaluate the two cases\nwhen hj=1 and when hj=0",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -16401,8 +16269,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "This final result is also called the free energy functions (also called Softplus)",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -16471,8 +16338,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "such that",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -16598,8 +16464,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Now that we have our probability distribution\nwe can learn from it how to tune our parameters\nsuch that the likelihood of our data increases\nto a point where it matches our dataset",
-			"lineHeight": 1.25,
-			"baseline": 93
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -16884,8 +16749,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "its like a smooth Relu",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -16998,8 +16862,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "if elements of x are 1 when c\nis positive and 0 when c is negative\ni.e\nif it has features that we know have\na higher prior to occur and 0 otherwise\nthe probability increases",
-			"lineHeight": 1.25,
-			"baseline": 114
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -17079,8 +16942,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "for this to be big\nwe want the input vector to be\nwell aligned with W's jth row, so for\na given hidden unit j, if x is positive\nfor positive values of wj and 0 for negative\nvalues of wj, then this means the features\ndetected in x via the dot product match\nwhat we learned (and is stored) in h\nthe bias of the hidden unit bj is the threshold\nof \"how present must this feature be in order\nfor us to consider it a meaningful feature\n andlet it significantly affect the prob\"",
-			"lineHeight": 1.25,
-			"baseline": 234
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -17169,8 +17031,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We can make a loss function out of this objective",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -17184,12 +17045,12 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -2726.476515441676,
-			"y": 3392.624344055148,
+			"x": -2715.4595914395773,
+			"y": 3389.9368162742403,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 262.43211256469357,
-			"height": 58.64404750049018,
+			"width": 240.39826456049582,
+			"height": 64.01910306230594,
 			"seed": 62724,
 			"groupIds": [],
 			"frameId": null,
@@ -17239,8 +17100,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We can get the probability of A\nby enumerating over all possible scenarios\nof A and the hidden unit\nas in A and AC",
-			"lineHeight": 1.25,
-			"baseline": 93
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -17685,8 +17545,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "positive phase",
-			"lineHeight": 1.25,
-			"baseline": 10
+			"lineHeight": 1.25
 		},
 		{
 			"type": "freedraw",
@@ -18026,8 +17885,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "negative phase",
-			"lineHeight": 1.25,
-			"baseline": 10
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -18112,8 +17970,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "given our data point xi this is\nan expectation over the\nconditional distribution\np(h | xi)",
-			"lineHeight": 1.25,
-			"baseline": 74
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -18149,8 +18006,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "this is derived from Z",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -18186,8 +18042,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "this is derived from sum\nover energies (numerator)",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -18271,8 +18126,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Summation over hidden vectors\ngiven a visible vector xi multiplied\nby their energy function",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -18308,8 +18162,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "The positive phase tells us that for all parameters that affected\nthe expectation xi, should be increased in order to increase the probability\nof having a combination of variables that includes xi and all possible values\nof h",
-			"lineHeight": 1.25,
-			"baseline": 74
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -18345,8 +18198,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Recall the visual example above:\n",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -18382,8 +18234,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "First datapoint samples AB\nso we increase probability\nof all scenarios that include\nAB in them over all values of\nh\nand decrease everything (including\nthose we increased)",
-			"lineHeight": 1.25,
-			"baseline": 78
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -18516,8 +18367,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Go over all possible values\nof x and h (intractable)\nin the probability distribution\nbuilt by our model\nand which parameters actually\naffected them and reduce it",
-			"lineHeight": 1.25,
-			"baseline": 114
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -18605,8 +18455,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "What this really is doing is the push pull approach",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -18675,8 +18524,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Since we want to associate low energy with high probability and we want\nto increase the probability of observing xi given our parameters\nand decrease the chance of finding random unrelated points samples from\nour model x,y given our parameters.\nWe traverse the loss function by reducing probabilities of all points in our space\nand only increasing the ones we just observed",
-			"lineHeight": 1.25,
-			"baseline": 143
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -18750,8 +18598,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "(soft on/off value\nindicating how well\npresent the feature\nin W is in x)",
-			"lineHeight": 1.25,
-			"baseline": 74
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -18831,8 +18678,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Expectation\nover the observations",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -18912,8 +18758,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "expectation over\nthe probability distribution\nbuilt by the model",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -19103,8 +18948,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Another and final way to look at this is\ngiven enough datapoints xi, the left term\nis calculating the expected value of xi, h\nover the DATASET distribution, and the right\nterm is calculating the expected value over the\ndistribution inferred and built by the model itself\nand this leads us to a a good solution at the\nminima when the gradient is 0\n(as in the left and right term are equal)\nBECAUSE the distribution built by the model will be\ncloser and closer to the dataset distribution",
-			"lineHeight": 1.25,
-			"baseline": 268
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -19214,8 +19058,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Okay cool, I get it (Kinda...) But\nyou just said the right side is\nintractable, how do we even do this?",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -19251,8 +19094,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Gibbs Sampling",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -19288,8 +19130,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Training",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -19325,8 +19166,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Contrastive Divergence (simplified)",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -19362,8 +19202,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Instead of decreasing all points (over all values of h and x)\nlets just obtain one random point and decrease it and be satisfied with that\nover an infinite amount of points this will converge to the normal CD\nit just will be an approximation and is a lot slower.",
-			"lineHeight": 1.25,
-			"baseline": 93
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -19399,8 +19238,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Analogy",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -19492,8 +19330,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Say you have a jar of Blue and red balls, and you have an external\nsupply of blue balls... you want to get rid of all the red balls and only\nfill the jar with blue balls.\none way to do this is to take all red balls out and put all blue balls in\n(which is what the normal CD algorithm tries)\n\nThe enhanced method goes as follows:\nTake exactly one ball out of the jar and throw it away\nand instead insert a blue ball from your supply...\nif the ball you took out was red, we are closer to our solution of all blue balls\nif the ball you took out was blue, we are exactly where we were on the last step\n\nwith every iteration we will always move forwards towards a solution or stand still\nand over an infinite amount of steps we will converge",
-			"lineHeight": 1.25,
-			"baseline": 274
+			"lineHeight": 1.25
 		},
 		{
 			"type": "ellipse",
@@ -20095,8 +19932,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Supply",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -20132,8 +19968,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Jar",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "ellipse",
@@ -20672,8 +20507,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "How do we obtain a random\nsample without iterating over\na lot of values?",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -20709,8 +20543,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Sampling from a joint probability distribution is hard!\nwe instead try to sample from conditional distribution some T amount of times\nand we will produce something random form the joint ",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -20746,8 +20579,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "For example:\n(stupid example)\n\nIf we want to sample from a joint probability distribution of all\npossible values of english letters and digits\n\n\n1. Start at an english letter (lets say A)\n\n2. Sample a number according to the conditional probability distribution\np( digit | A )\n\n3. We call that digit N, now we sample a letter according to the conditional\ndistribution of N p( Letter | N )\n\n4. Repeat steps 2-3, T times until you get something completely random",
-			"lineHeight": 1.25,
-			"baseline": 393
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -20849,8 +20681,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Formulated to our \nIssue",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -20891,8 +20722,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "1. Start at the current Point observed xi\n\n2. Sample an h according to the conditional distribution\np(hi|xi)\n\n3. get that value of h and sample an x according to its conditional\np(xj | hi)\n\n4. Repeat this process T times\n\n5. sample one random h value given xi and one random value\nh given xj\n\n6. Increase the probability of xi,h in your models distribution\nand decrease the probability of xj,h (after the T iterations)\nin your distribution",
-			"lineHeight": 1.25,
-			"baseline": 393
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -21113,8 +20943,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Which turns our previous example\nabout the visible layers A,B \nand latent C into",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -21652,8 +21481,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "probability",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -21691,8 +21519,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "scenario",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -21730,8 +21557,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "A",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -21769,8 +21595,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "B",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -21808,8 +21633,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "C",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -21847,8 +21671,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AB",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -21886,8 +21709,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -21925,8 +21747,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "BC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -21964,8 +21785,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ABC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -22105,8 +21925,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "after observing AB",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -22142,8 +21961,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Previously",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -22179,8 +21997,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Now",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -22520,8 +22337,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "probability",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -22557,8 +22373,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "scenario",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -22594,8 +22409,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "A",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -22631,8 +22445,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "B",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -22668,8 +22481,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "C",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -22705,8 +22517,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AB",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -22742,8 +22553,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -22779,8 +22589,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "BC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -22816,8 +22625,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ABC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -23157,8 +22965,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "probability",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -23194,8 +23001,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "scenario",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -23231,8 +23037,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "A",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -23268,8 +23073,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "B",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -23305,8 +23109,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "C",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -23342,8 +23145,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AB",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -23379,8 +23181,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "AC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -23416,8 +23217,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "BC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -23453,8 +23253,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ABC",
-			"lineHeight": 1.25,
-			"baseline": 9
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -23594,8 +23393,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "choose only one randomly between\nh that correlate to AB\nto increase",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -23987,8 +23785,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "choose randomly another x by using Gibbs\nthen choose randomly a variation one h of it\nto decrease",
-			"lineHeight": 1.25,
-			"baseline": 37
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -24212,8 +24009,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Derivation",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "embeddable",
@@ -24335,8 +24131,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Oh sorry that took longer than expected, anyway where were we?",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -24372,8 +24167,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "THIS WILL BE A REPLACEMENT FUNCTION FOR THE STANDARD ENERGY FUNCTION\n(Read the training part first)",
-			"lineHeight": 1.25,
-			"baseline": 60
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -24409,8 +24203,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "The log-likelihood of the data turns into\n\n\n\nDeriving our gradient we  arrive at",
-			"lineHeight": 1.25,
-			"baseline": 118
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -24571,8 +24364,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "positive phase\ncorresponds to the expected gradient of\nthe energy This simplification occurs because\nthe gradient of F w.r.t. p(h|v)\nis zero, so the effect of changing the parameters on\np(h|v) can be ignored",
-			"lineHeight": 1.25,
-			"baseline": 143
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -24700,8 +24492,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "negative phase, is an expectation over the model\ndistribution, p(v), and is intractable to compute exactly\nfor all but the smallest model\nGibbs sampling is still possible ofc\nWe can then ignore the sampled h and only keep the\nsampled v",
-			"lineHeight": 1.25,
-			"baseline": 143
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -24737,8 +24528,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Unlike RBMS, CRBMS model the distribution of two inputs x and y\np(x | y) by using an RBM to model x and using y to dynamically\ndetermine the biases or weights of that RBM\n\nCRBMs are governed by the following Energy function\n\n\n\nAssociated with the distribution",
-			"lineHeight": 1.25,
-			"baseline": 218
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -24756,8 +24546,8 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"y": 2041.5796202907643,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 406.3562329110105,
-			"height": 17.78978899840829,
+			"width": 406.35623291101047,
+			"height": 17.789788998408294,
 			"seed": 3674,
 			"groupIds": [],
 			"frameId": null,
@@ -24812,8 +24602,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We can turn this energy function the same way\nwe did with RBMs into a free energy function\nmarginalized over h values",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -24887,33 +24676,42 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			]
 		},
 		{
-			"id": "J6xsLWBQY-u_PkABea6DS",
 			"type": "arrow",
-			"x": -327.6087509350797,
-			"y": 1937.572907013593,
-			"width": 313.91872307386905,
-			"height": 49.39576177105232,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 203,
+			"versionNonce": 1721578435,
+			"isDeleted": false,
+			"id": "J6xsLWBQY-u_PkABea6DS",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -327.6087509350797,
+			"y": 1937.572907013593,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 313.91872307386905,
+			"height": 49.39576177105232,
+			"seed": 2139348685,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 2139348685,
-			"version": 203,
-			"versionNonce": 1721578435,
-			"isDeleted": false,
 			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": {
+				"elementId": "ImPjbmd7",
+				"focus": -0.09639404802470061,
+				"gap": 1.8539757297410233
+			},
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
@@ -24927,42 +24725,30 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					-313.91872307386905,
 					39.92260197934365
 				]
-			],
-			"lastCommittedPoint": [
-				-322.7640871889306,
-				46.689144687707085
-			],
-			"startBinding": null,
-			"endBinding": {
-				"elementId": "ImPjbmd7",
-				"focus": -0.09639404802470061,
-				"gap": 1.8539757297410233
-			},
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			]
 		},
 		{
-			"id": "ImPjbmd7",
 			"type": "text",
-			"x": -842.0770131250141,
-			"y": 1979.3494847226777,
-			"width": 405.3128356933594,
-			"height": 60,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 159,
+			"versionNonce": 1137909229,
+			"isDeleted": false,
+			"id": "ImPjbmd7",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -842.0770131250141,
+			"y": 1979.3494847226777,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 405.3128356933594,
+			"height": 60,
+			"seed": 2014614157,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 2014614157,
-			"version": 159,
-			"versionNonce": 1137909229,
-			"isDeleted": false,
 			"boundElements": [
 				{
 					"id": "J6xsLWBQY-u_PkABea6DS",
@@ -24972,56 +24758,44 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"text": "In the literature, this energy function is sometimes\nwritten out with connections between x and y\nand biases for x and h",
-			"rawText": "In the literature, this energy function is sometimes\nwritten out with connections between x and y\nand biases for x and h",
 			"fontSize": 16,
 			"fontFamily": 1,
+			"text": "In the literature, this energy function is sometimes\nwritten out with connections between x and y\nand biases for x and h",
+			"rawText": "In the literature, this energy function is sometimes\nwritten out with connections between x and y\nand biases for x and h",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 54,
 			"containerId": null,
 			"originalText": "In the literature, this energy function is sometimes\nwritten out with connections between x and y\nand biases for x and h",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "puA2eSn7C6xo_UHmEXZJk",
 			"type": "arrow",
-			"x": -633.2737264848301,
-			"y": 2073.2112792138128,
-			"width": 0.512806798452857,
-			"height": 35.89647589170181,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 27,
+			"versionNonce": 1827128163,
+			"isDeleted": false,
+			"id": "puA2eSn7C6xo_UHmEXZJk",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -633.2737264848301,
+			"y": 2073.2112792138128,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 0.512806798452857,
+			"height": 35.89647589170181,
+			"seed": 1029432621,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1029432621,
-			"version": 27,
-			"versionNonce": 1827128163,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-0.512806798452857,
-					35.89647589170181
-				]
-			],
-			"lastCommittedPoint": null,
 			"startBinding": {
 				"elementId": "v1C4Fj4S",
 				"focus": 0.004542595679838448,
@@ -25032,74 +24806,89 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 				"focus": -0.003335438182045976,
 				"gap": 8.66448286319519
 			},
+			"lastCommittedPoint": null,
 			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			"endArrowhead": "arrow",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-0.512806798452857,
+					35.89647589170181
+				]
+			]
 		},
 		{
-			"id": "L85MYF3F",
 			"type": "text",
-			"x": -302.25086736008205,
-			"y": 2238.550132845242,
-			"width": 361.248779296875,
-			"height": 40,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 87,
+			"versionNonce": 150132813,
+			"isDeleted": false,
+			"id": "L85MYF3F",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -302.25086736008205,
+			"y": 2238.550132845242,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 361.248779296875,
+			"height": 40,
+			"seed": 2105681997,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 2105681997,
-			"version": 87,
-			"versionNonce": 150132813,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"text": "Associated with the joint distribution of both\nour visible layers",
-			"rawText": "Associated with the joint distribution of both\nour visible layers",
 			"fontSize": 16,
 			"fontFamily": 1,
+			"text": "Associated with the joint distribution of both\nour visible layers",
+			"rawText": "Associated with the joint distribution of both\nour visible layers",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 34,
 			"containerId": null,
 			"originalText": "Associated with the joint distribution of both\nour visible layers",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "IuETDQIt6ddLFLH_jcbW5",
 			"type": "arrow",
-			"x": 156.4357176710618,
-			"y": 2189.9870046802816,
-			"width": 134.70732289779755,
-			"height": 2.172698756416139,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 46,
+			"versionNonce": 1451187971,
+			"isDeleted": false,
+			"id": "IuETDQIt6ddLFLH_jcbW5",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 156.4357176710618,
+			"y": 2189.9870046802816,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 134.70732289779755,
+			"height": 2.172698756416139,
+			"seed": 2105442541,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 2105442541,
-			"version": 46,
-			"versionNonce": 1451187971,
-			"isDeleted": false,
 			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
@@ -25109,38 +24898,30 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					134.70732289779755,
 					2.172698756416139
 				]
-			],
-			"lastCommittedPoint": [
-				134.70732289779755,
-				2.172698756416139
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			]
 		},
 		{
-			"id": "RrIyhki4",
 			"type": "text",
-			"x": 90.93537732944458,
-			"y": 2502.7258483162054,
-			"width": 1078.4788818359375,
-			"height": 350,
-			"angle": 0,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
+			"version": 1050,
+			"versionNonce": 1525434029,
+			"isDeleted": false,
+			"id": "RrIyhki4",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 90.93537732944458,
+			"y": 2502.7258483162054,
+			"strokeColor": "#1971c2",
+			"backgroundColor": "transparent",
+			"width": 1078.4788818359375,
+			"height": 350,
+			"seed": 565082531,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 565082531,
-			"version": 1050,
-			"versionNonce": 1525434029,
-			"isDeleted": false,
 			"boundElements": [
 				{
 					"id": "C3hUm1wsi2PpW403kk20g",
@@ -25150,45 +24931,49 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"text": "Example:\n\nIf we train our dataset by giving it random pictures of animals x\nand rotated version of those exact animals y, the real probability distribution\nin our dataset describes the effect of rotation, not the animals themselves.\n\nWe can teach our model to learn the structure of turning x into y or y into x\nand thus by the end of training, giving it a random picture of an animal that it has never seen\nand making it sample the rotated version of that animal out from the conditional!\n\nThis type of conditional structured output is not something that can be learned with RBMs on their own\n\nThese types of issues where you learn the relation between 2 images not the contents of the actual image\n(for example learning how to rotate stuff, not learning cat, dog etc..) is called correspondence",
-			"rawText": "Example:\n\nIf we train our dataset by giving it random pictures of animals x\nand rotated version of those exact animals y, the real probability distribution\nin our dataset describes the effect of rotation, not the animals themselves.\n\nWe can teach our model to learn the structure of turning x into y or y into x\nand thus by the end of training, giving it a random picture of an animal that it has never seen\nand making it sample the rotated version of that animal out from the conditional!\n\nThis type of conditional structured output is not something that can be learned with RBMs on their own\n\nThese types of issues where you learn the relation between 2 images not the contents of the actual image\n(for example learning how to rotate stuff, not learning cat, dog etc..) is called correspondence",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "Example:\n\nIf we train our dataset by giving it random pictures of animals x\nand rotated version of those exact animals y, the real probability distribution\nin our dataset describes the effect of rotation, not the animals themselves.\n\nWe can teach our model to learn the structure of turning x into y or y into x\nand thus by the end of training, giving it a random picture of an animal that it has never seen\nand making it sample the rotated version of that animal out from the conditional!\n\nThis type of conditional structured output is not something that can be learned with RBMs on their own\n\nThese types of issues where you learn the relation between 2 images not the contents of the actual image\n(for example learning how to rotate stuff, not learning cat, dog etc..) is called correspondence",
+			"rawText": "Example:\n\nIf we train our dataset by giving it random pictures of animals x\nand rotated version of those exact animals y, the real probability distribution\nin our dataset describes the effect of rotation, not the animals themselves.\n\nWe can teach our model to learn the structure of turning x into y or y into x\nand thus by the end of training, giving it a random picture of an animal that it has never seen\nand making it sample the rotated version of that animal out from the conditional!\n\nThis type of conditional structured output is not something that can be learned with RBMs on their own\n\nThese types of issues where you learn the relation between 2 images not the contents of the actual image\n(for example learning how to rotate stuff, not learning cat, dog etc..) is called correspondence",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 343,
 			"containerId": null,
 			"originalText": "Example:\n\nIf we train our dataset by giving it random pictures of animals x\nand rotated version of those exact animals y, the real probability distribution\nin our dataset describes the effect of rotation, not the animals themselves.\n\nWe can teach our model to learn the structure of turning x into y or y into x\nand thus by the end of training, giving it a random picture of an animal that it has never seen\nand making it sample the rotated version of that animal out from the conditional!\n\nThis type of conditional structured output is not something that can be learned with RBMs on their own\n\nThese types of issues where you learn the relation between 2 images not the contents of the actual image\n(for example learning how to rotate stuff, not learning cat, dog etc..) is called correspondence",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "ETzBVAy-J_WBVe9UYI6qe",
 			"type": "arrow",
-			"x": 1064.03603919196,
-			"y": 2295.081854393613,
-			"width": 432.31375984511055,
-			"height": 2.807232206786466,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 43,
+			"versionNonce": 1306691235,
+			"isDeleted": false,
+			"id": "ETzBVAy-J_WBVe9UYI6qe",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 1064.03603919196,
+			"y": 2295.081854393613,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 432.31375984511055,
+			"height": 2.807232206786466,
+			"seed": 1948185795,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1948185795,
-			"version": 43,
-			"versionNonce": 1306691235,
-			"isDeleted": false,
 			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
@@ -25198,118 +24983,113 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					432.31375984511055,
 					2.807232206786466
 				]
-			],
-			"lastCommittedPoint": [
-				432.31375984511055,
-				2.807232206786466
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			]
 		},
 		{
-			"id": "FwIgno57",
 			"type": "text",
-			"x": 1121.344163016862,
-			"y": 2251.569755188423,
-			"width": 295.2396545410156,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 50,
+			"versionNonce": 1550379277,
+			"isDeleted": false,
+			"id": "FwIgno57",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 1121.344163016862,
+			"y": 2251.569755188423,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 295.2396545410156,
+			"height": 25,
+			"seed": 363592675,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 363592675,
-			"version": 50,
-			"versionNonce": 1550379277,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"text": "Whats the training procedure?",
-			"rawText": "Whats the training procedure?",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "Whats the training procedure?",
+			"rawText": "Whats the training procedure?",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 18,
 			"containerId": null,
 			"originalText": "Whats the training procedure?",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "7qZN5T0Y",
 			"type": "text",
-			"x": 1517.3857373366127,
-			"y": 2276.9626599675826,
-			"width": 634.079345703125,
-			"height": 50,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 205,
+			"versionNonce": 700430915,
+			"isDeleted": false,
+			"id": "7qZN5T0Y",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 1517.3857373366127,
+			"y": 2276.9626599675826,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 634.079345703125,
+			"height": 50,
+			"seed": 1753096461,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1753096461,
-			"version": 205,
-			"versionNonce": 700430915,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"text": "If we want to maximize the joint data likelihood we will observe\nthat a similar pattern occurs for the gradients",
-			"rawText": "If we want to maximize the joint data likelihood we will observe\nthat a similar pattern occurs for the gradients",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "If we want to maximize the joint data likelihood we will observe\nthat a similar pattern occurs for the gradients",
+			"rawText": "If we want to maximize the joint data likelihood we will observe\nthat a similar pattern occurs for the gradients",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 43,
 			"containerId": null,
 			"originalText": "If we want to maximize the joint data likelihood we will observe\nthat a similar pattern occurs for the gradients",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "sJRs0eG6fmqMh2rJxGzNL",
 			"type": "arrow",
-			"x": 2144.9490508537365,
-			"y": 2439.7090631826522,
-			"width": 209.1042325739386,
-			"height": 31.403932364583852,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 92,
+			"versionNonce": 518143853,
+			"isDeleted": false,
+			"id": "sJRs0eG6fmqMh2rJxGzNL",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 2144.9490508537365,
+			"y": 2439.7090631826522,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 209.1042325739386,
+			"height": 31.403932364583852,
+			"seed": 1004711693,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1004711693,
-			"version": 92,
-			"versionNonce": 518143853,
-			"isDeleted": false,
 			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
@@ -25327,44 +25107,45 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					209.1042325739386,
 					31.403932364583852
 				]
-			],
-			"lastCommittedPoint": [
-				209.1042325739386,
-				31.403932364583852
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			]
 		},
 		{
-			"id": "xd7oqHSu25r_qlG72bQuz",
 			"type": "arrow",
-			"x": 2164.8637396703025,
-			"y": 2522.431616728386,
-			"width": 188.42359418750493,
-			"height": 51.318621181149865,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 129,
+			"versionNonce": 1727363555,
+			"isDeleted": false,
+			"id": "xd7oqHSu25r_qlG72bQuz",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 2164.8637396703025,
+			"y": 2522.431616728386,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 188.42359418750493,
+			"height": 51.318621181149865,
+			"seed": 1541285411,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1541285411,
-			"version": 129,
-			"versionNonce": 1727363555,
-			"isDeleted": false,
 			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
+			"startBinding": {
+				"elementId": "KS2iAdGHVXYMUIzjaa36C",
+				"focus": 0.7516845829825469,
+				"gap": 4.851909463478023
+			},
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
@@ -25382,53 +25163,40 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					188.42359418750493,
 					-51.318621181149865
 				]
-			],
-			"lastCommittedPoint": [
-				188.42359418750493,
-				-51.318621181149865
-			],
-			"startBinding": {
-				"elementId": "KS2iAdGHVXYMUIzjaa36C",
-				"focus": 0.7516845829825469,
-				"gap": 4.851909463478023
-			},
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			]
 		},
 		{
-			"id": "zcLQt2yE",
 			"type": "text",
-			"x": 2347.5542500047122,
-			"y": 2374.623540736812,
-			"width": 356.9195556640625,
-			"height": 175,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 284,
+			"versionNonce": 1914799117,
+			"isDeleted": false,
+			"id": "zcLQt2yE",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 2347.5542500047122,
+			"y": 2374.623540736812,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 356.9195556640625,
+			"height": 175,
+			"seed": 1268468899,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1268468899,
-			"version": 284,
-			"versionNonce": 1914799117,
-			"isDeleted": false,
 			"boundElements": [],
 			"updated": 1708266900299,
 			"link": null,
 			"locked": false,
-			"text": "As said before\nthis is intractable due to\nhaving to iterate over all values\nof x and y\n\nBut it can be approximated using\nGibbs sampling using the conditionals",
-			"rawText": "As said before\nthis is intractable due to\nhaving to iterate over all values\nof x and y\n\nBut it can be approximated using\nGibbs sampling using the conditionals",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "As said before\nthis is intractable due to\nhaving to iterate over all values\nof x and y\n\nBut it can be approximated using\nGibbs sampling using the conditionals",
+			"rawText": "As said before\nthis is intractable due to\nhaving to iterate over all values\nof x and y\n\nBut it can be approximated using\nGibbs sampling using the conditionals",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 168,
 			"containerId": null,
 			"originalText": "As said before\nthis is intractable due to\nhaving to iterate over all values\nof x and y\n\nBut it can be approximated using\nGibbs sampling using the conditionals",
 			"lineHeight": 1.25
@@ -25449,8 +25217,8 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"y": 2557.267028856013,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 112.60261998229208,
-			"height": 31.3810580278519,
+			"width": 112.6026199822921,
+			"height": 31.381058027851896,
 			"seed": 18619,
 			"groupIds": [],
 			"frameId": null,
@@ -25500,39 +25268,36 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			]
 		},
 		{
-			"id": "ttsCezLQ",
 			"type": "embeddable",
-			"x": 107.25034398532136,
-			"y": 2896.284432004255,
-			"width": 1004.8210863852469,
-			"height": 534.1176470588234,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 341,
+			"versionNonce": 1671626867,
+			"isDeleted": false,
+			"id": "ttsCezLQ",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
-			"roundness": null,
+			"angle": 0,
+			"x": 107.25034398532136,
+			"y": 2897.40393524549,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 1004.8210863852469,
+			"height": 534.1176470588234,
 			"seed": 8100,
-			"version": 340,
-			"versionNonce": 1406442787,
-			"updated": 1708266406449,
-			"isDeleted": false,
 			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [
 				{
 					"id": "C3hUm1wsi2PpW403kk20g",
 					"type": "arrow"
 				}
 			],
+			"updated": 1716470649318,
 			"link": "[[Learning_to_Relate_Images.pdf]]",
 			"locked": false,
-			"scale": [
-				1,
-				1
-			],
 			"customData": {
 				"mdProps": {
 					"useObsidianDefaults": false,
@@ -25545,54 +25310,40 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					"borderOpacity": 0,
 					"filenameVisible": false
 				}
-			}
+			},
+			"scale": [
+				1,
+				1
+			]
 		},
 		{
-			"id": "C3hUm1wsi2PpW403kk20g",
 			"type": "arrow",
-			"x": 1141.3629270031438,
-			"y": 2880.714391255504,
-			"width": 27.793514645781556,
-			"height": 244.9483802186678,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 527,
+			"versionNonce": 739581299,
+			"isDeleted": false,
+			"id": "C3hUm1wsi2PpW403kk20g",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 1141.3629270031438,
+			"y": 2881.833894496739,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 27.793514645781556,
+			"height": 243.96396028365325,
+			"seed": 454896461,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 454896461,
-			"version": 521,
-			"versionNonce": 1999207053,
-			"isDeleted": false,
 			"boundElements": [],
-			"updated": 1708266406449,
+			"updated": 1716470652389,
 			"link": null,
 			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					11.77476357862713,
-					216.9373387497776
-				],
-				[
-					-16.018751067154426,
-					244.9483802186678
-				]
-			],
-			"lastCommittedPoint": [
-				3.5294117647059693,
-				68.2352941176473
-			],
 			"startBinding": {
 				"elementId": "ttsCezLQ",
 				"focus": -1.0583019146979669,
@@ -25603,74 +25354,93 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 				"focus": 0.6232711173597856,
 				"gap": 13.272745565421246
 			},
+			"lastCommittedPoint": null,
 			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			"endArrowhead": "arrow",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					11.77476357862713,
+					215.81783550854243
+				],
+				[
+					-16.018751067154426,
+					243.96396028365325
+				]
+			]
 		},
 		{
-			"id": "ZkHaTu9R",
 			"type": "text",
-			"x": 89.12390501419503,
-			"y": 3454.5513642270444,
-			"width": 1008.698974609375,
-			"height": 75,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 174,
+			"versionNonce": 103481539,
+			"isDeleted": false,
+			"id": "ZkHaTu9R",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 89.12390501419503,
+			"y": 3454.5513642270444,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 1008.698974609375,
+			"height": 75,
+			"seed": 1168763309,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1168763309,
-			"version": 174,
-			"versionNonce": 103481539,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"text": "Which goes into detail about the task and discusses Higher order CRBMs which unlike standard RBMs\noperate multiplicatively can be thought of as dynamically modulating the connections between other\nvariables in the model",
-			"rawText": "Which goes into detail about the task and discusses Higher order CRBMs which unlike standard RBMs\noperate multiplicatively can be thought of as dynamically modulating the connections between other\nvariables in the model",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "Which goes into detail about the task and discusses Higher order CRBMs which unlike standard RBMs\noperate multiplicatively can be thought of as dynamically modulating the connections between other\nvariables in the model",
+			"rawText": "Which goes into detail about the task and discusses Higher order CRBMs which unlike standard RBMs\noperate multiplicatively can be thought of as dynamically modulating the connections between other\nvariables in the model",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 68,
 			"containerId": null,
 			"originalText": "Which goes into detail about the task and discusses Higher order CRBMs which unlike standard RBMs\noperate multiplicatively can be thought of as dynamically modulating the connections between other\nvariables in the model",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "XCZL0mffNF_pnJrhA0-lC",
 			"type": "arrow",
-			"x": 1123.471007019183,
-			"y": 3475.541368769631,
-			"width": 267.6225579179734,
-			"height": 38.0443832334372,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 97,
+			"versionNonce": 110403821,
+			"isDeleted": false,
+			"id": "XCZL0mffNF_pnJrhA0-lC",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 1123.471007019183,
+			"y": 3475.541368769631,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 267.6225579179734,
+			"height": 38.0443832334372,
+			"seed": 608718957,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 608718957,
-			"version": 97,
-			"versionNonce": 110403821,
-			"isDeleted": false,
 			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
@@ -25684,44 +25454,45 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					267.6225579179734,
 					38.0443832334372
 				]
-			],
-			"lastCommittedPoint": [
-				267.6225579179734,
-				38.0443832334372
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			]
 		},
 		{
-			"id": "L1oMHKf0pmn7UHXc2ZRQV",
 			"type": "arrow",
-			"x": 1118.2235058835363,
-			"y": 3472.9176182018073,
-			"width": 663.8088936592874,
-			"height": 52.47501135646462,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 149,
+			"versionNonce": 1395912803,
+			"isDeleted": false,
+			"id": "L1oMHKf0pmn7UHXc2ZRQV",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 1118.2235058835363,
+			"y": 3472.9176182018073,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 663.8088936592874,
+			"height": 52.47501135646462,
+			"seed": 1896611117,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1896611117,
-			"version": 149,
-			"versionNonce": 1395912803,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": {
+				"elementId": "hMX9RftN",
+				"focus": 0.19575971782504484,
+				"gap": 7.25481061579012
+			},
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
@@ -25735,114 +25506,103 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					663.8088936592874,
 					34.10875738170216
 				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": {
-				"elementId": "hMX9RftN",
-				"focus": 0.19575971782504484,
-				"gap": 7.25481061579012
-			},
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			]
 		},
 		{
-			"id": "xsQmr9eb",
 			"type": "text",
-			"x": 441.9209865520614,
-			"y": 3662.684374831505,
-			"width": 204.95118713378906,
-			"height": 105.15792940251737,
-			"angle": 0.332759020908064,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
+			"version": 332,
+			"versionNonce": 512490317,
+			"isDeleted": false,
+			"id": "xsQmr9eb",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0.332759020908064,
+			"x": 441.9209865520614,
+			"y": 3662.684374831505,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"width": 204.95118713378906,
+			"height": 105.15792940251737,
+			"seed": 611947949,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 611947949,
-			"version": 332,
-			"versionNonce": 512490317,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"text": "zk is varying the strength\nof the connection between xi\nand yj\nthe value of any of these\nvariables is a product of the\nothers",
-			"rawText": "zk is varying the strength\nof the connection between xi\nand yj\nthe value of any of these\nvariables is a product of the\nothers",
 			"fontSize": 14.021057253668983,
 			"fontFamily": 1,
+			"text": "zk is varying the strength\nof the connection between xi\nand yj\nthe value of any of these\nvariables is a product of the\nothers",
+			"rawText": "zk is varying the strength\nof the connection between xi\nand yj\nthe value of any of these\nvariables is a product of the\nothers",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 100,
 			"containerId": null,
 			"originalText": "zk is varying the strength\nof the connection between xi\nand yj\nthe value of any of these\nvariables is a product of the\nothers",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "NQKZXvLc",
 			"type": "text",
-			"x": -5.735985940082799,
-			"y": 3798.431921006186,
-			"width": 1196.9588623046875,
-			"height": 350,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 656,
+			"versionNonce": 1555950595,
+			"isDeleted": false,
+			"id": "NQKZXvLc",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -5.735985940082799,
+			"y": 3798.431921006186,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 1196.9588623046875,
+			"height": 350,
+			"seed": 506394893,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 506394893,
-			"version": 656,
-			"versionNonce": 1555950595,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"text": "But why do we need multiplicativity to learn relations/transformations?\n\nWell if we try to model a relation using sums, a hidden unit in such a model would receive as input the sum of two\nprojections, one from each image. To detect a particular transformation, the two receptive fields would need to be\ndefined such that one receptive field is the other modified by the transformation that the hidden unit is supposed to\ndetect.\n\nUnfortunately, however, the net input would be equally dependent on the images themselves not just the transformation.\nAs in if both images change, but the transformation (which in case lets say rotation) stays the same, the hidden layers\nvalue changes which is not what we want. its as if the hidden variables act like an OR gate, showing information from\nboth receptive fields.\n\nHowever if we allow multiplicative connections like an outer product between x and y (we take 2d binary images\nas an example)",
-			"rawText": "But why do we need multiplicativity to learn relations/transformations?\n\nWell if we try to model a relation using sums, a hidden unit in such a model would receive as input the sum of two\nprojections, one from each image. To detect a particular transformation, the two receptive fields would need to be\ndefined such that one receptive field is the other modified by the transformation that the hidden unit is supposed to\ndetect.\n\nUnfortunately, however, the net input would be equally dependent on the images themselves not just the transformation.\nAs in if both images change, but the transformation (which in case lets say rotation) stays the same, the hidden layers\nvalue changes which is not what we want. its as if the hidden variables act like an OR gate, showing information from\nboth receptive fields.\n\nHowever if we allow multiplicative connections like an outer product between x and y (we take 2d binary images\nas an example)",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "But why do we need multiplicativity to learn relations/transformations?\n\nWell if we try to model a relation using sums, a hidden unit in such a model would receive as input the sum of two\nprojections, one from each image. To detect a particular transformation, the two receptive fields would need to be\ndefined such that one receptive field is the other modified by the transformation that the hidden unit is supposed to\ndetect.\n\nUnfortunately, however, the net input would be equally dependent on the images themselves not just the transformation.\nAs in if both images change, but the transformation (which in case lets say rotation) stays the same, the hidden layers\nvalue changes which is not what we want. its as if the hidden variables act like an OR gate, showing information from\nboth receptive fields.\n\nHowever if we allow multiplicative connections like an outer product between x and y (we take 2d binary images\nas an example)",
+			"rawText": "But why do we need multiplicativity to learn relations/transformations?\n\nWell if we try to model a relation using sums, a hidden unit in such a model would receive as input the sum of two\nprojections, one from each image. To detect a particular transformation, the two receptive fields would need to be\ndefined such that one receptive field is the other modified by the transformation that the hidden unit is supposed to\ndetect.\n\nUnfortunately, however, the net input would be equally dependent on the images themselves not just the transformation.\nAs in if both images change, but the transformation (which in case lets say rotation) stays the same, the hidden layers\nvalue changes which is not what we want. its as if the hidden variables act like an OR gate, showing information from\nboth receptive fields.\n\nHowever if we allow multiplicative connections like an outer product between x and y (we take 2d binary images\nas an example)",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 343,
 			"containerId": null,
 			"originalText": "But why do we need multiplicativity to learn relations/transformations?\n\nWell if we try to model a relation using sums, a hidden unit in such a model would receive as input the sum of two\nprojections, one from each image. To detect a particular transformation, the two receptive fields would need to be\ndefined such that one receptive field is the other modified by the transformation that the hidden unit is supposed to\ndetect.\n\nUnfortunately, however, the net input would be equally dependent on the images themselves not just the transformation.\nAs in if both images change, but the transformation (which in case lets say rotation) stays the same, the hidden layers\nvalue changes which is not what we want. its as if the hidden variables act like an OR gate, showing information from\nboth receptive fields.\n\nHowever if we allow multiplicative connections like an outer product between x and y (we take 2d binary images\nas an example)",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "vS7Ub-QwVocGZqS_pJaG5",
 			"type": "image",
-			"x": 102.24269451197674,
-			"y": 4148.373679030692,
-			"width": 460.482476251872,
-			"height": 167.95375341553788,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
+			"version": 90,
+			"versionNonce": 1198066093,
+			"isDeleted": false,
+			"id": "vS7Ub-QwVocGZqS_pJaG5",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 102.24269451197674,
+			"y": 4148.373679030692,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"width": 460.482476251872,
+			"height": 167.95375341553788,
+			"seed": 1724486285,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1724486285,
-			"version": 90,
-			"versionNonce": 1198066093,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
@@ -25854,149 +25614,145 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			]
 		},
 		{
-			"id": "Jgi36hBE",
 			"type": "text",
-			"x": 141.09868837555035,
-			"y": 4131.035025622572,
-			"width": 11.239990234375,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 17,
+			"versionNonce": 113734563,
+			"isDeleted": false,
+			"id": "Jgi36hBE",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 141.09868837555035,
+			"y": 4131.035025622572,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 11.239990234375,
+			"height": 25,
+			"seed": 303924685,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 303924685,
-			"version": 17,
-			"versionNonce": 113734563,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"text": "x",
-			"rawText": "x",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "x",
+			"rawText": "x",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 18,
 			"containerId": null,
 			"originalText": "x",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "t05owGqu",
 			"type": "text",
-			"x": 254.72392969129805,
-			"y": 4131.035025837286,
-			"width": 9.379989624023438,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 27,
+			"versionNonce": 1112886285,
+			"isDeleted": false,
+			"id": "t05owGqu",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 254.72392969129805,
+			"y": 4131.035025837286,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 9.379989624023438,
+			"height": 25,
+			"seed": 1243913923,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1243913923,
-			"version": 27,
-			"versionNonce": 1112886285,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"text": "y",
-			"rawText": "y",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "y",
+			"rawText": "y",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 18,
 			"containerId": null,
 			"originalText": "y",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "nVhAJI5C",
 			"type": "text",
-			"x": 447.21786244706806,
-			"y": 4136.777458304023,
-			"width": 20.619979858398438,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 22,
+			"versionNonce": 830408515,
+			"isDeleted": false,
+			"id": "nVhAJI5C",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 447.21786244706806,
+			"y": 4136.777458304023,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 20.619979858398438,
+			"height": 25,
+			"seed": 1695798829,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1695798829,
-			"version": 22,
-			"versionNonce": 830408515,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"text": "xy",
-			"rawText": "xy",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "xy",
+			"rawText": "xy",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 18,
 			"containerId": null,
 			"originalText": "xy",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "P3zJjqgt",
 			"type": "text",
-			"x": 465.9973530493058,
-			"y": 4132.470633792935,
-			"width": 16.079986572265625,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 62,
+			"versionNonce": 1867137645,
+			"isDeleted": false,
+			"id": "P3zJjqgt",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 465.9973530493058,
+			"y": 4132.470633792935,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 16.079986572265625,
+			"height": 25,
+			"seed": 27205805,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 27205805,
-			"version": 62,
-			"versionNonce": 1867137645,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"text": "T",
-			"rawText": "T",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "T",
+			"rawText": "T",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 18,
 			"containerId": null,
 			"originalText": "T",
 			"lineHeight": 1.25
@@ -26035,69 +25791,67 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "T",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
-			"id": "fUVA5PP5",
 			"type": "text",
-			"x": 105.26023453306976,
-			"y": 4315.857263258637,
-			"width": 434.6408996582031,
-			"height": 40,
-			"angle": 0,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
+			"version": 99,
+			"versionNonce": 1930521805,
+			"isDeleted": false,
+			"id": "fUVA5PP5",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 105.26023453306976,
+			"y": 4315.857263258637,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"width": 434.6408996582031,
+			"height": 40,
+			"seed": 447843971,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 447843971,
-			"version": 99,
-			"versionNonce": 1930521805,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
-			"text": "This Operation maps an identity because x and y have\nthe same values at the same spots",
-			"rawText": "This Operation maps an identity because x and y have\nthe same values at the same spots",
 			"fontSize": 16,
 			"fontFamily": 1,
+			"text": "This Operation maps an identity because x and y have\nthe same values at the same spots",
+			"rawText": "This Operation maps an identity because x and y have\nthe same values at the same spots",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 34,
 			"containerId": null,
 			"originalText": "This Operation maps an identity because x and y have\nthe same values at the same spots",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "VLQXp6hRAs6UDJLHGQBvJ",
 			"type": "image",
-			"x": 656.6269232703687,
-			"y": 4161.777458,
-			"width": 438.9541763556464,
-			"height": 162.41304525158915,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
+			"version": 46,
+			"versionNonce": 312627843,
+			"isDeleted": false,
+			"id": "VLQXp6hRAs6UDJLHGQBvJ",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 656.6269232703687,
+			"y": 4161.777458,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"width": 438.9541763556464,
+			"height": 162.41304525158915,
+			"seed": 1696331107,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1696331107,
-			"version": 46,
-			"versionNonce": 312627843,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266406449,
 			"link": null,
 			"locked": false,
@@ -26142,8 +25896,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "This Operation maps a translation (movement by 1)\n because y is x moved by one pixel",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -26179,8 +25932,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "x",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -26216,8 +25968,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "y",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -26253,8 +26004,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "xy",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -26290,8 +26040,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "T",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -26327,74 +26076,81 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "T",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
-			"id": "EvFqWFye",
 			"type": "text",
-			"x": 34.93420217615062,
-			"y": 4364.032192917999,
-			"width": 1115.798828125,
-			"height": 325,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 175,
+			"versionNonce": 310025411,
+			"isDeleted": false,
+			"id": "EvFqWFye",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 34.93420217615062,
+			"y": 4364.032192917999,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 1115.798828125,
+			"height": 325,
+			"seed": 1126698925,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1126698925,
-			"version": 175,
-			"versionNonce": 310025411,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708266411296,
 			"link": null,
 			"locked": false,
-			"text": "very component of this matrix constitutes evidence for exactly one type of\ntransformation, The components act like AND-gates that can detect coincidences.\nSince a component is equal to 1 only when both corresponding pixels are equal to 1, a hidden unit that\npools over multiple components is much less likely to receive spurious activity that depends on the\nimage content rather than on the transformation.\n\n\n\n\n\nNote that pooling over the components of the matrix amounts to computing\nthe correlation of the output image with a transformed version of the input image. The same would be true for\nreal-valued images.",
-			"rawText": "very component of this matrix constitutes evidence for exactly one type of\ntransformation, The components act like AND-gates that can detect coincidences.\nSince a component is equal to 1 only when both corresponding pixels are equal to 1, a hidden unit that\npools over multiple components is much less likely to receive spurious activity that depends on the\nimage content rather than on the transformation.\n\n\n\n\n\nNote that pooling over the components of the matrix amounts to computing\nthe correlation of the output image with a transformed version of the input image. The same would be true for\nreal-valued images.",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "very component of this matrix constitutes evidence for exactly one type of\ntransformation, The components act like AND-gates that can detect coincidences.\nSince a component is equal to 1 only when both corresponding pixels are equal to 1, a hidden unit that\npools over multiple components is much less likely to receive spurious activity that depends on the\nimage content rather than on the transformation.\n\n\n\n\n\nNote that pooling over the components of the matrix amounts to computing\nthe correlation of the output image with a transformed version of the input image. The same would be true for\nreal-valued images.",
+			"rawText": "very component of this matrix constitutes evidence for exactly one type of\ntransformation, The components act like AND-gates that can detect coincidences.\nSince a component is equal to 1 only when both corresponding pixels are equal to 1, a hidden unit that\npools over multiple components is much less likely to receive spurious activity that depends on the\nimage content rather than on the transformation.\n\n\n\n\n\nNote that pooling over the components of the matrix amounts to computing\nthe correlation of the output image with a transformed version of the input image. The same would be true for\nreal-valued images.",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 318,
 			"containerId": null,
 			"originalText": "very component of this matrix constitutes evidence for exactly one type of\ntransformation, The components act like AND-gates that can detect coincidences.\nSince a component is equal to 1 only when both corresponding pixels are equal to 1, a hidden unit that\npools over multiple components is much less likely to receive spurious activity that depends on the\nimage content rather than on the transformation.\n\n\n\n\n\nNote that pooling over the components of the matrix amounts to computing\nthe correlation of the output image with a transformed version of the input image. The same would be true for\nreal-valued images.",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "PPZsgmFx_0HhwSlYJ8Lur",
 			"type": "arrow",
-			"x": -7058.702262882796,
-			"y": 4026.7684861296666,
-			"width": 396.3246483267103,
-			"height": 6.367604562317865,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 341,
+			"versionNonce": 1384374339,
+			"isDeleted": false,
+			"id": "PPZsgmFx_0HhwSlYJ8Lur",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -7058.702262882796,
+			"y": 4026.7684861296666,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 396.3246483267103,
+			"height": 6.367604562317865,
+			"seed": 164458211,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 164458211,
-			"version": 341,
-			"versionNonce": 1384374339,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267006543,
 			"link": null,
 			"locked": false,
+			"startBinding": {
+				"elementId": "FBM4WSE3",
+				"focus": -0.11151084253237152,
+				"gap": 23.537331833393182
+			},
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
@@ -26404,119 +26160,113 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					-396.3246483267103,
 					-6.367604562317865
 				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": {
-				"elementId": "FBM4WSE3",
-				"focus": -0.11151084253237152,
-				"gap": 23.537331833393182
-			},
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			]
 		},
 		{
-			"id": "pfzz2qAn",
 			"type": "text",
-			"x": -7386.561988206976,
-			"y": 3936.364488454902,
-			"width": 274.47967529296875,
-			"height": 75,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 89,
+			"versionNonce": 1999432451,
+			"isDeleted": false,
+			"id": "pfzz2qAn",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -7386.561988206976,
+			"y": 3936.364488454902,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 274.47967529296875,
+			"height": 75,
+			"seed": 355463363,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 355463363,
-			"version": 89,
-			"versionNonce": 1999432451,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267003773,
 			"link": null,
 			"locked": false,
-			"text": "Theres a small problem with\nthis algorithm that we need\nto fix",
-			"rawText": "Theres a small problem with\nthis algorithm that we need\nto fix",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "Theres a small problem with\nthis algorithm that we need\nto fix",
+			"rawText": "Theres a small problem with\nthis algorithm that we need\nto fix",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 68,
 			"containerId": null,
 			"originalText": "Theres a small problem with\nthis algorithm that we need\nto fix",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "D1a4O7Wb",
 			"type": "text",
-			"x": -8130.071815620718,
-			"y": 3766.909254659845,
-			"width": 387.045654296875,
-			"height": 35,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 94,
+			"versionNonce": 484899811,
+			"isDeleted": false,
+			"id": "D1a4O7Wb",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8130.071815620718,
+			"y": 3766.909254659845,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 387.045654296875,
+			"height": 35,
+			"seed": 419752835,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 419752835,
-			"version": 94,
-			"versionNonce": 484899811,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267020777,
 			"link": null,
 			"locked": false,
-			"text": "What we are currently doing",
-			"rawText": "What we are currently doing",
 			"fontSize": 28,
 			"fontFamily": 1,
+			"text": "What we are currently doing",
+			"rawText": "What we are currently doing",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 25,
 			"containerId": null,
 			"originalText": "What we are currently doing",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "DGnC2NdopwIZhudrwWdCH",
 			"type": "arrow",
-			"x": -8143.47941510182,
-			"y": 4071.4138195183914,
-			"width": 481.3855187908275,
-			"height": 1.0891075085764896,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 56,
+			"versionNonce": 411950285,
+			"isDeleted": false,
+			"id": "DGnC2NdopwIZhudrwWdCH",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8143.47941510182,
+			"y": 4071.4138195183914,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 481.3855187908275,
+			"height": 1.0891075085764896,
+			"seed": 952999715,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 952999715,
-			"version": 56,
-			"versionNonce": 411950285,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267028544,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
@@ -26526,41 +26276,41 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					481.3855187908275,
 					1.0891075085764896
 				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			]
 		},
 		{
-			"id": "qsB8K3Bx5A2Ijf7LkgRDz",
 			"type": "line",
-			"x": -8099.760997282732,
-			"y": 3858.4891764517315,
-			"width": 338.19189617069605,
-			"height": 191.11774597553313,
-			"angle": 0,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
+			"version": 173,
+			"versionNonce": 928685197,
+			"isDeleted": false,
+			"id": "qsB8K3Bx5A2Ijf7LkgRDz",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8099.760997282732,
+			"y": 3858.4891764517315,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"width": 338.19189617069605,
+			"height": 191.11774597553313,
+			"seed": 1936510349,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1936510349,
-			"version": 173,
-			"versionNonce": 928685197,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267096578,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -26582,44 +26332,41 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					338.19189617069605,
 					7.078435036130941
 				]
-			],
-			"lastCommittedPoint": [
-				333.4729394799424,
-				-9.43791338150777
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
+			]
 		},
 		{
-			"id": "-siQ9DdsYfW9bF9qwWmB1",
 			"type": "arrow",
-			"x": -8144.234291688177,
-			"y": 4068.2965690328656,
-			"width": 0.7992343814912601,
-			"height": 247.76265826237204,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 77,
+			"versionNonce": 1288507245,
+			"isDeleted": false,
+			"id": "-siQ9DdsYfW9bF9qwWmB1",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8144.234291688177,
+			"y": 4068.2965690328656,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 0.7992343814912601,
+			"height": 247.76265826237204,
+			"seed": 912341965,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 912341965,
-			"version": 77,
-			"versionNonce": 1288507245,
-			"isDeleted": false,
 			"boundElements": [],
 			"updated": 1708267058983,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
@@ -26629,81 +26376,77 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					0.7992343814912601,
 					-247.76265826237204
 				]
-			],
-			"lastCommittedPoint": [
-				0.7992343814912601,
-				-247.76265826237204
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			]
 		},
 		{
-			"id": "VuZL3cv1",
 			"type": "text",
-			"x": -8238.617477467404,
-			"y": 3818.136207626019,
-			"width": 86.46437072753906,
-			"height": 35,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 7,
+			"versionNonce": 1768231533,
+			"isDeleted": false,
+			"id": "VuZL3cv1",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8238.617477467404,
+			"y": 3818.136207626019,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 86.46437072753906,
+			"height": 35,
+			"seed": 2092332419,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 2092332419,
-			"version": 7,
-			"versionNonce": 1768231533,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267062087,
 			"link": null,
 			"locked": false,
-			"text": "Energy",
-			"rawText": "Energy",
 			"fontSize": 28,
 			"fontFamily": 1,
+			"text": "Energy",
+			"rawText": "Energy",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 25,
 			"containerId": null,
 			"originalText": "Energy",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "fBoZ6N7DZ-6gSsnK76mi9",
 			"type": "line",
-			"x": -7940.61048048157,
-			"y": 4064.9100727238424,
-			"width": 0,
-			"height": 18.410882538322312,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 27,
+			"versionNonce": 445961315,
+			"isDeleted": false,
+			"id": "fBoZ6N7DZ-6gSsnK76mi9",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -7940.61048048157,
+			"y": 4064.9100727238424,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 0,
+			"height": 18.410882538322312,
+			"seed": 1256921901,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1256921901,
-			"version": 27,
-			"versionNonce": 445961315,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267095094,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -26713,76 +26456,75 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					0,
 					18.410882538322312
 				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
+			]
 		},
 		{
-			"id": "T7nLf56L",
 			"type": "text",
-			"x": -7947.212552003889,
-			"y": 4087.111431078879,
-			"width": 21.868087768554688,
-			"height": 35,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 36,
+			"versionNonce": 527874349,
+			"isDeleted": false,
+			"id": "T7nLf56L",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -7947.212552003889,
+			"y": 4087.111431078879,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 21.868087768554688,
+			"height": 35,
+			"seed": 2052889933,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 2052889933,
-			"version": 36,
-			"versionNonce": 527874349,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267102976,
 			"link": null,
 			"locked": false,
-			"text": "xi",
-			"rawText": "xi",
 			"fontSize": 28,
 			"fontFamily": 1,
+			"text": "xi",
+			"rawText": "xi",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 25,
 			"containerId": null,
 			"originalText": "xi",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "7xZAOxfiG4vfR5Y5wteoz",
 			"type": "line",
-			"x": -8044.7559824090085,
-			"y": 4061.7149420274536,
-			"width": 0.33283854094952403,
-			"height": 18.97179683412969,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 68,
+			"versionNonce": 3787651,
+			"isDeleted": false,
+			"id": "7xZAOxfiG4vfR5Y5wteoz",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8044.7559824090085,
+			"y": 4061.7149420274536,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 0.33283854094952403,
+			"height": 18.97179683412969,
+			"seed": 120644771,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 120644771,
-			"version": 68,
-			"versionNonce": 3787651,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267137374,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -26792,150 +26534,147 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					0.33283854094952403,
 					18.97179683412969
 				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
+			]
 		},
 		{
-			"id": "xaGbEaGS",
 			"type": "text",
-			"x": -8054.220488030695,
-			"y": 4084.68080135298,
-			"width": 24.92010498046875,
-			"height": 35,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 21,
+			"versionNonce": 1728480237,
+			"isDeleted": false,
+			"id": "xaGbEaGS",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8054.220488030695,
+			"y": 4084.68080135298,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 24.92010498046875,
+			"height": 35,
+			"seed": 405341891,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 405341891,
-			"version": 21,
-			"versionNonce": 1728480237,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267145908,
 			"link": null,
 			"locked": false,
-			"text": "xj",
-			"rawText": "xj",
 			"fontSize": 28,
 			"fontFamily": 1,
+			"text": "xj",
+			"rawText": "xj",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 25,
 			"containerId": null,
 			"originalText": "xj",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "pauInHWq",
 			"type": "text",
-			"x": -8024.493514860663,
-			"y": 3926.633229120669,
-			"width": 191.88844299316406,
-			"height": 40,
-			"angle": 0,
-			"strokeColor": "#f08c00",
-			"backgroundColor": "transparent",
+			"version": 95,
+			"versionNonce": 768156237,
+			"isDeleted": false,
+			"id": "pauInHWq",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8024.493514860663,
+			"y": 3926.633229120669,
+			"strokeColor": "#f08c00",
+			"backgroundColor": "transparent",
+			"width": 191.88844299316406,
+			"height": 40,
+			"seed": 687746221,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 687746221,
-			"version": 95,
-			"versionNonce": 768156237,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267176790,
 			"link": null,
 			"locked": false,
-			"text": "Performing gibbs sampling\nto find a random point",
-			"rawText": "Performing gibbs sampling\nto find a random point",
 			"fontSize": 16,
 			"fontFamily": 1,
+			"text": "Performing gibbs sampling\nto find a random point",
+			"rawText": "Performing gibbs sampling\nto find a random point",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 34,
 			"containerId": null,
 			"originalText": "Performing gibbs sampling\nto find a random point",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "nLZhw6ac",
 			"type": "text",
-			"x": -8271.037609063125,
-			"y": 4130.030713442037,
-			"width": 650.7373657226562,
-			"height": 120,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 637,
+			"versionNonce": 791127341,
+			"isDeleted": false,
+			"id": "nLZhw6ac",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8271.037609063125,
+			"y": 4130.030713442037,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 650.7373657226562,
+			"height": 120,
+			"seed": 1135915789,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1135915789,
-			"version": 637,
-			"versionNonce": 791127341,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267381822,
 			"link": null,
 			"locked": false,
-			"text": "We find a point we want to decrease the energy of (xi)\nand we sample a random point to increase the energy of (xj)\ngibbs sampling only is activated k times.\nThe way the sampling works, points that already have a high energy will less likely\nbe sampled (because they have low prob of being sampled)\nthus not allowing us to actually stray away from points that are close to xi",
-			"rawText": "We find a point we want to decrease the energy of (xi)\nand we sample a random point to increase the energy of (xj)\ngibbs sampling only is activated k times.\nThe way the sampling works, points that already have a high energy will less likely\nbe sampled (because they have low prob of being sampled)\nthus not allowing us to actually stray away from points that are close to xi",
 			"fontSize": 16,
 			"fontFamily": 1,
+			"text": "We find a point we want to decrease the energy of (xi)\nand we sample a random point to increase the energy of (xj)\ngibbs sampling only is activated k times.\nThe way the sampling works, points that already have a high energy will less likely\nbe sampled (because they have low prob of being sampled)\nthus not allowing us to actually stray away from points that are close to xi",
+			"rawText": "We find a point we want to decrease the energy of (xi)\nand we sample a random point to increase the energy of (xj)\ngibbs sampling only is activated k times.\nThe way the sampling works, points that already have a high energy will less likely\nbe sampled (because they have low prob of being sampled)\nthus not allowing us to actually stray away from points that are close to xi",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 114,
 			"containerId": null,
 			"originalText": "We find a point we want to decrease the energy of (xi)\nand we sample a random point to increase the energy of (xj)\ngibbs sampling only is activated k times.\nThe way the sampling works, points that already have a high energy will less likely\nbe sampled (because they have low prob of being sampled)\nthus not allowing us to actually stray away from points that are close to xi",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "gX75SdzYArsAlSOA4sTbS",
 			"type": "line",
-			"x": -7940.128846816887,
-			"y": 4047.090905636748,
-			"width": 209.87822967695047,
-			"height": 71.94608684666264,
-			"angle": 0,
-			"strokeColor": "#f08c00",
-			"backgroundColor": "transparent",
+			"version": 256,
+			"versionNonce": 1008190285,
+			"isDeleted": false,
+			"id": "gX75SdzYArsAlSOA4sTbS",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "dashed",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -7940.128846816887,
+			"y": 4047.090905636748,
+			"strokeColor": "#f08c00",
+			"backgroundColor": "transparent",
+			"width": 209.87822967695047,
+			"height": 71.94608684666264,
+			"seed": 1469549475,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1469549475,
-			"version": 256,
-			"versionNonce": 1008190285,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267337861,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -26969,15 +26708,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					114.94345235857327,
 					-71.94608684666264
 				]
-			],
-			"lastCommittedPoint": [
-				114.94345235857327,
-				-71.94608684666264
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
+			]
 		},
 		{
 			"type": "text",
@@ -27013,8 +26744,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Reality",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -27147,8 +26877,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Energy",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -27228,8 +26957,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "xi",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -27307,37 +27035,41 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "xj",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
-			"id": "brqGSqpqbVv_zKLzkFAtY",
 			"type": "line",
-			"x": -8126.0423203415,
-			"y": 4557.012419942247,
-			"width": 525.4962177647085,
-			"height": 198.61274372209482,
-			"angle": 0,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
+			"version": 487,
+			"versionNonce": 474417741,
+			"isDeleted": false,
+			"id": "brqGSqpqbVv_zKLzkFAtY",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8126.0423203415,
+			"y": 4557.012419942247,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"width": 525.4962177647085,
+			"height": 198.61274372209482,
+			"seed": 1378648525,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1378648525,
-			"version": 487,
-			"versionNonce": 474417741,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267446823,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -27387,44 +27119,45 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					525.4962177647085,
 					-195.8542333926207
 				]
-			],
-			"lastCommittedPoint": [
-				525.4962177647085,
-				-195.8542333926207
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
+			]
 		},
 		{
-			"id": "ugdn5j_V1-NS7YKhx4tik",
 			"type": "arrow",
-			"x": -8283.023301001555,
-			"y": 4609.629761917757,
-			"width": 156.04085484171446,
-			"height": 39.010213710428616,
-			"angle": 0,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
+			"version": 60,
+			"versionNonce": 923029667,
+			"isDeleted": false,
+			"id": "ugdn5j_V1-NS7YKhx4tik",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8283.023301001555,
+			"y": 4609.629761917757,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"width": 156.04085484171446,
+			"height": 39.010213710428616,
+			"seed": 1892944909,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1892944909,
-			"version": 60,
-			"versionNonce": 923029667,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267638629,
 			"link": null,
 			"locked": false,
+			"startBinding": {
+				"elementId": "JW6BZ3mp",
+				"focus": -1.0409550504432254,
+				"gap": 12.095692254099959
+			},
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
@@ -27434,80 +27167,75 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					156.04085484171446,
 					-39.010213710428616
 				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": {
-				"elementId": "JW6BZ3mp",
-				"focus": -1.0409550504432254,
-				"gap": 12.095692254099959
-			},
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			]
 		},
 		{
-			"id": "0WFUlQSi",
 			"type": "text",
-			"x": -8572.0277186924,
-			"y": 4592.562793419444,
-			"width": 267.55255126953125,
-			"height": 40,
-			"angle": 0,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
+			"version": 90,
+			"versionNonce": 92657933,
+			"isDeleted": false,
+			"id": "0WFUlQSi",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8572.0277186924,
+			"y": 4592.562793419444,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"width": 267.55255126953125,
+			"height": 40,
+			"seed": 70087875,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 70087875,
-			"version": 90,
-			"versionNonce": 92657933,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267492634,
 			"link": null,
 			"locked": false,
-			"text": "We want to be able to reach and\nsample those points as well!",
-			"rawText": "We want to be able to reach and\nsample those points as well!",
 			"fontSize": 16,
 			"fontFamily": 1,
+			"text": "We want to be able to reach and\nsample those points as well!",
+			"rawText": "We want to be able to reach and\nsample those points as well!",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 34,
 			"containerId": null,
 			"originalText": "We want to be able to reach and\nsample those points as well!",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "kwHXsCk3TdxaN4PPXmd4c",
 			"type": "line",
-			"x": -7742.826922026524,
-			"y": 4554.48569085401,
-			"width": 187.60179138040803,
-			"height": 81.2526963991968,
-			"angle": 0,
-			"strokeColor": "#f08c00",
-			"backgroundColor": "transparent",
+			"version": 206,
+			"versionNonce": 1922069261,
+			"isDeleted": false,
+			"id": "kwHXsCk3TdxaN4PPXmd4c",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "dashed",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -7742.826922026524,
+			"y": 4554.48569085401,
+			"strokeColor": "#f08c00",
+			"backgroundColor": "transparent",
+			"width": 187.60179138040803,
+			"height": 81.2526963991968,
+			"seed": 2091147555,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 2091147555,
-			"version": 206,
-			"versionNonce": 1922069261,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267508065,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -27537,38 +27265,30 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					-94.42209367490796,
 					-81.2526963991968
 				]
-			],
-			"lastCommittedPoint": [
-				-94.42209367490796,
-				-81.2526963991968
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
+			]
 		},
 		{
-			"id": "JW6BZ3mp",
 			"type": "text",
-			"x": -8302.801033283678,
-			"y": 4621.725454171857,
-			"width": 796.8991088867188,
-			"height": 150,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 539,
+			"versionNonce": 832548387,
+			"isDeleted": false,
+			"id": "JW6BZ3mp",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "dashed",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8302.801033283678,
+			"y": 4621.725454171857,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 796.8991088867188,
+			"height": 150,
+			"seed": 1623583469,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1623583469,
-			"version": 539,
-			"versionNonce": 832548387,
-			"isDeleted": false,
 			"boundElements": [
 				{
 					"id": "ugdn5j_V1-NS7YKhx4tik",
@@ -27582,54 +27302,42 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"updated": 1708267647212,
 			"link": null,
 			"locked": false,
-			"text": "There are some points \"over the hill\" that are very unlikely to be sampled\nby gibbs because our dataset has very few points in that region thus\nwe only rarely reach that point that might have a lot of incorrect probabilities\nthat need to be lowered (increase in energy in the graph)\nfixing those is a key part of modelling the distribution well even if we dont have\na lot of datapoints there",
-			"rawText": "There are some points \"over the hill\" that are very unlikely to be sampled\nby gibbs because our dataset has very few points in that region thus\nwe only rarely reach that point that might have a lot of incorrect probabilities\nthat need to be lowered (increase in energy in the graph)\nfixing those is a key part of modelling the distribution well even if we dont have\na lot of datapoints there",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "There are some points \"over the hill\" that are very unlikely to be sampled\nby gibbs because our dataset has very few points in that region thus\nwe only rarely reach that point that might have a lot of incorrect probabilities\nthat need to be lowered (increase in energy in the graph)\nfixing those is a key part of modelling the distribution well even if we dont have\na lot of datapoints there",
+			"rawText": "There are some points \"over the hill\" that are very unlikely to be sampled\nby gibbs because our dataset has very few points in that region thus\nwe only rarely reach that point that might have a lot of incorrect probabilities\nthat need to be lowered (increase in energy in the graph)\nfixing those is a key part of modelling the distribution well even if we dont have\na lot of datapoints there",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 143,
 			"containerId": null,
 			"originalText": "There are some points \"over the hill\" that are very unlikely to be sampled\nby gibbs because our dataset has very few points in that region thus\nwe only rarely reach that point that might have a lot of incorrect probabilities\nthat need to be lowered (increase in energy in the graph)\nfixing those is a key part of modelling the distribution well even if we dont have\na lot of datapoints there",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "OVsa9oxhyGY5qU3XWh-Zz",
 			"type": "arrow",
-			"x": -7905.768876431173,
-			"y": 4788.193464746365,
-			"width": 1.0508833394642352,
-			"height": 88.27420051500667,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 28,
+			"versionNonce": 10616845,
+			"isDeleted": false,
+			"id": "OVsa9oxhyGY5qU3XWh-Zz",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -7905.768876431173,
+			"y": 4788.193464746365,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 1.0508833394642352,
+			"height": 88.27420051500667,
+			"seed": 2069635021,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 2069635021,
-			"version": 28,
-			"versionNonce": 10616845,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267663692,
 			"link": null,
 			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					1.0508833394642352,
-					88.27420051500667
-				]
-			],
-			"lastCommittedPoint": null,
 			"startBinding": {
 				"elementId": "JW6BZ3mp",
 				"focus": 0.006276073880284157,
@@ -27640,31 +27348,42 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 				"focus": -0.00423010200820489,
 				"gap": 15.763250091965347
 			},
+			"lastCommittedPoint": null,
 			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			"endArrowhead": "arrow",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					1.0508833394642352,
+					88.27420051500667
+				]
+			]
 		},
 		{
-			"id": "LwwjSh4W",
 			"type": "text",
-			"x": -8139.904078746385,
-			"y": 4887.230915353337,
-			"width": 472.47393798828125,
-			"height": 35,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 55,
+			"versionNonce": 1990136205,
+			"isDeleted": false,
+			"id": "LwwjSh4W",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8139.904078746385,
+			"y": 4887.230915353337,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 472.47393798828125,
+			"height": 35,
+			"seed": 1545779789,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1545779789,
-			"version": 55,
-			"versionNonce": 1990136205,
-			"isDeleted": false,
 			"boundElements": [
 				{
 					"id": "OVsa9oxhyGY5qU3XWh-Zz",
@@ -27674,76 +27393,74 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"updated": 1708267666278,
 			"link": null,
 			"locked": false,
-			"text": "Persistent Contrastive Divergence",
-			"rawText": "Persistent Contrastive Divergence",
 			"fontSize": 28,
 			"fontFamily": 1,
+			"text": "Persistent Contrastive Divergence",
+			"rawText": "Persistent Contrastive Divergence",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 25,
 			"containerId": null,
 			"originalText": "Persistent Contrastive Divergence",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "b9vTa2tj",
 			"type": "text",
-			"x": -8399.638531209053,
-			"y": 4922.2309153893175,
-			"width": 962.1390380859375,
-			"height": 275,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 721,
+			"versionNonce": 1778782669,
+			"isDeleted": false,
+			"id": "b9vTa2tj",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -8399.638531209053,
+			"y": 4922.2309153893175,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 962.1390380859375,
+			"height": 275,
+			"seed": 1727277411,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1727277411,
-			"version": 721,
-			"versionNonce": 1778782669,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708267825879,
 			"link": null,
 			"locked": false,
-			"text": "A solution that is on the simpler side of things but it does improve our algorithm\n\nPerform our CD algorithm on the first iteration exactly the same as before!\nwhere we obtained xi to increase and xj to decrease\n\non the next iteration instead of using the new observed point xi in order to\nperform gibbs sampling to get a new xj, use the previously random point xj as the starting\npoint for gibbs sampling to obtain a new xj!\n\nthat way after enough iterations we can sample things from different regions that are not\nrepresented too well because the sampling presists on the last xj not on the new observed point",
-			"rawText": "A solution that is on the simpler side of things but it does improve our algorithm\n\nPerform our CD algorithm on the first iteration exactly the same as before!\nwhere we obtained xi to increase and xj to decrease\n\non the next iteration instead of using the new observed point xi in order to\nperform gibbs sampling to get a new xj, use the previously random point xj as the starting\npoint for gibbs sampling to obtain a new xj!\n\nthat way after enough iterations we can sample things from different regions that are not\nrepresented too well because the sampling presists on the last xj not on the new observed point",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "A solution that is on the simpler side of things but it does improve our algorithm\n\nPerform our CD algorithm on the first iteration exactly the same as before!\nwhere we obtained xi to increase and xj to decrease\n\non the next iteration instead of using the new observed point xi in order to\nperform gibbs sampling to get a new xj, use the previously random point xj as the starting\npoint for gibbs sampling to obtain a new xj!\n\nthat way after enough iterations we can sample things from different regions that are not\nrepresented too well because the sampling presists on the last xj not on the new observed point",
+			"rawText": "A solution that is on the simpler side of things but it does improve our algorithm\n\nPerform our CD algorithm on the first iteration exactly the same as before!\nwhere we obtained xi to increase and xj to decrease\n\non the next iteration instead of using the new observed point xi in order to\nperform gibbs sampling to get a new xj, use the previously random point xj as the starting\npoint for gibbs sampling to obtain a new xj!\n\nthat way after enough iterations we can sample things from different regions that are not\nrepresented too well because the sampling presists on the last xj not on the new observed point",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 268,
 			"containerId": null,
 			"originalText": "A solution that is on the simpler side of things but it does improve our algorithm\n\nPerform our CD algorithm on the first iteration exactly the same as before!\nwhere we obtained xi to increase and xj to decrease\n\non the next iteration instead of using the new observed point xi in order to\nperform gibbs sampling to get a new xj, use the previously random point xj as the starting\npoint for gibbs sampling to obtain a new xj!\n\nthat way after enough iterations we can sample things from different regions that are not\nrepresented too well because the sampling presists on the last xj not on the new observed point",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "ICkaXOM8",
 			"type": "text",
-			"x": 2038.263596140815,
-			"y": 2765.5505358265864,
-			"width": 961.7389526367188,
-			"height": 225,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 824,
+			"versionNonce": 1658771555,
+			"isDeleted": false,
+			"id": "ICkaXOM8",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 2038.263596140815,
+			"y": 2765.5505358265864,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 961.7389526367188,
+			"height": 225,
+			"seed": 1387943267,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1387943267,
-			"version": 824,
-			"versionNonce": 1658771555,
-			"isDeleted": false,
 			"boundElements": [
 				{
 					"id": "z82jGCKrl-eT8ZszWvlNH",
@@ -27753,43 +27470,51 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"updated": 1708268538703,
 			"link": null,
 			"locked": false,
-			"text": "However training CRBMs with contrastive divergence \nis not good enough because of the variable y we are limiting\nthe overall probability distribution of x to only ones that conform to y\nmeaning we need to model a probability distribution chain for each sample\ninstead of chaining them together like CD\n\nThis gets a bit too complicated and quite honestly not important enough for me to summarize it\n2 days before the exam.... I encourage you to read this paper if you really want to know\nthe full details and the 2 new algorithms suggested to train CRBMs",
-			"rawText": "However training CRBMs with contrastive divergence \nis not good enough because of the variable y we are limiting\nthe overall probability distribution of x to only ones that conform to y\nmeaning we need to model a probability distribution chain for each sample\ninstead of chaining them together like CD\n\nThis gets a bit too complicated and quite honestly not important enough for me to summarize it\n2 days before the exam.... I encourage you to read this paper if you really want to know\nthe full details and the 2 new algorithms suggested to train CRBMs",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "However training CRBMs with contrastive divergence \nis not good enough because of the variable y we are limiting\nthe overall probability distribution of x to only ones that conform to y\nmeaning we need to model a probability distribution chain for each sample\ninstead of chaining them together like CD\n\nThis gets a bit too complicated and quite honestly not important enough for me to summarize it\n2 days before the exam.... I encourage you to read this paper if you really want to know\nthe full details and the 2 new algorithms suggested to train CRBMs",
+			"rawText": "However training CRBMs with contrastive divergence \nis not good enough because of the variable y we are limiting\nthe overall probability distribution of x to only ones that conform to y\nmeaning we need to model a probability distribution chain for each sample\ninstead of chaining them together like CD\n\nThis gets a bit too complicated and quite honestly not important enough for me to summarize it\n2 days before the exam.... I encourage you to read this paper if you really want to know\nthe full details and the 2 new algorithms suggested to train CRBMs",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 218,
 			"containerId": null,
 			"originalText": "However training CRBMs with contrastive divergence \nis not good enough because of the variable y we are limiting\nthe overall probability distribution of x to only ones that conform to y\nmeaning we need to model a probability distribution chain for each sample\ninstead of chaining them together like CD\n\nThis gets a bit too complicated and quite honestly not important enough for me to summarize it\n2 days before the exam.... I encourage you to read this paper if you really want to know\nthe full details and the 2 new algorithms suggested to train CRBMs",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "z82jGCKrl-eT8ZszWvlNH",
 			"type": "arrow",
-			"x": 2519.133072459174,
-			"y": 2604.6654720938145,
-			"width": 0,
-			"height": 139.1783487846983,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 57,
+			"versionNonce": 722659523,
+			"isDeleted": false,
+			"id": "z82jGCKrl-eT8ZszWvlNH",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 2519.133072459174,
+			"y": 2604.6654720938145,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 0,
+			"height": 139.1783487846983,
+			"seed": 1497577475,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1497577475,
-			"version": 57,
-			"versionNonce": 722659523,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708268538703,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": {
+				"elementId": "ICkaXOM8",
+				"focus": -9.456773059669083e-16,
+				"gap": 21.706714948073568
+			},
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
@@ -27799,46 +27524,34 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					0,
 					139.1783487846983
 				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": {
-				"elementId": "ICkaXOM8",
-				"focus": -9.456773059669083e-16,
-				"gap": 21.706714948073568
-			},
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			]
 		},
 		{
-			"id": "2opmKlJE",
 			"type": "embeddable",
-			"x": 2032.9129392007396,
-			"y": 3002.0363237804404,
-			"width": 971.1634009316866,
-			"height": 500,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
+			"version": 237,
+			"versionNonce": 410434499,
+			"isDeleted": false,
+			"id": "2opmKlJE",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
-			"roundness": null,
+			"angle": 0,
+			"x": 2032.9129392007396,
+			"y": 3002.0363237804404,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"width": 971.1634009316866,
+			"height": 500,
 			"seed": 1204,
-			"version": 237,
-			"versionNonce": 410434499,
-			"updated": 1708268561531,
-			"isDeleted": false,
 			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
+			"updated": 1708268561531,
 			"link": "[[CRBM.pdf]]",
 			"locked": false,
-			"scale": [
-				1,
-				1
-			],
 			"customData": {
 				"mdProps": {
 					"useObsidianDefaults": false,
@@ -27851,30 +27564,34 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					"borderOpacity": 0,
 					"filenameVisible": false
 				}
-			}
+			},
+			"scale": [
+				1,
+				1
+			]
 		},
 		{
-			"id": "nWfh3ac2Jo8AtUMUxsPV9",
 			"type": "image",
-			"x": 989.7522599530922,
-			"y": 1288.538890178295,
-			"width": 612.7195277349963,
-			"height": 171.77020117482152,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
+			"version": 238,
+			"versionNonce": 1928555949,
+			"isDeleted": false,
+			"id": "nWfh3ac2Jo8AtUMUxsPV9",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 989.7522599530922,
+			"y": 1288.538890178295,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"width": 612.7195277349963,
+			"height": 171.77020117482152,
+			"seed": 15810221,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 15810221,
-			"version": 238,
-			"versionNonce": 1928555949,
-			"isDeleted": false,
 			"boundElements": [
 				{
 					"id": "B0PMkcZYDNFr4xeqfdySu",
@@ -27892,42 +27609,31 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			]
 		},
 		{
-			"id": "B0PMkcZYDNFr4xeqfdySu",
 			"type": "arrow",
-			"x": 855.8308929404906,
-			"y": 1357.9323024425885,
-			"width": 127.97098613816047,
-			"height": 0.6093856482768842,
-			"angle": 0,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
+			"version": 54,
+			"versionNonce": 1458778125,
+			"isDeleted": false,
+			"id": "B0PMkcZYDNFr4xeqfdySu",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 855.8308929404906,
+			"y": 1357.9323024425885,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"width": 127.97098613816047,
+			"height": 0.6093856482768842,
+			"seed": 475875299,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 475875299,
-			"version": 54,
-			"versionNonce": 1458778125,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708268643416,
 			"link": null,
 			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					127.97098613816047,
-					0.6093856482768842
-				]
-			],
-			"lastCommittedPoint": null,
 			"startBinding": {
 				"elementId": "Ck577QYZ",
 				"focus": 0.12078392458616956,
@@ -27938,111 +27644,125 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 				"focus": 0.16480947358918338,
 				"gap": 5.950380874441123
 			},
+			"lastCommittedPoint": null,
 			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			"endArrowhead": "arrow",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					127.97098613816047,
+					0.6093856482768842
+				]
+			]
 		},
 		{
-			"id": "r96saocz",
 			"type": "text",
-			"x": 1016.7215600763595,
-			"y": 1456.3603075699236,
-			"width": 104.81986999511719,
-			"height": 50,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 47,
+			"versionNonce": 1919095011,
+			"isDeleted": false,
+			"id": "r96saocz",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 1016.7215600763595,
+			"y": 1456.3603075699236,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 104.81986999511719,
+			"height": 50,
+			"seed": 1043989219,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1043989219,
-			"version": 47,
-			"versionNonce": 1919095011,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708268658615,
 			"link": null,
 			"locked": false,
-			"text": "Noisy input\nimage",
-			"rawText": "Noisy input\nimage",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "Noisy input\nimage",
+			"rawText": "Noisy input\nimage",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 43,
 			"containerId": null,
 			"originalText": "Noisy input\nimage",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "UoZ6qNwc",
 			"type": "text",
-			"x": 1252.1639424116495,
-			"y": 1527.7880890790334,
-			"width": 216.17974853515625,
-			"height": 100,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 154,
+			"versionNonce": 867990829,
+			"isDeleted": false,
+			"id": "UoZ6qNwc",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 1252.1639424116495,
+			"y": 1527.7880890790334,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 216.17974853515625,
+			"height": 100,
+			"seed": 1946711075,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1946711075,
-			"version": 154,
-			"versionNonce": 867990829,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708268691601,
 			"link": null,
 			"locked": false,
-			"text": "3 different\ntraining algorithms\nand their denoising\n(highlighted with color)",
-			"rawText": "3 different\ntraining algorithms\nand their denoising\n(highlighted with color)",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "3 different\ntraining algorithms\nand their denoising\n(highlighted with color)",
+			"rawText": "3 different\ntraining algorithms\nand their denoising\n(highlighted with color)",
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 93,
 			"containerId": null,
 			"originalText": "3 different\ntraining algorithms\nand their denoising\n(highlighted with color)",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "cUcbDOehfwTnl43CxGjS5",
 			"type": "line",
-			"x": 1218.1197464035242,
-			"y": 1467.1826987076677,
-			"width": 125.90048356908756,
-			"height": 55.19419480249394,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 152,
+			"versionNonce": 1059906893,
+			"isDeleted": false,
+			"id": "cUcbDOehfwTnl43CxGjS5",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 1218.1197464035242,
+			"y": 1467.1826987076677,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 125.90048356908756,
+			"height": 55.19419480249394,
+			"seed": 351720941,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 351720941,
-			"version": 152,
-			"versionNonce": 1059906893,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708268710971,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -28060,44 +27780,41 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					125.90048356908756,
 					55.19419480249394
 				]
-			],
-			"lastCommittedPoint": [
-				125.90048356908756,
-				55.19419480249394
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
+			]
 		},
 		{
-			"id": "GOpIl9Sgn3YEb27rzhfgf",
 			"type": "line",
-			"x": 1348.7099327989674,
-			"y": 1457.08180031244,
-			"width": 4.328956455097568,
-			"height": 65.65583956897967,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 44,
+			"versionNonce": 1041876749,
+			"isDeleted": false,
+			"id": "GOpIl9Sgn3YEb27rzhfgf",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 1348.7099327989674,
+			"y": 1457.08180031244,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 4.328956455097568,
+			"height": 65.65583956897967,
+			"seed": 1886045059,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1886045059,
-			"version": 44,
-			"versionNonce": 1041876749,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708268707295,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -28107,44 +27824,41 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					-4.328956455097568,
 					65.65583956897967
 				]
-			],
-			"lastCommittedPoint": [
-				-4.328956455097568,
-				65.65583956897967
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
+			]
 		},
 		{
-			"id": "wHDVx3V_YMYJ8QoCZlqJM",
 			"type": "line",
-			"x": 1481.4645974219593,
-			"y": 1468.264937821442,
-			"width": 134.55839647928246,
-			"height": 54.47270205997779,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 145,
+			"versionNonce": 525162115,
+			"isDeleted": false,
+			"id": "wHDVx3V_YMYJ8QoCZlqJM",
 			"fillStyle": "hachure",
 			"strokeWidth": 4,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 1481.4645974219593,
+			"y": 1468.264937821442,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 134.55839647928246,
+			"height": 54.47270205997779,
+			"seed": 1342528781,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 1342528781,
-			"version": 145,
-			"versionNonce": 525162115,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708268715269,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -28162,126 +27876,7 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 					-134.55839647928246,
 					54.47270205997779
 				]
-			],
-			"lastCommittedPoint": [
-				-134.55839647928246,
-				54.47270205997779
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
-		},
-		{
-			"id": "mSI83OSt",
-			"type": "text",
-			"x": 1339.0202376020063,
-			"y": 1522.3768935101616,
-			"width": 9.999984741210938,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "hachure",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 2070153997,
-			"version": 2,
-			"versionNonce": 1971697635,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1708268697603,
-			"link": null,
-			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"baseline": 18,
-			"containerId": null,
-			"originalText": "",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "L7pMzsIo",
-			"type": "text",
-			"x": 1339.7417303445225,
-			"y": 1522.3768935101616,
-			"width": 9.999984741210938,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "hachure",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1124667235,
-			"version": 2,
-			"versionNonce": 101137069,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1708268700730,
-			"link": null,
-			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"baseline": 18,
-			"containerId": null,
-			"originalText": "",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "4qb1KAhq",
-			"type": "text",
-			"x": 1341.9062085720714,
-			"y": 1522.7376398814197,
-			"width": 9.999984741210938,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "hachure",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1062680045,
-			"version": 2,
-			"versionNonce": 1434175235,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1708268704291,
-			"link": null,
-			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"baseline": 18,
-			"containerId": null,
-			"originalText": "",
-			"lineHeight": 1.25
+			]
 		}
 	],
 	"appState": {
@@ -28299,10 +27894,10 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 		"currentItemTextAlign": "center",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": -245.9914926378636,
-		"scrollY": -599.4615963745902,
+		"scrollX": 261.90001851358124,
+		"scrollY": -2622.7275180925203,
 		"zoom": {
-			"value": 0.8197286737669442
+			"value": 0.8932533316263419
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
@@ -28317,7 +27912,8 @@ fc138c06e51dc9975fdd0e5fc2ca931b4fac5a45: [[Pasted Image 20240218160358_387.png]
 			"clip": true,
 			"name": true,
 			"outline": true
-		}
+		},
+		"objectsSnapModeEnabled": false
 	},
 	"files": {}
 }

@@ -198,6 +198,21 @@ the different levels in order to later on incorporate that in the decoder part t
 
 For more info read about U-net :] ^grJRU7Fp
 
+For large number of data points that may not fit in memory, we introduce an
+online algorithm ^K0VUrWRF
+
+Coordinate Gradient
+descent ^wurQARKJ
+
+Very hard to find a matrix
+V that produces sparse encoding ^4sHXOopQ
+
+Auto-encoders dont reserve
+volume in the input space
+we can reformulate this in a better way
+using dense encoding to produce a 
+probability of our data
+(no dimensionality reduction) ^t6uZWBVM
 
 # Embedded files
 17da101d0321e892064d4a24396ee1dc177f93de: $$x \in R^d \text{    and   } s \in R^h$$
@@ -230,7 +245,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.18",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.6",
 	"elements": [
 		{
 			"type": "image",
@@ -432,8 +447,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "middle",
 			"containerId": "kpie1T86GZmqYdyj85jF-",
 			"originalText": "Auto-Encoder",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -469,8 +483,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "In order to understand auto-encoders, we must take a short trip\nto visit the wonderful land of sparse encoding",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -506,8 +519,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "What is sparse encoding?",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -543,8 +555,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Sparse encoding is representing data in a way that is more efficient for some\npurpose aligning with our goals, such as:",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -580,8 +591,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Compression\nand\nsummary",
-			"lineHeight": 1.25,
-			"baseline": 95
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -617,8 +627,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Correlating\ndata to\nanother",
-			"lineHeight": 1.25,
-			"baseline": 95
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -654,8 +663,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Disentangling\nindependent\ncomponents",
-			"lineHeight": 1.25,
-			"baseline": 95
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -691,8 +699,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Extracting high\nlevel semantic\nfeatures",
-			"lineHeight": 1.25,
-			"baseline": 95
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -733,8 +740,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "In our case we will talk mostly about input images being\nencoded into vectors such that a lot of their elements are represented\nas 0, and the rest have positive values in them.\nWe can compress this representation by using a vector of pairs such that\nthe first element of the pair is the index and the second is the value",
-			"lineHeight": 1.25,
-			"baseline": 118
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -822,8 +828,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "but how do we encode it?",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -897,8 +902,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We can decompose the image into\na sparse vector s (the way we described\nit before) and a dictionary W that\ncontains general features and filters\ncontained within the image.\nthat way through element-wise multiplication\nwe can pick which features were strongly\npresent in the original picture and\nreconstruct the original data.\n\nThis not only has low costs,\nit also disentangles well the different\nfeatures represented in the pictures\ngiven.",
-			"lineHeight": 1.25,
-			"baseline": 343
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -986,8 +990,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Linear sparse encoding formulation",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -1023,8 +1026,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Given the vector x and its source code a sparse vector s",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -1093,8 +1095,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Using a dictionary W (that we build later on, but for now we assume its ready)\nwe can approximately reconstruct the data from the source code",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -1196,8 +1197,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "So now we have to both learn W and S in order to reach this level?",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -1290,8 +1290,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Let X1....Xn be a dataset in R\n\nand S1.....Sn be the representations of each datapoint\n\nLet       be a dictionary that re-constructes the data from the sources\n\nLets formulate an objective function to optimize",
-			"lineHeight": 1.25,
-			"baseline": 168
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -1327,8 +1326,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "d",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -1435,8 +1433,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "0 norm",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -1472,8 +1469,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Err of reconstruction",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -1561,8 +1557,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "a generalization of the p norm\nwith p=0 to measure how many non-zero\nvalues exist in s",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -1683,8 +1678,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Problem this is nonconvex\nand non differentiable",
-			"lineHeight": 1.25,
-			"baseline": 34
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -1758,8 +1752,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "replace with 1 norm\nthis will produce a sparse solution\nbut not a maximally sparse\nsolution",
-			"lineHeight": 1.25,
-			"baseline": 74
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -1795,8 +1788,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "This is the sum of 2 convex problems and its differentiable everywhere (that we care about)",
-			"lineHeight": 1.25,
-			"baseline": 14
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -1888,8 +1880,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We still have one more issue\ndue to us being able to scale\nW up and s down such that we\ncan almost ignore the sparsity term",
-			"lineHeight": 1.25,
-			"baseline": 74
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -2016,8 +2007,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "a low lambda will perfectly represent the data but wont be sparse\na high lambda will be really sparse but wont represent the data too well\nwe want an intermediate lambda as a tradeoff",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -2097,8 +2087,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Convolutional sparse encoding",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -2134,8 +2123,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Source codes are now h sparse feature maps,\nour dictionary w is now a set of convolutional filters\nthus\nto reconstruct our data now, we need to perform a convolution\nbetween the dictionary and the sparse feature maps",
-			"lineHeight": 1.25,
-			"baseline": 118
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -2204,8 +2192,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "each filter can be used for any location in pixel space\ndue to the nature of the convolution operation, this is much more statistically efficient\nin convolutional sparse encoding which allows our dictionary to learn much richer features",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -2241,13 +2228,12 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "source dimensions s1...sh must corrolate on some predefined 2D grid",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
-			"version": 164,
-			"versionNonce": 1516248614,
+			"version": 234,
+			"versionNonce": 962974067,
 			"isDeleted": false,
 			"id": "ssNff8XcvQ83o4qhzAryE",
 			"fillStyle": "solid",
@@ -2256,8 +2242,8 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 2895.556681054395,
-			"y": 2181.1582619359624,
+			"x": 2905.026100184996,
+			"y": 2270.6873155343683,
 			"strokeColor": "transparent",
 			"backgroundColor": "#b2f2bb",
 			"width": 333.09458148368725,
@@ -2267,7 +2253,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705753092185,
+			"updated": 1716468177860,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -2279,8 +2265,8 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 		},
 		{
 			"type": "image",
-			"version": 431,
-			"versionNonce": 680581030,
+			"version": 501,
+			"versionNonce": 1915824915,
 			"isDeleted": false,
 			"id": "LJTdo2GFWphgyddYf33il",
 			"fillStyle": "solid",
@@ -2289,8 +2275,8 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 3221.3400652922037,
-			"y": 2174.0617803587315,
+			"x": 3230.8094844228044,
+			"y": 2263.5908339571374,
 			"strokeColor": "transparent",
 			"backgroundColor": "#b2f2bb",
 			"width": 415.36326407644464,
@@ -2300,7 +2286,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705753177702,
+			"updated": 1716468177860,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -2312,8 +2298,8 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 		},
 		{
 			"type": "text",
-			"version": 55,
-			"versionNonce": 1100394214,
+			"version": 125,
+			"versionNonce": 1470124211,
 			"isDeleted": false,
 			"id": "0zZ6yhlS",
 			"fillStyle": "solid",
@@ -2322,8 +2308,8 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 3048.9414549572757,
-			"y": 2388.7199150263227,
+			"x": 3058.4108740878764,
+			"y": 2478.2489686247286,
 			"strokeColor": "#e03131",
 			"backgroundColor": "#b2f2bb",
 			"width": 359.41961669921875,
@@ -2333,7 +2319,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705753141417,
+			"updated": 1716468177860,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -2344,8 +2330,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Nxh and dxh parameters to optimize",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -2429,8 +2414,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Auto-encoder",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -2466,8 +2450,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Lets assume we can facilitate the creation of sparse vectors through\nan encoding V of xi        ",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -2503,8 +2486,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Our objective becomes",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -2540,8 +2522,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "This depends on two matrices W,V both of which can be learned via\nStochastic Gradient descent\nBUT\nour linear function does not have enough power to produce sparse encoding \nthus we use a non-linear function\n\n\nWhich produces zero for every negative element-wise input to help sparsity",
-			"lineHeight": 1.25,
-			"baseline": 193
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -2578,8 +2559,8 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 		},
 		{
 			"type": "image",
-			"version": 71,
-			"versionNonce": 613177530,
+			"version": 72,
+			"versionNonce": 1214444627,
 			"isDeleted": false,
 			"id": "vGV6ELdw0h8cnpeXfTRX4",
 			"fillStyle": "solid",
@@ -2598,8 +2579,13 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"boundElements": [],
-			"updated": 1705754521828,
+			"boundElements": [
+				{
+					"id": "U8CqUhddpwJqUkEPOsJur",
+					"type": "arrow"
+				}
+			],
+			"updated": 1716468357219,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -2643,8 +2629,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "note that this can sometimes create dead-units that never activate\nto avoid that we can also add an entropy terms that makes sure\nit activates a few times minimum",
-			"lineHeight": 1.25,
-			"baseline": 54
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -2733,8 +2718,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Multi-Layer Auto-Encoder",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -2770,8 +2754,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "It is often require to build a multi-layer encoder-decoder in order to have more\ncomplex functions of representation data",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "image",
@@ -2873,8 +2856,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We replace the encoding and decoding process with functions g and f because theyre much more complex\nnontheless these functions can still be trained via error back-propagation like any other NN",
-			"lineHeight": 1.25,
-			"baseline": 43
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -2910,8 +2892,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "In practice we have other goals other than \"reconstruct this\" and \"encode that\"\nwe may instead want to learn representation properties without irrelevant variances\nlike small rotations and translations (e.g detecting age, sex etc...)",
-			"lineHeight": 1.25,
-			"baseline": 68
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -2999,8 +2980,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Skip connection",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -3036,8 +3016,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "In some cases in the encoder-decoder architecture we find that our encoding of features\ndoes not include enough information in order for our decoder to solve the current issue we have.\nThis is usually a lot more apparent in CNN based encoders such as U-net.\n\nLets take for example the following issue, we want to use encoder-decoders in order to mask a specific input image\n ",
-			"lineHeight": 1.25,
-			"baseline": 143
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -3073,8 +3052,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "We can achieve these results by adding a hard-coded noise layer at the start\nthis results in a representation that is less sensitive to irrelevant and small variations\nwhich is better for prediction tasks (Generalization)\n(Makes the decision boundary have a larger margin and thus conforming to the data manifold)",
-			"lineHeight": 1.25,
-			"baseline": 93
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -3130,8 +3108,8 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 		},
 		{
 			"type": "rectangle",
-			"version": 87,
-			"versionNonce": 1545083430,
+			"version": 88,
+			"versionNonce": 1136435613,
 			"isDeleted": false,
 			"id": "_48njKpjH-J-jD6qvQ2EN",
 			"fillStyle": "solid",
@@ -3150,8 +3128,13 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"boundElements": [],
-			"updated": 1705755248107,
+			"boundElements": [
+				{
+					"id": "0x1Bvvl8agoY9QxATpQbW",
+					"type": "arrow"
+				}
+			],
+			"updated": 1716468673884,
 			"link": null,
 			"locked": false
 		},
@@ -3255,8 +3238,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "U-Net",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -3338,8 +3320,7 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "More uses",
-			"lineHeight": 1.25,
-			"baseline": 25
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -3380,34 +3361,35 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "1) Based on the size of the bottleneck dimension we can control the trade-off\nbetween storage and accuracy or reconstruction which is good\nfor video compression mechanisms\n\n2) We can use encoder-decoder technology for anomaly-detection by finding\nthe difference between the input image and the abstract general reconstruction\nof that image and even use the reconstruction error has a heatmap of\nvariations",
-			"lineHeight": 1.25,
-			"baseline": 193
+			"lineHeight": 1.25
 		},
 		{
-			"id": "1RSUvMDh",
 			"type": "image",
-			"x": 5081.933233704295,
-			"y": -324.1555939842658,
-			"width": 554.1391328128675,
-			"height": 201.70664434388374,
-			"angle": 0,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
+			"version": 272,
+			"versionNonce": 1710393600,
+			"isDeleted": false,
+			"id": "1RSUvMDh",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
-			"roundness": null,
+			"angle": 0,
+			"x": 5081.933233704295,
+			"y": -324.1555939842658,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"width": 554.1391328128674,
+			"height": 201.70664434388374,
 			"seed": 57335,
-			"version": 272,
-			"versionNonce": 1710393600,
-			"updated": 1707836194309,
-			"isDeleted": false,
 			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
+			"updated": 1707836194309,
 			"link": null,
 			"locked": false,
+			"status": "pending",
 			"fileId": "325c20d652f3c0ce280cf9898f90497563ae82b3",
 			"scale": [
 				1,
@@ -3415,12 +3397,84 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			]
 		},
 		{
-			"id": "EZpOav9a",
 			"type": "text",
+			"version": 1354,
+			"versionNonce": 2025416960,
+			"isDeleted": false,
+			"id": "EZpOav9a",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
 			"x": 4684.490682755702,
 			"y": -122.44894994418321,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
 			"width": 1336.478759765625,
 			"height": 425,
+			"seed": 220284672,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1707836194309,
+			"link": null,
+			"locked": false,
+			"fontSize": 20,
+			"fontFamily": 1,
+			"text": "The task of object detection is quite a common task for a CNN so it would make sense for our encoder to be a CNN network\nThe encoding of the input image that a CNN represents is a very dense semantic representation of the data\nand answers the question \"What am I looking at?\"\nTo generate the exact same Image but masked, we cannot rely on semantic information only, because although we know\nwhat each object is, we do not know where to place them, thus we are lacking more low level information (Spatial information)\nWe know from CNN architecture that spatial features are detected in earlier levels of the NN, all of which we can make use of.\n\n\n\n\n\n\n\n\nHere comes the concept of connection skipping where we propagate \"prior\" information that our knowledge has learned throughout\nthe different levels in order to later on incorporate that in the decoder part to figure out \"where to place each object in the image\"\n",
+			"rawText": "The task of object detection is quite a common task for a CNN so it would make sense for our encoder to be a CNN network\nThe encoding of the input image that a CNN represents is a very dense semantic representation of the data\nand answers the question \"What am I looking at?\"\nTo generate the exact same Image but masked, we cannot rely on semantic information only, because although we know\nwhat each object is, we do not know where to place them, thus we are lacking more low level information (Spatial information)\nWe know from CNN architecture that spatial features are detected in earlier levels of the NN, all of which we can make use of.\n\n\n\n\n\n\n\n\nHere comes the concept of connection skipping where we propagate \"prior\" information that our knowledge has learned throughout\nthe different levels in order to later on incorporate that in the decoder part to figure out \"where to place each object in the image\"\n",
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "The task of object detection is quite a common task for a CNN so it would make sense for our encoder to be a CNN network\nThe encoding of the input image that a CNN represents is a very dense semantic representation of the data\nand answers the question \"What am I looking at?\"\nTo generate the exact same Image but masked, we cannot rely on semantic information only, because although we know\nwhat each object is, we do not know where to place them, thus we are lacking more low level information (Spatial information)\nWe know from CNN architecture that spatial features are detected in earlier levels of the NN, all of which we can make use of.\n\n\n\n\n\n\n\n\nHere comes the concept of connection skipping where we propagate \"prior\" information that our knowledge has learned throughout\nthe different levels in order to later on incorporate that in the decoder part to figure out \"where to place each object in the image\"\n",
+			"lineHeight": 1.25
+		},
+		{
+			"type": "text",
+			"version": 70,
+			"versionNonce": 2099693312,
+			"isDeleted": false,
+			"id": "grJRU7Fp",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 5183.040273957411,
+			"y": 290.0510496336312,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 339.37957763671875,
+			"height": 25,
+			"seed": 495388416,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1707836951254,
+			"link": null,
+			"locked": false,
+			"fontSize": 20,
+			"fontFamily": 1,
+			"text": "For more info read about U-net :]",
+			"rawText": "For more info read about U-net :]",
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "For more info read about U-net :]",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "K0VUrWRF",
+			"type": "text",
+			"x": 2815.1970820613847,
+			"y": 2202.9698815229813,
+			"width": 766.0792846679688,
+			"height": 50,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -3432,31 +3486,313 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 220284672,
-			"version": 1354,
-			"versionNonce": 2025416960,
+			"seed": 1710282941,
+			"version": 93,
+			"versionNonce": 1223777043,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1707836194309,
+			"updated": 1716468172792,
 			"link": null,
 			"locked": false,
-			"text": "The task of object detection is quite a common task for a CNN so it would make sense for our encoder to be a CNN network\nThe encoding of the input image that a CNN represents is a very dense semantic representation of the data\nand answers the question \"What am I looking at?\"\nTo generate the exact same Image but masked, we cannot rely on semantic information only, because although we know\nwhat each object is, we do not know where to place them, thus we are lacking more low level information (Spatial information)\nWe know from CNN architecture that spatial features are detected in earlier levels of the NN, all of which we can make use of.\n\n\n\n\n\n\n\n\nHere comes the concept of connection skipping where we propagate \"prior\" information that our knowledge has learned throughout\nthe different levels in order to later on incorporate that in the decoder part to figure out \"where to place each object in the image\"\n",
-			"rawText": "The task of object detection is quite a common task for a CNN so it would make sense for our encoder to be a CNN network\nThe encoding of the input image that a CNN represents is a very dense semantic representation of the data\nand answers the question \"What am I looking at?\"\nTo generate the exact same Image but masked, we cannot rely on semantic information only, because although we know\nwhat each object is, we do not know where to place them, thus we are lacking more low level information (Spatial information)\nWe know from CNN architecture that spatial features are detected in earlier levels of the NN, all of which we can make use of.\n\n\n\n\n\n\n\n\nHere comes the concept of connection skipping where we propagate \"prior\" information that our knowledge has learned throughout\nthe different levels in order to later on incorporate that in the decoder part to figure out \"where to place each object in the image\"\n",
+			"text": "For large number of data points that may not fit in memory, we introduce an\nonline algorithm",
+			"rawText": "For large number of data points that may not fit in memory, we introduce an\nonline algorithm",
 			"fontSize": 20,
 			"fontFamily": 1,
 			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 418,
 			"containerId": null,
-			"originalText": "The task of object detection is quite a common task for a CNN so it would make sense for our encoder to be a CNN network\nThe encoding of the input image that a CNN represents is a very dense semantic representation of the data\nand answers the question \"What am I looking at?\"\nTo generate the exact same Image but masked, we cannot rely on semantic information only, because although we know\nwhat each object is, we do not know where to place them, thus we are lacking more low level information (Spatial information)\nWe know from CNN architecture that spatial features are detected in earlier levels of the NN, all of which we can make use of.\n\n\n\n\n\n\n\n\nHere comes the concept of connection skipping where we propagate \"prior\" information that our knowledge has learned throughout\nthe different levels in order to later on incorporate that in the decoder part to figure out \"where to place each object in the image\"\n",
+			"originalText": "For large number of data points that may not fit in memory, we introduce an\nonline algorithm",
 			"lineHeight": 1.25
 		},
 		{
-			"id": "grJRU7Fp",
+			"id": "cnLDReXn4kZBQhw_9gXq2",
+			"type": "arrow",
+			"x": 3622.638872703197,
+			"y": 2378.5845635813926,
+			"width": 119.65902355940761,
+			"height": 73.17278419100512,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1983119347,
+			"version": 62,
+			"versionNonce": 926928723,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1716468220809,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					96.41590387520637,
+					-2.5825688538002396
+				],
+				[
+					119.65902355940761,
+					70.59021533720488
+				]
+			],
+			"lastCommittedPoint": [
+				119.65902355940761,
+				70.59021533720488
+			],
+			"startBinding": null,
+			"endBinding": {
+				"elementId": "wurQARKJ",
+				"focus": 0.12174926394289519,
+				"gap": 7.58256885379933
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "wurQARKJ",
 			"type": "text",
-			"x": 5183.040273957411,
-			"y": 290.0510496336312,
-			"width": 339.37957763671875,
+			"x": 3660.8240093159634,
+			"y": 2456.7573477723968,
+			"width": 159.5043487548828,
+			"height": 40,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1589735827,
+			"version": 68,
+			"versionNonce": 63991027,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"id": "cnLDReXn4kZBQhw_9gXq2",
+					"type": "arrow"
+				}
+			],
+			"updated": 1716468220809,
+			"link": null,
+			"locked": false,
+			"text": "Coordinate Gradient\ndescent",
+			"rawText": "Coordinate Gradient\ndescent",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Coordinate Gradient\ndescent",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "U8CqUhddpwJqUkEPOsJur",
+			"type": "arrow",
+			"x": 4465.417175326655,
+			"y": 1245.6976930477188,
+			"width": 140.31957438980862,
+			"height": 68.86850276800465,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 231231517,
+			"version": 72,
+			"versionNonce": 93893331,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1716468357580,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					132.57186782840836,
+					6.025993992200483
+				],
+				[
+					140.31957438980862,
+					-62.84250877580416
+				]
+			],
+			"lastCommittedPoint": [
+				140.31957438980862,
+				-62.84250877580416
+			],
+			"startBinding": {
+				"elementId": "vGV6ELdw0h8cnpeXfTRX4",
+				"focus": -0.36265335555217554,
+				"gap": 6.285227490480793
+			},
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "4sHXOopQ",
+			"type": "text",
+			"x": 4477.232477255526,
+			"y": 1126.038669488311,
+			"width": 257.008544921875,
+			"height": 40,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1279500211,
+			"version": 67,
+			"versionNonce": 583816787,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1716468384059,
+			"link": null,
+			"locked": false,
+			"text": "Very hard to find a matrix\nV that produces sparse encoding",
+			"rawText": "Very hard to find a matrix\nV that produces sparse encoding",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Very hard to find a matrix\nV that produces sparse encoding",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "0x1Bvvl8agoY9QxATpQbW",
+			"type": "arrow",
+			"x": 4807.8185680014485,
+			"y": 506.70917808000877,
+			"width": 271.532506781512,
+			"height": 8.781969440630405,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 890445203,
+			"version": 656,
+			"versionNonce": 1576962355,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1716468935653,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					271.532506781512,
+					8.781969440630405
+				]
+			],
+			"lastCommittedPoint": [
+				209.0719202804794,
+				6.799086838389599
+			],
+			"startBinding": {
+				"elementId": "_48njKpjH-J-jD6qvQ2EN",
+				"focus": -0.20494598777770986,
+				"gap": 14.059335852650747
+			},
+			"endBinding": {
+				"elementId": "t6uZWBVM",
+				"focus": 0.07849608875904678,
+				"gap": 4.804489088923219
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "t6uZWBVM",
+			"type": "text",
+			"x": 5084.155563871884,
+			"y": 465.95484908601094,
+			"width": 321.0086669921875,
+			"height": 120,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 659358781,
+			"version": 356,
+			"versionNonce": 555756019,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"id": "0x1Bvvl8agoY9QxATpQbW",
+					"type": "arrow"
+				}
+			],
+			"updated": 1716468935650,
+			"link": null,
+			"locked": false,
+			"text": "Auto-encoders dont reserve\nvolume in the input space\nwe can reformulate this in a better way\nusing dense encoding to produce a \nprobability of our data\n(no dimensionality reduction)",
+			"rawText": "Auto-encoders dont reserve\nvolume in the input space\nwe can reformulate this in a better way\nusing dense encoding to produce a \nprobability of our data\n(no dimensionality reduction)",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Auto-encoders dont reserve\nvolume in the input space\nwe can reformulate this in a better way\nusing dense encoding to produce a \nprobability of our data\n(no dimensionality reduction)",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "yc0bV25r",
+			"type": "text",
+			"x": 3714.054784207798,
+			"y": 2363.5019947275923,
+			"width": 9.999984741210938,
 			"height": 25,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
@@ -3469,30 +3805,264 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 495388416,
-			"version": 70,
-			"versionNonce": 2099693312,
-			"isDeleted": false,
+			"seed": 1430743603,
+			"version": 2,
+			"versionNonce": 531340189,
+			"isDeleted": true,
 			"boundElements": null,
-			"updated": 1707836951254,
+			"updated": 1716468204873,
 			"link": null,
 			"locked": false,
-			"text": "For more info read about U-net :]",
-			"rawText": "For more info read about U-net :]",
+			"text": "",
+			"rawText": "",
 			"fontSize": 20,
 			"fontFamily": 1,
 			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "cnLDReXn4kZBQhw_9gXq2",
+			"originalText": "",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "J5v7YoxJ",
+			"type": "text",
+			"x": 4593.989035525668,
+			"y": 1241.7236870399192,
+			"width": 8.000015258789062,
+			"height": 20,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 38771389,
+			"version": 2,
+			"versionNonce": 1816191091,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1716468357581,
+			"link": null,
+			"locked": false,
+			"text": "",
+			"rawText": "",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "U8CqUhddpwJqUkEPOsJur",
+			"originalText": "",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "r1swavV4",
+			"type": "text",
+			"x": 4618.0930114944695,
+			"y": 1169.0814837183138,
+			"width": 8.000015258789062,
+			"height": 20,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1712994621,
+			"version": 2,
+			"versionNonce": 1096460979,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1716468378946,
+			"link": null,
+			"locked": false,
+			"text": "",
+			"rawText": "",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "center",
 			"verticalAlign": "top",
-			"baseline": 18,
 			"containerId": null,
-			"originalText": "For more info read about U-net :]",
+			"originalText": "",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "PStjgPks",
+			"type": "text",
+			"x": 4908.354520512294,
+			"y": 500.14891353554316,
+			"width": 8.000015258789062,
+			"height": 20,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1708049491,
+			"version": 2,
+			"versionNonce": 28508029,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1716468674312,
+			"link": null,
+			"locked": false,
+			"text": "",
+			"rawText": "",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "0x1Bvvl8agoY9QxATpQbW",
+			"originalText": "",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "gRKZRb2FVduxlLfGWa7Ee",
+			"type": "arrow",
+			"x": 5231.911609545998,
+			"y": 531.3960599055106,
+			"width": 152.97945386376523,
+			"height": 118.13413381701889,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 301863187,
+			"version": 103,
+			"versionNonce": 1148026835,
+			"isDeleted": true,
+			"boundElements": [],
+			"updated": 1716468704928,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					2.549657564395602,
+					107.08561770463575
+				],
+				[
+					152.97945386376523,
+					118.13413381701889
+				]
+			],
+			"lastCommittedPoint": [
+				152.97945386376523,
+				118.13413381701889
+			],
+			"startBinding": {
+				"elementId": "t6uZWBVM",
+				"focus": 0.09927175144409599,
+				"gap": 8.44349372352579
+			},
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "aHms3k2g",
+			"type": "text",
+			"x": 5230.461259480999,
+			"y": 627.6317917553476,
+			"width": 8.000015258789062,
+			"height": 20,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 176161267,
+			"version": 2,
+			"versionNonce": 453298141,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1716468702837,
+			"link": null,
+			"locked": false,
+			"text": "",
+			"rawText": "",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "middle",
+			"containerId": "gRKZRb2FVduxlLfGWa7Ee",
+			"originalText": "",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "3BkR7SAS",
+			"type": "text",
+			"x": 5442.932723180673,
+			"y": 647.8304220129321,
+			"width": 8.000015258789062,
+			"height": 20,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 642790557,
+			"version": 2,
+			"versionNonce": 1975927123,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1716468704090,
+			"link": null,
+			"locked": false,
+			"text": "",
+			"rawText": "",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "center",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "",
 			"lineHeight": 1.25
 		}
 	],
 	"appState": {
 		"theme": "light",
 		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#1e1e1e",
+		"currentItemStrokeColor": "#e03131",
 		"currentItemBackgroundColor": "transparent",
 		"currentItemFillStyle": "solid",
 		"currentItemStrokeWidth": 2,
@@ -3500,16 +4070,16 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 		"currentItemRoughness": 1,
 		"currentItemOpacity": 100,
 		"currentItemFontFamily": 1,
-		"currentItemFontSize": 20,
+		"currentItemFontSize": 16,
 		"currentItemTextAlign": "center",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": -4290.728849491425,
-		"scrollY": 705.5042724025302,
+		"scrollX": -3757.3596514702517,
+		"scrollY": -164.24537063247325,
 		"zoom": {
-			"value": 0.5678922769539728
+			"value": 1.1766285958916904
 		},
-		"currentItemRoundness": "sharp",
+		"currentItemRoundness": "round",
 		"gridSize": null,
 		"gridColor": {
 			"Bold": "#C9C9C9FF",
@@ -3522,7 +4092,8 @@ ab61ef4d7cc783cdb4d04bae13b115137f5f3c01: [[Pasted Image 20240120135812_483.png]
 			"clip": true,
 			"name": true,
 			"outline": true
-		}
+		},
+		"objectsSnapModeEnabled": false
 	},
 	"files": {}
 }
