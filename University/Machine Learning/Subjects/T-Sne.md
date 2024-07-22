@@ -215,7 +215,7 @@ To Be continued! ^0d3xkgon
 
 # Element Links
 XfdD5CUA: [[PCA]]
-3xOgvQnO: [[Low Dimensional Embedding]]
+3xOgvQnO: [[Locally Linear Embedding]]
 
 # Embedded files
 87556dfa4be988de24e471a2cbe0c348943b2296: [[Pasted Image 20240426174844_511.png]]
