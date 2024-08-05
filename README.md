@@ -9,7 +9,7 @@ Notes and summaries of the lectures I am currently partaking in including:
 5. Architecture of machine learning systems (WIP)
 
 You need to install obsidian and the following community plugins in order to view these canvases properly:
-# MAKE SURE TO ENABLE THE PLUGINS IN THE SETTINGS AFTER INSTALL
+#### MAKE SURE TO ENABLE THE PLUGINS IN THE SETTINGS AFTER INSTALL
 1. Excalidraw: Visual notes 
 2. Latex Suite: Latex integration
 3. Spaced repition: Study cards
