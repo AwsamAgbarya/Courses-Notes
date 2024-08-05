@@ -7,7 +7,8 @@ tags:
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
 Differential Equations ^KzhliL1O
 
 Differential equations are often used
@@ -70,7 +71,7 @@ Homogenousity ^PYC0QeCW
 Whether all variables involved
 have the same degree ^SXiSNlkd
 
-# Embedded files
+## Embedded Files
 8869b5aad0371eee672906a2e1d351f5393f1366: [[Pasted Image 20240201172340_374.png]]
 d6fa7fff9b5be985c6fe7a59725d7c0e3a8db603: [[Pasted Image 20240201172440_391.png]]
 6c40adbb9441b1409738a7c0eb2178abc806cc44: [[Pasted Image 20240201172511_397.png]]
@@ -79,1405 +80,138 @@ b402368be180d9743ef0046d99771fb7063677ec: [[Pasted Image 20240201173029_450.png]
 543b9d377d63cf86672da5c67885de58b646d02c: [[Pasted Image 20240201173608_518.png]]
 
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.6",
-	"elements": [
-		{
-			"type": "image",
-			"version": 369,
-			"versionNonce": 1888869310,
-			"isDeleted": false,
-			"id": "LeYiXkVBvqoJE0Z8vtNHu",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -11.87457904791728,
-			"y": -443.24146627464387,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 256.1502258684908,
-			"height": 42.17959008303393,
-			"seed": 324508898,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1706804794452,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "d6fa7fff9b5be985c6fe7a59725d7c0e3a8db603",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "image",
-			"version": 333,
-			"versionNonce": 1260368894,
-			"isDeleted": false,
-			"id": "bEonHUvPWWfRceqnkFrJj",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 1.0107468675719815,
-			"y": -404.28143214597605,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 220.36669867188328,
-			"height": 130.48028210835193,
-			"seed": 1977818210,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1706804794452,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "6c40adbb9441b1409738a7c0eb2178abc806cc44",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "text",
-			"version": 177,
-			"versionNonce": 2008460642,
-			"isDeleted": false,
-			"id": "KzhliL1O",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -166.75,
-			"y": -613.2578125,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"width": 307.41326904296875,
-			"height": 35,
-			"seed": 2084077730,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1706804514090,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "Differential Equations",
-			"rawText": "Differential Equations",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Differential Equations",
-			"lineHeight": 1.25
-		},
-		{
-			"type": "text",
-			"version": 443,
-			"versionNonce": 1136103280,
-			"isDeleted": false,
-			"id": "cZYFpBc5",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -230.2690814138836,
-			"y": -568.2414660434698,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"width": 446.4594421386719,
-			"height": 125,
-			"seed": 1750723070,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1715187788335,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Differential equations are often used\nwhen its easier to describe the situation\nwith relative change than absolute amounts.\nit relates the functions to their derivatives.\nfor example: population size",
-			"rawText": "Differential equations are often used\nwhen its easier to describe the situation\nwith relative change than absolute amounts.\nit relates the functions to their derivatives.\nfor example: population size",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Differential equations are often used\nwhen its easier to describe the situation\nwith relative change than absolute amounts.\nit relates the functions to their derivatives.\nfor example: population size",
-			"lineHeight": 1.25
-		},
-		{
-			"type": "image",
-			"version": 262,
-			"versionNonce": 524583998,
-			"isDeleted": false,
-			"id": "VIeanmUd4fj-VxMvXbGoI",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -270.36237781177334,
-			"y": -439.5950487355449,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 259.4265064385732,
-			"height": 162.458869002629,
-			"seed": 1588031678,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1706804794452,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "8869b5aad0371eee672906a2e1d351f5393f1366",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "text",
-			"version": 147,
-			"versionNonce": 1834839330,
-			"isDeleted": false,
-			"id": "EiglZFOr",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -247.25580901139278,
-			"y": -226.89047738234711,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"width": 464.0594482421875,
-			"height": 25,
-			"seed": 1906616638,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1706804804798,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "There are two types of Differential equations",
-			"rawText": "There are two types of Differential equations",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "There are two types of Differential equations",
-			"lineHeight": 1.25
-		},
-		{
-			"type": "line",
-			"version": 289,
-			"versionNonce": 1420236926,
-			"isDeleted": false,
-			"id": "EUwPVLIcZbrFw_5a_dA2V",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -28.765383208541436,
-			"y": -200.95917314704252,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"width": 209.40715916922443,
-			"height": 136.0251632210347,
-			"seed": 1188753342,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1706804892254,
-			"link": null,
-			"locked": false,
-			"startBinding": null,
-			"endBinding": null,
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": null,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					13.42353584418106,
-					67.11767922090525
-				],
-				[
-					-105.59848197422423,
-					66.22277683129317
-				],
-				[
-					-195.98362332504337,
-					61.74826488323282
-				],
-				[
-					-182.5600874808623,
-					136.0251632210347
-				]
-			]
-		},
-		{
-			"type": "line",
-			"version": 336,
-			"versionNonce": 996890814,
-			"isDeleted": false,
-			"id": "nircxAF1OqB85tPkMfI0p",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -29.660285598153507,
-			"y": -201.8540755366546,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"width": 238.0440356368107,
-			"height": 135.13026083142262,
-			"seed": 240425022,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1706804892254,
-			"link": null,
-			"locked": false,
-			"startBinding": null,
-			"endBinding": null,
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": null,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					30.426681246810404,
-					51.9043385975001
-				],
-				[
-					113.65260348073298,
-					64.43297205206903
-				],
-				[
-					230.88481651991412,
-					65.3278744416811
-				],
-				[
-					238.0440356368107,
-					135.13026083142262
-				]
-			]
-		},
-		{
-			"type": "text",
-			"version": 137,
-			"versionNonce": 1808349310,
-			"isDeleted": false,
-			"id": "kecSLL0a",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -362.8254913496327,
-			"y": -57.774790809111266,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 306.57965087890625,
-			"height": 25,
-			"seed": 1887906558,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1706804960251,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Ordinary Differential equations",
-			"rawText": "Ordinary Differential equations",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Ordinary Differential equations",
-			"lineHeight": 1.25
-		},
-		{
-			"type": "text",
-			"version": 119,
-			"versionNonce": 1047239010,
-			"isDeleted": false,
-			"id": "ZKeT3DpF",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 44.47413428634573,
-			"y": -57.7747906922147,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 296.4796142578125,
-			"height": 25,
-			"seed": 1402169186,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1706805007828,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Partial Differential equations",
-			"rawText": "Partial Differential equations",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Partial Differential equations",
-			"lineHeight": 1.25
-		},
-		{
-			"type": "text",
-			"version": 102,
-			"versionNonce": 2061702754,
-			"isDeleted": false,
-			"id": "B2Q4ZVLh",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -373.8145042714688,
-			"y": -26.74053826697173,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 317.56866455078125,
-			"height": 40,
-			"seed": 292686270,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1706804960251,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "Differential equations that only take in\na single variables (Time)",
-			"rawText": "Differential equations that only take in\na single variables (Time)",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Differential equations that only take in\na single variables (Time)",
-			"lineHeight": 1.25
-		},
-		{
-			"type": "image",
-			"version": 147,
-			"versionNonce": 452670754,
-			"isDeleted": false,
-			"id": "TC2wI_JaHdCBAAUaH1i-2",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -314.68322093236065,
-			"y": 21.9951459627338,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 199.3472047861662,
-			"height": 104.84186325790964,
-			"seed": 89633022,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1706804966532,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "1d7c034177f35a28df3e002fe3952dfb2344f59e",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "text",
-			"version": 75,
-			"versionNonce": 1073265040,
-			"isDeleted": false,
-			"id": "3vd64joK",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 31.432199405593565,
-			"y": -33.050929904838824,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 324.40069580078125,
-			"height": 40,
-			"seed": 1808700450,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "LN-F9vyFAAvoxu-N8dYmu",
-					"type": "arrow"
-				}
-			],
-			"updated": 1715188198589,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "Dealing with functions that have multiple\ninputs",
-			"rawText": "Dealing with functions that have multiple\ninputs",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Dealing with functions that have multiple\ninputs",
-			"lineHeight": 1.25
-		},
-		{
-			"type": "image",
-			"version": 176,
-			"versionNonce": 1420837566,
-			"isDeleted": false,
-			"id": "cHl5Qcc54NgXswk4C6U6N",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 101.79269815993474,
-			"y": 16.621328716750384,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 191.5313381598682,
-			"height": 103.07782607864829,
-			"seed": 159000802,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1706805022506,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "b402368be180d9743ef0046d99771fb7063677ec",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "arrow",
-			"version": 516,
-			"versionNonce": 1004864400,
-			"isDeleted": false,
-			"id": "i2E-jkfoKsCRnOhG2Wxa5",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -395.08743759713195,
-			"y": -17.15107932500635,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"width": 211.50067082336557,
-			"height": 186.44692070089496,
-			"seed": 858173218,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1715188321906,
-			"link": null,
-			"locked": false,
-			"startBinding": null,
-			"endBinding": {
-				"elementId": "2lwUzIuR",
-				"focus": -0.02477967108264181,
-				"gap": 11.911639642634924
-			},
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-198.87671541428801,
-					11.60114173250011
-				],
-				[
-					-211.50067082336557,
-					186.44692070089496
-				]
-			]
-		},
-		{
-			"type": "text",
-			"version": 686,
-			"versionNonce": 23003746,
-			"isDeleted": false,
-			"id": "2lwUzIuR",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -924.6918786865996,
-			"y": 181.20748101852354,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"width": 633.28125,
-			"height": 240,
-			"seed": 1648134754,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "i2E-jkfoKsCRnOhG2Wxa5",
-					"type": "arrow"
-				}
-			],
-			"updated": 1706805476793,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "Take for example the force of gravity\nGravity of earth applies 9.8 m/s per second on objects that are\naffected by it.\n\nMeaning we know that the rate of change of velocity of an object is\n9.8 m/s (Acceleration)\n\nThis is obviously assuming that the object being affected is insignificantly small\nin comparsion to the planet where its mass and its own gravity do not\ncontribute much. this is however different for two planets affecting each other\nthe equations becomes inversely proportional to the distance between them\nin the direction of the other, proportional to their mass as well.",
-			"rawText": "Take for example the force of gravity\nGravity of earth applies 9.8 m/s per second on objects that are\naffected by it.\n\nMeaning we know that the rate of change of velocity of an object is\n9.8 m/s (Acceleration)\n\nThis is obviously assuming that the object being affected is insignificantly small\nin comparsion to the planet where its mass and its own gravity do not\ncontribute much. this is however different for two planets affecting each other\nthe equations becomes inversely proportional to the distance between them\nin the direction of the other, proportional to their mass as well.",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Take for example the force of gravity\nGravity of earth applies 9.8 m/s per second on objects that are\naffected by it.\n\nMeaning we know that the rate of change of velocity of an object is\n9.8 m/s (Acceleration)\n\nThis is obviously assuming that the object being affected is insignificantly small\nin comparsion to the planet where its mass and its own gravity do not\ncontribute much. this is however different for two planets affecting each other\nthe equations becomes inversely proportional to the distance between them\nin the direction of the other, proportional to their mass as well.",
-			"lineHeight": 1.25
-		},
-		{
-			"type": "image",
-			"version": 273,
-			"versionNonce": 1369096190,
-			"isDeleted": false,
-			"id": "S1KEKWp60yUTkPum5X91l",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -1072.48385747925,
-			"y": 226.1033624970507,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 122.042374784928,
-			"height": 162.723166379904,
-			"seed": 222478690,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1706810694466,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "543b9d377d63cf86672da5c67885de58b646d02c",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "text",
-			"version": 216,
-			"versionNonce": 1573249406,
-			"isDeleted": false,
-			"id": "9YOSTCam",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -903.9193150263944,
-			"y": 431.4282319231274,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 562.3851318359375,
-			"height": 60,
-			"seed": 1124702398,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1706810803268,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "This is a description of how a function evolves over time!\n\nIf the function has state x(t) at time t, what is the state x(t+dt)?",
-			"rawText": "This is a description of how a function evolves over time!\n\nIf the function has state x(t) at time t, what is the state x(t+dt)?",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "This is a description of how a function evolves over time!\n\nIf the function has state x(t) at time t, what is the state x(t+dt)?",
-			"lineHeight": 1.25
-		},
-		{
-			"type": "text",
-			"version": 94,
-			"versionNonce": 1553059134,
-			"isDeleted": false,
-			"id": "6uXKRvTX",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -933.3642991046606,
-			"y": 501.64898252107946,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 639.937255859375,
-			"height": 20,
-			"seed": 1899050302,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1706811006429,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "In other words, given the derivative (rate of change), what is our function x(t)?",
-			"rawText": "In other words, given the derivative (rate of change), what is our function x(t)?",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "In other words, given the derivative (rate of change), what is our function x(t)?",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "LN-F9vyFAAvoxu-N8dYmu",
-			"type": "arrow",
-			"x": 369.51073739163974,
-			"y": -22.751419492872174,
-			"width": 152.32230381000215,
-			"height": 2.1058383015207482,
-			"angle": 0,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"seed": 1286966640,
-			"version": 68,
-			"versionNonce": 324958608,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1715188200792,
-			"link": null,
-			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					152.32230381000215,
-					2.1058383015207482
-				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": {
-				"elementId": "3vd64joK",
-				"focus": -0.5454440478969894,
-				"gap": 13.677842185264922
-			},
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
-		},
-		{
-			"id": "X3cByndF",
-			"type": "text",
-			"x": 511.8111185559177,
-			"y": -55.742886216697514,
-			"width": 422.9609069824219,
-			"height": 80,
-			"angle": 0,
-			"strokeColor": "#f08c00",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 353981840,
-			"version": 261,
-			"versionNonce": 1264065392,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1715188274211,
-			"link": null,
-			"locked": false,
-			"text": "Theres actually a third variant called\nStochastic Differential equations which are\npartial differential equations (multivariate functions)\nwith some stochastic processes like Gaussian noise",
-			"rawText": "Theres actually a third variant called\nStochastic Differential equations which are\npartial differential equations (multivariate functions)\nwith some stochastic processes like Gaussian noise",
-			"fontSize": 16,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Theres actually a third variant called\nStochastic Differential equations which are\npartial differential equations (multivariate functions)\nwith some stochastic processes like Gaussian noise",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "ioLSFKHMbW8GHCfXg4GPr",
-			"type": "arrow",
-			"x": -595.9770345560786,
-			"y": 603.2412823880982,
-			"width": 231.74159788655038,
-			"height": 162.89857741694527,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"seed": 3247984,
-			"version": 99,
-			"versionNonce": 1845701520,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1715188457180,
-			"link": null,
-			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					231.74159788655038,
-					162.89857741694527
-				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": {
-				"elementId": "WQXnSioB",
-				"focus": 0.004386743503176479,
-				"gap": 9.39622494877267
-			},
-			"endBinding": {
-				"elementId": "iPOK5QOR",
-				"focus": -0.28133253003306036,
-				"gap": 4.556603564110219
-			},
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
-		},
-		{
-			"id": "WQXnSioB",
-			"type": "text",
-			"x": -787.6115411600384,
-			"y": 568.8450574393255,
-			"width": 322.2196350097656,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 676537744,
-			"version": 50,
-			"versionNonce": 797314960,
-			"isDeleted": false,
-			"boundElements": [
-				{
-					"id": "ioLSFKHMbW8GHCfXg4GPr",
-					"type": "arrow"
-				},
-				{
-					"id": "rn0pY2Lum1Q4yvYoAT9ri",
-					"type": "arrow"
-				},
-				{
-					"id": "3__UOtncZ858DVuQIWJ-B",
-					"type": "arrow"
-				}
-			],
-			"updated": 1715188531139,
-			"link": null,
-			"locked": false,
-			"text": "Among ODEs are different types",
-			"rawText": "Among ODEs are different types",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Among ODEs are different types",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "rn0pY2Lum1Q4yvYoAT9ri",
-			"type": "arrow",
-			"x": -639.032383456459,
-			"y": 603.241282388098,
-			"width": 2.2783017820551095,
-			"height": 174.29008632722105,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"seed": 1918160272,
-			"version": 66,
-			"versionNonce": 1714850160,
-			"isDeleted": false,
-			"boundElements": [],
-			"updated": 1715188374079,
-			"link": null,
-			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-2.2783017820551095,
-					174.29008632722105
-				]
-			],
-			"lastCommittedPoint": [
-				-2.2783017820551095,
-				174.29008632722105
-			],
-			"startBinding": {
-				"elementId": "WQXnSioB",
-				"focus": 0.07592354717825413,
-				"gap": 9.396224948772556
-			},
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
-		},
-		{
-			"id": "aYWi100x",
-			"type": "text",
-			"x": -687.6872427210816,
-			"y": 796.8969338627882,
-			"width": 83.63990783691406,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 49790832,
-			"version": 29,
-			"versionNonce": 1037323152,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1715188454451,
-			"link": null,
-			"locked": false,
-			"text": "Linearity",
-			"rawText": "Linearity",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Linearity",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "YxrxTySo",
-			"type": "text",
-			"x": -788.0693031826787,
-			"y": 828.0974043564227,
-			"width": 288.96063232421875,
-			"height": 40,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1558788464,
-			"version": 126,
-			"versionNonce": 316812144,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1715188521891,
-			"link": null,
-			"locked": false,
-			"text": "Whether the unknown function\nis linear or not (and its derivatives)",
-			"rawText": "Whether the unknown function\nis linear or not (and its derivatives)",
-			"fontSize": 16,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Whether the unknown function\nis linear or not (and its derivatives)",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "iPOK5QOR",
-			"type": "text",
-			"x": -384.6634556365574,
-			"y": 770.6964633691537,
-			"width": 138.2998504638672,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1419044752,
-			"version": 16,
-			"versionNonce": 1638256528,
-			"isDeleted": false,
-			"boundElements": [
-				{
-					"id": "ioLSFKHMbW8GHCfXg4GPr",
-					"type": "arrow"
-				}
-			],
-			"updated": 1715188457177,
-			"link": null,
-			"locked": false,
-			"text": "Autonomousity",
-			"rawText": "Autonomousity",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Autonomousity",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "pcYiDIm0",
-			"type": "text",
-			"x": -457.68235474630114,
-			"y": 802.1186320807328,
-			"width": 307.12066650390625,
-			"height": 60,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 742528400,
-			"version": 147,
-			"versionNonce": 1230259056,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1715188517460,
-			"link": null,
-			"locked": false,
-			"text": "Whether the ODE depends on\ntime variable or not for its evaluation\n(also called time invariant)",
-			"rawText": "Whether the ODE depends on\ntime variable or not for its evaluation\n(also called time invariant)",
-			"fontSize": 16,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Whether the ODE depends on\ntime variable or not for its evaluation\n(also called time invariant)",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "3__UOtncZ858DVuQIWJ-B",
-			"type": "arrow",
-			"x": -744.9734163220247,
-			"y": 608.9370368432359,
-			"width": 207.3254621670211,
-			"height": 117.3325417758416,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"seed": 820945264,
-			"version": 41,
-			"versionNonce": 351093616,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1715188540598,
-			"link": null,
-			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-207.3254621670211,
-					117.3325417758416
-				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": {
-				"elementId": "WQXnSioB",
-				"focus": 0.3805567683908378,
-				"gap": 15.091979403910386
-			},
-			"endBinding": {
-				"elementId": "PYC0QeCW",
-				"focus": -0.058135266839238975,
-				"gap": 9.113207128220779
-			},
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
-		},
-		{
-			"id": "PYC0QeCW",
-			"type": "text",
-			"x": -1049.166725361818,
-			"y": 732.8827857472983,
-			"width": 134.49984741210938,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1892903824,
-			"version": 65,
-			"versionNonce": 951105904,
-			"isDeleted": false,
-			"boundElements": [
-				{
-					"id": "3__UOtncZ858DVuQIWJ-B",
-					"type": "arrow"
-				}
-			],
-			"updated": 1715188542363,
-			"link": null,
-			"locked": false,
-			"text": "Homogenousity",
-			"rawText": "Homogenousity",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Homogenousity",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "SXiSNlkd",
-			"type": "text",
-			"x": -1098.3010484819351,
-			"y": 773.1964633691535,
-			"width": 232.76849365234375,
-			"height": 40,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 2029303664,
-			"version": 75,
-			"versionNonce": 2137046384,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1715188886929,
-			"link": null,
-			"locked": false,
-			"text": "Whether all variables involved\nhave the same degree",
-			"rawText": "Whether all variables involved\nhave the same degree",
-			"fontSize": 16,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Whether all variables involved\nhave the same degree",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "59jHYYk2",
-			"type": "text",
-			"x": -625.9451277204397,
-			"y": 559.9535485290496,
-			"width": 8.000015258789062,
-			"height": 20,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 578710928,
-			"version": 2,
-			"versionNonce": 1996817776,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1715188340657,
-			"link": null,
-			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 16,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "nqV5A4vd",
-			"type": "text",
-			"x": -645.1715267180921,
-			"y": 677.8863255517085,
-			"width": 9.999984741210938,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1665145744,
-			"version": 2,
-			"versionNonce": 327408496,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1715188374080,
-			"link": null,
-			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "middle",
-			"containerId": "rn0pY2Lum1Q4yvYoAT9ri",
-			"originalText": "",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "QOlN3OKH",
-			"type": "text",
-			"x": -985.777643135341,
-			"y": 787.7837267345673,
-			"width": 9.999984741210938,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#ffffff",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 242024336,
-			"version": 2,
-			"versionNonce": 434033520,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1715188711800,
-			"link": null,
-			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "",
-			"lineHeight": 1.25
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#000000",
-		"currentItemStrokeColor": "#ffffff",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 1,
-		"currentItemFontSize": 16,
-		"currentItemTextAlign": "center",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1246.1998083741637,
-		"scrollY": -1.769611925531235,
-		"zoom": {
-			"value": 0.8778468312463282
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#363636FF",
-			"Regular": "#121212FF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		},
-		"objectsSnapModeEnabled": false
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+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
 ```
 %%
