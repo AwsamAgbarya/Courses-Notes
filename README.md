@@ -2,16 +2,17 @@
 
 Notes and summaries of the lectures I am currently partaking in including:
 
-1. Deep Learning
-2. Machine Learning
-3. Computer graphics
+1. Deep Learning 1&2 (WIP)
+2. Machine Learning 1&2
+3. Computer graphics 1&2
 4. Database Technologies
+5. Architecture of machine learning systems (WIP)
 
 You need to install obsidian and the following community plugins in order to view these canvases properly:
-1. Excalidraw: Visual notes
-2. Git: Repository management
-3. Latex Suite: Latex integration
-4. Spaced repition: Study cards
+#### MAKE SURE TO ENABLE THE PLUGINS IN THE SETTINGS AFTER INSTALL
+1. Excalidraw: Visual notes 
+2. Latex Suite: Latex integration
+3. Spaced repition: Study cards
 
 QoL plugins I use but are not necessary:
 1. Better Word Count: Estimating word count in files and folders better
