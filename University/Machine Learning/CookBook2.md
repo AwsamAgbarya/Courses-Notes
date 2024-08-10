@@ -2,13 +2,14 @@
 tags:
   - MachineLearning
   - Cookbook
+cssclasses:
+  - embedded_code
 ---
-# Cookbook for Machine learning 2:
 ## PCA (Recap):
 [[PCA]]
 - We want to map our high dimensional data to low dimensions while keeping the main contributing features of the data.
 - We consider the least contributing features of the data as noise (minimal variance) and the maximal contributing features of the data as Principal components (maximal variance).
-- Our objective is to minimize the noise of the projected data  $\arg\min_w \left[\frac{1}{N}\sum_{k=1}^N \|x-ww^tx\|^2 \right]$ Or find the maximal variance in our covariance matrix $\arg\max_{\|w\|^2=1} \left[w^T \hat{\Sigma}w\right]$, These two objectives are equivalent 
+- Our objective is to minimize the noise of the projected data  $\arg\min_w \left[\frac{1}{N}\sum_{k=1}^N \|x-ww^tx\|^2 \right]$ Or find he maximal variance in our covariance matrix $\arg\max_{\|w\|^2=1} \left[w^T \hat{\Sigma}w\right]$, These two objectives are equivalent 
 - Minimizing the noise of the projected data can be seen equivalent to a linear auto-encoder.
 - Data needs to be centered and cleared of outliers, i.e this method assumes mean=0.
 - The second objective translates to finding the maximal eigenvectors of our covariance data (which describe the maximally scaled direction according to our covariance matrix)
@@ -27,7 +28,7 @@ tags:
 - This is all assuming the data is centered but if we have to center it using $\tilde{\phi}(x) = \phi(x) - \frac{1}{N}\sum\limits_{i} \phi(x_{i})$ then the centered kernel matrix is given via $\hat{K} = K -1_N K - K 1_N + 1_N K 1_N$
 - This can be used in the context of two classes if our Kernel PCA can properly define the PC of the decision boundary, then we can estimate the relevant information needed to classify a point y, only lies in the largest PCs and the smaller PCs contribute nothing but noise
 - If we reconstruct our labels using the most relevant information via $\hat{y} = \sum\limits_{\tau=1}^{d} u_{\tau}u_{\tau}^{T}y$ then we can estimate how much noise the separation of the first d PCs will yield via $e(d) = \sum\limits_{i=1}^{N}L(\hat(y)_{i}, y_{i})$
-> [!Code]- POWIT Code Snippet
+> [!example]- POWIT Code Snippet
 > ![[Machine Learning/Code Snippets#PCA]]
 
 ## Locally Linear Embedding:
@@ -52,9 +53,8 @@ tags:
 - We do not know the best low dimensionlity to represent our data, we have to experiment
 - Finding neighbors is not robust but has to be problem specific.
 
-> [!Code]- LLE Code Snippet
+> [!example]+ LLE Code Snippet
 > ![[Machine Learning/Code Snippets#LLE]]
-
 ## Pairwise distances:
 [[T-Sne]]
 - Multi-dimensional Scaling tries to minimize the discrepancy between the pairwise distances in the original space and the low dimensional space.
@@ -82,7 +82,7 @@ tags:
 - a problem arises while trying to map our high dimensional manifold to a low dimensional one, since we focus on similarities and dis-similarities, the very dissimilar parts will have to have a large distance between them which results in crushing everything together because of the force that it exerts, this is mainly due to how the gaussian is defined as it tends to 0 exponentially fast over further distances, so having gaussian terms in the denominator will make the fraction explode beyond necessity.
 - a plausible solution is to say that if the points are super far away, we don't care as much about the accuracy , we will model them far away but not accurately proportionally far away, we can do this by replacing the gaussian with a student distribution that tends to 1 instead of 0 which is $\frac{1}{1+\|x_{i}-x_{j}\|^{2}}$.
 
-> [!Code]- T-SNE Code Snippet
+> [!example]- T-SNE Code Snippet
 > ![[Machine Learning/Code Snippets#T-SNE]]
 ## Non-metric data:
 [[T-Sne]]
@@ -108,7 +108,7 @@ tags:
 - Our objective $max_{w_{x}, w_{y}} \frac{w_{x}^{T}XY^{T}w_{y}}{\sqrt{w_{x}^TXX^{T}w_{x}}\sqrt{w_{y}^{T}YY^{T}w_{y}}}$ which we can simplify by maximizing the numerator while constraining the variance of the two projected sets to 1, $argmax_{w_{x}, w_{y}} w_{x}^{T}XY^{T}w_{y}$     s.t    $w_{x}^{T}XX^{T}w_{x} = 1$   and    $w_{y}^{T}YY^{T}w_{y}=1$
 - We denote the cross covariance matrices (of two centered datasets) as $C_{xy} = \frac{1}{N} XY^{T}$ and the auto covariance matrices as $C_{xx} = \frac{1}{N}XX^{T}$
 - The solution of our objective is our highest eigenvector of the following problem $$\begin{bmatrix}0 & C_{xy} \\ C_{yx} & 0 \end{bmatrix}\begin{bmatrix}w_{x}\\ w_{y}\end{bmatrix} = \lambda \begin{bmatrix}C_{xx}&0 \\0& C_{yy} \end{bmatrix}\begin{bmatrix}w_{x}\\ w_{y}\end{bmatrix}$$ and in the Kernerlized object its : $$\begin{bmatrix}0 & K_{x}K_{y} \\ K_{y}K_{x} & 0 \end{bmatrix}\begin{bmatrix}\alpha_{x}\\ \alpha_{y}\end{bmatrix} = \lambda \begin{bmatrix}K_{x}K_{x}&0 \\0& K_{y}K_{y} \end{bmatrix}\begin{bmatrix}\alpha_{x}\\ \alpha_{y}\end{bmatrix}$$
-> [!Code]- CCA Code Snippet
+> [!example]- CCA Code Snippet
 > ![[Machine Learning/Code Snippets#CCA]]
 ## Independent Component Analysis:
 [[Component Analysis]]
@@ -127,7 +127,7 @@ tags:
 	- The std of the angles define the seperability matrix
 	- measure instability of the mixing matrix via $S_{ij} = \sqrt{<\alpha_{ij}^{2}>}$
 	- The uncertainty of the estimated projection direction i is $max_{j}S_{ij}$
-> [!Code]- FastICA Code Snippet
+> [!example]- FastICA Code Snippet
 > ![[Machine Learning/Code Snippets#ICA]]
 ## Representation learning:
 [[Auto-encoders]], [[CNN]], [[Generative Modelling]], [[Regularization]] [[Representation Learning]]
@@ -156,7 +156,7 @@ tags:
 	- This is often done using the Wasserstein distance.
 - Representation based learning is a learning task that tries to learn general transformations between data and not the local information in the datapoint itself (e.g how to rotate an image). This can be done by producing two version of one datapoint, one rotated the other not, and encoding them with an encoder such that the decoder takes in the input of both and tries to learn to rotate the original image using the difference between the two representations produced by the two encoders working on the original and rotated image.
 
-> [!Code]- Auto-encoders Code Snippet
+> [!example]- Auto-encoders Code Snippet
 > ![[Machine Learning/Code Snippets#Auto-encoder]]
 ## Hidden Markov Models
 [[Markov Models]]
@@ -206,7 +206,7 @@ tags:
 		- $a_{ij} = \frac{\sum\limits_{t=1}^{T-1}\xi_{t}(i,j)}{\sum\limits_{t=1}^{T-1}\gamma_{t}(i)}$
 		- $\pi_{i} = \gamma_{t}(i)$
 		- $b_{i}(k)= \frac{\sum\limits_{t=1 \text{ s.t } O_{t}=v_{k}}^{T}\gamma_{t}(i)}{\sum\limits_{t=1}^{T}\gamma_{t}(i)}$
-> [!Code]- HMM Code Snippet
+> [!example]- HMM Code Snippet
 > ![[Machine Learning/Code Snippets#HMM]]
 ## Kernels (Input, Output, Anomaly detection):
 [[Kernel Methods]]
@@ -217,7 +217,7 @@ tags:
 - Model induced kernels tell us that there is no point in trying to build a new structural kernel to compare two things in a model that already induces structure.
 - For generative probabilistic models, things that are very conforming to the structure have a high likelihood and things that do not have a low likelihood, Fisher kernel measures similarity by comparing the gradients of the log likelihood of the model using $k(x,x^{'})=g_{x}^{T}(E_{z~p_{\theta}}[g_{z}g_{z}^{T}])^{-1}g_{x^{'}}$ we divide by the expectation of the covariance matrix of the gradients in order to normalize the scores.
 - Diffusion Kernels use the exponentiation of the generator matrix in order to simulate lazy random walks across the graph $k(x_{i},x_{j}) = [e^{\beta H}]_{ij}$ such that $\beta$ is a hyper-parameter that indicates the probability of the random walk for any vertex with valence smaller than the maximal and the exponentiation will indicate the sum over the paths of the random walks.
- > [!Code]- Text Kernels Code Snippet
+ > [!example]- Text Kernels Code Snippet
 > ![[Machine Learning/Code Snippets#Structured input kernels]]
 - In structured Output prediction, we want to learn complex structures that abide by certain rules instead of predicting a number or a class, i.e we want to output a structure that is compatible with our input, for this we need to learn a compatibility function between our x and y such that it scores high for super compatible structures and low otherwise.
 - We can technically theoretically do this with Multi-class SVM such that each possible output is mapped to a class, and only the most compatible output is the correct class to choose, but this is unfeasible as the number of possible outputs can tend to infinity.
@@ -239,7 +239,7 @@ tags:
 		- We can learn SVDD to describe the data in the minimal containing sphere having the knowledge of a percentage of data we expect to be outliers, the outlier score is then computed according to the distance from the center within a given radius. The problem is that that the experts cannot add their own input in SVDD
 		- We can Generalize this hyper-sphere approach to a semi-supervised setting where we have a bunch of labeled data and a bunch of unlabeled data and we have different slack variables for them and different boundary constraints but this is no longer convex! and need gradient descent.
 		- One class SVM is also a generalized of SVDD that tries to compare the datapoint in the space of kernels to our learned features and if the features are near the origin then they have values near 0 and the "similarities" are little with the data and thus we seperate the origin from the class with as big a margin as we can
- > [!Code]- Anomaly detection Code Snippet
+ > [!example]- Anomaly detection Code Snippet
 > ![[Machine Learning/Code Snippets#Anomaly Detection]]
 ## Deep Learning:
 This is a quick summary of DL in ML, this will not go into details because everything will be summarized in the DL section on its own.
@@ -257,5 +257,5 @@ This is a quick summary of DL in ML, this will not go into details because every
 - The training procedure to maximize the data likelihood is called contrastive divergence and its models the push pull approach as it takes in a sample that we think belongs to the data distribution and decreases its energy, and takes a random point (that is gotten through gibbs sampling method) and increases its energy, this converges until our model built distribution matches the true probability distribution described by out dataset [[Energy Based Models]]
 - The model can sometimes assume that the label is sequential and thus divide the iteration over possible ys into N smaller problems which reduces the computation required.
 - In situations where this is not applicable we can train a Generator network that learns to produce good contrastive examples which is trained alongside the discriminator network in order to fool it, similar to the GAN approach.
- > [!Code]- Competing Generator network Code Snippet
+ > [!example]- Competing Generator network Code Snippet
 > ![[Machine Learning/Code Snippets#Energy based models]]

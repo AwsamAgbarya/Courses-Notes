@@ -5,6 +5,11 @@ tags:
 ---
 The following note will have relevant code snippets from some basic machine learning concepts alongside some basic python reminders!
 ## Python Basics:
+```python {pre}
+import numpy as np
+import torch
+import sklearn.datasets
+```
 **Array initialization:**
 ```python
 # Values
@@ -64,7 +69,7 @@ np.linalg.norm(x - (w.dot(x)/np.linalg.norm(w)) # calculating distance of x from
 
 ## Famous Toy Datasets:
 **Labeled Faces in the wild:***
-```python
+```run-python
 import numpy, sklearn.datasets
 D = sklearn.datasets.fetch_lfw_people(resize=0.5)['images']
 # Fetching random data
@@ -76,7 +81,7 @@ D = D / D.std(axis=(1,2), keepdims=True)
 print(D.shape) # (2000,62,47)
 ```
 **20 NewsGroups:**
-```python
+```run-python
 from sklearn.datasets import fetch_20newgroups
 
 train = fetch_20newsgroups(subset='train', categories=['sci.med'])
@@ -92,21 +97,120 @@ def sample(data, T=50):
 	 return O[j:j+T]
 ```
 **GMM:**
-```python
-import sklearn.datasets
+```run-python
 X = sklearn.datasets.make_blobs(n_samples=2000, centers=10, random_state=2)[0]
 X = X - X.mean(axis=0)
 X = X / X.std() * 4.0
 ```
 **MNIST:**
-```python
-import torch
+```run-python
 trainset = torchvision.datasets.MNIST(root='./data', train=True, download=True)
 testset = torchvision.datasets.MNIST(root='./data', train=False, download=True)
-Xr = trainset.data[:2500].float().view(-1,784)/127.5-1
+Xr = trainset.data[:1].float().view(-1,784)/127.5-1
 Xt = testset.data.float().view(-1,784)/127.5-1
 ```
+**Beast Cnacer:**
+```python
+import numpy,sklearn,sklearn.datasets
+D = sklearn.datasets.load_breast_cancer()
+X = D['data']
+T = D['target']
+T = (D['target']==1)*2.0-1.0
+```
+**Yeast:**
+```python
+def Yeast():
+	# Read the dataset
+	f = open("yeast.txt","r").readlines()
+	X = numpy.array([l[:-1].strip().split(',') for l in f])
+	X,T = X[:,1:-1].astype('float'),X[:,-1]
+	classes = set(['CYT','NUC','MIT','ME3','ME2','ME1','EXC'])
+	# Convert labels to soft indicator vectors
+	T = numpy.array([(T==c)*1.0 for c in classes]).T + 1e-2
+	T /= T.sum(axis=1)[:,numpy.newaxis]
+	# Shuffle the data
+	R = numpy.random.mtrand.RandomState(5456).permutation(len(X))
+	
+	return X[R],T[R]
+```
+**Diabetes:**
+```python
+def Diabetes():
+	# Read the dataset
+	diabetes = sklearn.datasets.load_diabetes()
+	X,T = diabetes.data,diabetes.target
+	# Normalize the labels
+	T -= T.mean()
+	# Shuffle the data and reduce it's size
+	R = numpy.random.mtrand.RandomState(5456).permutation(len(X))
+	
+	return X[R],T[R]
+```
+**yacht:**
+```python
+def yacht():
+	D = numpy.loadtxt(open("yacht_hydrodynamics.csv","rb"),delimiter=",",skiprows=1)
+	X,Y = D[:,:-1],D[:,-1]
+	return X,Y
+```
 ## Data Processing:
+##### Data Sampler:
+```python
+class Sampler:
+
+	def __init__(self,X,T):
+		assert(len(X)==len(T))
+		self.X,self.T,self.nbsamples = X*1.0,T*1.0,len(X)
+		self.seed = numpy.random.mtrand.RandomState(1234)
+	
+	# sample half of the total data
+	def sample(self):
+		r = self.seed.permutation(self.nbsamples)[:self.nbsamples//2]
+		return self.X[r]*1.0,self.T[r]*1.0
+```
+##### Splitting:
+```python
+def split(X,Y):
+	n=len(X)
+	rstate = numpy.random.mtrand.RandomState(2345)
+	R = rstate.permutation(n)
+	
+	Rtrain = R[:n//2]
+	Rtest = R[n//2:]
+
+	Xtrain = X[Rtrain] # Training data
+	Ytrain = Y[Rtrain] # Training targets
+
+	Xtest = X[Rtest] # Test data
+	Ytest = Y[Rtest] # Test targets
+
+	return Xtrain,Ytrain,Xtest,Ytest
+```
+##### James-Stein Mean estimator:
+```python
+def JS(X,s):
+	N,d = X.shape
+	m_Ml = X.mean(axis=0)
+	m_JS = (1 - (d-2)*s**2/N/(m_Ml**2).sum())*m_Ml
+	return m_JS
+```
+
+##### Bias-Variance Decomposition:
+```python
+def biasVarianceRegression(sampler, predictor, X, T, nbsamples=25):
+	Y = numpy.array([predictor.fit(*sampler.sample()).predict(X) for _ in range(nbsamples)])
+	bias = (Y-T).mean(axis=0)**2
+	variance = ((Y-Y.mean(axis=0))**2).mean(axis=0)
+	return bias.mean(),variance.mean()
+
+def biasVarianceClassification(sampler, predictor, X, T, nbsamples=25):
+	Y = numpy.array([predictor.fit(*sampler.sample()).predict(X) for _ in range(nbsamples)])
+	R = numpy.exp(numpy.log(Y).mean(axis=0))
+	R /= R.sum(axis=1, keepdims=True)
+	bias = (T*numpy.log(T/R)).sum(axis=-1)
+	variance = (R*numpy.log(R/Y)).sum(axis=-1)
+	return bias.mean(),variance.mean()
+```
 ##### Whitening:
 ```python
 def Whiten(X):
@@ -121,7 +225,6 @@ def Whiten(X):
 [[CookBook2#PCA (Recap)]]
 ##### SVD:
 ```python
-import numpy as np
 # D.shape = (2000,62,47)
 X = D.reshape(len(D), -1).T # X.shape = (2914, 2000)
 X -= X.mean(axis=1, keepdims=True) # Centering
@@ -150,6 +253,147 @@ for iteration in range(100):
 	w = Sw / (Sw**2).sum()**.5
 ```
 
+## SVM:
+```python
+def getGaussianKernel(X1,X2,scale):
+	norm = scipy.spatial.distance.cdist(X1,X2,'euclidean')
+	return np.exp((norm**2)/(-2*scale**2))
+
+def getQPMatrices(K,T,C):
+	n = len(K)
+	h = matrix(np.concatenate([np.zeros([n]), np.full([n],C)]).astype('float'))
+	G = matrix(np.concatenate([-np.eye(n,n), np.eye(n,n)]).astype('float'))
+	b = matrix(np.array([0.0]))
+	A = matrix(T.reshape(1,-1).astype('float'))
+	P = matrix(T@T.T@K)
+	q = matrix(-np.ones([n]))
+	return P,q,G,h,A,b
+
+def getTheta(K,T,alpha,C):
+	sv = np.argmin(np.abs(alpha-C/2.0))
+	ym = T[sv]
+	sv_sum = K[sv,:]@(alpha*T)
+	return ym - sv_sum.sum()
+
+class GaussianSVM:
+
+	def __init__(self,C=1.0,scale=1.0):
+		self.C, self.scale = C, scale
+	
+	def fit(self,X,T):
+		K = getGaussianKernel(X,X,self.scale)
+		P,q,G,h,A,b = getQPMatrices(K,T,self.C)
+		alphas = numpy.array(cvxopt.solvers.qp(P,q,G,h,A,b)['x']).flatten()
+		
+		self.theta = getTheta(K,T,alphas,self.C)
+		# No need to retain all alphas!
+		indices = alphas>(1e-6*alphas.mean())
+		
+		self.labels = T[indices]*1
+		self.alphas = alphas[indices]*1
+		self.X = X[indices]*1
+	
+	def predict(self,X):
+		K = getGaussianKernel(X,self.X,self.scale)
+		Y = np.sign(np.dot(K,self.alphas*self.labels)+self.theta)
+		return Y
+for scale in [30,100,300,1000,3000]:
+	for C in [10,100,1000,10000]:
+		acctrain,acctest,nbsvs = [],[],[]
+		svm = GaussianSVM(C=C,scale=scale)
+		for i in range(10):
+			# Split the data
+			R = numpy.random.mtrand.RandomState(i).permutation(len(X))
+			Xtrain,Xtest = X[R[:len(R)//2]]*1,X[R[len(R)//2:]]*1
+			Ttrain,Ttest = T[R[:len(R)//2]]*1,T[R[len(R)//2:]]*1
+			# Train and test the SVM
+			svm.fit(Xtrain,Ttrain)
+			acctrain += [(svm.predict(Xtrain)==Ttrain).mean()]
+			acctest += [(svm.predict(Xtest)==Ttest).mean()]
+			nbsvs += [len(svm.X)*1.0]
+		print('scale=%9.1f C=%9.1f nSV: %4d train: %.3f test: %.3f'%(scale,C,numpy.mean(nbsvs),numpy.mean(acctrain),numpy.mean(acctest)))
+	print('')
+```
+## Weighted K-means CLustering:
+```python
+import scipy, scipy.spatial.distance
+
+def initialize(K,population):
+	population = population.astype('float64')
+	p = population / population.sum()
+
+	centroids = numpy.random.choice(p.size,[K], p=p.flatten()) # pick a number from the entire size
+	centroids = numpy.unravel_index(centroids,p.shape) # reshape back into row and col
+	
+	centroids = numpy.concatenate([
+		centroids[0][:, None],
+		centroids[1][:, None]
+		], axis=1)
+	centroids = centroids+numpy.random.normal(0,0.01, centroids.shape)
+	return centroids
+	
+def wkmeans(centroids, points, weights, verbose, nbit):
+	for it in range(nbit):
+
+		# Expectation
+		distance = scipy.spatial.distance.cdist(points,centroids, 'sqeuclidean') # Squared distances
+		allocation = numpy.argmin(distance, axis=1) # Which centroid does point i belong to
+		
+		# Maximization
+		J = 0
+		
+		for k in range(len(centroids)):
+			p = points[allocation==k] # get all points belonging to centroid k
+			w = weights[allocation==k] # get their current weight to centroid k
+			centroids[k] = (p*w[:, None]).sum(axis=0) / (w.sum(axis=0) + 1e-6) # compute new centroids
+
+			J = J + (w*((p-centroids[k])**2).sum(axis=1)).sum()
+		J /= weights.sum()
+		if verbose or it==nbit-1: print(f'Current iteration={it}, Obj={J}')
+	
+	return centroids
+```
+## Gaussian Process:
+```python
+import numpy as np
+
+class GP_Regressor():
+	def __init__(self, Xtrain, Ytrain, width, noise):
+		self.width = width
+		self.noise = noise
+		
+		self.Xtrain = Xtrain
+		self.Ytrain = Ytrain
+		
+		self.kXX = utils.gaussianKernel(self.Xtrain, self.Xtrain, self.width)
+		self.SXX = self.kXX + self.noise**2*np.identity(len(self.Xtrain))
+		
+		self.SXXinv = np.linalg.inv(self.SXX)
+	
+	def predict(self, Xtest):
+		kXZ = utils.gaussianKernel(self.Xtrain, Xtest, self.width)
+		kZZ = utils.gaussianKernel(Xtest, Xtest, self.width)
+		
+		SXZ = kXZ
+		SZX = SXZ.T
+		SZZ = kZZ + self.noise**2*np.identity(len(Xtest))
+
+		mean = SZX.dot(self.SXXinv).dot(self.Ytrain)		
+		cov = SZZ - SZX.dot(self.SXXinv).dot(SXZ)
+	
+		return mean,cov
+	
+	def loglikelihood(self, Xtest, Ytest):
+		mean, cov = self.predict(Xtest)
+		covinv = np.linalg.inv(cov)
+		
+		v = Ytest-mean
+		Q = v.T@covinv@v
+		R1 = np.linalg.slogdet(cov)[1]
+		R2 = len(Xtest)*np.log(2*np.pi)
+		
+		return -0.5 * (Q+R1+R2)
+```
 ## LLE:
 [[CookBook2#Locally Linear Embedding]]
 ```python
