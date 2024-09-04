@@ -4,64 +4,82 @@ tags:
   - Programming
 ---
 The following note will have relevant code snippets from some basic machine learning concepts alongside some basic python reminders!
-## Python Basics:
+## Torch Basics:
 **Array initialization:**
 ```python
-# Values
-np.zeros(size) #0
-np.ones(size) #1
-np.full(size,val) #val
-np.empty(size) #no value
-# Ranges
-np.arange(start:end:step) #custom range
-np.linspace(startval,endval,size) #linear range
-# miscellaneous
-np.repeat(container,times,axis)
-np.identity(size)/np.eye(size)
+torch.FloatTensor(a.shape) # Allocate space
+torch.zeros(a.shape) # zeros
 ```
 
-**Useful numpy functions:**
+**Useful torch functions:**
 ```python
-np.cumsum(arr,axis) #Cumulative sum
-np.vstack(a,b) #appends 2 arrays while keeping the objects
-np.hstack(a,b) #appends 2 arrays horizontally 
-np.argmin/max(a)  #returns index of min/max
-np.unique(arr, return_index, return_inverse, return_counts) # counts unique values and returns their index/count
-np.expand_dims(arr, axis) #expanding the dimension of an array
-np.argwhere(a>c).flatten() #returns indices of non-zero elements
-np.where(cond, x,y) #returns elements that match the condition (returns x otherwise y)
-np.put(a,indices,values) #replaces indices in a with values
-np.hsplit(a,number) #splits array horizontally given a number of elements
-pad_shape = (
-	(0, 0),  # Add no row at the top and no row at the bottom
-	(1, 0),  # Add one column at the left and no column at the right
-)
-transition = np.pad(arr,pad_shape,constant_values=0) 
+values, indices = torch.sort(a, descending=True) # sorts
+torch.clamp(a,min=b, max=c) # clip values
+torch.cat(a,b) # concatenate
+torch.unique(a) # np.unique
+torch.softmax(x) # softmax function
+a.item() #returns the actual value of a 1 element tensor
+torch.manual_seed(0)# Testing randomness with a seed
 ```
 
 **Reshaping:**
 ```python
-A.T #flips the axis 
-A.transpose(indices) #transposes the arrays axis according to the indices of the original axis
-A.reshape(shape) #keeps the data in the same order but changes the dimensions accordingly, You are allowed to use '...' to indicate all previous indexes
-A.flatten() #turns the array into one dimensional
-A[:,None] #To add a new dimensions (usually for broadcasting)
-A[A>c] #filter out all the elements in A that dont apply to the condition
+torch.permute(a, (0,1,2)) # transpose
+a.view(1,-1,1) # reshape
+A.ravel() #turns the array into one dimensional (flatten)
+a.unsqueeze(0) # expand dimensions
 ```
-
-**Linear Algebra:**
+**NN layers:**
 ```python
-np.linalg.norm(point1-point2) #Used to calculate euclidean distances or l2 norm
-np.linalg.inv(A) #inverse matrix
-np.linalg.eig(A) #returns eigen values vectors
-np.linalg.eigh(A) #returns eigenvalues and vectors given that the matrix A is symmetric (i.e all eigenvalues are real)
-scipy.linalg.eigs(A, k=num) #returns eigenvalues and vectors given that the matrix A is sparse 
-np.linalg.det(A) #returns determinant
-np.linalg.einsum('ii->i',a) #returns the diagonal einsum('ii',a) returns sum of diagonal
-np.linalg.norm(x - (w.dot(x)/np.linalg.norm(w)) # calculating distance of x from hyperplane w
-((A - B)**2).mean(axis=0) # performs mean squared error
+nn.Sequential(
+	nn.Linear(in_dim, out_dim),
+	nn.ReLU(),
+	nn.BatchNorm2d(num_features=out_channels),
+	nn.Conv2d(in_channels, out_channels=out_channels, kernel_size=kernel, stride=stride),
+	
+)
+```
+## Famous Toy Datasets:
+**FashionMNIST:**
+```python
+data_root = './data'
+train_dataset = FashionMNIST(data_root, train=True,download=True, transform=T.ToTensor())
+test_dataset = FashionMNIST(data_root, train=False,download=True, transform=T.ToTensor())
 ```
 ## Processing tasks:
+**Saving a model:**
+```python
+# save model after each epoch
+os.makedirs('models', exist_ok=True)
+torch.save(model.state_dict(), f'models/model_{k}.pt')
+model.load_state_dict(torch.load(f'models/model_{k}.pt'))
+model.eval() # put it in eval mode in order to not do extra computation (freeze)
+```
+**Training bar:**
+```python 
+from tqdm.auto import tqdm
+from torch.utils.data import DataLoader
+
+train_loader = DataLoader(train_dataset, batch_size=1024, shuffle=True)
+# ITERATION
+for x, y in tqdm(train_loader):
+# Or at once
+x, y = next(iter(dl))
+```
+**Accuracy function:**
+```python
+@torch.no_grad()
+def accuracy(model: torch.nn.Sequential, data_loader: DataLoader) -> [float, float]:
+	count = 0
+	num_correct = 0
+
+	for x, y in data_loader:
+		logits = model(x)
+		yh = torch.argmax(logits, dim=1)
+		num_correct += (y==yh).float().sum()
+		count += x.shape[0]
+	return float(num_correct / count)
+```
 **In-painting missing patch:**
 ```python
 def removepatch(X):
@@ -72,4 +90,189 @@ def removepatch(X):
 		mask[i,11+j:17+j,11+k:17+k] = 1
 	mask = mask.view(len(X),784)
 	return (X*(1-mask)).data,mask
+```
+**Transformations:**
+```python
+from torchvision.transforms import v2
+raffine = v2.RandomAffine(degrees=(-15, 15), translate=(0.1, 0.1), scale=(0.8, 1.1))
+elastic_transformer = v2.ElasticTransform(alpha=20.0, sigma=6.0)
+random_transform = v2.RandomApply(transforms=torch.nn.ModuleList([raffine, elastic_transformer]), p=0.9)
+# Or composed into one
+v2.Compose(
+	[v2.RandomResizedCrop(28, scale=(0.1, 1.0), interpolation=v2.InterpolationMode('bicubic')),
+	 v2.RandomHorizontalFlip(),
+	 v2.ToTensor(),
+	 v2.Normalize((0.5,), (0.5,))
+])
+
+# To add to a torchvision dataset we need to define a class
+class ViewTransform(object):
+	# two views from the image x and return them as tuple
+	def __call__(self, x):
+		return (augment(x).float(), augment(x).float())
+
+dataset.transform = ViewTransform()
+```
+ **Contour loss Trajectory :**
+ ```python
+ def plot_loss_surface_toy(loss_func):
+	l = 4
+	x = np.linspace(-l, l, 100)
+	y = np.linspace(-l, l, 100)
+	
+	X, Y = np.meshgrid(x, y)
+	fig = plt.figure()
+	Z = loss_func(torch.stack([torch.tensor(x.flatten()).float() for x in [X, Y]]).T).reshape(X.shape)
+	
+	plt.contourf(X, Y, Z, cmap='viridis', levels=25)
+	plt.ylim(-l,l)
+	plt.xlim(-l,l)
+
+def trajectory_plot(loss_func, optim, optim_kwargs, bs=0, nsteps = int(5e2)):
+	model = ML_Model()
+	optim_ = optim(model.parameters(), **optim_kwargs)
+	param_traj = [list(model.params[0].detach().cpu().numpy())]
+	
+	for i in range(nsteps):
+		train_loss = loss_func(model.params)
+		train_loss.backward()
+		optim_.step()
+		model.zero_grad()
+		param_traj.append(list(model.params[0].detach().cpu().numpy()))
+		
+		#if ((i + 1) % max(nsteps//10, 1)) == 0:
+		# print(f"Epoch {i + 1} trainloss {train_loss.item():.2e}")
+	plt.plot(*np.asarray(param_traj).T, alpha=0.9)
+	return model.params
+	```
+## Neural Networks:
+**Basic MLP :**
+```python
+class ReluMLP(nn.Module):
+	def __init__(self, in_neurons=4, hidden_neurons = [6, 8, 6], out_neurons=1):
+		super(ReluMLP, self).__init__()
+		self.layer_list = nn.ModuleList()
+		
+		if not hidden_neurons:
+			self.layer_list.append(nn.Linear(in_neurons, out_neurons))
+			return
+		# Input layer
+		self.layer_list.append(nn.Linear(in_neurons, hidden_neurons[0]))
+		self.layer_list.append(nn.ReLU())
+		# Hidden layers
+		for i in range(len(hidden_neurons) - 1):
+			self.layer_list.append(nn.Linear(hidden_neurons[i], hidden_neurons[i + 1]))
+			self.layer_list.append(nn.ReLU())
+		# Output layer
+		self.layer_list.append(nn.Linear(hidden_neurons[-1], out_neurons))
+
+	def forward(self, x):
+		for __, l in enumerate(self.layer_list):
+			x = l(x)
+		return x
+
+def train_mlp(model, X, y, num_epochs=3, batch_size=10, lr=0.001):
+	assert len(X) >= batch_size
+	loss_log = []
+	N = len(X) # Num of datapoints
+	batch_it = N // batch_size 	# Num of batches
+
+	# Initialize stochastic gradient descent and MSE loss
+	loss_func = torch.nn.MSELoss()
+	gradient_descent = torch.optim.SGD(model.parameters(), lr=lr)
+	
+	model.train()
+	
+	for epoch in range(num_epochs):
+		epoch_loss = 0.0
+		
+		# Permute the data
+		permutation = torch.randperm(N)
+		X = X[permutation]
+		y = y[permutation]
+		
+		for i in range(batch_it):
+			X_batch = X[i * batch_size: (i + 1) * batch_size]
+			y_true = y[i * batch_size: (i + 1) * batch_size].reshape(-1,1)
+			
+			# Compute forward pass, loss and backward pass
+			gradient_descent.zero_grad()
+			
+			loss = loss_func(model(X_batch),y_true) # Compute Forward pass + loss
+			loss.backward() # Compute backward pass
+			gradient_descent.step() # adjust parameters
+			
+			# Add loss to the epoch loss
+			epoch_loss += loss.item()
+			
+		# Add average loss per point to history
+		loss_log.append(epoch_loss / batch_it)
+	
+	return loss_log
+```
+
+**Generating Adversarial attacks:**
+```python
+single_img = test_dataset[2][0]
+
+def adversarial_attack(original, model, target=1):
+	perturbed = original.clone().requires_grad_() # Cloning our image for pertubation
+	wanted_label = torch.Tensor([target]).long() # Label we want to make it predict
+	
+	# Set up SGD with learning-rate 1
+	optim = torch.optim.SGD((perturbed,), lr=1)
+	
+	# Set up criterion
+	criterion = nn.CrossEntropyLoss() # Loss
+	pred = model(perturbed.reshape(1, 784)) # Models prediction
+	pred_label = pred.argmax()
+	counter = 0
+	model.eval()
+	
+	# As long as the prediction_label is not target, do gradient descent on the sample
+	while not pred_label == wanted_label:
+		# Predict
+		pred = model(perturbed.reshape(1, 784))
+		pred_label = pred.argmax()
+		# See loss from wanted label and take a step backwards
+		loss = criterion(pred, wanted_label)
+		loss.backward()
+		optim.step()
+		optim.zero_grad()
+	
+		counter += 1
+		if counter > 50000:
+			print('Not Converging')
+			break
+	
+	# To here ------------------------------------------------
+	
+	fig, ax = plt.subplots(1, 3)
+	show_single_image(original, ax[0])
+	ax[0].set_title(f'Orig. Pred {model(original.reshape(1, 784)).argmax()}')
+	show_single_image(perturbed, ax[1])
+	ax[1].set_title(f'Orig. Pred {model(perturbed.reshape(1, 784)).argmax()}')
+	show_single_image(perturbed - original, ax[2])
+	ax[2].set_title(f'Perturbation L2: {torch.norm(perturbed - original):.1f}')
+	model.train()
+	
+	return perturbed
+```
+
+## SimCLR:
+[[CookBook2#Representation learning]]
+```python
+def simclr_loss(z1, z2):
+	tau = 0.1
+	N = z1.shape[0]
+	# Matrix of size (2048,32) which is basically z1 and z2 concatenated horizontally
+	z = torch.cat((z1,z2),0)
+	# Matrix of size (2048,2048) which is each view's cosine similarity with every other view
+	similarity = torch.exp(torch.nn.functional.cosine_similarity(z[:,None,:],z[None,:,:], dim=2)/tau)
+	
+	numerator = torch.cat((torch.diagonal(similarity,offset=N),torch.diagonal(similarity,offset=-N)),0)
+	similarity = similarity - torch.diag(torch.diagonal(similarity))
+	denominator = torch.sum(similarity,axis=0)
+	
+	return -1/(2*N) * torch.sum(torch.log(numerator/denominator))
 ```
