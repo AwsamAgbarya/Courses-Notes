@@ -546,6 +546,7 @@ for i in range(iterations):
 	hmm_model.backward()
 	# Learning process
 	# Compute gamma, xi and psi
+	# Or simply put replace the next 6 lines with hmm_model.learn()
 	hmm_model.gamma = hmm_model.alpha*hmm_model.beta / hmm_model.pobs
 	hmm_model.xi = hmm_model.alpha[:-1,:,None] * hmm_model.A[None,:,:] * hmm_model.beta[1:, None, :] * self.Z[1:, None, :] / self.pobs
 	hmm_model.psi = hmm_model.gamma[:,:, None]* (hmm_model.O[:,None,None] == np.arange(hmm_model.B.shape[1])[None,None,:])

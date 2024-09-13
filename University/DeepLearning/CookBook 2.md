@@ -1,4 +1,5 @@
 ## Representation Learning:
+[[Representation Learning]]
 - When using data hungry models or developing in fields with lack of data, its very useful to be able to use unlabeled data because its a lot more common than labeled data that requires experts.
 - Representation learning is about taking unsupervised data and learning features and patterns that occur in the data without having explicit labels, in other words, encoding the observation space into the latent space which represents all modalities combined.
 - Since we lack labels we cannot compare things with the ground truth provided instead we need to define clear objectives that we can measure the error of, these are called Pretext Tasks:
@@ -33,6 +34,8 @@
 	2. Contrastive learning requires a large batch with a lot of contrastive examples in order for it not to collapse.
 	Both of these problems will be solved in the following 2 topics respectively.
 -  SimCLR loss is given by: $$\mathcal{L} = - \frac{1}{N} \sum_{i,j \in MB} log \frac{exp \left( \frac{sim(z_i,z_j)}{\tau} \right) }{\sum_{k=1}^{2N} 1_{k \neq i} exp \left( \frac{sim(z_i,z_j)}{\tau} \right)}$$ such that sim is usually the cosine similarity $\frac{u \cdot v}{|u|\cdot|v|}$ the numerator maximizes the similarity between 2 views of the same image and the denominator minimizes the similarity between the views of different images.
+> [!example]- SIMCLR loss Code Snippet
+> ![[DeepLearning/Code Snippets#SimCLR|Code Snippets]]
 -  The softmax distribution is controlled by the cosine similarity which is bounded by [-1,1] , The temperature parameter Controls the following:
 	- Higher temperature leads to a more Uniform distribution of the similarities because the loss is less sensitive to changes in the similarity of views
 	- Lower temperature leads to a distribution to have less entropy meaning that the similarities after the softmax become larger because the loss becomes more sensitive to changes in the similarity of 2 views
@@ -74,3 +77,84 @@
 - We then have 2 Types of losses that are symmetric for the 2 views (Thus 4 losses):
 	1. One type of loss tries to match the CLS token of the student with the CLS token of teacher across the views which will make it want to predict global representation classification from the teacher
 	2. the other type of loss will try to compare the predicted patches of the student with the visual tokens produces by the teachers tokenizer and try to improve upon it
+
+## Transformers:
+[[Transformers]]
+- Attention -the main component of transformers- is the algorithm that allows our neural network to analyze the input and tell the deduce which part of the input is related and influenced by other parts the most, i.e which token should we pay attention to while processing each token in the input. With such algorithm, we do not have to do an exhaustive search over all tokens and and consider all feature tokens when processing input tokens, instead we can pay attention only to the ones that matter.
+- Attention was revolutionary in the sequence modelling field because previously RNNs had to consider one token at a time sequentially, which lead to both scaling complexity with the context window AND a short term memory since over a long context window the information gets lost /explodes/diminishes.
+- Self-attention is an attention algorithm applied to the input as context and as features, this is often used to understand the underlying structure of a given input and to generate that structure (instead of relating a certain input to a certain output)
+- Cross-attention is an attention algorithm applied to a pair of inputs-output, such that it analyzes how each part of the input is influences each part of the output.
+- Transformers have less inductive biases then CNN and RNNs making them build a richer representation space and also require a lot more data to train.
+- Attention heads are efficient and can operate at large window sizes (Which RNNs cant since they have short term memory), and unlike RNNs they do not need to grow with the sequence length, self-attention also reduces maximal path length between long range dependencies (attend to all elements at the same time)
+- Unlike RNN's Transformers can be parallelized during training
+- Unlike CNN's Transformers store information
+- Unlike RNNs and CNNs, transformers often provide us with a little interpretation (not explanation, big difference) if we try to analyze the attention scores given.
+##### Attention Algorithm:
+1. **Tokenization:** As mentioned above transformers have to have its input split into core elements, those core elements are called tokens and its those tokens we analyze, the assumption here is that for our problem tokens are the primal building blocks and they cannot be broken down into simpler tokens. (This process is done for the pair of inputs in cross attention)
+2. **Embedding:** Tokens are input data building blocks, they could be of many modalities (string, images, numbers...), however our model only takes in numerical vectors. The embedding process is a semantic preserving process that takes in an input of any kind, and returns a vector that represent a latent of sorts for the features of this token. Additionally for our problem, it may be important to also not lose spatial information and thus the embedding also includes position information for each token in the entire structure. (This process is done for the pair of inputs in cross attention)
+3. **Query, Key, Value computation:** The next computation is the heart of the attention algorithm, its the main part with learnable parameters in the Attention head and its comprised of three operations:
+	1. *Query computation:* The term query is used to resemble our current context that are processing, i.e if we were to go to analyze one word (token) at a time in a sentence (For Cross-attention this is relating to a token in the first half of the pair, and for self-attention this is the input embedding itself), at each iteration the current word we are at is our Query, and its used later on to compute and analyze which other tokens relate to it the most . Query computation is straight forward, its simply a projection of the embedding of the token along a learnable parameter $q_{i} = Wq_{i}E_{x_{i}}$
+	2. *Key computation:* The term key is used to resemble the token we are examining against our current query, i.e given our current query token, how much does this particular key token relate to it (for Cross attention this is relating to a token in the second part of the pair, whereas with self-attention its just the input embedding itself).  Key computation is quite similar to query except it uses different learnable parameters $k_{i} = Wk_{i}E_{x_{i}}$
+	3. *Value computation:* Values are basically the latent outputs vector that we are looking for each matching token (In cross attention this is usually related to the later half of the pair, in self-attention this is the input embedding token itself), values can also be seen as displacement vectors that represent the displacement this current token causes in the semantic latent space.
+4. **Attention Computation:** Taking our queries and keys for all the tokens, computed previously, we now perform a dot product between every key and query. The dot product is a measure of similarity between numerical vectors, and it produces a score that roughly indicates which keys contribute to which queries the most.
+5. **Extra Score modification:** After getting the attention scores, a few things are noted, firstly the process we have achieved so far has been stacked with matrix multiplication which we want to avoid due to exploding gradients. Another thing to note is that the scale of the scores is usually out of proportion, while we do care about the "order of importance" in the scores, we often want to convert it to numerically stable probabilities where there aren't regions that experience extremely small gradients, thus we perform a scaling down process with a fraction $\frac{1}{\sqrt{d}}$ relative to the context size. Furthermore in certain tasks where we are meant to generate words, it is often wrong to have the knowledge of "future/ahead tokens" influence on our current token since we treat the input as if the query is the last token (only in self-attention), We can fix this issue by adding a mask that covers the upper triangular matrix with -infinity scores.
+6. **Softmax:** We convert from scores to probabilities using the softmax function
+7. **Compute Output:** We can compute an output for an attention head by multiplying the probabilities with the values we have computed earlier, i.e produce an output that consists of only the values that we should pay attention to according to our scores. $y_{i} = \sum\limits_{i} v_{i} softmax(\frac{q_{j}^{T}k_{i}}{\sqrt{D}})$
+- **Note:** The gradients of an attention layer w.r.t to its QKV is: $$\frac{\partial f}{\partial q_{j}} = \sum\limits_{k} \sum\limits_{i} \frac{\partial f}{\partial y_{k}} \frac{\partial y_{k}}{\partial p_{ik}} \frac{\partial p_{ik}}{\partial q_{j}}$$ $$ \frac{\partial f }{\partial k_{i}} = \sum\limits_{k} \frac{\partial f }{\partial y_{k}} \left( \frac{\partial y_{k}}{\partial x_{i}} + \sum\limits_{l} \frac{\partial y_{k}}{\partial p_{lk} } \frac{\partial p_{lk}}{\partial x_{i}} \right)$$
+> [!example]- Attention  Code Snippet
+> ![[DeepLearning/Code Snippets#Attention Block|Code Snippets]]
+##### Multi-Headed Attention:
+- Multi-headed attention is a component that is comprised of many attention heads randomly initilialized such that each one of them learns its own "features", which is then combined (concatenated) with its other attention heads in the MHA. Lastly since the output dimension is going to be much larger than needed, we add a projection head at the end of the MHA to project that information back into the size we want it to be.
+##### Transformer Architecture:
+- The transformer is usually made of an Encoder and a Decoder, those of which have similar structure but differ in certain areas.
+- **The Encoder** part is made up of many layers of transformer encoders, each of which is comprised of a res-net of multi-headed attention block alongside a feed-forward network (MLP) block. A Batch normalization is also added at the end of each resnet block. The encoder is fed positional input embeddings and will output embeddings in latent space that are forwarded to the decoder.
+- **The Decoder** is often auto-regressive, meaning it generates one token at a time and will take all previously generated tokens as input in each iteration. At the start it will take a [CLS] token as input and will stop generating when it generates a [SEP] token.
+  The architecture of the decoder consists of 3 Res-net blocks, first a MHA that is masked for future tokens that takes in the previous output as input followed up by BN, then a MHA that takes in the previous MHA's input plus input from the Encoder plus BN, then a feed forward MLP network plus BN. at the end we convert the output into probabilities using a linear layer with a softmax and pick the token with the highest probability.
+##### Vision Transformers (ViT):
+- So far we have only mentioned Text Transformers but they can be generalized into Convolution-free image transformers, the Idea is described in [[CookBook2#BEIT]] where we first need to tokenize the image into "visual tokens" followed up by the same architecture as previously mentioned.
+
+## Graph Neural Networks:
+[[Graph NN]]
+- Graph neural networks are typically formulated as functions that take a varying size graph as input and output a representation of the graph. The representation usually takes the form of an embedding of the graph nodes in Euclidean space
+- Graphs consists of  a set of nodes V and a set of directed/undirected weighted/unweighted edges E connecting the vertices, edges are symmetric in their representations, labels can also be attached to nodes and edges to provide extra information.
+- Graph features can be learned through:
+	- Sub-graphs: Represent the graph as a bunch of sub-graphs. This number exponentially grows with the size of the graph (Think of embedding space/feature space)
+	-  Random Walks: Sample a random walk in a random direction alongside the graph , information about (non)locality of walks may be hard to recover. Many walks are required to represent the graph since theyre treated as sequences (think RNN). However This does not capture global information.
+- Graph-focused applications: independent of the node i and implements a classifier or a regressor on a graph structured data set, i.e the whole graph is used to produce one output.
+- Node focused applications: depends on the node n, so that the classification (or the regression) depends on the properties of each node. 
+- Lets define a Graph G=(V,A) that consists of V a set of nodes, and A an adjacency matrix where aij denotes the weight between two nodes i and j, missing edge is represented through aij = 0 We define the degree matrix D = diag(d1, . . . , dn) is a diagonal matrix where each entry on the diagonal is equal to the row-sum of the adjacency matrix Each node vi in the graph has a corresponding d-dimensional feature vector xi Each node belongs to one out of C classes and can be labeled with a C-dimensional one-hot vector yi. 
+- #### Weisfeiler-Lehman isomorphism test
+	-  A test that allows us to learn more about two graphs that are "isomorphic", this test does not guarantee that they are, but it is necessary to prove that they are (If it fails then theyre not isomorphic for sure, if it succeeds then theres a chance theyre isomorphic and a chance that theyre not)
+	- The idea behind it is the basis of the GNN network
+	1. if nodes are not labeled, assign the same label to each node.
+	2. Relabel nodes with tuple of own label and sorted multi-set of neighbor labels.
+	3. Compress labels using hash function (here: sequential id). Its important to note that this hash function encodes the label of the current node and its neighbors, nodes that have the same label and same number of neighbors will result in the same label after hashing, moving  forward we will use this has function multiple times.
+	4. We check our stop conditions and compare:
+		- If the labels of the graph nodes differed from the last iteration -> We continue with step 2
+		- If the labels of the graph nodes did not differ from the last iteration (at least one of the two graphs) -> Stop and check isomorphism
+			- If both graphs have the same representation -> Isomorphic
+			- If the graphs have a different representation -> Not isomorphic
+- #### Message Passing NN:
+	- Similar to CNNs or MLPs, GNNs learn a new feature representation for the feature xi of each node over multiple layers, which is subsequently used as input into a linear classifier.
+	- Has many implementations like GCN, DTNN, GGSNN but they all follow the same logic with diff functions and implementations.
+	- The network consists of two phases:
+		1. Message passing (transition): information is exchanged between the nodes of the NN.
+		   Usually written as the function $x = F_w(x,I)$ such that I is extra node labels.
+		   Theoretically the transition function needs to keep updating the graph until we reach a fixed point, We can guarantee the convergences to a unique fixed point according to Banach fixed-point theorem: Which denotes that in a metric space (for example euclidean governed by l2 norm) the map F is called a contraction map (converges to a fixed point) on X if there exists $\alpha \in [0,1)$ such that $\|F(x) - F(Y)\| \leq \alpha \|x-y\|$. In our case we can guarantee this by adding lipschitz Regularization (which is basically a gradient penalty to the loss function) $\| \frac{\partial F_w}{\partial x}\|$ Lipschitz regularization enforces Lipschitz continuity which ensures a certain smoothness (in the sense that there are no sudden jumps and step function like movement) to the function applied. hence an existence of a unique solution to converge to. This is important to prove for implementations of Transition functions.
+		   However in practice we dont apply this until convergence, we just choose T times/layers where we apply this until it has a rich representation of our graph features.
+		   There is no need in storing the states of every iteration of message passing in this phase, only the final output is require for gradient computation because we reached a unique point.
+		2. Readout Phase (output): computes an output from the given representation we have reached according to our problem (whether graph based or node based) 
+	- ##### GCNN:
+		- Quite complicated in the process of reaching the final product, id suggest you read the visual note about it, as i wont go into detail here besides the fact that we use the Laplacian eigenvectors as the fourier basis functions to perform convolution filters in the spectral domain.
+		- Note: in order for a graph to have a discrete spatial convolution with translation, the laplacian needs to be a toeplitz matrix (diagonals' values are equal), in which case all nodes have to have equal degrees
+		- The definition of convolution in the spatial domain faces many challenges, limitations and just doesnt work, which is why we define it in the spectral domain.
+		- The convolution Operating is comprised of three stages:
+			1. Feature propagation where we update our graph representation with the message passing between neighbors $H^{l+1} = \tilde{D}^{-\frac{1}{2}} \tilde{A} \tilde{D}^{-\frac{1}{2}} H^{l}$
+			2. Linear transformation Where we multiply the representation with learnable parameters W to project into a representation we want
+			3. non-linear pointwise activation function to enrich the solution space
+			- Transition function: $H^{l+1} = \sigma(\tilde{D}^{-\frac{1}{2}} \tilde{A} \tilde{D}^{-\frac{1}{2}} H^{l} W^{l})$ Where it performs a convolution of the neighbors if each node and the receptive field gets larger by the layer
+		- The output function is not unique in GCNN and can be written like any output function in GNN commonly used as:
+			- Graph based output: $Y = \frac{1}{N} \sum\limits_{i=1}^{N}f(x_{i})$
+			- Node based Classification: $Y = softmax(H^{K})$
+> [!example]- Graph Convolution  Code Snippet
+> ![[DeepLearning/Code Snippets#Graph Convolution|Code Snippets]]

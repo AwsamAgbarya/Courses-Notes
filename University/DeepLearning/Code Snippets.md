@@ -276,3 +276,219 @@ def simclr_loss(z1, z2):
 	
 	return -1/(2*N) * torch.sum(torch.log(numerator/denominator))
 ```
+
+## Transformers:
+[[CookBook 2#Transformers]]
+**DistillBert Tokenizer:**
+```python
+from transformers import AutoTokenizer
+tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
+sentence = "This was one of the best movies I have ever seen."
+inputs = tokenizer(sentence, return_tensors = 'pt')
+subtokens = tokenizer.convert_ids_to_tokens(list(inputs['input_ids'].squeeze()))
+```
+**Embedding layer:**
+```python
+class Embeddings(nn.Module):
+	def __init__(self, config):
+		super().__init__()
+		self.word_embeddings = nn.Embedding(config.vocab_size, config.dim, padding_idx=config.pad_token_id)
+		self.position_embeddings = nn.Embedding(config.max_position_embeddings, config.dim)
+		self.LayerNorm = nn.LayerNorm(config.dim, eps=config.eps)
+
+	def forward(self, input_ids: torch.Tensor) -> torch.Tensor:
+		"""
+		Parameters:
+		input_ids (torch.Tensor):
+		torch.tensor(bs, max_seq_length) The token ids to embed.
+		Returns: torch.tensor(bs, max_seq_length, dim) The embedded tokens (plus position embeddings)
+		"""
+		# Embedding the input ids into the dictionary
+		input_embeds = self.word_embeddings(input_ids) # (bs, max_seq_length, dim)
+		seq_length = input_embeds.size(1)
+		
+		# Creating and embedding the position ids
+		position_ids = torch.arange(seq_length, dtype=torch.long, device=input_ids.device) # (max_seq_length)
+		position_ids = position_ids.unsqueeze(0).expand_as(input_ids) # (bs, max_seq_length)
+		position_embeddings = self.position_embeddings(position_ids) # (bs, max_seq_length, dim)
+		
+		# Compute the output embeddings
+		embeddings = input_embeds + position_embeddings # (bs, max_seq_length, dim)
+		embeddings = self.LayerNorm(embeddings) # (bs, max_seq_length, dim)
+		
+		return embeddings
+```
+###### Attention Block:
+```python
+class AttentionBlock(nn.Module):
+	
+	def __init__(self, config):
+		super().__init__()
+		self.config = config
+		# self-attention components
+		self.q_lin = nn.Linear(in_features=config.dim, out_features=config.all_head_size)
+		self.k_lin = nn.Linear(in_features=config.dim, out_features=config.all_head_size)
+		self.v_lin = nn.Linear(in_features=config.dim, out_features=config.all_head_size)
+		# res-net Normalization
+		self.out_lin = nn.Linear(in_features=config.dim, out_features=config.dim, bias=True)	
+		self.sa_layer_norm = nn.LayerNorm(normalized_shape=config.dim, eps=config.eps)
+		# feed-forward network
+		self.lin1 = nn.Linear(in_features=config.dim, out_features=3072, bias=True)
+		self.lin2 = nn.Linear(in_features=3072, out_features=config.dim, bias=True)
+		self.output_layer_norm = nn.LayerNorm(normalized_shape=config.dim, eps=config.eps)
+	
+	def forward(self, hidden_states):
+	
+		def shape(x):
+			""" separate heads """
+			return x.view(1, -1, 12, 64).transpose(1, 2)
+		def unshape(x):
+			""" group heads """
+			return x.transpose(1, 2).contiguous().view(1, -1, 12 * 64)
+	
+		bs=hidden_states.shape[0] #(bs, input_length, embed_size)
+		n_nodes= hidden_states.shape[1] #(bs, n_tokens, embed_size)
+		# Input
+		query=key=value=hidden_states
+		# QKV compute
+		q = self.q_lin(query)
+		k = self.k_lin(key)
+		v = self.v_lin(value)
+		
+		# Separating the heads
+		q = shape(q) # (bs, n_heads, q_length, dim_per_head)
+		k = shape(k) # (bs, n_heads, k_length, dim_per_head)
+		v = shape(v) # (bs, n_heads, k_length, dim_per_head)
+		
+		# Normalizing the query-tensor
+		q = q / math.sqrt(q.shape[-1])
+		
+		# Compute attention scores
+		scores = torch.matmul(q, k.transpose(2, 3)) # (bs, n_heads, q_length, k_length)
+		
+		# Transform the scores into probability distribution via softmax
+		prob = nn.functional.softmax(scores)
+		weights = prob
+		
+		# Compute the weighted representation of the value-tensor (aka context)
+		context = torch.matmul(weights, v) # (bs, n_heads, q_length, dim_per_head)
+	
+		# Merging the heads again
+		context = unshape(context) # (bs, q_length, dim)
+		
+		# Additional projection of the context to get the output of the self-attention block
+		sa_output = self.out_lin(context)
+		# Res-Net
+		sa_output = self.sa_layer_norm(sa_output + hidden_states)
+		
+		# Feed-forward network to compute the attention block output
+		x = self.lin1(sa_output)
+		x = nn.functional.gelu(x)
+		ffn_output = self.lin2(x)
+		ffn_output = self.output_layer_norm(ffn_output + sa_output)
+		
+		return ffn_output, weights
+```
+###### DistillBERT pre-trained model built by our blocks:
+```python
+class DistillBertAttention(nn.Module):
+	def __init__(self, config):
+		super().__init__()
+		self.config = config
+		self.n_layers=config.n_layers
+		# embedding layer to compute output embeddings
+		self.embeddings = Embeddings(config)
+		# encoder consisting of n attention blocks + MLP
+		self.attention_layers = torch.nn.Sequential(*[AttentionBlock(config) for i in range(config.n_layers)])
+		# classification MLP
+		self.pre_classifier = nn.Linear(in_features=config.dim, out_features=config.dim, bias=True)
+		self.classifier = nn.Linear(in_features=config.dim, out_features=config.n_classes, bias=True)
+		
+		self.attention_probs = {i: [] for i in range(config.n_layers)}
+
+	def forward(self, input_ids):
+		"""
+		Parameters:
+		input_ids (torch.Tensor): torch.tensor(bs, max_seq_length) The token ids to embed.
+		Returns: torch.tensor(bs, n_classes) The computed logit scores for each class.
+		"""
+		# Computing the embeddings
+		hidden_states = self.embeddings(input_ids=input_ids).to(self.config.device)
+		
+		# Iteratively going through the attention layers
+		encoder_input = hidden_states
+		for i,block in enumerate(self.attention_layers):
+			output, attention_probs = block(encoder_input)
+			self.attention_probs[i] = attention_probs
+			encoder_input = output
+
+		# Pooling by selection the [CLS] token
+		CLS_output = output[:, 0] # (bs, dim)
+		# Classification
+		CLS_output = self.pre_classifier(CLS_output) # (bs, dim)
+		CLS_output = nn.ReLU()(CLS_output) # (bs, dim)
+		logits = self.classifier(CLS_output)
+		
+		return logits
+		
+model = DistillBertAttention(config)
+state_dict = torch.load('distilbert.pt')
+_ = model.load_state_dict(state_dict)
+_ = model.eval()
+```
+## Graph Neural Networks:
+**Edge computation given 2d datapoints:**
+```python
+def compute_edges(points:torch.FloatTensor, cutoff:float=1.) -> torch.LongTensor:
+	# COmpute distance between every 2 points and create a distance matrix
+	distances = torch.sqrt(torch.sum((points[:,None, :] - points[None,:,:])**2, dim=-1))
+	# Create an adjacency matrix by setting neighbors as ones closer or equals to 1
+	adjacency_matrix = distances <= cutoff
+	# Return indices of where connections are
+	edges = torch.nonzero(adjacency_matrix)
+	return edges
+```
+###### Graph Convolution:
+```python
+class GraphConv(nn.Module):
+	def __init__(self, n_in:int , n_out: int, activation=F.relu):
+		super().__init__()
+		self.n_in = n_in
+		self.n_out = n_out
+		self.activation = activation
+		self.theta = nn.Parameter(torch.empty((n_in, n_out)))
+		torch.nn.init.xavier_uniform_(self.theta)
+	
+	def forward(self, x:torch.Tensor, edges:torch.Tensor) -> torch.Tensor:
+		messages = self.compute_message(x, edges)
+		# aggregate messages for each node
+		aggregated_messages = self.aggregate(messages, edges)
+		# update node states
+		x = self.compute_update(x, aggregated_messages)
+		return x
+
+	def aggregate(self, messages:torch.Tensor, edges:torch.Tensor) -> torch.Tensor:
+		n_nodes = torch.max(edges) + 1
+		# Only count edges once
+		incoming = edges[:, 0]
+		#Add the elements of messages to each other according to the edges
+		aggregated_messages = scatter_add(messages, incoming, dim_size=n_nodes, dim=0)
+		return aggregated_messages
+
+	def compute_message(self, x:torch.Tensor, edges:torch.Tensor) -> torch.Tensor:
+		# we assume here that in- and out-degrees are equal, i.e. undirected graphs
+		_, degree = torch.unique(edges, return_counts=True)
+		# sparse version of GCN D^{-1/2} (A+I) D^{-1/2}
+		# (assuming self-connection is already included in edges)
+		incoming = edges[:,0]
+		outgoing = edges[:,1]
+		message = x[incoming]
+		degree_normalization = torch.sqrt(degree[incoming]*degree[outgoing])
+		message = message/degree_normalization[:, None]
+		return message
+
+	def compute_update(self, x:torch.Tensor, m:torch.Tensor) -> torch.Tensor:
+		y = torch.mm(m, self.theta)
+		y = self.activation(y)
+		return y
+```
