@@ -1,4 +1,5 @@
 # System Landscape
+[Course Website](https://mboehm7.github.io/teaching/ss24_amls/index.htm)
 ![[Pasted image 20240905144034.png || center]]
 ###### The Data Science Lifecycle consists of three stages:
 1. **Data**: data integration, data cleaning, data preparation
