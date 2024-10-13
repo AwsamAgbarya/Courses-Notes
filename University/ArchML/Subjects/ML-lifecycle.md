@@ -1,0 +1,136 @@
+# Machine learning life-cycle:
+## Data Processing:
+- **Identification of Data Sources:** Data Catalogs are curated data in repositories which usually contain metadata for analysis and transformations and augmentations that occurred on it (provenance).
+- ##### Data Integration:
+	- ###### Data Extraction:
+		- Extracting structured data from un/semi-structured data using rule based methods and other ML based methods to detect those features.
+	- ###### Schema Alignment:
+		- **Detecting Schemas:** There are basic syntactic schema detection methods using rules and regex that sample a few datapoints from your dataset and infer the given variable type for each feature. This can be further complicated when faced with the inference of whether a feature is Numerical, Categorical or Ordinal, furthermore it takes well-defined rules or an ML model to detect semantic features such as currency and date and age etc...
+		- **Schema Matching:** Finding correspondences between different attributes in different schemas/datasets.
+		- **Schema Mapping:**  Given two schemas and correspondences, generate transformation program.
+	- ###### Entity Linking:
+		- linking separate datapoints to entities, such that we can detect two records belonging to the same entity.
+		- Entity embeddings, clustering, pairwise matching methods to define entities.
+	- ###### Data Fusion
+		- Resolve conflicts, necessary in presence of erroneous data
+	- ###### Data Validation: 
+		- Validity checks on expected shape, min and max values.
+		- Validity checks on distribution biases  via the expected histograms of continuous or categorical values
+		- Whether a feature is present in enough examples or missing.
+		- Whether a defining feature has the right number of values
+		- **Corrupted Data:**
+			- Data can be corrupted due to human error/ human bias/ default values.
+			- Data can be corrupted due to inconsistencies and changes in the processes over time.
+			- Data can be corrupted due to unreliable HW/SW measurements and harsh environments.
+- ##### Feature Engineering:
+	- Bring multi-modal data and features into numeric representation by exposing predictive features to ML model training.
+	- **Recoding:** Map an integer value per categorical string unique value for each feature.
+	- **Feature Hashing:** Hash each unique value of a feature modolu N, suffers from collisions but will compress features down to N unique values.
+	- **Binning:** Encode of numerical features to integer domain using different quantization methods.
+	- **One-hot Encoding:** Encode integer feature of cardinality d into sparse 0/1 vector of length d
+	- **Hybrid transformations:** Combining two or more methods of feature engineering to benefit from both their benefits such as re-coding and feature hashing on the least frequent features.
+	- ###### Derive Features:
+		- **Intercept:** Add a column of ones to X for computing the intercept as a weight for linear regression models.
+		- **Pre-defined non-linear relationships:** Can be explicitly materialized as complex feature combinations
+		- **Windowing:** Sliding window over time series to include the context as a feature for the present datapoint.
+	- ###### NLP specific  feature extraction:
+		- NLP often requires sentence/word/prefix/suffix tokenization to analyze the overall structure of languages.
+		- We often tag words with labels such as nounc, verb , adjective. or semantic role labeling to indicate its role in the sentence.
+		- **Bag of words/ N-grams:**  Represent sentences as a bag of occurrences for N-length token sequences.
+		- **Word embeddings:** DL learned representations of words using the weights of a MLM model of a continuous bag of words which transforms the words into semantic preserving numeric vectors which we can do arithmatic on.
+- ##### Data Cleaning:
+	- ###### Normalization:
+		1. **Standardization:** Centering and scaling to mean 0 and variance 1 which ensures will behaved training BUT densifies the representation.
+		2. **(Min-Max) Normalization:** which rescales the values into [0,1] range and preserves the the sparse elements.
+		3. **Deferred Standardization:** Avoid densifying dataset upfront by pushing standardization into inner loop iterations, using matrix rewrites you avoid intermediates and keep the matrix sparse.
+	- ###### Trimming:
+		1. **Quantile removal:** Remove outliers from the data by trimming quantiles/precentiles from both edges. Or replace with edges.
+		2. **Truncation:** Remove values from a certain range that is believed to be unhelpful.
+		3. **Deviated element elimination:** Remove elements with largest distance from data mean.
+	- ###### Constraints:
+		- General data Constraints can be derived from the data in a semi-automatic way, such as unique primary key, inclusion dependencies of foreign keys, Value range of semantic attributes, Invariance to capitalization.
+		- Further Formal Constraints that require expertise and semantic judgement can be implemented and eliminated from the data using queries.
+	- ###### Missing value Imputation:
+		- Missing values are defined based on context and often use the NaN or NA symbol.
+		- Basic value imputation states that missing values are to be replaced with a logical default answer such as the mean or mode.
+		- Iterative missing value imputation trains a model on the datapoints without missing values and sues that model to best predict those missing values. **mice**
+		- Dynamic Missing value imputation refers to when missing values are based off of the value itself and thus cannot be inferred, this can be dealt with by training a biased model and adding contrastive biases in those values to see which helps it improve the most in predicting the test dataset.
+- ##### Data Augmentations:
+	- Complex ML models need a lot of data to model the real world distribution and avoid overfitting, we can generate new data from existing data by changing the proprties of each image with augmentations.
+	- Certain tasks require invariances to certain transformations, if those transformations do not exist in plethora in our dataset, augmentations are needed.
+	- This is different from task to task and often requires trial and error.
+	- **Types of augmentations:**
+		- Movement/Selection based: like rotations, translations, reflection and cropping
+		- Distortions: stretching, shearing, color, mixup, blurr. morphing.
+		- Cutout: randomly masking a small part of the image to simulate dropout.
+		- Randomized simulated/synthesized images.
+	- **Weak supervision:** Hand labeling expensive and time consuming, thus weak supervision is automated lower-quality labels that can be automatically generated using hueristics, trained models, constraints, invariances etc...
+## Model Selection and tuning:
+- Given a dataset and ML task Select the model (type) that performs best.
+- Given a model and dataset, find best hyper parameter values.
+- ##### AutoML:
+	- Systems that provide automatic model selection and hyperparameter tuning.
+	- ###### Basic Grid search:
+		- Given n hyper parameters make a grid spanning all their possible values and explore all datapoints in the hypercube
+		- if parameters are continuous, we have to discretise them.
+		- Only applicable with small domains
+	- ###### Simulated Annealing:
+		- Decaying temperature schedules 
+		- With higher temperatures we do big steps and jump out of local minima, and the further we go on we consider smaller and smaller solution spaces while traversing better solutions.
+	- ###### Recursive Random search:
+		- Sample random points from the grid, pick the region of the grid with the best performance then sample in that grid and repeat the process.
+	- ###### Multi-Armed Bandit:
+		- Model types that have not had the best result do have qualities we want.
+		- Select among k model types (exploration) while increasing the probability to select the best model (exploitation)
+	- ###### Hyperband:
+		- Successively discarding the worst-performing half of arms
+		- Extended by doubling budget of arms in each iteration (no need to configure k, random search included)
+- ##### Neural Architecture searech
+	- Automatic neural architecture search to avoid trial and error manual design.
+	- Things to consider while searching  for the best architecture:
+	- **Search Space of Building Blocks:** Design specific building blocks and search for solutions and permutations within them.
+	- **Search Strategy:** Using evolutionary algorithms like RNNs and bayesian optimization in order to find the best combination.
+	- **Optimization Objective:** Which multi-objective are we training for, what linear ratio is there between them, which do we prioritize and which are we willing to compromise.
+- ##### Model Management and provenance:
+	- The process of datascience is quite exploratory and not straight forward, we often find a lot of designs based purely on heuristics and empirical data.
+	- However sometimes  insights and records lost along the way, results are difficult to reproduce for others to confirm your results,  we need to properly mange and track our pipeline  and experiments.
+## Model Explainability and debugging:
+- Simpler models can be debugged through visualization methods by plotting interactions using dimensionality reduction and analyzing the plots.
+- Black box models require further validation, Explainability, and fairness constraints in order to ensure that the model operates properly.
+- ##### Issues that are discovered with explainability:
+	- Overfitting on an under-determined system
+	- Data advantage leakage that gives the training an upper hand.
+	- Covariance shift in the distribution of features that does not match or represent real world data
+	- Concept drift, i.e gradual shift in statistical properties.
+- ##### Sources of Bias:
+	- **Selection Bias:** difference in data availability/selection and the current environment/context.
+	- **Sample Bias:** collected data not representative of application
+	- **Confirmation Bias:** if the engineers had certain biased hypotheses, they might not investigate any further reasoning if it the results match it.
+	- **NMAR Bias:** Missing values based on the value itself which might not represent the data properly.
+- ##### Fairness:
+	- Validate and ensure fairness with regard to sensitive features (unbiased) that should not contribute to the output.
+	- Use occlusion and saliency maps to characterize and compare groups
+	- Use constraints to enforce certain properties like statistical parity (ensuring all groups have similar distributions of correct labels)
+- ##### Explaination Methods:
+	- **Using basic statistics:** such as average residuals, precision, recall, area under ROC, and confusion matrix. confusion matrices can be generalized and Heirarchial for multi-labels 
+	- **Occlusion based:** We mask certain parts of the image and re-run the computation on the image and sense how much the output changes, areas with high importance will shift the result a lot and vice versa.
+	- **Saliency Map:** Given input image and specific class, compute the class derivatives w.r.t input image which allows us to see areas of high gradient (high divergence away from class).
+	- **Slices:** Find the biggest Data slice with a certain feature such that the model performs significantly worse than average on (Uncovers dataset biases),  This can also help during the training to penalize the model's performance on those "worse" slices.
+	- **Model Assertions:**  ML models might fail in complex ways that are not captured in loss function, we can use assertion rules to steer it in logical ways. BY constantly monitoring the model during runtime, we can add corrective action to steer it into the right direction.
+	- **SHAP:** Compute the additive feature contribution that lead from the input to the output of the model. 
+## Model Serving
+- Smaller models Can be embedded into devices using compiling techniques and language bindings that condense the model to a small footprint
+- Bigger models that do not computationally fit in phones, can be put in the cloud and have services for requests.
+- ##### Server Optimizations:
+	- Batching: Batching can really speed up the entire model by letting each request wait insignificant time and processing a bunch of requests all together using batching techniques.
+	- Quantization: Lossy compression via ultra-low precision / fixed-point in the final model scoring Rcan save on a lot of energy.
+	- Result caching: Sometimes there are very frequent results that do not need to be processed in the model multiple times and can be cached
+	- Vectorization: Compressing down model predictions into vectorized operations instead of sequential can really help parallelize operations
+	- Model distillation: compressing down models using a teacher/enembles of models to guide it down to something smaller.
+	- Specialization: sometimes your model is too good for a simple task and you have to downgrade to something simpler and faster, or specialize your current model on simpler predictions.
+- ##### Model Updates:
+	- When serving a model we need to first check whether it deviates away from the real world distribution.
+	- This is done by detetcing the changes and setting up alerts that inform us of the necessary understandable and actionable change.
+	- Action needs to be taken periodically in order to keep the model always up to date.
+		- This is often done through  Periodic Re-Training with a window of latest data or online learning.
+		- Or alternatively through Event-based Re-Training for detected shift in the concept.

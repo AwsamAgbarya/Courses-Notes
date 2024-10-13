@@ -80,7 +80,7 @@
 
 ## Transformers:
 [[Transformers]]
-- Attention -the main component of transformers- is the algorithm that allows our neural network to analyze the input and tell the deduce which part of the input is related and influenced by other parts the most, i.e which token should we pay attention to while processing each token in the input. With such algorithm, we do not have to do an exhaustive search over all tokens and and consider all feature tokens when processing input tokens, instead we can pay attention only to the ones that matter.
+- Attention -the main component of transformers- is the algorithm that allows our neural network to analyze the input and tell the deduce which part of the input is related and influenced by other parts the most, i.e which token should we pay attention to while processing each token in the input. With such algorithm, we do not have to do an exhaustive search over all tokens  and consider all feature tokens when processing input tokens, instead we can pay attention only to the ones that matter.
 - Attention was revolutionary in the sequence modelling field because previously RNNs had to consider one token at a time sequentially, which lead to both scaling complexity with the context window AND a short term memory since over a long context window the information gets lost /explodes/diminishes.
 - Self-attention is an attention algorithm applied to the input as context and as features, this is often used to understand the underlying structure of a given input and to generate that structure (instead of relating a certain input to a certain output)
 - Cross-attention is an attention algorithm applied to a pair of inputs-output, such that it analyzes how each part of the input is influences each part of the output.
@@ -170,7 +170,7 @@
 	3. Runge-Kutta 4-5: $u(t+h) = u(t) + \frac{h}{6} \left( f_1(u(t)) + 2 f_2(u(t) + \frac{h}{2}u(f_{1}))+ 2 f_{3}(u(t) + \frac{h}{2}f_{2}) +f_{4}(u(t)+hf_{3})\right)$ which uses a 4th order solution to estimate error and set step size and  steps with 5th order solution
 - ##### Neural ODEs:
 	- Implicitly theyre discretized and defined as resnets, since L layers of resnets will modify the input slightly each time until the target point is reached. Other methods like depe equilibrium modes can be seen as ODEs as they transform infinite layers into a one iterative layer that reaches a state of equilibrium through a root finding method to optimize on memory.
-	- Explicitly it can be modelled as a neural network parameterized by theta to describe the phase space, the time is then modelled from 0-1 since there is no real meaning for time and our input is the IV. The ODE solver is an initial layer, which is followed up by some linear layers and softmax (according to our goal) to classify accordingly.
+	- Explicitly it can be modeled as a neural network parameterized by theta to describe the phase space, the time is then modeled from 0-1 since there is no real meaning for time and our input is the IV. The ODE solver is an initial layer, which is followed up by some linear layers and softmax (according to our goal) to classify accordingly.
 	- However Back-propagation through the iterative ODE solver is not completely straight-forward:
 		1. Discretize then Optimize: which does back-propagation through all step of the ODE solver by saving the states in memory which makes it memory inefficient, but accurate. This method uses automatic differentation to differentiate the forward process and back-propagates it.
 		2. Optimize then discretize: which involves solving another ODE (adjoint ODE) back in time to find the relations of the loss function to our parameters defined in the change of rate function, this is only possible because the ODE is invertible. This is memory efficient because nothing needs to be saved however its slightly inaccurate due to discretization errors.
@@ -235,7 +235,7 @@
 		- this information is then fed to a generative network that produces a distribution over the possible positions of this new attached atom
 		- This model generates one atom at a time based off of the previously generated atoms in a mollecule
 - #### Variational Auto-Encoder:
-	-  Given an observsation X and a latent variable Z we can calculate the posterior distribution $P(Z | X)$ using bayes theorem, given $P(X|Z)$ and $P(Z)$
+	-  Given an observation X and a latent variable Z we can calculate the posterior distribution $P(Z | X)$ using bayes theorem, given $P(X|Z)$ and $P(Z)$
 	- The likelihood $P(X|Z)$ is infact generally intractable, however we can try to either approximate it using monte carlo, Or try to learn a distribution Q such that its as close to the likelihood as possible.
 	- **Variational Inference:** is the approximation of a likelihood distribution with a tractable distribution and its the minimization of the follow KL divergence $D_{KL}[ Q(Z|X) \| P(Z|X)]$ 
 		- The KL-divergence can be re-written into $E_{z~Q}[log Q(z|X) - log P(X|z) - log P(z)] + log P(X)$ and its goal (Objective1) is to approximate the posterior by minimizing the distance of our learned distribution to it
