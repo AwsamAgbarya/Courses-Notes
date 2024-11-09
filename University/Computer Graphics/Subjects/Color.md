@@ -9,7 +9,8 @@ Child of [[Lighting and Shading]]
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
 Color and Light ^PNjuKs7s
 
 What is light? ^yO7O8pMS
@@ -71,1250 +72,136 @@ since its both linear and additive.
 color inside the additive color mixing are inside a triangle, colors using subtractive
 color mixing are outside of it ^T1cidAZR
 
-
-# Embedded files
+## Embedded Files
 994fc57313a5a7ee2f8a972b018e52dc7c103f0a: [[Pasted Image 20231222200822_560.png]]
 
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23",
-	"elements": [
-		{
-			"type": "ellipse",
-			"version": 77,
-			"versionNonce": 1816307553,
-			"isDeleted": false,
-			"id": "9OfIF6pTHgQUA0nRqOP4Q",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -169.34512316832138,
-			"y": -403.34409329208034,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 374,
-			"height": 153,
-			"seed": 1271506814,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [
-				{
-					"type": "text",
-					"id": "PNjuKs7s"
-				}
-			],
-			"updated": 1703271400993,
-			"link": null,
-			"locked": false
-		},
-		{
-			"type": "text",
-			"version": 29,
-			"versionNonce": 1528369985,
-			"isDeleted": false,
-			"id": "PNjuKs7s",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -66.23811560323313,
-			"y": -371.9377620528512,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 167.3280487060547,
-			"height": 90,
-			"seed": 860308578,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703271400993,
-			"link": null,
-			"locked": false,
-			"fontSize": 36,
-			"fontFamily": 1,
-			"text": "Color and\nLight",
-			"rawText": "Color and Light",
-			"textAlign": "center",
-			"verticalAlign": "middle",
-			"containerId": "9OfIF6pTHgQUA0nRqOP4Q",
-			"originalText": "Color and Light",
-			"lineHeight": 1.25,
-			"baseline": 77
-		},
-		{
-			"type": "text",
-			"version": 75,
-			"versionNonce": 1179595649,
-			"isDeleted": false,
-			"id": "yO7O8pMS",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -89,
-			"y": -241.2578125,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 188.7767791748047,
-			"height": 35,
-			"seed": 1062729726,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703270697922,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "What is light?",
-			"rawText": "What is light?",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "What is light?",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "text",
-			"version": 102,
-			"versionNonce": 1880129807,
-			"isDeleted": false,
-			"id": "8V52BJPA",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -209,
-			"y": -204.2578125,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 491.6594543457031,
-			"height": 50,
-			"seed": 1276850082,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703270697922,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Light may be modeled as an electromagnetic wave\n",
-			"rawText": "Light may be modeled as an electromagnetic wave\n",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Light may be modeled as an electromagnetic wave\n",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "text",
-			"version": 140,
-			"versionNonce": 939465569,
-			"isDeleted": false,
-			"id": "ROUxTBbB",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -198,
-			"y": -115.2578125,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 428.98980712890625,
-			"height": 35,
-			"seed": 2112991678,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703270697923,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "Hoes does light result in color?",
-			"rawText": "Hoes does light result in color?",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Hoes does light result in color?",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "text",
-			"version": 293,
-			"versionNonce": 1260258685,
-			"isDeleted": false,
-			"id": "j9cd7fM2",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -301,
-			"y": -84.2578125,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 708.479248046875,
-			"height": 50,
-			"seed": 563070270,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "r4nqWE82B8WxnETOKsv9e",
-					"type": "arrow"
-				},
-				{
-					"id": "hllBSF5a3YDqq85rBZJ9l",
-					"type": "arrow"
-				},
-				{
-					"id": "XOS7GSvllDk9zYWp7gciF",
-					"type": "arrow"
-				}
-			],
-			"updated": 1709579065062,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Lights waves have different wavelengths and frequencies, both of which\ncorrelate to what kind of \"color\" it is in the visible spectrum",
-			"rawText": "Lights waves have different wavelengths and frequencies, both of which\ncorrelate to what kind of \"color\" it is in the visible spectrum",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Lights waves have different wavelengths and frequencies, both of which\ncorrelate to what kind of \"color\" it is in the visible spectrum",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "arrow",
-			"version": 105,
-			"versionNonce": 1596393281,
-			"isDeleted": false,
-			"id": "r4nqWE82B8WxnETOKsv9e",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 420,
-			"y": -73.2578125,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 160,
-			"height": 57,
-			"seed": 1666178338,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1703270697923,
-			"link": null,
-			"locked": false,
-			"startBinding": {
-				"elementId": "j9cd7fM2",
-				"focus": 0.8334829782113077,
-				"gap": 12.520751953125
-			},
-			"endBinding": {
-				"elementId": "9o9YqDwB",
-				"focus": -0.7649413134027157,
-				"gap": 6.188655529928681
-			},
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					117,
-					-57
-				],
-				[
-					160,
-					-7
-				]
-			]
-		},
-		{
-			"type": "text",
-			"version": 108,
-			"versionNonce": 1344325967,
-			"isDeleted": false,
-			"id": "9o9YqDwB",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 577.6087759108099,
-			"y": -74.06915697007132,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 194.7683868408203,
-			"height": 20.002675582563995,
-			"seed": 1236303458,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "r4nqWE82B8WxnETOKsv9e",
-					"type": "arrow"
-				}
-			],
-			"updated": 1703270697923,
-			"link": null,
-			"locked": false,
-			"fontSize": 16.002140466051195,
-			"fontFamily": 1,
-			"text": "Frequency v.s wavelength",
-			"rawText": "Frequency v.s wavelength",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Frequency v.s wavelength",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 305,
-			"versionNonce": 1445361441,
-			"isDeleted": false,
-			"id": "uJpD45Rj",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 512,
-			"y": -53.26637436420478,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 372.107666015625,
-			"height": 64.00856186420478,
-			"seed": 407388898,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703270697923,
-			"link": null,
-			"locked": false,
-			"fontSize": 12.801712372840955,
-			"fontFamily": 1,
-			"text": "Frequency refers to the number of wave cycles that\noccur per unit of time, usually measured in hertz.\nWavelength, on the other hand, refers to the distance\nbetween two consecutive points in a wave that is in phase",
-			"rawText": "Frequency refers to the number of wave cycles that\noccur per unit of time, usually measured in hertz.\nWavelength, on the other hand, refers to the distance\nbetween two consecutive points in a wave that is in phase",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Frequency refers to the number of wave cycles that\noccur per unit of time, usually measured in hertz.\nWavelength, on the other hand, refers to the distance\nbetween two consecutive points in a wave that is in phase",
-			"lineHeight": 1.25,
-			"baseline": 59
-		},
-		{
-			"type": "text",
-			"version": 88,
-			"versionNonce": 1593362287,
-			"isDeleted": false,
-			"id": "Vh2OHlmX",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 552,
-			"y": 13.7421875,
-			"strokeColor": "#e03131",
-			"backgroundColor": "#6741d9",
-			"width": 279.64422607421875,
-			"height": 14,
-			"seed": 99163838,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703270697923,
-			"link": null,
-			"locked": false,
-			"fontSize": 11.2,
-			"fontFamily": 1,
-			"text": "The higher the frequency the lower the wavelength",
-			"rawText": "The higher the frequency the lower the wavelength",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "The higher the frequency the lower the wavelength",
-			"lineHeight": 1.25,
-			"baseline": 10
-		},
-		{
-			"type": "arrow",
-			"version": 122,
-			"versionNonce": 81775887,
-			"isDeleted": false,
-			"id": "hllBSF5a3YDqq85rBZJ9l",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -314.846166992188,
-			"y": -77.96406250000041,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 199.2,
-			"height": 73.59999999999997,
-			"seed": 159952911,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1703270860275,
-			"link": null,
-			"locked": false,
-			"startBinding": {
-				"elementId": "j9cd7fM2",
-				"focus": -0.8849848264724027,
-				"gap": 13.846166992187989
-			},
-			"endBinding": {
-				"elementId": "5x7mtpTk",
-				"focus": 0.8982867140921043,
-				"gap": 8.86018371582054
-			},
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-98.40000000000003,
-					-73.59999999999997
-				],
-				[
-					-199.2,
-					-22.644440141708316
-				]
-			]
-		},
-		{
-			"type": "text",
-			"version": 127,
-			"versionNonce": 1927283439,
-			"isDeleted": false,
-			"id": "5x7mtpTk",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -686.0461669921882,
-			"y": -115.66406250000034,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 163.1398162841797,
-			"height": 25,
-			"seed": 909304449,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "hllBSF5a3YDqq85rBZJ9l",
-					"type": "arrow"
-				}
-			],
-			"updated": 1703270860275,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Anatomy of eyes",
-			"rawText": "Anatomy of eyes",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Anatomy of eyes",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 436,
-			"versionNonce": 445453647,
-			"isDeleted": false,
-			"id": "OwYL9Sly",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -847.6461669921883,
-			"y": -86.66406250000034,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 522.1771240234375,
-			"height": 100,
-			"seed": 1811269039,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703270861704,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "Human eyes are compromised of of rods and cones\nrods are more sensitive to waves and only record the lightness\nof the light that hits our eyes whereas cones are responsible for\ndetecting the colors. Cones come in three variations each of\nwhich are sensitive to Red, Green and blue color respectively",
-			"rawText": "Human eyes are compromised of of rods and cones\nrods are more sensitive to waves and only record the lightness\nof the light that hits our eyes whereas cones are responsible for\ndetecting the colors. Cones come in three variations each of\nwhich are sensitive to Red, Green and blue color respectively",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Human eyes are compromised of of rods and cones\nrods are more sensitive to waves and only record the lightness\nof the light that hits our eyes whereas cones are responsible for\ndetecting the colors. Cones come in three variations each of\nwhich are sensitive to Red, Green and blue color respectively",
-			"lineHeight": 1.25,
-			"baseline": 94
-		},
-		{
-			"type": "arrow",
-			"version": 89,
-			"versionNonce": 1510431617,
-			"isDeleted": false,
-			"id": "XOS7GSvllDk9zYWp7gciF",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 18.132222399798252,
-			"y": -21.829672492756572,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 2.092155838828944,
-			"height": 131.8058178462233,
-			"seed": 1634911151,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1703271069750,
-			"link": null,
-			"locked": false,
-			"startBinding": {
-				"elementId": "j9cd7fM2",
-				"focus": 0.09910636541697672,
-				"gap": 12.428140007243428
-			},
-			"endBinding": null,
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					0,
-					92.05485690847343
-				],
-				[
-					2.092155838828944,
-					131.8058178462233
-				]
-			]
-		},
-		{
-			"type": "text",
-			"version": 28,
-			"versionNonce": 1526243329,
-			"isDeleted": false,
-			"id": "IcqkW72U",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -121.80058228129667,
-			"y": 122.35162582234165,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 273.5891418457031,
-			"height": 35,
-			"seed": 1739137359,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703271082847,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "Additive color mixing",
-			"rawText": "Additive color mixing",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Additive color mixing",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "text",
-			"version": 338,
-			"versionNonce": 1519103951,
-			"isDeleted": false,
-			"id": "Lb19m6xm",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -398.50036351208166,
-			"y": 186.10944387365072,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 808.1593017578125,
-			"height": 150,
-			"seed": 146756545,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703271208181,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "The three dimensional color system is inspired by the human visual cone system\nGenerally color requires three values or dimensions to be represented\nwhich can be then converted to a vector in the color space such that\nthe magnitude of the vector is its lightness and the direction is the chromaticity\n\n",
-			"rawText": "The three dimensional color system is inspired by the human visual cone system\nGenerally color requires three values or dimensions to be represented\nwhich can be then converted to a vector in the color space such that\nthe magnitude of the vector is its lightness and the direction is the chromaticity\n\n",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "The three dimensional color system is inspired by the human visual cone system\nGenerally color requires three values or dimensions to be represented\nwhich can be then converted to a vector in the color space such that\nthe magnitude of the vector is its lightness and the direction is the chromaticity\n\n",
-			"lineHeight": 1.25,
-			"baseline": 143
-		},
-		{
-			"type": "text",
-			"version": 41,
-			"versionNonce": 414190863,
-			"isDeleted": false,
-			"id": "XbCjsOYv",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -102.6278548835196,
-			"y": 307.915261719874,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 254.07308959960938,
-			"height": 35,
-			"seed": 1750432897,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703271288517,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "F = rR + gG + bB",
-			"rawText": "F = rR + gG + bB",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "F = rR + gG + bB",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "text",
-			"version": 144,
-			"versionNonce": 1842716097,
-			"isDeleted": false,
-			"id": "GZ5A4EDs",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -414.3622399535542,
-			"y": 377.54170312649876,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 897.3189697265625,
-			"height": 50,
-			"seed": 659379535,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703271385019,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Such that RGB are the primaries of this color space and rgb are psychophysical functions\nthat can only be determined with experiments",
-			"rawText": "Such that RGB are the primaries of this color space and rgb are psychophysical functions\nthat can only be determined with experiments",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Such that RGB are the primaries of this color space and rgb are psychophysical functions\nthat can only be determined with experiments",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "arrow",
-			"version": 150,
-			"versionNonce": 2049977089,
-			"isDeleted": false,
-			"id": "4bXBwE1k-qrQ9AQCSrvQq",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 18.132222399798252,
-			"y": 439.490689969025,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 3.1382337582433593,
-			"height": 112.97641529676281,
-			"seed": 68674863,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1703271426946,
-			"link": null,
-			"locked": false,
-			"startBinding": null,
-			"endBinding": {
-				"elementId": "xIBA2Kiv",
-				"focus": -0.029152167510432557,
-				"gap": 2.9709187860389648
-			},
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					1.0460779194144152,
-					69.04114268135487
-				],
-				[
-					3.1382337582433593,
-					112.97641529676281
-				]
-			]
-		},
-		{
-			"type": "text",
-			"version": 95,
-			"versionNonce": 1138041569,
-			"isDeleted": false,
-			"id": "xIBA2Kiv",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -346.42507859785087,
-			"y": 555.4380240518268,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 759.53125,
-			"height": 35,
-			"seed": 390854401,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "4bXBwE1k-qrQ9AQCSrvQq",
-					"type": "arrow"
-				}
-			],
-			"updated": 1703271426946,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "There are colors that cannot be generated additively!",
-			"rawText": "There are colors that cannot be generated additively!",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "There are colors that cannot be generated additively!",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "text",
-			"version": 96,
-			"versionNonce": 1889787489,
-			"isDeleted": false,
-			"id": "Fwkago68",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -222.79896078380887,
-			"y": 589.679044842316,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 490.5994873046875,
-			"height": 25,
-			"seed": 970385871,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703271468994,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "As such we introduce the subtractive color mixing",
-			"rawText": "As such we introduce the subtractive color mixing",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "As such we introduce the subtractive color mixing",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 68,
-			"versionNonce": 1362362319,
-			"isDeleted": false,
-			"id": "kuvSgw4H",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -93.38706564403856,
-			"y": 614.3250996050824,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#6741d9",
-			"width": 237.5810089111328,
-			"height": 35,
-			"seed": 1065285327,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703271494198,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "F = -rR +gG +bB",
-			"rawText": "F = -rR +gG +bB",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "F = -rR +gG +bB",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "line",
-			"version": 215,
-			"versionNonce": 825728609,
-			"isDeleted": false,
-			"id": "40jJwf4oB1GFCUpRzESBD",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 416.87748950650973,
-			"y": 322.0079309578283,
-			"strokeColor": "#e03131",
-			"backgroundColor": "#6741d9",
-			"width": 238.96365453938222,
-			"height": 45.877256659345335,
-			"seed": 1370289249,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1703271614206,
-			"link": null,
-			"locked": false,
-			"startBinding": null,
-			"endBinding": null,
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": null,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					186.4006227598062,
-					30.1044963723524
-				],
-				[
-					238.96365453938222,
-					-15.772760286992934
-				]
-			]
-		},
-		{
-			"type": "text",
-			"version": 213,
-			"versionNonce": 2082979745,
-			"isDeleted": false,
-			"id": "ubodszSb",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 535.9222039906748,
-			"y": 236.14808555996706,
-			"strokeColor": "#e03131",
-			"backgroundColor": "#6741d9",
-			"width": 392.6728515625,
-			"height": 60,
-			"seed": 1239770337,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703271616201,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "This system is linear, meaning multiplying the color\nby a scalar K will result in each of the primaries\nmultiplied by K",
-			"rawText": "This system is linear, meaning multiplying the color\nby a scalar K will result in each of the primaries\nmultiplied by K",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "This system is linear, meaning multiplying the color\nby a scalar K will result in each of the primaries\nmultiplied by K",
-			"lineHeight": 1.25,
-			"baseline": 54
-		},
-		{
-			"type": "line",
-			"version": 56,
-			"versionNonce": 2039475329,
-			"isDeleted": false,
-			"id": "rKgtEXVk_SbV4Pn8njnKE",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -438.5077026694772,
-			"y": 360.34394709522417,
-			"strokeColor": "#e03131",
-			"backgroundColor": "#6741d9",
-			"width": 214.54376257551928,
-			"height": 113.79116689088312,
-			"seed": 1223595823,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1703271625045,
-			"link": null,
-			"locked": false,
-			"startBinding": null,
-			"endBinding": null,
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": null,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-100.75259568463616,
-					-113.79116689088312
-				],
-				[
-					-214.54376257551928,
-					-61.636882065895065
-				]
-			]
-		},
-		{
-			"type": "text",
-			"version": 89,
-			"versionNonce": 2131905487,
-			"isDeleted": false,
-			"id": "vTdDgi3D",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -840.3327607529086,
-			"y": 305.81901296000945,
-			"strokeColor": "#e03131",
-			"backgroundColor": "#6741d9",
-			"width": 329.36065673828125,
-			"height": 40,
-			"seed": 395040911,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703271643324,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "We can always preform a change of basis\ninto 3 different primaries",
-			"rawText": "We can always preform a change of basis\ninto 3 different primaries",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "We can always preform a change of basis\ninto 3 different primaries",
-			"lineHeight": 1.25,
-			"baseline": 34
-		},
-		{
-			"type": "line",
-			"version": 65,
-			"versionNonce": 83812449,
-			"isDeleted": false,
-			"id": "R7QzsoqGQd1hEStx7BbqN",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 711.2572127904882,
-			"y": 303.44836364978255,
-			"strokeColor": "#e03131",
-			"backgroundColor": "#6741d9",
-			"width": 91.26999844372926,
-			"height": 90.08467378861587,
-			"seed": 1367706159,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1703271882582,
-			"link": null,
-			"locked": false,
-			"startBinding": null,
-			"endBinding": null,
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": null,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					53.33960948010156,
-					79.41675189259558
-				],
-				[
-					91.26999844372926,
-					90.08467378861587
-				]
-			]
-		},
-		{
-			"type": "text",
-			"version": 256,
-			"versionNonce": 2125100239,
-			"isDeleted": false,
-			"id": "T1cidAZR",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 806.0831851995575,
-			"y": 354.41732381965744,
-			"strokeColor": "#e03131",
-			"backgroundColor": "#6741d9",
-			"width": 653.2333984375,
-			"height": 80,
-			"seed": 940733519,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703271937247,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "This allows our model to be represented using barycentric coordinates\nsince its both linear and additive.\ncolor inside the additive color mixing are inside a triangle, colors using subtractive\ncolor mixing are outside of it",
-			"rawText": "This allows our model to be represented using barycentric coordinates\nsince its both linear and additive.\ncolor inside the additive color mixing are inside a triangle, colors using subtractive\ncolor mixing are outside of it",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "This allows our model to be represented using barycentric coordinates\nsince its both linear and additive.\ncolor inside the additive color mixing are inside a triangle, colors using subtractive\ncolor mixing are outside of it",
-			"lineHeight": 1.25,
-			"baseline": 74
-		},
-		{
-			"type": "image",
-			"version": 205,
-			"versionNonce": 1781434941,
-			"isDeleted": false,
-			"id": "1uhX4xgCN-7XrCHy0x7GN",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -845.9050125612208,
-			"y": 349.44173999256884,
-			"strokeColor": "transparent",
-			"backgroundColor": "#6741d9",
-			"width": 230.68815075588904,
-			"height": 66.37035516043956,
-			"seed": 1948306703,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1709579642862,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "994fc57313a5a7ee2f8a972b018e52dc7c103f0a",
-			"scale": [
-				1,
-				1
-			]
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#e03131",
-		"currentItemBackgroundColor": "#6741d9",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 1,
-		"currentItemFontSize": 16,
-		"currentItemTextAlign": "center",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1011.953816804076,
-		"scrollY": -138.11301358832281,
-		"zoom": {
-			"value": 1.2522739542479608
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		}
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+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
 ```
 %%

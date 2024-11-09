@@ -8,10 +8,11 @@ Next [[Computations]]
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
 Parallel Databases ^dWmjNYeP
 
-%%***>>>text element-link:[[Computations]]<<<***%%* So far we have only considered single-Threaded/Serial System that manages all the data, now we 
+* So far we have only considered single-Threaded/Serial System that manages all the data, now we 
   are upgrading our ideas to extend beyond that into parallel databases.
 *                    : the machines are homogeneous and tightly coupled, clusters with direct network
   connection, multi-processor system, everything works together. (Optimized for performance)
@@ -134,823 +135,179 @@ Needs high sync overhead, lower degree of parallelism (not too many pipelines pe
 
 3) Replication & Fragmentation: we fragment our relation and store multiple copies of each fragment ^OtDbJXa9
 
+## Element Links
+uaETZVbv: [[Computations]]
 
-# Embedded files
+## Embedded Files
 b2af7350275e9e863a564247117a4423ca06f7f1: $$SpeedUp = \frac{1}{1 - P + \frac{P}{N}}$$
+
 765ed0699bf0cb07fd4eb5a8ac784bf734043a0a: $$SpeedUp_{Weak} = (1-P) + N \cdot P$$
 
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.20",
-	"elements": [
-		{
-			"type": "text",
-			"version": 187,
-			"versionNonce": 1710205184,
-			"isDeleted": false,
-			"id": "dWmjNYeP",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -121.69463303078908,
-			"y": -483.3325516501797,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 194.9597625732422,
-			"height": 25,
-			"seed": 1111181056,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Parallel Databases",
-			"rawText": "Parallel Databases",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Parallel Databases",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 4113,
-			"versionNonce": 902954698,
-			"isDeleted": false,
-			"id": "uaETZVbv",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -535.9213142582548,
-			"y": -455.1322257483251,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 1046.458984375,
-			"height": 2000,
-			"seed": 495151360,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1708272098566,
-			"link": "[[Computations]]",
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "* So far we have only considered single-Threaded/Serial System that manages all the data, now we \n  are upgrading our ideas to extend beyond that into parallel databases.\n*                    : the machines are homogeneous and tightly coupled, clusters with direct network\n  connection, multi-processor system, everything works together. (Optimized for performance)\n*                        : machines can be hetrogeneous and are loosely coupled, long distance network\n  connections, can act independently. (Optimized for reliability).\n* Speedup is the runtime of a sequential program and the run of a parallel program over p nodes\n\n* Amdahl's Law : Theoretical maximal speedup is determined by by the sequential part of the program\n\n* Gustafon's Law More processors are usually added to solve a larger problem in the same time\n\n* Homogeneous distributed database: machines are aware of each other, have the same software and\n  work together in order to process user requests, appears as a single system\n\n\n\n\n* Instruction Parallelism: Single instructions are automatically processed in parallel by the hardware\n* Data parallelism: Each processing unit executes the same operations on its share of the input data\n  Independently \n* Task parallelism: Tasks (work/data) are distributed among the processors/nodes each processor\n  executes a different thread/process\n\n* Inter-Query parallelism (efficient resource utilization): While one query waits for I/O, another executes\n  Requires concurrency control, important for highly transactional data\n\n* Intra-Query Parallelism: Parallel processing of a single query, whether its concurrent I/O from multiple\n  disk, Data Parallelism where multiple threads work on the same operator, or pipeline parallelism where\n  multiple pipelines work on different pipelines of the plan in parallel. Important for Analytical Data\n\n\n\n\n\n* Distribution: Deciding what data goes where\n\n\n\n\n\n\n\n\n\n\n\n* Types of partitioning:\n* Horizontal Partitioning: split table into slices of records with the same schema, each record only\n  occurs once per slice and slice is placed where it is most often read, This can be done through\n  round robin which guarantees equal size but no relation between tuples, Hash Partitioned over a \n  column value which guarantees tuples with similar column values are together, range partition where\n  define a specific range over certain columns and slice the records such that theyre in the same range\n* Vertical Partitioning: Partition table in multiple vertical slices, each of which requires a key, useful\n  if the the entire table is frequently used but over different values, allows us to process only \n  required attributes and place them where theyre frequently used.\n\n* Distributed transactions: Each site has a local transaction manager responsible for manaing the logs\n  for recovery purposes and coordinating the concurrent execution of the transactions at that site.\n  Each site also has a transaction coordinator which is responsible for Starting the execution of\n  transactions that originate at the site and redirecting the sub-transactions that need to be at\n  other sites. This responsibility also includes the termination of transactions that originate at that\n  site.\n\n* Failures related to distributed systems: 1) Failure of one site   2) Message loss   3) Failure of \n      communication link\n  4) Network partitioning failure (missing connection between two subsystems after partitioning)\n\n* Committing across different sites adds a lot more consistency complexity and global coordination\n* Two-Phase Commit: \n1) Phase 1: Vote collection phase : Coordinator contacts everyone to make a decision, waits for response\n2) Phase 2: Vote Collection Phase: if all agree, the decision is to commit, otherwise abort\n3) Phase 3: Decision Phase: Coordinator contacts all with the final decision\n\n* Distributed Query Processing: This is just an extension of centralized query processing except we \n  can exploit replication and fragmentation, harder to estimate cost due to network inconsistencies.\n  Dont forget to include send and receive operators in algebra.\n\n* High locality = Nodes own partitions exclusively\n* Low locality = All nodes own equal portions of each partition",
-			"rawText": "* So far we have only considered single-Threaded/Serial System that manages all the data, now we \n  are upgrading our ideas to extend beyond that into parallel databases.\n*                    : the machines are homogeneous and tightly coupled, clusters with direct network\n  connection, multi-processor system, everything works together. (Optimized for performance)\n*                        : machines can be hetrogeneous and are loosely coupled, long distance network\n  connections, can act independently. (Optimized for reliability).\n* Speedup is the runtime of a sequential program and the run of a parallel program over p nodes\n\n* Amdahl's Law : Theoretical maximal speedup is determined by by the sequential part of the program\n\n* Gustafon's Law More processors are usually added to solve a larger problem in the same time\n\n* Homogeneous distributed database: machines are aware of each other, have the same software and\n  work together in order to process user requests, appears as a single system\n\n\n\n\n* Instruction Parallelism: Single instructions are automatically processed in parallel by the hardware\n* Data parallelism: Each processing unit executes the same operations on its share of the input data\n  Independently \n* Task parallelism: Tasks (work/data) are distributed among the processors/nodes each processor\n  executes a different thread/process\n\n* Inter-Query parallelism (efficient resource utilization): While one query waits for I/O, another executes\n  Requires concurrency control, important for highly transactional data\n\n* Intra-Query Parallelism: Parallel processing of a single query, whether its concurrent I/O from multiple\n  disk, Data Parallelism where multiple threads work on the same operator, or pipeline parallelism where\n  multiple pipelines work on different pipelines of the plan in parallel. Important for Analytical Data\n\n\n\n\n\n* Distribution: Deciding what data goes where\n\n\n\n\n\n\n\n\n\n\n\n* Types of partitioning:\n* Horizontal Partitioning: split table into slices of records with the same schema, each record only\n  occurs once per slice and slice is placed where it is most often read, This can be done through\n  round robin which guarantees equal size but no relation between tuples, Hash Partitioned over a \n  column value which guarantees tuples with similar column values are together, range partition where\n  define a specific range over certain columns and slice the records such that theyre in the same range\n* Vertical Partitioning: Partition table in multiple vertical slices, each of which requires a key, useful\n  if the the entire table is frequently used but over different values, allows us to process only \n  required attributes and place them where theyre frequently used.\n\n* Distributed transactions: Each site has a local transaction manager responsible for manaing the logs\n  for recovery purposes and coordinating the concurrent execution of the transactions at that site.\n  Each site also has a transaction coordinator which is responsible for Starting the execution of\n  transactions that originate at the site and redirecting the sub-transactions that need to be at\n  other sites. This responsibility also includes the termination of transactions that originate at that\n  site.\n\n* Failures related to distributed systems: 1) Failure of one site   2) Message loss   3) Failure of \n      communication link\n  4) Network partitioning failure (missing connection between two subsystems after partitioning)\n\n* Committing across different sites adds a lot more consistency complexity and global coordination\n* Two-Phase Commit: \n1) Phase 1: Vote collection phase : Coordinator contacts everyone to make a decision, waits for response\n2) Phase 2: Vote Collection Phase: if all agree, the decision is to commit, otherwise abort\n3) Phase 3: Decision Phase: Coordinator contacts all with the final decision\n\n* Distributed Query Processing: This is just an extension of centralized query processing except we \n  can exploit replication and fragmentation, harder to estimate cost due to network inconsistencies.\n  Dont forget to include send and receive operators in algebra.\n\n* High locality = Nodes own partitions exclusively\n* Low locality = All nodes own equal portions of each partition",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* So far we have only considered single-Threaded/Serial System that manages all the data, now we \n  are upgrading our ideas to extend beyond that into parallel databases.\n*                    : the machines are homogeneous and tightly coupled, clusters with direct network\n  connection, multi-processor system, everything works together. (Optimized for performance)\n*                        : machines can be hetrogeneous and are loosely coupled, long distance network\n  connections, can act independently. (Optimized for reliability).\n* Speedup is the runtime of a sequential program and the run of a parallel program over p nodes\n\n* Amdahl's Law : Theoretical maximal speedup is determined by by the sequential part of the program\n\n* Gustafon's Law More processors are usually added to solve a larger problem in the same time\n\n* Homogeneous distributed database: machines are aware of each other, have the same software and\n  work together in order to process user requests, appears as a single system\n\n\n\n\n* Instruction Parallelism: Single instructions are automatically processed in parallel by the hardware\n* Data parallelism: Each processing unit executes the same operations on its share of the input data\n  Independently \n* Task parallelism: Tasks (work/data) are distributed among the processors/nodes each processor\n  executes a different thread/process\n\n* Inter-Query parallelism (efficient resource utilization): While one query waits for I/O, another executes\n  Requires concurrency control, important for highly transactional data\n\n* Intra-Query Parallelism: Parallel processing of a single query, whether its concurrent I/O from multiple\n  disk, Data Parallelism where multiple threads work on the same operator, or pipeline parallelism where\n  multiple pipelines work on different pipelines of the plan in parallel. Important for Analytical Data\n\n\n\n\n\n* Distribution: Deciding what data goes where\n\n\n\n\n\n\n\n\n\n\n\n* Types of partitioning:\n* Horizontal Partitioning: split table into slices of records with the same schema, each record only\n  occurs once per slice and slice is placed where it is most often read, This can be done through\n  round robin which guarantees equal size but no relation between tuples, Hash Partitioned over a \n  column value which guarantees tuples with similar column values are together, range partition where\n  define a specific range over certain columns and slice the records such that theyre in the same range\n* Vertical Partitioning: Partition table in multiple vertical slices, each of which requires a key, useful\n  if the the entire table is frequently used but over different values, allows us to process only \n  required attributes and place them where theyre frequently used.\n\n* Distributed transactions: Each site has a local transaction manager responsible for manaing the logs\n  for recovery purposes and coordinating the concurrent execution of the transactions at that site.\n  Each site also has a transaction coordinator which is responsible for Starting the execution of\n  transactions that originate at the site and redirecting the sub-transactions that need to be at\n  other sites. This responsibility also includes the termination of transactions that originate at that\n  site.\n\n* Failures related to distributed systems: 1) Failure of one site   2) Message loss   3) Failure of \n      communication link\n  4) Network partitioning failure (missing connection between two subsystems after partitioning)\n\n* Committing across different sites adds a lot more consistency complexity and global coordination\n* Two-Phase Commit: \n1) Phase 1: Vote collection phase : Coordinator contacts everyone to make a decision, waits for response\n2) Phase 2: Vote Collection Phase: if all agree, the decision is to commit, otherwise abort\n3) Phase 3: Decision Phase: Coordinator contacts all with the final decision\n\n* Distributed Query Processing: This is just an extension of centralized query processing except we \n  can exploit replication and fragmentation, harder to estimate cost due to network inconsistencies.\n  Dont forget to include send and receive operators in algebra.\n\n* High locality = Nodes own partitions exclusively\n* Low locality = All nodes own equal portions of each partition",
-			"lineHeight": 1.25,
-			"baseline": 1993
-		},
-		{
-			"type": "text",
-			"version": 113,
-			"versionNonce": 1007847680,
-			"isDeleted": false,
-			"id": "KCpvYTgE",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -515.6424321287263,
-			"y": -408.0751754332309,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 190.73976135253906,
-			"height": 25,
-			"seed": 983516928,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Parallel databases",
-			"rawText": "Parallel databases",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Parallel databases",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 93,
-			"versionNonce": 720799488,
-			"isDeleted": false,
-			"id": "AUaMEOvL",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -519.6655798336315,
-			"y": -358.1881438924092,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 225.77972412109375,
-			"height": 25,
-			"seed": 1198180096,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Distributed databases",
-			"rawText": "Distributed databases",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Distributed databases",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 136,
-			"versionNonce": 182020352,
-			"isDeleted": false,
-			"id": "Hgd9k7W9",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -516.3247935327271,
-			"y": -281.64855199914166,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 867.025634765625,
-			"height": 20,
-			"seed": 1313491200,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "Describes how much faster we get by running the parallel algorithm on p nodes, the fastest speedup is linear",
-			"rawText": "Describes how much faster we get by running the parallel algorithm on p nodes, the fastest speedup is linear",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Describes how much faster we get by running the parallel algorithm on p nodes, the fastest speedup is linear",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 171,
-			"versionNonce": 948807424,
-			"isDeleted": false,
-			"id": "lrZqNgLj",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 63.907099135638674,
-			"y": -231.588565041907,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 334.416748046875,
-			"height": 20,
-			"seed": 1677805824,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "P is the fraction that can be parallelized",
-			"rawText": "P is the fraction that can be parallelized",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "P is the fraction that can be parallelized",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 219,
-			"versionNonce": 499403008,
-			"isDeleted": false,
-			"id": "mT3Rv9Lv",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -505.56568632153324,
-			"y": -230.74763908556668,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 386.8328857421875,
-			"height": 20,
-			"seed": 1866376960,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "1-P is the fraction of the program that is serial",
-			"rawText": "1-P is the fraction of the program that is serial",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "1-P is the fraction of the program that is serial",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 224,
-			"versionNonce": 1178650368,
-			"isDeleted": false,
-			"id": "6U1J33kw",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -528.2706742321283,
-			"y": -106.26789188186865,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 1019.2388916015625,
-			"height": 25,
-			"seed": 887858944,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "1) Shared Memory:  Several cpus that have several disks, work on the same memory over a common bus",
-			"rawText": "1) Shared Memory:  Several cpus that have several disks, work on the same memory over a common bus",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "1) Shared Memory:  Several cpus that have several disks, work on the same memory over a common bus",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 257,
-			"versionNonce": 1347627264,
-			"isDeleted": false,
-			"id": "1BC6575B",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -524.2207781444752,
-			"y": 297.8965358476964,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 944.2738647460938,
-			"height": 40,
-			"seed": 23963392,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "1) Pipeline Parallelism: Inter-Operator Parallelism Executes multiple pipelines simultaneously, only if the pipelines are not\n  dependent on each other",
-			"rawText": "1) Pipeline Parallelism: Inter-Operator Parallelism Executes multiple pipelines simultaneously, only if the pipelines are not\n  dependent on each other",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "1) Pipeline Parallelism: Inter-Operator Parallelism Executes multiple pipelines simultaneously, only if the pipelines are not\n  dependent on each other",
-			"lineHeight": 1.25,
-			"baseline": 34
-		},
-		{
-			"type": "text",
-			"version": 288,
-			"versionNonce": 1888478976,
-			"isDeleted": false,
-			"id": "NccOvTnV",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -524.220778261146,
-			"y": 361.9866078650343,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 1012.5619506835938,
-			"height": 40,
-			"seed": 901253376,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "2) Data Parallelism: Some operations dont need to see the entire table, thus we can divide the data into subparts each of\n   which can be processed independently, Degree of Parallelism as high as the number of possible subsets depending on operator",
-			"rawText": "2) Data Parallelism: Some operations dont need to see the entire table, thus we can divide the data into subparts each of\n   which can be processed independently, Degree of Parallelism as high as the number of possible subsets depending on operator",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "2) Data Parallelism: Some operations dont need to see the entire table, thus we can divide the data into subparts each of\n   which can be processed independently, Degree of Parallelism as high as the number of possible subsets depending on operator",
-			"lineHeight": 1.25,
-			"baseline": 34
-		},
-		{
-			"type": "text",
-			"version": 186,
-			"versionNonce": 235276544,
-			"isDeleted": false,
-			"id": "XF2ibo3N",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -515.0025139146027,
-			"y": 339.9415722261487,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 912.7855834960938,
-			"height": 20,
-			"seed": 260835584,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "Needs high sync overhead, lower degree of parallelism (not too many pipelines per query), pipelines can be imbalanced",
-			"rawText": "Needs high sync overhead, lower degree of parallelism (not too many pipelines per query), pipelines can be imbalanced",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Needs high sync overhead, lower degree of parallelism (not too many pipelines per query), pipelines can be imbalanced",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 741,
-			"versionNonce": 1140524800,
-			"isDeleted": false,
-			"id": "D6PCnrgg",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -531.7803658055076,
-			"y": 446.5664148821967,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 1011.598876953125,
-			"height": 175,
-			"seed": 1540605696,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "1) Replication: multiple copies of data, stored in different sites, faster retrieval and fault tolerance.\n  advantages: 1) Availability: if one node doesnt have R, does not mean other nodes do not!\n               2) Parallelism: queries on same relation can be processed in several nodes\n               3) Reduced data transfer: because everything is available on all nodes\n  disadvantages: 1) Increased cost of updates: each updated R needs to be updated for every node\n                 2) requires a lot of concurrency control in order to ensure that 2 replicas of the \n                    same data dont have inconsistencies. (Pick one as Primary and apply CC)",
-			"rawText": "1) Replication: multiple copies of data, stored in different sites, faster retrieval and fault tolerance.\n  advantages: 1) Availability: if one node doesnt have R, does not mean other nodes do not!\n               2) Parallelism: queries on same relation can be processed in several nodes\n               3) Reduced data transfer: because everything is available on all nodes\n  disadvantages: 1) Increased cost of updates: each updated R needs to be updated for every node\n                 2) requires a lot of concurrency control in order to ensure that 2 replicas of the \n                    same data dont have inconsistencies. (Pick one as Primary and apply CC)",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "1) Replication: multiple copies of data, stored in different sites, faster retrieval and fault tolerance.\n  advantages: 1) Availability: if one node doesnt have R, does not mean other nodes do not!\n               2) Parallelism: queries on same relation can be processed in several nodes\n               3) Reduced data transfer: because everything is available on all nodes\n  disadvantages: 1) Increased cost of updates: each updated R needs to be updated for every node\n                 2) requires a lot of concurrency control in order to ensure that 2 replicas of the \n                    same data dont have inconsistencies. (Pick one as Primary and apply CC)",
-			"lineHeight": 1.25,
-			"baseline": 168
-		},
-		{
-			"type": "text",
-			"version": 435,
-			"versionNonce": 1381820672,
-			"isDeleted": false,
-			"id": "71vkaZHV",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -524.220777588785,
-			"y": 622.4985180184763,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 915.779052734375,
-			"height": 75,
-			"seed": 1143269120,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "2) Fragmentation: partitioned into several fragments stored in distinct sites\n   special case advantages: 1) Partitions can be dropped out if theyre no longer necessary\n                             2) Some queries can be limited to operate on certain sets only",
-			"rawText": "2) Fragmentation: partitioned into several fragments stored in distinct sites\n   special case advantages: 1) Partitions can be dropped out if theyre no longer necessary\n                             2) Some queries can be limited to operate on certain sets only",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "2) Fragmentation: partitioned into several fragments stored in distinct sites\n   special case advantages: 1) Partitions can be dropped out if theyre no longer necessary\n                             2) Some queries can be limited to operate on certain sets only",
-			"lineHeight": 1.25,
-			"baseline": 68
-		},
-		{
-			"type": "text",
-			"version": 365,
-			"versionNonce": 1023551232,
-			"isDeleted": false,
-			"id": "OtDbJXa9",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -524.4442747977712,
-			"y": 697.4985180325516,
-			"strokeColor": "#f08c00",
-			"backgroundColor": "transparent",
-			"width": 1000.4590454101562,
-			"height": 25,
-			"seed": 1601865984,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "3) Replication & Fragmentation: we fragment our relation and store multiple copies of each fragment",
-			"rawText": "3) Replication & Fragmentation: we fragment our relation and store multiple copies of each fragment",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "3) Replication & Fragmentation: we fragment our relation and store multiple copies of each fragment",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "frame",
-			"version": 385,
-			"versionNonce": 1104151551,
-			"isDeleted": false,
-			"id": "7UzCFPUWxGl_zXCVxUreN",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -542.7041733874028,
-			"y": -483.3325518716272,
-			"strokeColor": "#bbb",
-			"backgroundColor": "transparent",
-			"width": 1036.9788418581356,
-			"height": 2125.979252591028,
-			"seed": 1565018368,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1708099386588,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"frameColor": {
-					"stroke": "#D4D4D4",
-					"fill": "#ADADAD",
-					"nameColor": "#7A7A7A"
-				}
-			},
-			"name": "Parallel"
-		},
-		{
-			"type": "image",
-			"version": 228,
-			"versionNonce": 685230336,
-			"isDeleted": false,
-			"id": "4g2Th96E",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -93.50971068825046,
-			"y": -234.87841590470822,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 137.2392728848481,
-			"height": 33.318204977824394,
-			"seed": 74589,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "b2af7350275e9e863a564247117a4423ca06f7f1",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "image",
-			"version": 97,
-			"versionNonce": 1210402560,
-			"isDeleted": false,
-			"id": "dWrvrLLt",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -141.09041606195404,
-			"y": -174.8977554789136,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 225.92033994308701,
-			"height": 16.554507668243446,
-			"seed": 47748,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "765ed0699bf0cb07fd4eb5a8ac784bf734043a0a",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "text",
-			"version": 253,
-			"versionNonce": 754362624,
-			"isDeleted": false,
-			"id": "wjmQA6FJ",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 99.6565965715997,
-			"y": -175.7795757009729,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 334.416748046875,
-			"height": 20,
-			"seed": 680798464,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "P is the fraction that can be parallelized",
-			"rawText": "P is the fraction that can be parallelized",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "P is the fraction that can be parallelized",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 333,
-			"versionNonce": 1105487616,
-			"isDeleted": false,
-			"id": "jFubQD0K",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -396.10957836582816,
-			"y": -175.77957578829225,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 240.19248962402344,
-			"height": 20,
-			"seed": 1888872704,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "N is the number of Processors",
-			"rawText": "N is the number of Processors",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "N is the number of Processors",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 385,
-			"versionNonce": 171542784,
-			"isDeleted": false,
-			"id": "sYBUaaQI",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -528.270674305437,
-			"y": -81.26789223323155,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 949.8189697265625,
-			"height": 25,
-			"seed": 428017408,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "2) Shared disk: Several cpus each with their own memory share the same disks and datasource.",
-			"rawText": "2) Shared disk: Several cpus each with their own memory share the same disks and datasource.",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "2) Shared disk: Several cpus each with their own memory share the same disks and datasource.",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 604,
-			"versionNonce": 1992263424,
-			"isDeleted": false,
-			"id": "joAo9bk5",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -530.793450885595,
-			"y": -55.42696697544518,
-			"strokeColor": "#f08c00",
-			"backgroundColor": "transparent",
-			"width": 1007.6589965820312,
-			"height": 25,
-			"seed": 552019712,
-			"groupIds": [],
-			"frameId": "7UzCFPUWxGl_zXCVxUreN",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707833795142,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "3) Shared nothing: nodes have their own disk, memory, communication is direct and data is partitioned.",
-			"rawText": "3) Shared nothing: nodes have their own disk, memory, communication is direct and data is partitioned.",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "3) Shared nothing: nodes have their own disk, memory, communication is direct and data is partitioned.",
-			"lineHeight": 1.25,
-			"baseline": 18
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#f08c00",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 1,
-		"currentItemFontSize": 20,
-		"currentItemTextAlign": "left",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1986.089752458335,
-		"scrollY": 632.1983943261132,
-		"zoom": {
-			"value": 0.4
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		}
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+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
 ```
 %%

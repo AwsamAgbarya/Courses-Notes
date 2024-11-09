@@ -7,7 +7,8 @@ tags:
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
 Hypothesis space ^pvwHvbAE
 
 
@@ -26,245 +27,38 @@ hypotheses (Which is calculated by multiplying all possible values
 of each attribute) ^167mbXTx
 
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.14",
-	"elements": [
-		{
-			"id": "pvwHvbAE",
-			"type": "text",
-			"x": -123.75,
-			"y": -409.2578125,
-			"width": 230.4409637451172,
-			"height": 35,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 158364007,
-			"version": 56,
-			"versionNonce": 597676135,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1705677838089,
-			"link": null,
-			"locked": false,
-			"text": "Hypothesis space",
-			"rawText": "Hypothesis space",
-			"fontSize": 28,
-			"fontFamily": 1,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"baseline": 25,
-			"containerId": null,
-			"originalText": "Hypothesis space",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "CldlYtNO",
-			"type": "text",
-			"x": -210.68145499999994,
-			"y": -344.7578125,
-			"width": 441.36083984375,
-			"height": 140,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1886388041,
-			"version": 809,
-			"versionNonce": 1944242409,
-			"isDeleted": false,
-			"boundElements": [],
-			"updated": 1705678953524,
-			"link": null,
-			"locked": false,
-			"text": "\na potential solution is called a potential hypothesis\nbecause we are given assumptions about the situation\nand we are supposed to draw a logical conclusion from \nit to classify our data into potential values.\ni.e We hypothesize something about the situation, and\nthe most fitting hypothesis is our prediction",
-			"rawText": "\na potential solution is called a potential hypothesis\nbecause we are given assumptions about the situation\nand we are supposed to draw a logical conclusion from \nit to classify our data into potential values.\ni.e We hypothesize something about the situation, and\nthe most fitting hypothesis is our prediction",
-			"fontSize": 16,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"baseline": 134,
-			"containerId": null,
-			"originalText": "\na potential solution is called a potential hypothesis\nbecause we are given assumptions about the situation\nand we are supposed to draw a logical conclusion from \nit to classify our data into potential values.\ni.e We hypothesize something about the situation, and\nthe most fitting hypothesis is our prediction",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "En31IKwOca9l4TBhL3h8X",
-			"type": "arrow",
-			"x": -7.8776850095260045,
-			"y": -188.2578125,
-			"width": 1.1735396601807224,
-			"height": 90,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"seed": 88996457,
-			"version": 824,
-			"versionNonce": 1682686921,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1705678953524,
-			"link": null,
-			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					1.1735396601807224,
-					90
-				]
-			],
-			"lastCommittedPoint": [
-				-1,
-				96
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
-		},
-		{
-			"id": "167mbXTx",
-			"type": "text",
-			"x": -261.37004799999994,
-			"y": -81.1453645,
-			"width": 505.6810607910156,
-			"height": 120,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 62184393,
-			"version": 605,
-			"versionNonce": 395469481,
-			"isDeleted": false,
-			"boundElements": [],
-			"updated": 1705678953524,
-			"link": null,
-			"locked": false,
-			"text": "So The hypothesis space for a certain class is the set\nof all hypotheses that will belong to that class\n\nand the total hypothesis space is the set of all possible\nhypotheses (Which is calculated by multiplying all possible values\nof each attribute)",
-			"rawText": "So The hypothesis space for a certain class is the set\nof all hypotheses that will belong to that class\n\nand the total hypothesis space is the set of all possible\nhypotheses (Which is calculated by multiplying all possible values\nof each attribute)",
-			"fontSize": 16,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"baseline": 114,
-			"containerId": null,
-			"originalText": "So The hypothesis space for a certain class is the set\nof all hypotheses that will belong to that class\n\nand the total hypothesis space is the set of all possible\nhypotheses (Which is calculated by multiplying all possible values\nof each attribute)",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "rhF0FXVt",
-			"type": "text",
-			"x": -460.75,
-			"y": 48.7421875,
-			"width": 8.000015258789062,
-			"height": 20,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 634007465,
-			"version": 2,
-			"versionNonce": 1882371719,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1705678555334,
-			"link": null,
-			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 16,
-			"fontFamily": 1,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"baseline": 14,
-			"containerId": null,
-			"originalText": "",
-			"lineHeight": 1.25
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#1e1e1e",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 1,
-		"currentItemFontSize": 16,
-		"currentItemTextAlign": "center",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 711.25,
-		"scrollY": 484.7421875,
-		"zoom": {
-			"value": 1
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		}
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+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=
 ```
 %%

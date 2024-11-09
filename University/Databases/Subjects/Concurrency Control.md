@@ -8,7 +8,8 @@ Next [[Recovery]]
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
 Schedules ^DgCqyTl6
 
 * We provide concurrency control in order to improve utilization of resource and apply fairness to users
@@ -170,860 +171,188 @@ S(E)= request shared lock on E          X(E)= request exclusive lock on E       
 conflict ^p7wMHCpz
 
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.20",
-	"elements": [
-		{
-			"type": "text",
-			"version": 1234,
-			"versionNonce": 1103300352,
-			"isDeleted": false,
-			"id": "DgCqyTl6",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -42.484288659113744,
-			"y": -470.8596741529883,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 129.9485626220703,
-			"height": 35,
-			"seed": 1409911659,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "Schedules",
-			"rawText": "Schedules",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Schedules",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "text",
-			"version": 1991,
-			"versionNonce": 1964304640,
-			"isDeleted": false,
-			"id": "7wT2bTFt",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -496.42944160316733,
-			"y": -416.4087515182106,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 1037.8388671875,
-			"height": 1150,
-			"seed": 1480624677,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "* We provide concurrency control in order to improve utilization of resource and apply fairness to users\n* Transactions contain multiple reads and writes to manipulate data and end with commit or abort\n* ACID properties:\n\n\n\n\n\n\n\n\n* A schedule is a sequence of operations from multiple transactions. We try to make schedule have\n  no conflict within their transactions to ensure Isolation.\n* A schedule is considered         operations from different TX are not interleaved (sequential TX)\n* A schedule is considered                 if its results equal to a serial schedule of the same TXs\n\n* Two operations are                if one of the following conditions apply:\n\n\n\n* Two operations are                     if all these rules apply:\n\n\n\n* Two schedules are Conflict-equivalent if they work on the same transactions and we can turn one\n   into the other with a series of swaps of non-conflicting adjacent operation\n\n* A schedule is Conflict-serializable if a conflict-equivalent serial schedule exists, i.e in this equivalent\nserial schedule the conflicting operations execute in the original order and the rest doesnt matter\n\n* Advantages of Conflict-Serializability:\n1) Consistency: transactions’ outcomes correspond to the sequence in which they were carried out.\n2) Correctness: Regardless of the order transactions are executed correctly.\n3) Enhanced Concurrency: concurrent execution of operations without conflict enhances concurrency\n\n* Disadvantages of Conflict-Serializability:\n1) Complexity: an be complex to implement, especially in large and complex databases\n2) Limited Concurrency: can limit the concurrency because it may delay some TX to avoid conflict\n3) Increased Overhead: requires overhead to maintain order of the transactions and ensure non-conflict\n\n* Precedence Graph:\n1) Make nodes V = {T1, T2,T3……….Tn}\n2) An edge is drawn from node Tj to Tk if one of the operations in Tj appears in the schedule\n   before some conflicting operation in Tk\n3) If no cycles are in graph, that schedule is conflict-serializable\n",
-			"rawText": "* We provide concurrency control in order to improve utilization of resource and apply fairness to users\n* Transactions contain multiple reads and writes to manipulate data and end with commit or abort\n* ACID properties:\n\n\n\n\n\n\n\n\n* A schedule is a sequence of operations from multiple transactions. We try to make schedule have\n  no conflict within their transactions to ensure Isolation.\n* A schedule is considered         operations from different TX are not interleaved (sequential TX)\n* A schedule is considered                 if its results equal to a serial schedule of the same TXs\n\n* Two operations are                if one of the following conditions apply:\n\n\n\n* Two operations are                     if all these rules apply:\n\n\n\n* Two schedules are Conflict-equivalent if they work on the same transactions and we can turn one\n   into the other with a series of swaps of non-conflicting adjacent operation\n\n* A schedule is Conflict-serializable if a conflict-equivalent serial schedule exists, i.e in this equivalent\nserial schedule the conflicting operations execute in the original order and the rest doesnt matter\n\n* Advantages of Conflict-Serializability:\n1) Consistency: transactions’ outcomes correspond to the sequence in which they were carried out.\n2) Correctness: Regardless of the order transactions are executed correctly.\n3) Enhanced Concurrency: concurrent execution of operations without conflict enhances concurrency\n\n* Disadvantages of Conflict-Serializability:\n1) Complexity: an be complex to implement, especially in large and complex databases\n2) Limited Concurrency: can limit the concurrency because it may delay some TX to avoid conflict\n3) Increased Overhead: requires overhead to maintain order of the transactions and ensure non-conflict\n\n* Precedence Graph:\n1) Make nodes V = {T1, T2,T3……….Tn}\n2) An edge is drawn from node Tj to Tk if one of the operations in Tj appears in the schedule\n   before some conflicting operation in Tk\n3) If no cycles are in graph, that schedule is conflict-serializable\n",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* We provide concurrency control in order to improve utilization of resource and apply fairness to users\n* Transactions contain multiple reads and writes to manipulate data and end with commit or abort\n* ACID properties:\n\n\n\n\n\n\n\n\n* A schedule is a sequence of operations from multiple transactions. We try to make schedule have\n  no conflict within their transactions to ensure Isolation.\n* A schedule is considered         operations from different TX are not interleaved (sequential TX)\n* A schedule is considered                 if its results equal to a serial schedule of the same TXs\n\n* Two operations are                if one of the following conditions apply:\n\n\n\n* Two operations are                     if all these rules apply:\n\n\n\n* Two schedules are Conflict-equivalent if they work on the same transactions and we can turn one\n   into the other with a series of swaps of non-conflicting adjacent operation\n\n* A schedule is Conflict-serializable if a conflict-equivalent serial schedule exists, i.e in this equivalent\nserial schedule the conflicting operations execute in the original order and the rest doesnt matter\n\n* Advantages of Conflict-Serializability:\n1) Consistency: transactions’ outcomes correspond to the sequence in which they were carried out.\n2) Correctness: Regardless of the order transactions are executed correctly.\n3) Enhanced Concurrency: concurrent execution of operations without conflict enhances concurrency\n\n* Disadvantages of Conflict-Serializability:\n1) Complexity: an be complex to implement, especially in large and complex databases\n2) Limited Concurrency: can limit the concurrency because it may delay some TX to avoid conflict\n3) Increased Overhead: requires overhead to maintain order of the transactions and ensure non-conflict\n\n* Precedence Graph:\n1) Make nodes V = {T1, T2,T3……….Tn}\n2) An edge is drawn from node Tj to Tk if one of the operations in Tj appears in the schedule\n   before some conflicting operation in Tk\n3) If no cycles are in graph, that schedule is conflict-serializable\n",
-			"lineHeight": 1.25,
-			"baseline": 1143
-		},
-		{
-			"type": "text",
-			"version": 164,
-			"versionNonce": 1103767296,
-			"isDeleted": false,
-			"id": "PO576POq",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -474.2147651576443,
-			"y": -337.7224381172548,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 976.4497680664062,
-			"height": 20,
-			"seed": 1169557509,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "1) Atomicity: Either all operations of a transaction complete or none of them complete, no transaction is left half finished.",
-			"rawText": "1) Atomicity: Either all operations of a transaction complete or none of them complete, no transaction is left half finished.",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "1) Atomicity: Either all operations of a transaction complete or none of them complete, no transaction is left half finished.",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 111,
-			"versionNonce": 881838336,
-			"isDeleted": false,
-			"id": "LbLuyVUD",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -474.21476569147393,
-			"y": -317.7224387608275,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 844.1776733398438,
-			"height": 20,
-			"seed": 126919301,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "2) Consistency: A transaction that is applied to a consistent database produces a consistent database.",
-			"rawText": "2) Consistency: A transaction that is applied to a consistent database produces a consistent database.",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "2) Consistency: A transaction that is applied to a consistent database produces a consistent database.",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 126,
-			"versionNonce": 1944930048,
-			"isDeleted": false,
-			"id": "Eic61sNJ",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -474.2147655937069,
-			"y": -297.722438078081,
-			"strokeColor": "#f08c00",
-			"backgroundColor": "transparent",
-			"width": 732.353271484375,
-			"height": 20,
-			"seed": 1505184741,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "3) Isolation: A transaction executes as if it is the only transaction running in the system. ",
-			"rawText": "3) Isolation: A transaction executes as if it is the only transaction running in the system. ",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "3) Isolation: A transaction executes as if it is the only transaction running in the system. ",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 131,
-			"versionNonce": 28223744,
-			"isDeleted": false,
-			"id": "SUGNFnAq",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -474.2147654839637,
-			"y": -277.7224387517617,
-			"strokeColor": "#9c36b5",
-			"backgroundColor": "transparent",
-			"width": 833.1536254882812,
-			"height": 20,
-			"seed": 2117091013,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "4) Durability: The effects of committed transactions are reflected in the database even after failures",
-			"rawText": "4) Durability: The effects of committed transactions are reflected in the database even after failures",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "4) Durability: The effects of committed transactions are reflected in the database even after failures",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 523,
-			"versionNonce": 883713792,
-			"isDeleted": false,
-			"id": "f8Hpm7lL",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -494.3664878711572,
-			"y": -246.5865664455797,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 1006.4818115234375,
-			"height": 100,
-			"seed": 391732203,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "* Interleaved transactions are transactions that work on the same attributes.\n* Dirty read is when a second transaction reads the effects of a first transaction before the first aborts, thus\n  causing its effect to carry on even when aborted\n* Lost Update is when a second transaction reads an old value (before the first transaction adjust it) of an attribute and\n  commits its changes to the old value thus rendering the first transaction useless.",
-			"rawText": "* Interleaved transactions are transactions that work on the same attributes.\n* Dirty read is when a second transaction reads the effects of a first transaction before the first aborts, thus\n  causing its effect to carry on even when aborted\n* Lost Update is when a second transaction reads an old value (before the first transaction adjust it) of an attribute and\n  commits its changes to the old value thus rendering the first transaction useless.",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* Interleaved transactions are transactions that work on the same attributes.\n* Dirty read is when a second transaction reads the effects of a first transaction before the first aborts, thus\n  causing its effect to carry on even when aborted\n* Lost Update is when a second transaction reads an old value (before the first transaction adjust it) of an attribute and\n  commits its changes to the old value thus rendering the first transaction useless.",
-			"lineHeight": 1.25,
-			"baseline": 94
-		},
-		{
-			"type": "text",
-			"version": 103,
-			"versionNonce": 133269760,
-			"isDeleted": false,
-			"id": "n654dJ7r",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -230.25592362204713,
-			"y": -90.878989265629,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 75.19993591308594,
-			"height": 25,
-			"seed": 25394475,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "SERIAL",
-			"rawText": "SERIAL",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "SERIAL",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 106,
-			"versionNonce": 1351059200,
-			"isDeleted": false,
-			"id": "Lx7EaXv6",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -228.31580287137376,
-			"y": -64.87741975494998,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 155.15988159179688,
-			"height": 25,
-			"seed": 1614279595,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "SERIALIZABLE",
-			"rawText": "SERIALIZABLE",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "SERIALIZABLE",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 128,
-			"versionNonce": 47737088,
-			"isDeleted": false,
-			"id": "iaah1r6X",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -275.72494463527397,
-			"y": -14.045286623659024,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 143.15989685058594,
-			"height": 25,
-			"seed": 1136108331,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "CONFLICTING",
-			"rawText": "CONFLICTING",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "CONFLICTING",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 122,
-			"versionNonce": 67020544,
-			"isDeleted": false,
-			"id": "x5agIfNa",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -469.03265597846695,
-			"y": 10.954713513068029,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 775.6392211914062,
-			"height": 50,
-			"seed": 787720197,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "1) They belong to the same transaction\n2) They operate on the same data item and at least one of them is a write",
-			"rawText": "1) They belong to the same transaction\n2) They operate on the same data item and at least one of them is a write",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "1) They belong to the same transaction\n2) They operate on the same data item and at least one of them is a write",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "text",
-			"version": 121,
-			"versionNonce": 1038305536,
-			"isDeleted": false,
-			"id": "j2uuuMQm",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -277.15678974616026,
-			"y": 85.70738681302967,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 191.65985107421875,
-			"height": 25,
-			"seed": 2084848427,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "NON-CONFLICTING",
-			"rawText": "NON-CONFLICTING",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "NON-CONFLICTING",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 185,
-			"versionNonce": 2073151232,
-			"isDeleted": false,
-			"id": "2I4vVXZu",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -469.03265640810076,
-			"y": 108.59124826480928,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 658.8792724609375,
-			"height": 50,
-			"seed": 1253088901,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "1) They belong to different transactions\n2) They do not operate the same data or all of them are Reads",
-			"rawText": "1) They belong to different transactions\n2) They do not operate the same data or all of them are Reads",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "1) They belong to different transactions\n2) They do not operate the same data or all of them are Reads",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "text",
-			"version": 190,
-			"versionNonce": 345123072,
-			"isDeleted": false,
-			"id": "9fffcMTy",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -495.9674061324004,
-			"y": 743.1490172882901,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 1022.9459228515625,
-			"height": 80,
-			"seed": 1491869579,
-			"groupIds": [],
-			"frameId": "fgMQFMIBF88HENUer2F3v",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "* Recoverable Schedules: Commit of the write transaction Tj must be carried out before the commit of the read transaction Ti\n* Avoids cascading resets: It is only read when the changes to the writing transaction Tj have been committed\n* Strict Schedule: a schedule in which the order of transactions is preserved exactly as specified by the program or user.\n                   (no reading from or overwriting of data items before a commit)",
-			"rawText": "* Recoverable Schedules: Commit of the write transaction Tj must be carried out before the commit of the read transaction Ti\n* Avoids cascading resets: It is only read when the changes to the writing transaction Tj have been committed\n* Strict Schedule: a schedule in which the order of transactions is preserved exactly as specified by the program or user.\n                   (no reading from or overwriting of data items before a commit)",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* Recoverable Schedules: Commit of the write transaction Tj must be carried out before the commit of the read transaction Ti\n* Avoids cascading resets: It is only read when the changes to the writing transaction Tj have been committed\n* Strict Schedule: a schedule in which the order of transactions is preserved exactly as specified by the program or user.\n                   (no reading from or overwriting of data items before a commit)",
-			"lineHeight": 1.25,
-			"baseline": 74
-		},
-		{
-			"type": "frame",
-			"version": 1793,
-			"versionNonce": 1478875537,
-			"isDeleted": false,
-			"id": "fgMQFMIBF88HENUer2F3v",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -503.27459185284374,
-			"y": -470.8596742409659,
-			"strokeColor": "#bbb",
-			"backgroundColor": "transparent",
-			"width": 1039.816207,
-			"height": 1297.5212802316412,
-			"seed": 2024271019,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1708272069732,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"frameColor": {
-					"stroke": "#D4D4D4",
-					"fill": "#ADADAD",
-					"nameColor": "#7A7A7A"
-				}
-			},
-			"name": "CC"
-		},
-		{
-			"type": "text",
-			"version": 1358,
-			"versionNonce": 1919224064,
-			"isDeleted": false,
-			"id": "3rnx1VbE",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -56.28863036014229,
-			"y": 896.7541207602474,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 93.21238708496094,
-			"height": 35,
-			"seed": 1014940331,
-			"groupIds": [],
-			"frameId": "5jHjrEGA1gyCAeexN6OpQ",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "Locking",
-			"rawText": "Locking",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Locking",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "text",
-			"version": 5169,
-			"versionNonce": 420218624,
-			"isDeleted": false,
-			"id": "oBFh5tLo",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -514.9373160145219,
-			"y": 950.4616231720825,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 1032.73876953125,
-			"height": 1650,
-			"seed": 1216820555,
-			"groupIds": [],
-			"frameId": "5jHjrEGA1gyCAeexN6OpQ",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "* Locking is Enforcement of serializability by locking database elements, theyre requested by the TX\n* There are two types of locks, read which is sharable, and write which is exclusive!\n\n\n* Dead locks: are the denial of locks due to the existence of an unreleased shared lock\n\n* Two Phase locking (serializable): Once TX starts to release locks, it cannot rquest new locks\n  Consists of growing phase where it has locks, and shrinking phase where its on cooldown for requests\n\n\n* Problem of cascading aborts is when one transaction does changes to attribute A, then another \n  transaction reads those changes, if T1 aborts, T2 also has to abort due to it having information\n  gained by T1.\n* Strict 2PL: Only release locks after Abort/commit to ensure recoverable schedules\n\n* Phantom Read: the same query produces different output at different times.\n  Example: One tuple is added to the table while another transaction is operating on smthn based off\n           off of tuples, this occurs because the addition of a tuple only needs a write lock on that\n           tuple itself, thus General locks do not help\n\n* Lock Granularities: Lock database elements in a hierarchy to cope with different granularities\n* Introduce intention locks on the current element if the element is below in the hierarchy\n* Intention locks IS and IX are compatible with each other, and only S is compatible with IS\n* Latches are physical locks that seperate Threads to protect in-memory data structures\n\n* Optimizations to lock manager:\n  1) try to inherit high-level locks from the previous transaction that executed in the same thread\n  2) Thread-per-data partition rather than thread-per-transaction\n  3) Private lock table per transaction simplifies code paths for requesting and releasing locks from\n     global lock table\n  4) Allow transactions to release their locks as soon as they receive allocated space in buffer pool\n     for commit log record\n\n* How to deal with deadlocks?\n  1) Abort transaction if it is been waiting for too long. How to pick timeout parameter?\n  2) Roll back transaction if waits-for graph contains cycle\n\n* Some applications can handle a bit of dirtyness as a trade off for response time:\n1) Dirty read\n2) Fuzzy Read: T1 reads data, T2 changes/deletes that data and commits, T2 reads same data and\n               finds different value\n3) Phantom: T1 searches using a < X < b, T2 modifies items in that range, T1 searches and finds\n             different values in that range.\n\n* Isolation levels: \n1) READ UNCOMMITTED: can read data that has been written by non-committed transactions.\n    • Allows dirty reads, fuzzy reads, phantoms\n2) READ COMMITTED: only read data that have been updated by committed transactions.\n    • Does not allow dirty reads, Allows fuzzy reads, phantoms\n3) REPEATABLE READ: Reads to individual items are repeatable.\n    • Does not allow dirty reads or fuzzy reads, but Allows phantoms\n4) SERIALIZABLE: Reads by predicate search are repeatable.\n    • Does not allow dirty reads, fuzzy reads, phantoms\n\n* Optimistic approaches hope that conflict will be rare, if they do we fix things, If something goes\nwrong, abort and restart transaction\n\n*Timestamp protocol: for each item, the order that theyre accessed by conflicting operations does not \nviolate the ordering, W_TS(X) is largest TS for writing on attribute X and R_TS(X) is for reading.\nTS(T) is the timestamp in which the transaction entered the system\n1) When T wants to Write X, if RTS(X) > T(S) (Someone has read old value) abort, if WTS(X) > T(s)\n  then skip because it will be overwritten, else execute and update timestamps\n2) When T wants to Read x, if WTS(X) > T(s) (someone overwrote old value) then abort, else execute\n3) if two conflicting operations occur in wrong order, it aborts the latter\n\n*MCC: Each transaction operates on private copy of data, copies are merged later",
-			"rawText": "* Locking is Enforcement of serializability by locking database elements, theyre requested by the TX\n* There are two types of locks, read which is sharable, and write which is exclusive!\n\n\n* Dead locks: are the denial of locks due to the existence of an unreleased shared lock\n\n* Two Phase locking (serializable): Once TX starts to release locks, it cannot rquest new locks\n  Consists of growing phase where it has locks, and shrinking phase where its on cooldown for requests\n\n\n* Problem of cascading aborts is when one transaction does changes to attribute A, then another \n  transaction reads those changes, if T1 aborts, T2 also has to abort due to it having information\n  gained by T1.\n* Strict 2PL: Only release locks after Abort/commit to ensure recoverable schedules\n\n* Phantom Read: the same query produces different output at different times.\n  Example: One tuple is added to the table while another transaction is operating on smthn based off\n           off of tuples, this occurs because the addition of a tuple only needs a write lock on that\n           tuple itself, thus General locks do not help\n\n* Lock Granularities: Lock database elements in a hierarchy to cope with different granularities\n* Introduce intention locks on the current element if the element is below in the hierarchy\n* Intention locks IS and IX are compatible with each other, and only S is compatible with IS\n* Latches are physical locks that seperate Threads to protect in-memory data structures\n\n* Optimizations to lock manager:\n  1) try to inherit high-level locks from the previous transaction that executed in the same thread\n  2) Thread-per-data partition rather than thread-per-transaction\n  3) Private lock table per transaction simplifies code paths for requesting and releasing locks from\n     global lock table\n  4) Allow transactions to release their locks as soon as they receive allocated space in buffer pool\n     for commit log record\n\n* How to deal with deadlocks?\n  1) Abort transaction if it is been waiting for too long. How to pick timeout parameter?\n  2) Roll back transaction if waits-for graph contains cycle\n\n* Some applications can handle a bit of dirtyness as a trade off for response time:\n1) Dirty read\n2) Fuzzy Read: T1 reads data, T2 changes/deletes that data and commits, T2 reads same data and\n               finds different value\n3) Phantom: T1 searches using a < X < b, T2 modifies items in that range, T1 searches and finds\n             different values in that range.\n\n* Isolation levels: \n1) READ UNCOMMITTED: can read data that has been written by non-committed transactions.\n    • Allows dirty reads, fuzzy reads, phantoms\n2) READ COMMITTED: only read data that have been updated by committed transactions.\n    • Does not allow dirty reads, Allows fuzzy reads, phantoms\n3) REPEATABLE READ: Reads to individual items are repeatable.\n    • Does not allow dirty reads or fuzzy reads, but Allows phantoms\n4) SERIALIZABLE: Reads by predicate search are repeatable.\n    • Does not allow dirty reads, fuzzy reads, phantoms\n\n* Optimistic approaches hope that conflict will be rare, if they do we fix things, If something goes\nwrong, abort and restart transaction\n\n*Timestamp protocol: for each item, the order that theyre accessed by conflicting operations does not \nviolate the ordering, W_TS(X) is largest TS for writing on attribute X and R_TS(X) is for reading.\nTS(T) is the timestamp in which the transaction entered the system\n1) When T wants to Write X, if RTS(X) > T(S) (Someone has read old value) abort, if WTS(X) > T(s)\n  then skip because it will be overwritten, else execute and update timestamps\n2) When T wants to Read x, if WTS(X) > T(s) (someone overwrote old value) then abort, else execute\n3) if two conflicting operations occur in wrong order, it aborts the latter\n\n*MCC: Each transaction operates on private copy of data, copies are merged later",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* Locking is Enforcement of serializability by locking database elements, theyre requested by the TX\n* There are two types of locks, read which is sharable, and write which is exclusive!\n\n\n* Dead locks: are the denial of locks due to the existence of an unreleased shared lock\n\n* Two Phase locking (serializable): Once TX starts to release locks, it cannot rquest new locks\n  Consists of growing phase where it has locks, and shrinking phase where its on cooldown for requests\n\n\n* Problem of cascading aborts is when one transaction does changes to attribute A, then another \n  transaction reads those changes, if T1 aborts, T2 also has to abort due to it having information\n  gained by T1.\n* Strict 2PL: Only release locks after Abort/commit to ensure recoverable schedules\n\n* Phantom Read: the same query produces different output at different times.\n  Example: One tuple is added to the table while another transaction is operating on smthn based off\n           off of tuples, this occurs because the addition of a tuple only needs a write lock on that\n           tuple itself, thus General locks do not help\n\n* Lock Granularities: Lock database elements in a hierarchy to cope with different granularities\n* Introduce intention locks on the current element if the element is below in the hierarchy\n* Intention locks IS and IX are compatible with each other, and only S is compatible with IS\n* Latches are physical locks that seperate Threads to protect in-memory data structures\n\n* Optimizations to lock manager:\n  1) try to inherit high-level locks from the previous transaction that executed in the same thread\n  2) Thread-per-data partition rather than thread-per-transaction\n  3) Private lock table per transaction simplifies code paths for requesting and releasing locks from\n     global lock table\n  4) Allow transactions to release their locks as soon as they receive allocated space in buffer pool\n     for commit log record\n\n* How to deal with deadlocks?\n  1) Abort transaction if it is been waiting for too long. How to pick timeout parameter?\n  2) Roll back transaction if waits-for graph contains cycle\n\n* Some applications can handle a bit of dirtyness as a trade off for response time:\n1) Dirty read\n2) Fuzzy Read: T1 reads data, T2 changes/deletes that data and commits, T2 reads same data and\n               finds different value\n3) Phantom: T1 searches using a < X < b, T2 modifies items in that range, T1 searches and finds\n             different values in that range.\n\n* Isolation levels: \n1) READ UNCOMMITTED: can read data that has been written by non-committed transactions.\n    • Allows dirty reads, fuzzy reads, phantoms\n2) READ COMMITTED: only read data that have been updated by committed transactions.\n    • Does not allow dirty reads, Allows fuzzy reads, phantoms\n3) REPEATABLE READ: Reads to individual items are repeatable.\n    • Does not allow dirty reads or fuzzy reads, but Allows phantoms\n4) SERIALIZABLE: Reads by predicate search are repeatable.\n    • Does not allow dirty reads, fuzzy reads, phantoms\n\n* Optimistic approaches hope that conflict will be rare, if they do we fix things, If something goes\nwrong, abort and restart transaction\n\n*Timestamp protocol: for each item, the order that theyre accessed by conflicting operations does not \nviolate the ordering, W_TS(X) is largest TS for writing on attribute X and R_TS(X) is for reading.\nTS(T) is the timestamp in which the transaction entered the system\n1) When T wants to Write X, if RTS(X) > T(S) (Someone has read old value) abort, if WTS(X) > T(s)\n  then skip because it will be overwritten, else execute and update timestamps\n2) When T wants to Read x, if WTS(X) > T(s) (someone overwrote old value) then abort, else execute\n3) if two conflicting operations occur in wrong order, it aborts the latter\n\n*MCC: Each transaction operates on private copy of data, copies are merged later",
-			"lineHeight": 1.25,
-			"baseline": 1643
-		},
-		{
-			"type": "text",
-			"version": 280,
-			"versionNonce": 1390143744,
-			"isDeleted": false,
-			"id": "2evTttcR",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -442.86915832134514,
-			"y": 1021.3649332995101,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 899.489501953125,
-			"height": 20,
-			"seed": 313844677,
-			"groupIds": [],
-			"frameId": "5jHjrEGA1gyCAeexN6OpQ",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "S(E)= request shared lock on E          X(E)= request exclusive lock on E          U(E)= release any lock on E",
-			"rawText": "S(E)= request shared lock on E          X(E)= request exclusive lock on E          U(E)= release any lock on E",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "S(E)= request shared lock on E          X(E)= request exclusive lock on E          U(E)= release any lock on E",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 222,
-			"versionNonce": 1207117568,
-			"isDeleted": false,
-			"id": "dvdBmL4t",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -505.2908980583812,
-			"y": 1001.3649326660511,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 615.8732299804688,
-			"height": 20,
-			"seed": 112328101,
-			"groupIds": [],
-			"frameId": "5jHjrEGA1gyCAeexN6OpQ",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "* NO compatibility between any two types of locks except shared with shared",
-			"rawText": "* NO compatibility between any two types of locks except shared with shared",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* NO compatibility between any two types of locks except shared with shared",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 227,
-			"versionNonce": 1098303744,
-			"isDeleted": false,
-			"id": "kwK5q4IW",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -514.1694005284988,
-			"y": 1151.4116244110407,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 344.57672119140625,
-			"height": 40,
-			"seed": 536070469,
-			"groupIds": [],
-			"frameId": "5jHjrEGA1gyCAeexN6OpQ",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "* Dead locks can still happen\n* Does not guarantee recoverable schedule",
-			"rawText": "* Dead locks can still happen\n* Does not guarantee recoverable schedule",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* Dead locks can still happen\n* Does not guarantee recoverable schedule",
-			"lineHeight": 1.25,
-			"baseline": 34
-		},
-		{
-			"type": "text",
-			"version": 151,
-			"versionNonce": 1291208448,
-			"isDeleted": false,
-			"id": "p7wMHCpz",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -277.28893735415653,
-			"y": 1084.6429385013796,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 56.92811584472656,
-			"height": 20,
-			"seed": 1683905701,
-			"groupIds": [],
-			"frameId": "5jHjrEGA1gyCAeexN6OpQ",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838530851,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "conflict",
-			"rawText": "conflict",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "conflict",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "frame",
-			"version": 1946,
-			"versionNonce": 305561457,
-			"isDeleted": false,
-			"id": "5jHjrEGA1gyCAeexN6OpQ",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -517.0789335538723,
-			"y": 896.7541206722697,
-			"strokeColor": "#bbb",
-			"backgroundColor": "transparent",
-			"width": 1039.816207,
-			"height": 1704.1219511470379,
-			"seed": 626535275,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1708272069732,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"frameColor": {
-					"stroke": "#D4D4D4",
-					"fill": "#ADADAD",
-					"nameColor": "#7A7A7A"
-				}
-			},
-			"name": "CC"
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#e03131",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 1,
-		"currentItemFontSize": 16,
-		"currentItemTextAlign": "left",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 3129.268659203358,
-		"scrollY": 873.9605512108292,
-		"zoom": {
-			"value": 0.25
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		}
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+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
 ```
 %%

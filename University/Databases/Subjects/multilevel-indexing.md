@@ -8,7 +8,8 @@ Next [[Query Execution]]
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
 Multi-level Indexing ^YbGU2DzO
 
 * Data cubes: relational data is considered as points in multidimensional space, where every attribute
@@ -66,492 +67,90 @@ split that node for 2 nodes that are at least half full AND minimize dead covera
 Bitmap size =Align(Number of records / 8bits / 1000byte) * Number of unique values ^CmSZKWut
 
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.20",
-	"elements": [
-		{
-			"type": "text",
-			"version": 345,
-			"versionNonce": 1240567680,
-			"isDeleted": false,
-			"id": "YbGU2DzO",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -151.86854530626982,
-			"y": -457.5551857164628,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 260.7370910644531,
-			"height": 35,
-			"seed": 1837531008,
-			"groupIds": [],
-			"frameId": "jeHqLRpLOwv_9QMIUyja7",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707229638790,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "Multi-level Indexing",
-			"rawText": "Multi-level Indexing",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Multi-level Indexing",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "text",
-			"version": 1599,
-			"versionNonce": 1470641719,
-			"isDeleted": false,
-			"id": "2Pu2OtkL",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -528.4897562996194,
-			"y": -382.55518581578946,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 1024.678955078125,
-			"height": 825,
-			"seed": 1792667520,
-			"groupIds": [],
-			"frameId": "jeHqLRpLOwv_9QMIUyja7",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707943642818,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "* Data cubes: relational data is considered as points in multidimensional space, where every attribute\n  corresponds to a dimension\n\n* Spatial Queries :\n1) Point queries: all dimensions are restricted to a certain value.\n2) Partial queries: one dimension is restricted while the others are not.\n3) Range queries: range specifies area and searches data in it\n4) Nearest neighbor queries: Nearest point to a given point\n5) Where-am-I queries: Given a point, on which plain is it located?\n6) Distance query: Given a radius and a center, what points are located in that area?\n\n* Grid File: Multidimensional space becomes grid, Partition every dimension into stripes indicating ranges\n            stored in a bucket (overflow allowed), all buckets are stored in multidimensional array\n\n\n\n\n\n* Partitioned Hashing: We have a hash function for each attribute that produces a binary output\n  the final hash value is the concatenation of those bits\n\n\n* kdimensional Trees: BST for k dimensions, each level is an alternating separator for an attribute\n\n* Quad tree: Partition the grid into SW, SE, NE, NW and split each quad into quadrants if necessary\n* R-tree: A b-Tree in higher dimensions, where we partition space into intervals (rectangles) and build\n  a hierarchy of it (Does not cover entire space and can have overlap)\n\n\n\n\n* Bitmap indexing: Each value of each attribute has an n length bitmap that indicates (1,0) membership\n",
-			"rawText": "* Data cubes: relational data is considered as points in multidimensional space, where every attribute\n  corresponds to a dimension\n\n* Spatial Queries :\n1) Point queries: all dimensions are restricted to a certain value.\n2) Partial queries: one dimension is restricted while the others are not.\n3) Range queries: range specifies area and searches data in it\n4) Nearest neighbor queries: Nearest point to a given point\n5) Where-am-I queries: Given a point, on which plain is it located?\n6) Distance query: Given a radius and a center, what points are located in that area?\n\n* Grid File: Multidimensional space becomes grid, Partition every dimension into stripes indicating ranges\n            stored in a bucket (overflow allowed), all buckets are stored in multidimensional array\n\n\n\n\n\n* Partitioned Hashing: We have a hash function for each attribute that produces a binary output\n  the final hash value is the concatenation of those bits\n\n\n* kdimensional Trees: BST for k dimensions, each level is an alternating separator for an attribute\n\n* Quad tree: Partition the grid into SW, SE, NE, NW and split each quad into quadrants if necessary\n* R-tree: A b-Tree in higher dimensions, where we partition space into intervals (rectangles) and build\n  a hierarchy of it (Does not cover entire space and can have overlap)\n\n\n\n\n* Bitmap indexing: Each value of each attribute has an n length bitmap that indicates (1,0) membership\n",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* Data cubes: relational data is considered as points in multidimensional space, where every attribute\n  corresponds to a dimension\n\n* Spatial Queries :\n1) Point queries: all dimensions are restricted to a certain value.\n2) Partial queries: one dimension is restricted while the others are not.\n3) Range queries: range specifies area and searches data in it\n4) Nearest neighbor queries: Nearest point to a given point\n5) Where-am-I queries: Given a point, on which plain is it located?\n6) Distance query: Given a radius and a center, what points are located in that area?\n\n* Grid File: Multidimensional space becomes grid, Partition every dimension into stripes indicating ranges\n            stored in a bucket (overflow allowed), all buckets are stored in multidimensional array\n\n\n\n\n\n* Partitioned Hashing: We have a hash function for each attribute that produces a binary output\n  the final hash value is the concatenation of those bits\n\n\n* kdimensional Trees: BST for k dimensions, each level is an alternating separator for an attribute\n\n* Quad tree: Partition the grid into SW, SE, NE, NW and split each quad into quadrants if necessary\n* R-tree: A b-Tree in higher dimensions, where we partition space into intervals (rectangles) and build\n  a hierarchy of it (Does not cover entire space and can have overlap)\n\n\n\n\n* Bitmap indexing: Each value of each attribute has an n length bitmap that indicates (1,0) membership\n",
-			"lineHeight": 1.25,
-			"baseline": 818
-		},
-		{
-			"type": "text",
-			"version": 159,
-			"versionNonce": 1188831104,
-			"isDeleted": false,
-			"id": "vc3Qwuuq",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -506.2930646320792,
-			"y": -57.55518598178204,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 975.9190063476562,
-			"height": 25,
-			"seed": 2139250560,
-			"groupIds": [],
-			"frameId": "jeHqLRpLOwv_9QMIUyja7",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707229638790,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Search: Treat each dimension separately, find the corresponding bucket dimensions and search in it",
-			"rawText": "Search: Treat each dimension separately, find the corresponding bucket dimensions and search in it",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Search: Treat each dimension separately, find the corresponding bucket dimensions and search in it",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 124,
-			"versionNonce": 1008179328,
-			"isDeleted": false,
-			"id": "kRaheo62",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -420.8943516499229,
-			"y": -32.555186411365604,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 402.560791015625,
-			"height": 20,
-			"seed": 1141530496,
-			"groupIds": [],
-			"frameId": "jeHqLRpLOwv_9QMIUyja7",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707229638790,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "requires indexes on each dimension or binary search",
-			"rawText": "requires indexes on each dimension or binary search",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "requires indexes on each dimension or binary search",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 190,
-			"versionNonce": 1697394560,
-			"isDeleted": false,
-			"id": "VO5b4EkT",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -513.1618526196983,
-			"y": -11.779517019752028,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 963.1390380859375,
-			"height": 50,
-			"seed": 1604206464,
-			"groupIds": [],
-			"frameId": "jeHqLRpLOwv_9QMIUyja7",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707229638790,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Insert: Find corresponding bucket and insert, if no space then either overflow block or dynamically\nchange the gridlines to add more",
-			"rawText": "Insert: Find corresponding bucket and insert, if no space then either overflow block or dynamically\nchange the gridlines to add more",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Insert: Find corresponding bucket and insert, if no space then either overflow block or dynamically\nchange the gridlines to add more",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "text",
-			"version": 188,
-			"versionNonce": 1593458560,
-			"isDeleted": false,
-			"id": "UyagDELU",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -513.161853463077,
-			"y": 38.99615174546633,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 603.6393432617188,
-			"height": 25,
-			"seed": 1803692160,
-			"groupIds": [],
-			"frameId": "jeHqLRpLOwv_9QMIUyja7",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707229638790,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "1 I/O for point lookup, 2 I/O for point insertion and deletion",
-			"rawText": "1 I/O for point lookup, 2 I/O for point insertion and deletion",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "1 I/O for point lookup, 2 I/O for point insertion and deletion",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 165,
-			"versionNonce": 1416329344,
-			"isDeleted": false,
-			"id": "575Hcf9T",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -529.036452183201,
-			"y": 121.30156947709179,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 833.1991577148438,
-			"height": 25,
-			"seed": 1772800128,
-			"groupIds": [],
-			"frameId": "jeHqLRpLOwv_9QMIUyja7",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707229638790,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Partial query: only need to explore 2^i such that i is the number of unexplored bits",
-			"rawText": "Partial query: only need to explore 2^i such that i is the number of unexplored bits",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Partial query: only need to explore 2^i such that i is the number of unexplored bits",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 117,
-			"versionNonce": 289888384,
-			"isDeleted": false,
-			"id": "BKDxGOoV",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -429.4965959207024,
-			"y": 192.44481371275353,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 733.6593017578125,
-			"height": 25,
-			"seed": 2041051264,
-			"groupIds": [],
-			"frameId": "jeHqLRpLOwv_9QMIUyja7",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707229638790,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Space partition: Based on median          Data partition: based on mean",
-			"rawText": "Space partition: Based on median          Data partition: based on mean",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Space partition: Based on median          Data partition: based on mean",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 148,
-			"versionNonce": 264784000,
-			"isDeleted": false,
-			"id": "1atFg02A",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -510.83448583607924,
-			"y": 290.6749605829646,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 487.75946044921875,
-			"height": 25,
-			"seed": 244006784,
-			"groupIds": [],
-			"frameId": "jeHqLRpLOwv_9QMIUyja7",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707229638790,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "We try to minimize overlap and maximize coverage",
-			"rawText": "We try to minimize overlap and maximize coverage",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "We try to minimize overlap and maximize coverage",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 281,
-			"versionNonce": 1713274752,
-			"isDeleted": false,
-			"id": "UZmZUC8G",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -526.167260618541,
-			"y": 331.02436790523217,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 1015.1188354492188,
-			"height": 50,
-			"seed": 1333614720,
-			"groupIds": [],
-			"frameId": "jeHqLRpLOwv_9QMIUyja7",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707229638790,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Insertion: Insert the node in the area with minimal expansion to cover the inserted node, then possibly\nsplit that node for 2 nodes that are at least half full AND minimize dead coverage",
-			"rawText": "Insertion: Insert the node in the area with minimal expansion to cover the inserted node, then possibly\nsplit that node for 2 nodes that are at least half full AND minimize dead coverage",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Insertion: Insert the node in the area with minimal expansion to cover the inserted node, then possibly\nsplit that node for 2 nodes that are at least half full AND minimize dead coverage",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "text",
-			"version": 115,
-			"versionNonce": 757239680,
-			"isDeleted": false,
-			"id": "CmSZKWut",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -506.2930648460182,
-			"y": 422.44481425304957,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 840.8392333984375,
-			"height": 25,
-			"seed": 1394126720,
-			"groupIds": [],
-			"frameId": "jeHqLRpLOwv_9QMIUyja7",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707229638790,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Bitmap size =Align(Number of records / 8bits / 1000byte) * Number of unique values",
-			"rawText": "Bitmap size =Align(Number of records / 8bits / 1000byte) * Number of unique values",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Bitmap size =Align(Number of records / 8bits / 1000byte) * Number of unique values",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "frame",
-			"version": 660,
-			"versionNonce": 473278399,
-			"isDeleted": false,
-			"id": "jeHqLRpLOwv_9QMIUyja7",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -541.4081034999999,
-			"y": -457.55518606913665,
-			"strokeColor": "#bbb",
-			"backgroundColor": "transparent",
-			"width": 1039.816207,
-			"height": 905.5848811480103,
-			"seed": 1504800640,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1708099385958,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"frameColor": {
-					"stroke": "#D4D4D4",
-					"fill": "#ADADAD",
-					"nameColor": "#7A7A7A"
-				}
-			},
-			"name": "Indexing"
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#2f9e44",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 1,
-		"currentItemFontSize": 20,
-		"currentItemTextAlign": "left",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 732.7499999999999,
-		"scrollY": 489.5049329951315,
-		"zoom": {
-			"value": 1
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		}
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+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
 ```
 %%

@@ -7,7 +7,8 @@ tags:
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
 What is the Lagrange Multipliers method? ^FboPAWD4
 
 General framework for finding solutions of constrained optimization problems
@@ -44,741 +45,110 @@ Funnily enough, it is important to note that although we ignore the actual value
 the porportions between the gradients of f and g
 in other words, lambda describes the ratio of change between our constraint and our maximal point! ^ejiZo3ym
 
-
-# Embedded files
+## Embedded Files
 14ddcd224c6b8c769a3e3da302ba6c798492ebd3: [[Pasted Image 20231229123543_211.png]]
+
 942ce279de02ca497f78051dda83fdd453d5782d: [[Pasted Image 20231229123843_233.png]]
+
 c5d09c8ff24433ee0a24d0ed878250b42edf1fba: [[Pasted Image 20231229124238_308.png]]
+
 545dd797d29be6857b7a0836e37dccf31df5db2c: [[Pasted Image 20231229124307_336.png]]
+
 63ba932a5d2f97d4049c616ad98b077a390bbd98: [[Pasted Image 20231229124352_340.png]]
 
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.3",
-	"elements": [
-		{
-			"type": "text",
-			"version": 153,
-			"versionNonce": 1423896411,
-			"isDeleted": false,
-			"id": "FboPAWD4",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -267.6731872558594,
-			"y": -415.5,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 571.8463745117188,
-			"height": 35,
-			"seed": 1084090133,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703849701663,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "What is the Lagrange Multipliers method?",
-			"rawText": "What is the Lagrange Multipliers method?",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "What is the Lagrange Multipliers method?",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "text",
-			"version": 47,
-			"versionNonce": 883872411,
-			"isDeleted": false,
-			"id": "SGJ7h8KB",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -349.75,
-			"y": -374,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 749.8992309570312,
-			"height": 50,
-			"seed": 260641947,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703849718288,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "General framework for finding solutions of constrained optimization problems\nof the type",
-			"rawText": "General framework for finding solutions of constrained optimization problems\nof the type",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "General framework for finding solutions of constrained optimization problems\nof the type",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "image",
-			"version": 148,
-			"versionNonce": 446731835,
-			"isDeleted": false,
-			"id": "WMnLGECR7cpqSxqxPkDPN",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -174.155224,
-			"y": -308.5,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 398.70967741935465,
-			"height": 39.99999999999998,
-			"seed": 1271011157,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703849737776,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "14ddcd224c6b8c769a3e3da302ba6c798492ebd3",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "text",
-			"version": 195,
-			"versionNonce": 1570565787,
-			"isDeleted": false,
-			"id": "ahzeZwiy",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -368.09954833984375,
-			"y": -261,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 776.6990966796875,
-			"height": 50,
-			"seed": 146916789,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703849808039,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "We start off by Construction the Lagrangian Function\nWhich is a function that describes are conditions and constraints all together",
-			"rawText": "We start off by Construction the Lagrangian Function\nWhich is a function that describes are conditions and constraints all together",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "We start off by Construction the Lagrangian Function\nWhich is a function that describes are conditions and constraints all together",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "image",
-			"version": 38,
-			"versionNonce": 1743276981,
-			"isDeleted": false,
-			"id": "8cr8KMi4UiXqY-aGo6PjJ",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -133.25,
-			"y": -202.5,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 323,
-			"height": 51,
-			"seed": 1113657467,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "k17xJXN3FpFN5JWl5ZEtT",
-					"type": "arrow"
-				}
-			],
-			"updated": 1703850106155,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "942ce279de02ca497f78051dda83fdd453d5782d",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "line",
-			"version": 56,
-			"versionNonce": 315187349,
-			"isDeleted": false,
-			"id": "FGNeHv91rQRBS2IAGy0k7",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 118.75841957798514,
-			"y": -152.19232386833602,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 226.8877100808719,
-			"height": 28.66812221238456,
-			"seed": 2023836891,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1703849934115,
-			"link": null,
-			"locked": false,
-			"startBinding": null,
-			"endBinding": null,
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": null,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					14.743605709226358,
-					28.66812221238456
-				],
-				[
-					226.8877100808719,
-					7.371802854613179
-				]
-			]
-		},
-		{
-			"type": "text",
-			"version": 39,
-			"versionNonce": 53019483,
-			"isDeleted": false,
-			"id": "KYEuuEMf",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 276.45616782854177,
-			"y": -182.49862449285683,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 228.479736328125,
-			"height": 25,
-			"seed": 876571067,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703849943103,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "The Lagrange multiplier",
-			"rawText": "The Lagrange multiplier",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "The Lagrange multiplier",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "arrow",
-			"version": 141,
-			"versionNonce": 1751498491,
-			"isDeleted": false,
-			"id": "k17xJXN3FpFN5JWl5ZEtT",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 31.32375118816851,
-			"y": -138.26780736517782,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 1.024991235305155,
-			"height": 91.73799107963055,
-			"seed": 1499343003,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1703850140172,
-			"link": null,
-			"locked": false,
-			"startBinding": {
-				"elementId": "8cr8KMi4UiXqY-aGo6PjJ",
-				"focus": -0.016324113539542478,
-				"gap": 13.232192634822184
-			},
-			"endBinding": {
-				"elementId": "Y09dLfHv",
-				"focus": -0.019143926277317726,
-				"gap": 15.562694915294458
-			},
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					1.024991235305155,
-					91.73799107963055
-				]
-			]
-		},
-		{
-			"type": "text",
-			"version": 126,
-			"versionNonce": 608219579,
-			"isDeleted": false,
-			"id": "Y09dLfHv",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -258.2319881440354,
-			"y": -30.967121370252812,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 593.4393310546875,
-			"height": 50,
-			"seed": 1734033397,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "k17xJXN3FpFN5JWl5ZEtT",
-					"type": "arrow"
-				}
-			],
-			"updated": 1703850140170,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Find the derivative of this function w.r.t Theta and lambda\nand set it to 0",
-			"rawText": "Find the derivative of this function w.r.t Theta and lambda\nand set it to 0",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Find the derivative of this function w.r.t Theta and lambda\nand set it to 0",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "image",
-			"version": 20,
-			"versionNonce": 1257617173,
-			"isDeleted": false,
-			"id": "hsDayelXiuEzTdYMJqkZI",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -66.05505499848732,
-			"y": 26.218156060832655,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 214,
-			"height": 56,
-			"seed": 572030011,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703850142734,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "c5d09c8ff24433ee0a24d0ed878250b42edf1fba",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "text",
-			"version": 65,
-			"versionNonce": 133923317,
-			"isDeleted": false,
-			"id": "63SbUW50",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -205.30655957883425,
-			"y": 77.15265383074035,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 459.73944091796875,
-			"height": 25,
-			"seed": 1950922197,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703850157344,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "This condition is necessary in order to achieve",
-			"rawText": "This condition is necessary in order to achieve",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "This condition is necessary in order to achieve",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "image",
-			"version": 43,
-			"versionNonce": 2104763387,
-			"isDeleted": false,
-			"id": "8mZM8DGqFyfn5t1AlBPxO",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -70.2032146773729,
-			"y": 113.97891698875998,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 201,
-			"height": 23,
-			"seed": 694184469,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703850166405,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "545dd797d29be6857b7a0836e37dccf31df5db2c",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "text",
-			"version": 171,
-			"versionNonce": 936280533,
-			"isDeleted": false,
-			"id": "USr5gwKt",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -392.1431239696716,
-			"y": 166.61502909903527,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 837.9791259765625,
-			"height": 50,
-			"seed": 2022809915,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703850217729,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Which means that the gradient of both the objective and the constraint are aligned\n but are pointing in opposite directions as such convex at that point",
-			"rawText": "Which means that the gradient of both the objective and the constraint are aligned\n but are pointing in opposite directions as such convex at that point",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Which means that the gradient of both the objective and the constraint are aligned\n but are pointing in opposite directions as such convex at that point",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "image",
-			"version": 80,
-			"versionNonce": 582762811,
-			"isDeleted": false,
-			"id": "YhbFwcipQ9Ygaazc95-fz",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -137.78838545141653,
-			"y": 229.1138991704713,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 385.52451488609415,
-			"height": 276.978777685155,
-			"seed": 2013122709,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1703850231124,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "63ba932a5d2f97d4049c616ad98b077a390bbd98",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"id": "NjtQzLPf",
-			"type": "text",
-			"x": -427.3531521428305,
-			"y": 513.7173910593922,
-			"width": 957.4990844726562,
-			"height": 50,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1900583421,
-			"version": 246,
-			"versionNonce": 1594352285,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1704367150735,
-			"link": null,
-			"locked": false,
-			"text": "The Lagrange method is highly useful when your function is multivariate yet you want to project\na (usually) univariate constraint onto it and find the maximum points upon that projection",
-			"rawText": "The Lagrange method is highly useful when your function is multivariate yet you want to project\na (usually) univariate constraint onto it and find the maximum points upon that projection",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"baseline": 43,
-			"containerId": null,
-			"originalText": "The Lagrange method is highly useful when your function is multivariate yet you want to project\na (usually) univariate constraint onto it and find the maximum points upon that projection",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "mGMnKT7y",
-			"type": "text",
-			"x": -351.2994460238955,
-			"y": 575.55949632255,
-			"width": 794.8653564453125,
-			"height": 40,
-			"angle": 0,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1457233757,
-			"version": 220,
-			"versionNonce": 1568585277,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1704367372072,
-			"link": null,
-			"locked": false,
-			"text": "We know that the Gradient is the direction of steepest ascent, and since the steepest ascent\nin a contour map is always inward of the curve to aim at the next contour line, so is the gradient!",
-			"rawText": "We know that the Gradient is the direction of steepest ascent, and since the steepest ascent\nin a contour map is always inward of the curve to aim at the next contour line, so is the gradient!",
-			"fontSize": 16,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"baseline": 34,
-			"containerId": null,
-			"originalText": "We know that the Gradient is the direction of steepest ascent, and since the steepest ascent\nin a contour map is always inward of the curve to aim at the next contour line, so is the gradient!",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "DlyGIS0N",
-			"type": "text",
-			"x": -535.6210017136568,
-			"y": 623.1910752699184,
-			"width": 1127.718994140625,
-			"height": 175,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1656359389,
-			"version": 640,
-			"versionNonce": 1666048701,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1704367373538,
-			"link": null,
-			"locked": false,
-			"text": "Thus to optimize two functions that intersect in many points we only need to look at contour lines (one value of\nour multivariate function) that is tangent to that circle, more specifically we are looking for the maximum\ncontour line that is tangent to it\n\nif the gradient of that contour line is exactly the opposite (proportional) to our constraint's gradient, then\nit means the only way to maximize the value is to go away from the constraint thus it is\nthe maximum value that lies on the constraint",
-			"rawText": "Thus to optimize two functions that intersect in many points we only need to look at contour lines (one value of\nour multivariate function) that is tangent to that circle, more specifically we are looking for the maximum\ncontour line that is tangent to it\n\nif the gradient of that contour line is exactly the opposite (proportional) to our constraint's gradient, then\nit means the only way to maximize the value is to go away from the constraint thus it is\nthe maximum value that lies on the constraint",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"baseline": 168,
-			"containerId": null,
-			"originalText": "Thus to optimize two functions that intersect in many points we only need to look at contour lines (one value of\nour multivariate function) that is tangent to that circle, more specifically we are looking for the maximum\ncontour line that is tangent to it\n\nif the gradient of that contour line is exactly the opposite (proportional) to our constraint's gradient, then\nit means the only way to maximize the value is to go away from the constraint thus it is\nthe maximum value that lies on the constraint",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "ejiZo3ym",
-			"type": "text",
-			"x": -455.7422416267942,
-			"y": 806.3489700067605,
-			"width": 955.3298950195312,
-			"height": 60,
-			"angle": 0,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1726095325,
-			"version": 366,
-			"versionNonce": 751203997,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1704368111645,
-			"link": null,
-			"locked": false,
-			"text": "Funnily enough, it is important to note that although we ignore the actual value of lambda, it is quite important as its\nthe porportions between the gradients of f and g\nin other words, lambda describes the ratio of change between our constraint and our maximal point!",
-			"rawText": "Funnily enough, it is important to note that although we ignore the actual value of lambda, it is quite important as its\nthe porportions between the gradients of f and g\nin other words, lambda describes the ratio of change between our constraint and our maximal point!",
-			"fontSize": 16,
-			"fontFamily": 1,
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"baseline": 54,
-			"containerId": null,
-			"originalText": "Funnily enough, it is important to note that although we ignore the actual value of lambda, it is quite important as its\nthe porportions between the gradients of f and g\nin other words, lambda describes the ratio of change between our constraint and our maximal point!",
-			"lineHeight": 1.25
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#e03131",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 1,
-		"currentItemFontSize": 16,
-		"currentItemTextAlign": "center",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 692.2878204328181,
-		"scrollY": -269.50686474360265,
-		"zoom": {
-			"value": 0.9500000000000001
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		}
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQAWbR4aOiCEfQQOKGZuAG1wMFAwYuh4cXQoLCgU4shGFnYuNABGAFZ4/hL61k4AOU4xbh4AdlaABgBOYZ4AZj4CyEIOYixu
+
+CFwxmpLCZgARNMribgAzAjDOxaOJADFNNgAFAEEAdV34rchjwnx8AGVYYJrQQeD4QZhQUhsADWCGeJHUQwuYIh0IQ/xggIkwJIoMhfkkHHCORaSLYcFw2DUMG4zTGYyR1mUmNQ9IWEEw3GcPAAbMNtLyZs0ABzTVqtIWtCYdNnUtDOeJtbStJHgyEwgDCbHwbFIawAxM0EIbDaDNBSoco8ctNdrdRIIdZmOTAllQRR4ZJuK1ptphhMhTMZv74jNR
+
+kjJAhCMppNwZsq2WEEFdULShfFJmNmoGkZbhHAAJLEYmoXIAXSRx3IGUL3A4Qh+SKtxEJzGLdYbbLuQmWAFFghkssWy0ihHBiLhDjThjMxtOeEK6VNpbUIEQOFDa/X8EjtdgYcnTvhzmzjpwoL9CEZyvOK2frrh9N9ZSmkZVMNUJM9JBPUDtUOoEFQAAZaJyA4ZRAIAWXrKBCB8QgmGYVAMnUNhiAAflxSgABUqjWL8fz/ADgNAxkoJguCiEQ5CE
+
+FQjDQTfKBHiIZQmnQYJjmqJF6lg9xmKjNjoDJUE9CyXAliYGs0Hbbc2R1KMlgIXD33w78oF/JDiJAy0yNQaD8Fg+DqJQyQ0MwhkhCgNgACVwkvcoISEBAdwkgAJSNow/FMklaAoAF9OiKEpYEQNZGNBbpGm4eIhW4xDGn6DhBhaOZhgzedYrZJYVg5CRcGaUEdn2YJJzQQ9jxXHEJF+ABxAApYZJCFABpAAhUEvh+dFmTBLUcRVFEYThYgETQeYV
+
+1VVFuvKXqQUbYRoxbYtmlJclKVgGk6QZcDmVZFdctQZw4zGbQ5jpWc5niHhhTDGVOVDZcSkmjUtR1fVjSNJAkTNPdc27YgbTe+0wKdXAXS4tl3RGz00FGZptDGIMeHiVpuTGdpuSFTKVwjKMYzQcYVQQJMhjR7kFSlYYczxAsizycsTyrBApNQGT5v+pbNw7Fcu17ftMmyemRzHCcSZaacLvnRdhkeyA1w3aStx3Ng9zF1Byuck8zwvK8hj2kpTy
+
+ye9H3wZ8VrZcKJBqzImAIdWmYoHUoXVnV1eypZlFQYFLMaJC2GOVBRNVcTCWIVAyVgx8jAnRpUDgSFNH7ZgAB0OH9/8I3/MosIoZSvIga3CXIfB7YfBBHdIZ3T1IN3lg9r2tR9zg/YDoOHQksOI8IKOY84OOE6T1P0+IkKvotqp+NYtYxCyJgIqYXiCEnwSrLgESzxDyTkzZuTSAUjglLwq2beL0uMgrqvXa+OvwIb3xYOb8PW+b9vQ/DuBI8vXu
+
+OH7uxB7TgOI9s4WSsrZVgus0COU1iuNcCB3J4y8vDHgvligBQKEFSAo81jd2iGPFckVOA0niBMOKDQ+gDHKK0GYC5pg8DGNjbYyxVh5WSEiIqBw1YazYcmCAzxIIcCAjVHs6prLDGwHAAAjr8TAEjMD3ChLse4vQOrfD+ACGa2IjgDTVLCD0iIEyDTROooEfUtFsjxItIkNJVoUipJtfWkBGS7SRAdZwzQZbaDaK0HgyMkTPiOvQpU2jUSAztBUE
+
+GzoBamnNH9a0r0wnQAiWDKJSIoajVQEGIUvpJi8hls0CYcZ4jcnjDjDy+MMkTG0BMapNTak1IYQIYmyZmgjFpM0dp3pqZ5kLEOBmK5KxlxZjvFcTZOaK25iUXmxA+zpAFr04W45SopglnOBckwZYuXXFzWSMCVb7hOGcaBT0ohQCEMWCAiAb7KBUcEFmEBmjxGIMQbAxAfHxGwNyTQQpsDDG5BMXAMwEAzHHDOHgZpuQ/ODBMHgCBNDEBmKCZg7h
+
+yj5FqGAc2aLmgLFLP5QKFts72jwqQnobF8ncmJQlChNJuTNG5IKGYKNyVZSYQddYCK2F7A4QeQ53C1i4EkFeAAWu6akFZVHTRMXNAxOjhrpPGscnREqsSmNxAtAkViSRyTWnYloW02ROPKA49k91Ma+mqajdGRSRQlJKP4nkGKFUhPie9T6JpvoxKbKEsKSTwZuj0bDYYWTJgTBabSApt1SkIK9EaxMzSikht5EKEhbI/q03mYzQZ28lbmOEMsMZ
+
+rNs081zdM/mg4hZslHIstW7iZyrOlrLVcSwFYFomXLPZnCeVayyDra8RrDZQGNk+ax48VKfkAuCMG6l/YB00DAVAmoOCqiENgB+P8tKkXAk4VA1xuwrsaKnL85hJAaVQLgdWu7V0Zx/CsJFe9NDhFPYEQOnBHCrqQtYMObdyBLGyKen4/42AQQArqRsOEj7oGeOOqIpAp3HBnXOhdS69193XTpTd1ht0Xv3RwQ92Bj1/jPccLDKG1KoBvdgO9D7k
+
+nPrrm+09ywaPBx/e+/9VkgMRhAyOpiLFBIz0qJx/BC9zBLx42FYSSJRJRAkqQIZhaSjyX8IfUdEGoOTqfvB+dL9SDLsvahsCqgMM7qSqug9kgj0nsI8RtdpHyOUffU+0Sr7fb0c/VpkOv6CAlzY7RDjoJcCWRsnZCB/5tNHLlm5MpiCfK4vQfi0KEgcEQXnmQtiQYKXkKSuUAMaZ8n0IaRAbKzD0C4HeBy4qtEO1HjCwVnh3zSAtUgoQeIABVQgA
+
+ANCRABNZwuAapsG5PcAAVnVG5aiMQaJVcEoa/reBTaMeNyV/Uc34nzQ6yAZJbEbV1Uag13AjWuKzDMHyfjOR0LiDagQhivXA0dJE107rfqeudTdxdd2IYrjSTDDJsxwyRa9GtsETSaTtJmMUmWvIumjh6eW/pTNZOtogKMjVLadmTOLTMgcgs0CotqBg7YPCoTuMwHVNrvQZjXDgNcXorQ6rPHwK0QVPYoDYQ+MFAlxXSCQioAsMAflsULNFs0lZ
+
+cw1lLk2c24ZJRdz7LKp2iaJyzlrEuY4cCNzmY8KlDwMQIwJgrDGFrkrUxjiBvRs0J5uAAzHCeSjYF3ohQ8DMRNZFeQedrfRdimLxQMGlHi+xCSyWSVeipmyAhHBErJRTNUtM4wMpsJZXy1ohVOUlUqxVfHaxrg1V6HA+gIbSAAEVrKtV+DwfMjwaowDGFCYYo2lXoE0Yiwxsqvvysu4q4xyqpUjLVatmx60zZ6pXLttA+3gdZNGDliY3o/QSgeSd
+
+uUbQ4j5NmLMIUmNAxo1b8iHR130AGldXgyZHri278Sbd5J93IYzZ8dybQWNhjDFpPQ+hj/k2Rs8kMLJ3JMYtJ8S06hjKRMasZ21CoOSaAOqa0O2OfSBscOWaCOSOrY3AeOPu14CwaCRa/0GOcyMOJQlaguU4taIu9a4u2yysqs3KVWA0k6rU7squ4yqOkAmQxAtBVyZBbI+AoQUAmo+gj4MgSY9wbAP67B8uk6jwnObAFAEYuA8BjBGAyw4hXO0h
+
+shSIcAQhZa2OPOOOtQDixQYwPOMBxQ2hxQDyvoIYaM3okwN+cYDSxQ84/IP+Pi10q+jKBhFwYAxhYAN+d+Ioj+dIC4Io+S7hYAfIoYwo+uEoRSWY7iEwBhHuqCeKK4WChKKk6WbE6YaR4eWWGY+uGRzKOUfK3ISe5WSyXCWUPCzUnWPYQgQgPYkExwteHe9ek20qqIze+i8u7eC2neS23eK2yOAOG2/e9i20TIhqLiQwHiowNKdKyCGY4wF2EA/i
+
+wocQxCa+yMxC84qMAYc2p+++H00Sj2J+z24S5+vqqS1+god+foMs7QAYmS8QDauMH+Y0ixsa3AIoYOtIEOKaNMUBJYhhEAAy1YKhy2eayOkukAUy2BGhAJAuSyNaksouGyHBTaIhUu7alBaenw2s9kest4RsD4Q6mqSR4GEA2Emc2k+mgE+gFERkAmJQ5AucZJFJgEVJuktJBklECEDJmCE8omEgfGc8pCi8+Ay8Yma8EmG80m8OchCmik+Aecaw
+
+rJJEaGEEyEdJVEvJ6wAWYCeJkCoWmycCf2LQ0WCRsWSR7O6wEhVAaRRCW+oeWRm0tIzhUwTKlU8eeUNeZWXKByVB5RawhOwwxOpO5OlO1OtO9OjOzOjR3RzRXejq020MHRiZ82PUDe7MliSBJJ8m2qW2KYg+JQw+LIExaAVxcwoYrQ7SWMtKs+8+h0WYWSPIJu04xS7igaW+z0CAexH0bqnYx+/0p+Dor2F+72JQn2NICMyM1S/+VCpuYov2UaaA
+
+IavooYM5s4EwdK6MbxQOLQxCBSIYdIMwkOaauBnwcB6JkAiBxYKByRvA6B306OpaWOcJFaIsCJwuUs6yDa8sl5q4mJfp2JyINBdB1yaAKBaQmOdydWDWTWrWHW3WvW/WQ2I27hQJKsiucoJ0mYsxCoWYVCU+V08QgaaFyguAa8KUSQcwy+dKMUf+aYaFXwmAAh6hXkMkD5bIzBrBKuYFqAEFz5dynWkwxAQExwrk9ArO6F2AmFh02F+SDySM3IIw
+
+047ZPIpF5FNIrQSoSlfyxCi+UoKMthQJhAzFxAghwhDBHFMCXBPBfBhw5lroDB1BMGihkhyhf5zBrlUhIQPCYMXOoIahzGLuaKnhuhYA+haKhhHhPO6KU5+5s5M4VZC5MVK504foIaG5W5YocRtQOK5pXucWM04UdpLQIwmRVKuqfooOBSaMceBReUQoxRvpsu/plUPCQluuol4lsZ6ZLRnRbR1+c2des0vRjJPeAxfeOqBZO2O04xbIriyCWSqM
+
+dC6Msw1CfoW+/iM4VSvIoaoY+u3iQoLSuxJxEA+xn0hxFoT2to3qZxKSV+yZBMUoCM1SoO3iDKlZi5LxqAhMCYu5yyDKiMgYUwJ5/xw4GaIJf515f50Jz5Q4POeOlwgZROJOZOFOVONOdODOTOLOwRqBfKNpEAPOfOuV8J1an5yJP5aJTlHBAFLVQF/aPa+JXaA6RJpsw6pJymEA1w2UGcgEKwe89AMcjAT8Gcf4RGxmscFA2gpA2g6krJUQLmqA
+
+nB+gcKuAqcH6XstEv46kVkLIOcSpNwvNxEAthAQtsEItw8ZmSEEtyGP80tst8tEYitmtKtatGtDGYQ6kagAG+tr4/JAk08AswpIeQmfEApFQ4mbIkmm8MmoJK48pB8ipZJPNDGJtTAZtwtgEVt4tVmqADtctqACtZ6rtD47tB8nt2tPtetmwICgW4CDkhpqJhI8C31SCKCvOiRbOvuBW+guCAeUUY0AOjpFVvAWYow0KIYW+hWrKuAEwTVKeWJ1W
+
+VU6AkgewuAMAQQbWhAtRRg2ExAnWkEdUEiUIgq+YPVE2CZbeA1j1s2rRMIw1GZy2WZy0k1+ZT+oxzi81nI3+CMYolqUeMUc49ZPISQwobQZM9CcwxSbxV2p1w5oM5x/ZRxg58DPq91H21+c+bIzx5SqMQByY3odCM4mYEBfxdM0BFYF5NNfR4J2ZKOj5WBcNZ5EA+BH5RBX5YuzdEucmbaFBgF1WE6py5yyuHsaudy2ArQxAkw2AQocGGxgYxMYw
+
+uAyM0jSYIo9u4wmgV0SYxwzQxwZoiKzumhmK7hWKuVnuhQhVYURKodKW3A3+5VmW9p1SxSm5+WM9fKjwC9FWS9vKEgdKvwmgzWzw4wF9i2juqZ7RY0Q1TRI1kTV5419DgxeZA+M1Yxe2pZh0dCt+AYMDAY4o0RWY9ZD+ni3ixSoBs46YcYJ1N1Eg51fZPMA5cSdTpxI5SDmDt9RScQ6VIYaYvyy1ixuDXkyCBDNIU+Vh10INvx3SFDr5sOmaUNxa
+
++akJEAsNsysJ4NK4bD5NHDlNpBNDGJ/D9N1WjN+pvAfad4bNZs/tXNFJf4jmagscf4hIYgrYYMc6Sw4cpAAtvtFIZmCAjABtLJ1tNGTmfcLzCAbzzAHzv4P8Oovzet/zCEQLtz3Ggdgpwd2pPEwmYpEdQkkp0d0pRcsppIe8imyddzoLjzl6kL0LsLXzCLTAfzeGKLh+jiupQWjdTkRprd5S7dlj3ud5vd/dJVqAjxTjEeDyiaIwgo09npxW7UPp
+
+i9Aj/j6AQo+ggqkEQouwNUEi1wMAxwHArQUAzQzErU9wmAAA8uEz0Qk9vjfXKrE3GfE6qv0ck2/Wk5/XNftJyGlEkIjNdEUg/qGDwG/rasDkdlMOAX8vfpKP6LU0DG04gxg0figy00m2fu06m5ABOWNJmF9eUj9n9WrLpcKI8X8qDXM1s7AYs4c4kxzBCbw2s0+Rsy+TW5ADs0LnsyQdw3+dLqnoIwriI8wWI2Krcjwu0FI8QDca8hMPepjN6JoM
+
+MBsHk0CsMM8tgMcIKMQMcFI5oFrkYwQCiq7mY/EZ3Rad3UVbY4JvY+LA6fFBllK6jAqH6HlnVUVusOqD46UXLunhIM1r8KQK0MoBQM1GOZ8OKnE0/f1UmU6/fWmZfaNQ2y/RzbmZtl6/qrNZk9/XKEjAkFQqGodTyFQg2mbL/TSjHhMMGojN4sHrB92adQ0+y2s80wDGg3dZfp0+ktlkqDOddJMJ9TgyaT9TGv9WdlLDOYsZAdW4CcCerks42/Q6
+
+s+s5jumts++bs0ib2zAtTQw7Tcc+rH+zid2uc3QgSazSbDc1xqpOZhkI6FerrZnDpI4ALKLXcOoHzeHJoINlCxbYBJrcRF+u5o+gFzxkmKnKgJoJZKF3HKxfXIy3AGoawJUGRoQIEHbe+khMwMuseqJIwJgKek5z+IFVx4yWBlzbhsevZ4uo515y5whFkO52wJ58RHYL53uiLYF5nMFz+rFwQAJBFz/NF+pNRqV7BLfIl8l2oPzel3585qEF7Llz
+
+RgV0V3V+NwxAHVPJi7PNi2HSJhi5HYSyuDHTKfHfJuSwqYbRBmZnhjRA5+oD+MRA125+nB58em1z5/N112nT125n19RgN6xEN1FzF2N/F5N/C0l2wCl7Nxl3Rotzl3d/l1gGt49+pBt3XXqcFlAryyJwK/lVY5aT3Ylix6Hh8cPY+2HqPe0rT78kde6YwvVcVrsD+4O2qxAJ1pIJoNcBQJSHAPnhMJ1mRbgEYNgFPs4McEYLa/Gchw63By3s671V
+
+fYjkk6/VqhhyMVhxkyPlk24qGL6FjNQlOw8rSlQiA2G54o2TOWlMRcUwh0Oeg2V1CWx475xxBxAHmxkhKEqMjFWTFGvpMAqEMyJyMLftGw/vT0lTucAZmHKyMJMFW+p7W5DfW6r0p22M26pzgZQ2+VWt29p9+Qc/p7soZ2UaIcI0rqO6ruOwpwEzMGaAUjwLgFIzwMcFMMQOmMQh8rSjIf6JoLOCu0GGMJoHCv6Ee8yMYW7uY8UHlRewVcT9e6kX
+
+Y4HmNMRZK72uTJsZjB4wq+sD2Gz34wGRIL0INlAPnkYEBPcA0eO2Nsr3L12dE3fQx4/X1WNe6+rwnak1r0Pth7r7h4dCuhNlEYbQe3EUgZQ0p6yVZI7I/mnAZVJQSMTsnA1aZnVeyLHH6FdWOIoCEGb2P1LfSnyVJ8k1HTcryHcYRoSgwzaNGMxaDUd0YAYK6GQ1mbJ9zydbEvu/zoaZ8Ec2fTZoCS7aEFC+XDXTlsjT4Dsj+/SXEsFnM4s1B07N
+
+HMnySpZskN06pEyGhBPRmZowpsVAGcgQBEYS43lH+DAGEA1xbatLJCJyQtpgwrAqXTeupEMFCB861gXWmwF/gdcoAGtVAAAAozkQgTzDAAACUWgjgJnT3iixGMr8KdFkGcE+1Na18MOMRD7qYBu4QgfQHF2YxaC1C1mErpCFcFRRQMzJBQaqWpI0Q6IagvGJoO0G6D86EYAwUYPPSS0IWZgiiELRCHWDtadghwU1z1rxw2Arg9wV4Jy6+CAh3YYI
+
+VYMAi9cmuZ4KIaNwYyxCvOCQpISkPG5IRRwJGLIT0Pm6EI0W4pHbvxmSyilthR3deGJDO5/lE6SmfOCqXZLgQaSPmVQX+HUGSByhYQSofoNQB2DjBedP8OYJGGhCbBbw4QB0KcEuC/OfQ7wYMMCE/DUu4wiIXrWiEzDjamceYbSUWGsVlhGQ9btkI2FcAseXLbgLj2brGkly3kZBIK2sYpEPe5PMaNdA37A5iKEoNKPQg/az1rgh/VVsf3QD6Aao
+
+/CZqNhGGCioTwUHF1jByiaDUEOr/FXhYnVQesNewxbbN6xw6+s8OVZBIIKCKTjBv8a+K6MeTugExRgSoSUMQlmLIJYGO+JjggBAGChLqsSdjtgKd4e8vefoLSi0gKRShCOozYTkSLyITR/qDyIhoGFGD0cSgMnZgUCWoZsCG2HAmGq2zU4sM+B4sHtkXz7YiC6aRnVqgbAkHlBaUFnGQdZ05r5xIMqAKEGnAoB1diINUcgK5ya5ERM4jgeHrHHTj
+
+ghiYiAcEKeiRQCxqAStVgJli86NiEAzY0bm2KyCpwvmZ6STLUL7pwALM+ACgBvSQhLAZxPzUWkFxEAi0kW3cNHpnEJDvgaMVkEQMrQkgdjBAJ6Z7hWMa5QAAAhMC0q6AQixkhUsZnHLEyEzxx4msXNztqi1ex/Y1sXxg7Ga0uxYgHsZUD7HhABxfGYcT/FHGTC9xE4qcTOJgBziOAC4zuIAh64rjAIa4lIU903FVAdxtQ2BIeKiGaRnOp4gWJeK2
+
+H4shSe3GDLiwOEEsjhUmElud3WyXck613XhDeOLH3jAIj4ysd7SIlw8sRH4oCV+NCA/jOxSwACcRE/EgTvxAscCaelwnQTyKsE2cXCyQlLjUJpAVcc4PEiYSnOgELcepDHF7j8JDcF8YBBe5ZAyJ+qTlg3TxFN0hBhItumaXn5E8r2NjZfre1X6oByYlPFLE6WXJrJBQLSI1J4zyg1RWRJzDnrsFNg1R8wvwMYMolv7iiH+TeUUS/2g5v8UOUoz/
+
+uh1lHTV5R//RUYdCoR8h7UOFUHHQilDaiVwz4JSkdnkqzhymM5Big7yY5oCrR11TNjgNHJ4D0kIOE6DUn1wfVyBkASgeLBj7NJikdKBAUmiT4sN5OpLMEs2CbZcDoxOfeZngU04F860iYoQTwwRyiC2R4g0zpIMuaEkrOaHeQRcI0CaRnBXcKOOhMdh1DMudXH9IhD85wtkI1gOdEsPzrZ0OAmgwkEmF9rahoQa3YyTXFgRIQPBnAQCELV8DZ1jg
+
+Q8aCU0MsGhCTBjQAIej2PFkROhzgnGZSFEDBAOx+gHUOOkQCUgvg7gTQRQAC5PowZUIeuNXDmG4BEhyI1OJDP3GEg3pmkPGUCLUCpxhxKEiySRImEoSfwXM2BCeiwAUgoAmgtrtD1h6eDuhahaiZwAIDYz7pe46EQAHIkIlkqAB2IAgcBhx6kGrvxPDiAy50cE32kiPshecEZTkY8c4OUA6TbZlYAwF52hEZwzkOtDSKnHiFsyFhqAJ2ehNIxUQ/
+
+Y1mMYf92d6I4KuN0v2XrQekOyoAz0zGY/BxnvSWAn0r5n3Q4C/TUR/0q2UDKaSgy2A4MyWVBKhkSQYZcM0OQQGdn+wUZNcb4c0NGEvTV02M0jERH5m+1CZ6XbACTOQjkyvYlMwgNTN8HFzqMjM5ma7CDnszkhnM6udzPDmEQ+Z1w/GTrSFlBCRZqAQ2RpKrmRCTJEkGWZgDlkKzM4ZIabqlw8GqydQq6TWb7VqF6yDZYso2XzVNlBDzZIQWrm12t
+
+kOC50ete2VeEdmNzAIREV2e7I3r2wvZQXWOU5z9k+0dggcxEcHORENzEZdXSOVbO9kILNu74WiZRL2E0T8Wq8eibHSWkJ0WJ5w5UrdOfkfxu4qc9OVZiImERduYQFdF9PzmFy0hdMkuXOmBlxDnBjMiGSvOhmeD65Ycp+C3I1Jcl25GMqzN3PXn/g+5etAecTOcgjyn0ToKFhPNxa0z6ZgEWebfBZkLyFhy84+TXJ5lZyN5EELeYLK/kTz6u78w+
+
+UZPEWny/wssldJfOzpKyZuKsyEGrMfn4AtZ4cHWQgv1n7z35xs6oWbPu5/yr5AC22cAvQWpzM40iyBfvOgVzpPZKQ+BYunCG+y5xfE1BTSXQXJDMFzsnGTgpIwxzCl36OOf5lAS4iDSPLAkXyyiwkjCeQrK0sVRX6D0MkPxLyZSmcYtByYIadxDeHyKftcArkSKamKAor0MAg2QgIKjYAzAYA+gGXq6zmxP8kBXRe/va0lG94ZRU1D+try/rFT5Q
+
+YoO/P6Guh/JF2ky+sguFvwMok0DIsYLyAsKJsEkeoc0fSgKgPZMBqDW0e7z6lfYp8WlXydHjShysQ+RI2qiWyFw8hJgVCd0SuGDELSwxqzaGmn24HtteB20/gbtMEFS49OqzI6VFJZpM1xl2Y65ldOgAp1uwQQzQZkDVQdjkFc4/QMEscG+004qXHGQQFQj4hi5AkUecRDlk+CS40i9OG7XHCcq+JqACREIACXdxeVTXRbmoBThZBM4as4Jc5nvR
+
+pziY0c6JU+LmSi0A4mtZQPJJa4cZ86CLZgB2PlVnpbMhAe9JbPIAPxRaeGXSEarpmZBwlNcH2ZrXHHoK7Y43aySMgTkZ4WVT4VAOyvxCKqT06qh+Xyr1oCq15o3AyKZFFX8LxVT6SVSumlVVKkZytMugqv9l/gVVaqnlWms1UlKdVxEfVQ/MNW0QA1pqw2S3HVhK0bVQQ+FsBgdU/MnV5a1WuODIzhAKM7qh9MRC9XsAfV34a4VF3bUmqg1YQxpd
+
+MM7hKT2ZEa1ilGuChbdeMWLEheHUO50SpSxwxiacJoWUt84RmVlXOkTXRhk1f4VNTBnTXODM1dXYVbmujBirWIEqzOFKrtiyqA4Lql9UhBrWpc31UQBtTrSbV6qdQBqx+P6tXUnjzVg4S1b2ttWDqK4RYZ1RWtdWTq7MXnOdfdNbiLr1SqGwNS/IQVK0w1O6kuJGr8y2Tzm+IxyZ0snLdLec4APpOsCS7/BRYyBAoNAAjAZA1gLEGMJ0AYAIQKAr
+
+UV3kxzgxKab+Im6SpzgFj5hKg+gf4KaJQH/KLRQK1TSIHBiab0g8m9NjaO6l2itgEANTSZq0080uomUhMrZuM0aatNOmx1oryM3qasgpm7TYYhSmRNXNvmqAP5ushq80OIW+zekCtbf85RPmmLfoGuBXNLpOZaLe5vSApbTpmYxnhlr81aa84RC49dJrs2ZaAtYhG0u5UOb5awtWmnsAoSq0+UCa/lUrW5oK3pAvK2EK0k2Bs23otQ+ANrM6Vvxj
+
+BiK10JNGGzoEMIwQFGAbZ1mihr4EYo2+hOTGQTyV5UEAIwBXO2XgUQ84CvbL6Esa1bwtyzZHOn2WA2bLQJAWlWwIgBXbiA/wPsV6Gk33bIIaEBAA1twCJx2eIm+7bvm9ytQtQPCPUOqAmCg7QdoIWyMoHrBgx9QPYXYPDvh1E1CetWzzTCDi1vp0SoYsuLZCYR7x6CfFTigfG+3Jh2NJQIeXBHsntKVwB8cTW0uqzCB5Z/uenUdva5+dmAvwA+HA
+
+De0rBPtJO46Y4k64IBsIFc/AMJsX5Ag0gdtESGcisj6ButvuSlSmPL5S4uCjwIXSLq1DbJ/I4ADAsZWCA3k+cfkIAA==
 ```
 %%

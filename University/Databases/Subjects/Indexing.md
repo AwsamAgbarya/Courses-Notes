@@ -8,7 +8,8 @@ Next [[multilevel-indexing]]
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
 Caching ^TfLXvwl8
 
 * Caching: Memory hierarchy enables caching, which in turn improves access speed due to many factors
@@ -223,2294 +224,296 @@ ceiling ^OIkGwGA6
 
 Total I/O = height + amount of requests/blocks needed ^nF19f4Bg
 
-
-# Embedded files
+## Embedded Files
 a58cd73ef3bed69510280133b96839429f932af3: $$\color{green} \frac{Size_{Block}}{Size_{Tuples}} = \#_{Tuples\in Block}$$
+
 4aec195030d826533a9d87973fb7659168e72766: $$\color{green} \frac{\#_{Tuples\in request}}{\#_{Tuples\in block}} = \#_{requests}$$
+
 367f1c88858a860bb223e436019ab3d8293beae8: $$\color{green} \frac{Size_{Block}-Size_{pointer2next}}{Size_{Index}} * Fillrate_{avg}= \#_{Index\in Leaf}$$
+
 195a1d7e6fed779e02e175231979720fd674a9f4: $$\color{green} \frac{\#_{Indexes}}{\#_{index\in leaf}} = \#_{Leaves} $$
 
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.20",
-	"elements": [
-		{
-			"type": "text",
-			"version": 311,
-			"versionNonce": 1548658432,
-			"isDeleted": false,
-			"id": "TfLXvwl8",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 18.72999871428577,
-			"y": -722.9720979285713,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 97.8323974609375,
-			"height": 35,
-			"seed": 997408992,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436484,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "Caching",
-			"rawText": "Caching",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Caching",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "text",
-			"version": 1179,
-			"versionNonce": 1385384192,
-			"isDeleted": false,
-			"id": "v81yc0RM",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -430.1812869181285,
-			"y": -687.972098190894,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 1024.23876953125,
-			"height": 450,
-			"seed": 669381920,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436484,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "* Caching: Memory hierarchy enables caching, which in turn improves access speed due to many factors\n          OS does caching which depends on its kernel and is transparent to the user.\n* Buffer Manager: provides access for DB processes to access blocks on disk, retrieves them to main\n                   memory and caches for faster access.\n* Query thread: starts off by checking cache for requested page, if not, we head to the request\n                threat until we receive our page, we update the cache according to our eviction policy\n                and write the evicted page into disk (if dirty).\n\n\n\n\n\n\n* Pre-fetching pages: Loading more sequential data than needed in hopes that we might use it soon\n\n* Page eviction trade-off: New blocks→low access/reference counts, but involved in current operations\n                           Old blocks→high access/reference counts, survived a long time constant use\n* Eviction Policies:",
-			"rawText": "* Caching: Memory hierarchy enables caching, which in turn improves access speed due to many factors\n          OS does caching which depends on its kernel and is transparent to the user.\n* Buffer Manager: provides access for DB processes to access blocks on disk, retrieves them to main\n                   memory and caches for faster access.\n* Query thread: starts off by checking cache for requested page, if not, we head to the request\n                threat until we receive our page, we update the cache according to our eviction policy\n                and write the evicted page into disk (if dirty).\n\n\n\n\n\n\n* Pre-fetching pages: Loading more sequential data than needed in hopes that we might use it soon\n\n* Page eviction trade-off: New blocks→low access/reference counts, but involved in current operations\n                           Old blocks→high access/reference counts, survived a long time constant use\n* Eviction Policies:",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* Caching: Memory hierarchy enables caching, which in turn improves access speed due to many factors\n          OS does caching which depends on its kernel and is transparent to the user.\n* Buffer Manager: provides access for DB processes to access blocks on disk, retrieves them to main\n                   memory and caches for faster access.\n* Query thread: starts off by checking cache for requested page, if not, we head to the request\n                threat until we receive our page, we update the cache according to our eviction policy\n                and write the evicted page into disk (if dirty).\n\n\n\n\n\n\n* Pre-fetching pages: Loading more sequential data than needed in hopes that we might use it soon\n\n* Page eviction trade-off: New blocks→low access/reference counts, but involved in current operations\n                           Old blocks→high access/reference counts, survived a long time constant use\n* Eviction Policies:",
-			"lineHeight": 1.25,
-			"baseline": 443
-		},
-		{
-			"type": "text",
-			"version": 185,
-			"versionNonce": 1239533312,
-			"isDeleted": false,
-			"id": "5vDO1Gpq",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -232.99907003764022,
-			"y": -175.67287086955753,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 706.5133666992188,
-			"height": 20,
-			"seed": 1049833760,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436484,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "when you access a lot of the same data in burst but then dont need it like query plans",
-			"rawText": "when you access a lot of the same data in burst but then dont need it like query plans",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "when you access a lot of the same data in burst but then dont need it like query plans",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 141,
-			"versionNonce": 323102976,
-			"isDeleted": false,
-			"id": "ELMAXvvK",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -239.7803761971739,
-			"y": -130.67287129045576,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 747.0253295898438,
-			"height": 20,
-			"seed": 834220256,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436484,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "good if you have to access certain nodes all throughout the entire process, like root of tree",
-			"rawText": "good if you have to access certain nodes all throughout the entire process, like root of tree",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "good if you have to access certain nodes all throughout the entire process, like root of tree",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 375,
-			"versionNonce": 1477502720,
-			"isDeleted": false,
-			"id": "qJL2ntj4",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -232.9990700277622,
-			"y": -85.6728708502651,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 646.7532958984375,
-			"height": 100,
-			"seed": 1978642656,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436484,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "1. Spin around in a ring\n2. each block has either a 1 or 0,\n   if it has a 0 and you arrive at it at a given time, replace it with new block\n   if it has a 1 and you arrive at it at a given time, turn it into 0 and move on\n3. if you access something already in the cache, turn the 0 into 1",
-			"rawText": "1. Spin around in a ring\n2. each block has either a 1 or 0,\n   if it has a 0 and you arrive at it at a given time, replace it with new block\n   if it has a 1 and you arrive at it at a given time, turn it into 0 and move on\n3. if you access something already in the cache, turn the 0 into 1",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "1. Spin around in a ring\n2. each block has either a 1 or 0,\n   if it has a 0 and you arrive at it at a given time, replace it with new block\n   if it has a 1 and you arrive at it at a given time, turn it into 0 and move on\n3. if you access something already in the cache, turn the 0 into 1",
-			"lineHeight": 1.25,
-			"baseline": 94
-		},
-		{
-			"type": "frame",
-			"version": 582,
-			"versionNonce": 1010368447,
-			"isDeleted": false,
-			"id": "iflQeYhVwX16qhZtL31fo",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -438.97723517460383,
-			"y": -722.972098214286,
-			"strokeColor": "#bbb",
-			"backgroundColor": "transparent",
-			"width": 1039.8162071846293,
-			"height": 742.0072380218733,
-			"seed": 371632352,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1708109812667,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"frameColor": {
-					"stroke": "#D4D4D4",
-					"fill": "#ADADAD",
-					"nameColor": "#7A7A7A"
-				}
-			},
-			"name": "Caching"
-		},
-		{
-			"type": "text",
-			"version": 380,
-			"versionNonce": 324798208,
-			"isDeleted": false,
-			"id": "8s5Fk2i1",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -430.38205971874686,
-			"y": -508.08653993012,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 984.3538208007812,
-			"height": 60,
-			"seed": 500402464,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436484,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "* Benefits of caching: Reduced disk I/O\n                       Faster Reads due to cache hits\n                       Faster writes because we only need to write to cache (if hit) and it gets pushed to disk in batches",
-			"rawText": "* Benefits of caching: Reduced disk I/O\n                       Faster Reads due to cache hits\n                       Faster writes because we only need to write to cache (if hit) and it gets pushed to disk in batches",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* Benefits of caching: Reduced disk I/O\n                       Faster Reads due to cache hits\n                       Faster writes because we only need to write to cache (if hit) and it gets pushed to disk in batches",
-			"lineHeight": 1.25,
-			"baseline": 54
-		},
-		{
-			"type": "text",
-			"version": 305,
-			"versionNonce": 1703667968,
-			"isDeleted": false,
-			"id": "p5ixNN4a",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -430.18128666110255,
-			"y": -448.0865399200949,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 666.1453247070312,
-			"height": 60,
-			"seed": 1409537312,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436484,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "* Sizes of buffers: Blocks -> Commonly used\n                    Chunks of blocks -> Good for heavy operations (table join/sort)\n                    Whole tables -> Only for heavily used",
-			"rawText": "* Sizes of buffers: Blocks -> Commonly used\n                    Chunks of blocks -> Good for heavy operations (table join/sort)\n                    Whole tables -> Only for heavily used",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* Sizes of buffers: Blocks -> Commonly used\n                    Chunks of blocks -> Good for heavy operations (table join/sort)\n                    Whole tables -> Only for heavily used",
-			"lineHeight": 1.25,
-			"baseline": 54
-		},
-		{
-			"type": "text",
-			"version": 106,
-			"versionNonce": 2017666816,
-			"isDeleted": false,
-			"id": "rPTr24ra",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -270.8833128515788,
-			"y": -382.7544597296187,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 307.63262939453125,
-			"height": 20,
-			"seed": 2026239264,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436484,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "tuples -> too expensive for the payoff",
-			"rawText": "tuples -> too expensive for the payoff",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "tuples -> too expensive for the payoff",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 180,
-			"versionNonce": 2116471040,
-			"isDeleted": false,
-			"id": "hjZp2waB",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -244.23719820163512,
-			"y": -261.2777533461637,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 486.3994445800781,
-			"height": 25,
-			"seed": 863029536,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436484,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "1. FIFO: Evict based off of position using queues",
-			"rawText": "1. FIFO: Evict based off of position using queues",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "1. FIFO: Evict based off of position using queues",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 250,
-			"versionNonce": 1933985536,
-			"isDeleted": false,
-			"id": "mVjrYg1H",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -245.25884622213408,
-			"y": -199.95512884905864,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 520.37939453125,
-			"height": 25,
-			"seed": 1378544864,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436484,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "2. LRU: Evict based off of time using priority queue",
-			"rawText": "2. LRU: Evict based off of time using priority queue",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "2. LRU: Evict based off of time using priority queue",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 263,
-			"versionNonce": 6662400,
-			"isDeleted": false,
-			"id": "RNky7ZqL",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -239.78037619138524,
-			"y": -109.46896604959069,
-			"strokeColor": "#f08c00",
-			"backgroundColor": "transparent",
-			"width": 653.0393676757812,
-			"height": 25,
-			"seed": 1765788896,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436484,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "4. CLOCK: spin around a clock and evict based on second chances",
-			"rawText": "4. CLOCK: spin around a clock and evict based on second chances",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "4. CLOCK: spin around a clock and evict based on second chances",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 283,
-			"versionNonce": 1625646848,
-			"isDeleted": false,
-			"id": "EEreYF8D",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -239.780376150387,
-			"y": -155.67287145444934,
-			"strokeColor": "#9c36b5",
-			"backgroundColor": "transparent",
-			"width": 553.0593872070312,
-			"height": 25,
-			"seed": 1694942432,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436484,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "3. LFU: Evict based off of Usage by counting accesses",
-			"rawText": "3. LFU: Evict based off of Usage by counting accesses",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "3. LFU: Evict based off of Usage by counting accesses",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 185,
-			"versionNonce": 399018240,
-			"isDeleted": false,
-			"id": "tK6N8wlo",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 281.9115244273855,
-			"y": -195.67287092593065,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 254.7685089111328,
-			"height": 20,
-			"seed": 1287072032,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436484,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "(simple ones are most effective)",
-			"rawText": "(simple ones are most effective)",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "(simple ones are most effective)",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 218,
-			"versionNonce": 228624128,
-			"isDeleted": false,
-			"id": "oystM5zh",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -232.99907014526218,
-			"y": -242.43138526416703,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 675.7614135742188,
-			"height": 40,
-			"seed": 160727264,
-			"groupIds": [],
-			"frameId": "iflQeYhVwX16qhZtL31fo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "queues are surprisingly complex, a lot of implementation details to take into account\nCan also be implemented by a ring buffer (which is just a circular queue)",
-			"rawText": "queues are surprisingly complex, a lot of implementation details to take into account\nCan also be implemented by a ring buffer (which is just a circular queue)",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "queues are surprisingly complex, a lot of implementation details to take into account\nCan also be implemented by a ring buffer (which is just a circular queue)",
-			"lineHeight": 1.25,
-			"baseline": 34
-		},
-		{
-			"type": "text",
-			"version": 235,
-			"versionNonce": 2144299264,
-			"isDeleted": false,
-			"id": "vB2J1Vb5",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 17.230127641898832,
-			"y": 84.34364691686363,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 108.55645751953125,
-			"height": 35,
-			"seed": 380643616,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "Indexing",
-			"rawText": "Indexing",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Indexing",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "text",
-			"version": 379,
-			"versionNonce": 905422592,
-			"isDeleted": false,
-			"id": "9F3sEZPR",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -431.313285901255,
-			"y": 132.79856739450258,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 706.5792846679688,
-			"height": 150,
-			"seed": 684878112,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "* an Index is a data structure that finds Records quickly,\n  The field on whose values the index is based off of is a search key.\n* We use indexes depending on its selectivity.\n\n\n* Index types: ",
-			"rawText": "* an Index is a data structure that finds Records quickly,\n  The field on whose values the index is based off of is a search key.\n* We use indexes depending on its selectivity.\n\n\n* Index types: ",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* an Index is a data structure that finds Records quickly,\n  The field on whose values the index is based off of is a search key.\n* We use indexes depending on its selectivity.\n\n\n* Index types: ",
-			"lineHeight": 1.25,
-			"baseline": 143
-		},
-		{
-			"type": "text",
-			"version": 486,
-			"versionNonce": 66734336,
-			"isDeleted": false,
-			"id": "N8sARaAM",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -409.9423163217984,
-			"y": 281.28698687938464,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 964.339111328125,
-			"height": 100,
-			"seed": 1852661024,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "1. Dense or       :\n    Dense index has an index for every record in a table, the index file is much smaller than the\n    actual file and can be sorted thus allowing fast access.\n    Can also be done on non-unique values and is treated similarly to sparse",
-			"rawText": "1. Dense or       :\n    Dense index has an index for every record in a table, the index file is much smaller than the\n    actual file and can be sorted thus allowing fast access.\n    Can also be done on non-unique values and is treated similarly to sparse",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "1. Dense or       :\n    Dense index has an index for every record in a table, the index file is much smaller than the\n    actual file and can be sorted thus allowing fast access.\n    Can also be done on non-unique values and is treated similarly to sparse",
-			"lineHeight": 1.25,
-			"baseline": 93
-		},
-		{
-			"type": "text",
-			"version": 480,
-			"versionNonce": 107661056,
-			"isDeleted": false,
-			"id": "qrrRHMuQ",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -406.0791187860507,
-			"y": 534.788069506355,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 898.3790893554688,
-			"height": 50,
-			"seed": 1699353824,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "2. Clustered or            :\n    Clustered Index is an index that follows the exact same order of tuples in the table",
-			"rawText": "2. Clustered or            :\n    Clustered Index is an index that follows the exact same order of tuples in the table",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "2. Clustered or            :\n    Clustered Index is an index that follows the exact same order of tuples in the table",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "text",
-			"version": 561,
-			"versionNonce": 2143889664,
-			"isDeleted": false,
-			"id": "zOr0sTeR",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -405.1566958865917,
-			"y": 614.8819434390377,
-			"strokeColor": "#f08c00",
-			"backgroundColor": "transparent",
-			"width": 842.6390380859375,
-			"height": 50,
-			"seed": 57311456,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "3. Primary or seconday:\n   a primary key is Index on the primary key of the relation, otherwise its secondary",
-			"rawText": "3. Primary or seconday:\n   a primary key is Index on the primary key of the relation, otherwise its secondary",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "3. Primary or seconday:\n   a primary key is Index on the primary key of the relation, otherwise its secondary",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "text",
-			"version": 168,
-			"versionNonce": 460973824,
-			"isDeleted": false,
-			"id": "qwaCLWmK",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -248.9996035249696,
-			"y": 534.7894300346129,
-			"strokeColor": "#0c8599",
-			"backgroundColor": "transparent",
-			"width": 111.3798828125,
-			"height": 25,
-			"seed": 658186528,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "unclustered",
-			"rawText": "unclustered",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "unclustered",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 249,
-			"versionNonce": 1589381376,
-			"isDeleted": false,
-			"id": "ybqgZ5xE",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -365.7969553339662,
-			"y": 587.3350059434238,
-			"strokeColor": "#0c8599",
-			"backgroundColor": "transparent",
-			"width": 803.279296875,
-			"height": 25,
-			"seed": 1352649952,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Unclustered index is an index that does not follow the order (can only be dense)",
-			"rawText": "Unclustered index is an index that does not follow the order (can only be dense)",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Unclustered index is an index that does not follow the order (can only be dense)",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 295,
-			"versionNonce": 27592448,
-			"isDeleted": false,
-			"id": "IzGvVcSz",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -377.586845505347,
-			"y": 482.3366059684677,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 957.7991333007812,
-			"height": 50,
-			"seed": 1030376736,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "* Remember when calculating indices, if indices dont span blocks we find how many solid indices fit\nin a block first then use that number to calculate how many blocks we need!!",
-			"rawText": "* Remember when calculating indices, if indices dont span blocks we find how many solid indices fit\nin a block first then use that number to calculate how many blocks we need!!",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* Remember when calculating indices, if indices dont span blocks we find how many solid indices fit\nin a block first then use that number to calculate how many blocks we need!!",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "frame",
-			"version": 433,
-			"versionNonce": 161525727,
-			"isDeleted": false,
-			"id": "V092jXEqKzfCYiWi2ikpw",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -445.75872355183145,
-			"y": 73.17628156418976,
-			"strokeColor": "#bbb",
-			"backgroundColor": "transparent",
-			"width": 1039.816207,
-			"height": 601.5947471382735,
-			"seed": 1950120224,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1708109812667,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"frameColor": {
-					"stroke": "#D4D4D4",
-					"fill": "#ADADAD",
-					"nameColor": "#7A7A7A"
-				}
-			},
-			"name": "Indexing"
-		},
-		{
-			"type": "text",
-			"version": 224,
-			"versionNonce": 896280320,
-			"isDeleted": false,
-			"id": "woImmoSg",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -411.887672587003,
-			"y": 207.79856667897963,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 859.4390869140625,
-			"height": 25,
-			"seed": 2105410848,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "If the ratio of selected elements (Selectivity) is low then the query is highly selective",
-			"rawText": "If the ratio of selected elements (Selectivity) is low then the query is highly selective",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "If the ratio of selected elements (Selectivity) is low then the query is highly selective",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 225,
-			"versionNonce": 1141754112,
-			"isDeleted": false,
-			"id": "sKx3UFTW",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -413.0911590429877,
-			"y": 233.07178225465913,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 859.439208984375,
-			"height": 25,
-			"seed": 1562868960,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "If the ratio of selected elements (Selectivity) is high then the query is lowly selective",
-			"rawText": "If the ratio of selected elements (Selectivity) is high then the query is lowly selective",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "If the ratio of selected elements (Selectivity) is high then the query is lowly selective",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 145,
-			"versionNonce": 592398080,
-			"isDeleted": false,
-			"id": "Lpdq3Yyj",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -297.82967633357134,
-			"y": 280.9541288971047,
-			"strokeColor": "#9775fa",
-			"backgroundColor": "transparent",
-			"width": 65.75991821289062,
-			"height": 25,
-			"seed": 1165474080,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Sparse",
-			"rawText": "Sparse",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Sparse",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "text",
-			"version": 294,
-			"versionNonce": 1902946560,
-			"isDeleted": false,
-			"id": "uzfRAfJu",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -371.66663831613755,
-			"y": 378.5999168319991,
-			"strokeColor": "#9775fa",
-			"backgroundColor": "transparent",
-			"width": 823.619140625,
-			"height": 50,
-			"seed": 1644043488,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Sparse index has an index for each block in a table, its much smaller and has less\nI/O during search but requires iterating the actual block afterwards",
-			"rawText": "Sparse index has an index for each block in a table, its much smaller and has less\nI/O during search but requires iterating the actual block afterwards",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Sparse index has an index for each block in a table, its much smaller and has less\nI/O during search but requires iterating the actual block afterwards",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "text",
-			"version": 157,
-			"versionNonce": 667838208,
-			"isDeleted": false,
-			"id": "i1Hwfi6z",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 211.3926294884164,
-			"y": 335.38678455104804,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 167.4563446044922,
-			"height": 20,
-			"seed": 952503520,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "divide index by tuples",
-			"rawText": "divide index by tuples",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "divide index by tuples",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 146,
-			"versionNonce": 1341098240,
-			"isDeleted": false,
-			"id": "bq3iArj0",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 328.4916218844184,
-			"y": 405.0899205011637,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 163.808349609375,
-			"height": 20,
-			"seed": 1692860704,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "divide index by pages",
-			"rawText": "divide index by pages",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "divide index by pages",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 277,
-			"versionNonce": 258574080,
-			"isDeleted": false,
-			"id": "xHCVqE69",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -377.5868458336129,
-			"y": 429.88514181103955,
-			"strokeColor": "#9c36b5",
-			"backgroundColor": "transparent",
-			"width": 943.9991455078125,
-			"height": 50,
-			"seed": 724034848,
-			"groupIds": [],
-			"frameId": "V092jXEqKzfCYiWi2ikpw",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Multi-level indexing is a sparse index on a dense index, second level index is incredibly small and\ncan be kept in main memory to speed up the search",
-			"rawText": "Multi-level indexing is a sparse index on a dense index, second level index is incredibly small and\ncan be kept in main memory to speed up the search",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Multi-level indexing is a sparse index on a dense index, second level index is incredibly small and\ncan be kept in main memory to speed up the search",
-			"lineHeight": 1.25,
-			"baseline": 43
-		},
-		{
-			"type": "text",
-			"version": 325,
-			"versionNonce": 454453504,
-			"isDeleted": false,
-			"id": "X9QXHyL8",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 12.518234068359334,
-			"y": 775.3567200077634,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 117.04051208496094,
-			"height": 35,
-			"seed": 1985920224,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "B+ Tree",
-			"rawText": "B+ Tree",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "B+ Tree",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "text",
-			"version": 1472,
-			"versionNonce": 379627264,
-			"isDeleted": false,
-			"id": "ymimL6V6",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -438.17441136012286,
-			"y": 824.5392617896837,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 1027.8389892578125,
-			"height": 500,
-			"seed": 959717600,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "* a B-Tree is a balanced binary tree that allows a flexible amount of children per node, which is\n    designed for block-wise access and operations that read and write a lot, by optimizing its worst\n    case to be logn, and also guarantees >50% storage used.\n\n\n\n\n* B+Tree is a B-Tree that only its leaves point to the data, and each leaf points to its right sibling\n\n\n\n\n\n\n* Bulk loading a B+tree one record at a time is inefficient, thus we can sort the records to create\n    full leaves out of them, then creating inner-nodes based off of them.\n\n* Prefix tree (Trie): Encode prefexes as paths containing each letter that lead to results\n\n* B+ tree for blobs only lead to the position of the data blocks of blob",
-			"rawText": "* a B-Tree is a balanced binary tree that allows a flexible amount of children per node, which is\n    designed for block-wise access and operations that read and write a lot, by optimizing its worst\n    case to be logn, and also guarantees >50% storage used.\n\n\n\n\n* B+Tree is a B-Tree that only its leaves point to the data, and each leaf points to its right sibling\n\n\n\n\n\n\n* Bulk loading a B+tree one record at a time is inefficient, thus we can sort the records to create\n    full leaves out of them, then creating inner-nodes based off of them.\n\n* Prefix tree (Trie): Encode prefexes as paths containing each letter that lead to results\n\n* B+ tree for blobs only lead to the position of the data blocks of blob",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* a B-Tree is a balanced binary tree that allows a flexible amount of children per node, which is\n    designed for block-wise access and operations that read and write a lot, by optimizing its worst\n    case to be logn, and also guarantees >50% storage used.\n\n\n\n\n* B+Tree is a B-Tree that only its leaves point to the data, and each leaf points to its right sibling\n\n\n\n\n\n\n* Bulk loading a B+tree one record at a time is inefficient, thus we can sort the records to create\n    full leaves out of them, then creating inner-nodes based off of them.\n\n* Prefix tree (Trie): Encode prefexes as paths containing each letter that lead to results\n\n* B+ tree for blobs only lead to the position of the data blocks of blob",
-			"lineHeight": 1.25,
-			"baseline": 493
-		},
-		{
-			"type": "text",
-			"version": 203,
-			"versionNonce": 509692160,
-			"isDeleted": false,
-			"id": "FI59Ify0",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -395.3694311431562,
-			"y": 896.3154141488542,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 404.1195373535156,
-			"height": 100,
-			"seed": 1304575200,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "As many levels as needed\nAlways balanced\n50%+ of each node is always being used\nno overflow blocks needed",
-			"rawText": "As many levels as needed\nAlways balanced\n50%+ of each node is always being used\nno overflow blocks needed",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "As many levels as needed\nAlways balanced\n50%+ of each node is always being used\nno overflow blocks needed",
-			"lineHeight": 1.25,
-			"baseline": 93
-		},
-		{
-			"type": "text",
-			"version": 274,
-			"versionNonce": 1777583872,
-			"isDeleted": false,
-			"id": "xvsWs0Sb",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -414.9115247664265,
-			"y": 1020.645298674011,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 488.46484375,
-			"height": 20,
-			"seed": 1871071520,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "Too unnecessary to go into detail since we did the project :]",
-			"rawText": "Too unnecessary to go into detail since we did the project :]",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Too unnecessary to go into detail since we did the project :]",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 335,
-			"versionNonce": 894445824,
-			"isDeleted": false,
-			"id": "aD9yqbXp",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -411.9151483975585,
-			"y": 1039.6163096249543,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 596.4794311523438,
-			"height": 100,
-			"seed": 1874070816,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Search: h I/O for path + 1 I/O for reading of block\nRange query: h I/O for path + n I/O for reading of n data\nInsertion: if space h + 1 I/O , If no space 3h + 1 I/O\nDeletion: if enough h + 1 I/O, If not enough 3h I/O",
-			"rawText": "Search: h I/O for path + 1 I/O for reading of block\nRange query: h I/O for path + n I/O for reading of n data\nInsertion: if space h + 1 I/O , If no space 3h + 1 I/O\nDeletion: if enough h + 1 I/O, If not enough 3h I/O",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Search: h I/O for path + 1 I/O for reading of block\nRange query: h I/O for path + n I/O for reading of n data\nInsertion: if space h + 1 I/O , If no space 3h + 1 I/O\nDeletion: if enough h + 1 I/O, If not enough 3h I/O",
-			"lineHeight": 1.25,
-			"baseline": 93
-		},
-		{
-			"type": "text",
-			"version": 40,
-			"versionNonce": 635627264,
-			"isDeleted": false,
-			"id": "7S85bRHe",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -438.1744110865794,
-			"y": 1350.4081360027674,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 206.33978271484375,
-			"height": 25,
-			"seed": 346591456,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "*B+Tree Calculation:",
-			"rawText": "*B+Tree Calculation:",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "*B+Tree Calculation:",
-			"lineHeight": 1.25,
-			"baseline": 18
-		},
-		{
-			"type": "arrow",
-			"version": 176,
-			"versionNonce": 1264781568,
-			"isDeleted": false,
-			"id": "90eAvxoFEs-Fgy4Fx96lO",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 30.04535393251262,
-			"y": 1366.7887910490758,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 53.72781682064875,
-			"height": 0.9458685808431255,
-			"seed": 1016302816,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1707838436485,
-			"link": null,
-			"locked": false,
-			"startBinding": {
-				"elementId": "bv1v5zLW",
-				"focus": 0.02989889135665443,
-				"gap": 8.87792856524483
-			},
-			"endBinding": {
-				"elementId": "tCjUDWal",
-				"focus": -0.1623032513083402,
-				"gap": 8.584065620900276
-			},
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					53.72781682064875,
-					0.9458685808431255
-				]
-			]
-		},
-		{
-			"type": "text",
-			"version": 114,
-			"versionNonce": 1458439936,
-			"isDeleted": false,
-			"id": "LlLqr872",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -67.7668254076429,
-			"y": 1375.566666868248,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 77.09672546386719,
-			"height": 41.40190956208312,
-			"seed": 73417952,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"fontSize": 11.040509216555499,
-			"fontFamily": 1,
-			"text": "ceiling or floor\ndepending on\nspan",
-			"rawText": "ceiling or floor\ndepending on\nspan",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "ceiling or floor\ndepending on\nspan",
-			"lineHeight": 1.25,
-			"baseline": 37
-		},
-		{
-			"type": "text",
-			"version": 70,
-			"versionNonce": 1545201920,
-			"isDeleted": false,
-			"id": "riRFtKgn",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 249.61050778109427,
-			"y": 1377.8151933930758,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 36.91204833984375,
-			"height": 16.159625831656648,
-			"seed": 1394378016,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"fontSize": 12.927700665325318,
-			"fontFamily": 1,
-			"text": "Ceiling",
-			"rawText": "Ceiling",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Ceiling",
-			"lineHeight": 1.25,
-			"baseline": 11
-		},
-		{
-			"type": "text",
-			"version": 170,
-			"versionNonce": 2039817984,
-			"isDeleted": false,
-			"id": "H7UfzxKm",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -143.18161937597839,
-			"y": 1461.6107960146903,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 23.048797607421875,
-			"height": 12.618729288670924,
-			"seed": 135595232,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"fontSize": 10.09498343093674,
-			"fontFamily": 1,
-			"text": "floor",
-			"rawText": "floor",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "floor",
-			"lineHeight": 1.25,
-			"baseline": 8
-		},
-		{
-			"type": "text",
-			"version": 47,
-			"versionNonce": 1928644864,
-			"isDeleted": false,
-			"id": "iz5ip7wP",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -18.44675789353974,
-			"y": 1452.3572654001025,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 25.566390991210938,
-			"height": 11.76437922488524,
-			"seed": 1897856288,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"fontSize": 9.411503379908192,
-			"fontFamily": 1,
-			"text": "ceiling",
-			"rawText": "ceiling",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "ceiling",
-			"lineHeight": 1.25,
-			"baseline": 7
-		},
-		{
-			"type": "arrow",
-			"version": 178,
-			"versionNonce": 2052605696,
-			"isDeleted": false,
-			"id": "DgZZUYivLaBfQcvyRIn0z",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 356.4618017477951,
-			"y": 1482.7983557525718,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 106.30627263023615,
-			"height": 30.546290832358864,
-			"seed": 222434592,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"startBinding": {
-				"elementId": "j54NqzL8",
-				"gap": 11.671821586839997,
-				"focus": -0.7059965781103784
-			},
-			"endBinding": {
-				"elementId": "j54NqzL8",
-				"gap": 10.691191420460427,
-				"focus": 0.6392840110878679
-			},
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-25.00238736498335,
-					29.565660665979294
-				],
-				[
-					-91.35836195666872,
-					27.277523611093784
-				],
-				[
-					-106.30627263023615,
-					-0.9806301663795693
-				]
-			]
-		},
-		{
-			"type": "text",
-			"version": 172,
-			"versionNonce": 729000192,
-			"isDeleted": false,
-			"id": "fqQg5P3m",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 218.071323659698,
-			"y": 1523.3167698507148,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 175.85845947265625,
-			"height": 68.52594935262869,
-			"seed": 1104684320,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"fontSize": 13.705189870525738,
-			"fontFamily": 1,
-			"text": "repeat until you get\na number that is smaller\nthan capacity of one leaf\niterations = height",
-			"rawText": "repeat until you get\na number that is smaller\nthan capacity of one leaf\niterations = height",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "repeat until you get\na number that is smaller\nthan capacity of one leaf\niterations = height",
-			"lineHeight": 1.25,
-			"baseline": 63
-		},
-		{
-			"type": "text",
-			"version": 45,
-			"versionNonce": 901211904,
-			"isDeleted": false,
-			"id": "OIkGwGA6",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 347.450309584692,
-			"y": 1454.363549282825,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 43.464071503458925,
-			"height": 20,
-			"seed": 824883488,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "ceiling",
-			"rawText": "ceiling",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "ceiling",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 127,
-			"versionNonce": 823560448,
-			"isDeleted": false,
-			"id": "nF19f4Bg",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -238.25320543184668,
-			"y": 1503.3167702113683,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 449.15289306640625,
-			"height": 20,
-			"seed": 856122656,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "Total I/O = height + amount of requests/blocks needed",
-			"rawText": "Total I/O = height + amount of requests/blocks needed",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Total I/O = height + amount of requests/blocks needed",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "frame",
-			"version": 612,
-			"versionNonce": 182279167,
-			"isDeleted": false,
-			"id": "8fflGC4npLQpnt2x1wR5t",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -450.47061712537084,
-			"y": 764.1893546550893,
-			"strokeColor": "#bbb",
-			"backgroundColor": "transparent",
-			"width": 1047.619099342829,
-			"height": 895.5068593154549,
-			"seed": 1517230304,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1708109812667,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"frameColor": {
-					"stroke": "#D4D4D4",
-					"fill": "#ADADAD",
-					"nameColor": "#7A7A7A"
-				}
-			},
-			"name": "B+Tree"
-		},
-		{
-			"type": "text",
-			"version": 503,
-			"versionNonce": 1063086336,
-			"isDeleted": false,
-			"id": "2HK2e6n6",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -13.676759486044133,
-			"y": 1740.6682247276187,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 170.43670654296875,
-			"height": 35,
-			"seed": 1169610976,
-			"groupIds": [],
-			"frameId": "b_1TbCMgdUTnFqfQI9cBH",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 1,
-			"text": "Hash Tables",
-			"rawText": "Hash Tables",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Hash Tables",
-			"lineHeight": 1.25,
-			"baseline": 25
-		},
-		{
-			"type": "text",
-			"version": 3374,
-			"versionNonce": 2118756096,
-			"isDeleted": false,
-			"id": "YV7wt0ty",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -436.07030348504054,
-			"y": 1776.6385660078154,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 1017.178955078125,
-			"height": 1000,
-			"seed": 522763488,
-			"groupIds": [],
-			"frameId": "b_1TbCMgdUTnFqfQI9cBH",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "* A hash function is a function that takes in a search key and outputs an index between 0 and N\n* in DBMS hash tables lead to blocks/buckets, each of which storing multiple values and can Overflow\n\n* Static Hash tables: Better than indexing and B+tree but does not work for range queries!\n                      Since length is fixed, it is not dynamic and can get a lot of overflow buckets\n\n* Dynamic Hash tables: Bucket is pointer array instead of data-blocks (can grow and shrink)\n                        Size of table can double when needed (no overflow buckets)\n                        Buckets can share data-blocks if room is available\n                        Hash function computes k bits, bucket numbers will use i<=k bits, 2^i Buckets\n                        Each bucket has a bit indicating number of relevant bits\n\n\n\n\n\n\n\n* Linear Hash Table: Number of buckets grows and shrinks in a linear fashion\n                      Overflow buckets are allowed but uncommon\n                      no of buckets is chosen such that avg no. of records in bucket is a fixed %\n                      Use rightmost bits with logn to identify buckets\n\n\n\n\n\n\n\n\n\n* Collision Handling: how to handle 2 entries being hashed into the same value?\n\n1) Seperate chaining, each entry is now a linked list and will append the newly collided with entry\n\n2) Open-Addressin/Probing (can be linear or quadratic or of any kind) skip a given interval by the hash\n   function forward until you find an empty space/ a value you were looking for, the gap between\n   intervals is what dictates whether its linear or quadratic etc...\n\n3) Double hashing: Hash again using a different function = less likely to have collisions",
-			"rawText": "* A hash function is a function that takes in a search key and outputs an index between 0 and N\n* in DBMS hash tables lead to blocks/buckets, each of which storing multiple values and can Overflow\n\n* Static Hash tables: Better than indexing and B+tree but does not work for range queries!\n                      Since length is fixed, it is not dynamic and can get a lot of overflow buckets\n\n* Dynamic Hash tables: Bucket is pointer array instead of data-blocks (can grow and shrink)\n                        Size of table can double when needed (no overflow buckets)\n                        Buckets can share data-blocks if room is available\n                        Hash function computes k bits, bucket numbers will use i<=k bits, 2^i Buckets\n                        Each bucket has a bit indicating number of relevant bits\n\n\n\n\n\n\n\n* Linear Hash Table: Number of buckets grows and shrinks in a linear fashion\n                      Overflow buckets are allowed but uncommon\n                      no of buckets is chosen such that avg no. of records in bucket is a fixed %\n                      Use rightmost bits with logn to identify buckets\n\n\n\n\n\n\n\n\n\n* Collision Handling: how to handle 2 entries being hashed into the same value?\n\n1) Seperate chaining, each entry is now a linked list and will append the newly collided with entry\n\n2) Open-Addressin/Probing (can be linear or quadratic or of any kind) skip a given interval by the hash\n   function forward until you find an empty space/ a value you were looking for, the gap between\n   intervals is what dictates whether its linear or quadratic etc...\n\n3) Double hashing: Hash again using a different function = less likely to have collisions",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "* A hash function is a function that takes in a search key and outputs an index between 0 and N\n* in DBMS hash tables lead to blocks/buckets, each of which storing multiple values and can Overflow\n\n* Static Hash tables: Better than indexing and B+tree but does not work for range queries!\n                      Since length is fixed, it is not dynamic and can get a lot of overflow buckets\n\n* Dynamic Hash tables: Bucket is pointer array instead of data-blocks (can grow and shrink)\n                        Size of table can double when needed (no overflow buckets)\n                        Buckets can share data-blocks if room is available\n                        Hash function computes k bits, bucket numbers will use i<=k bits, 2^i Buckets\n                        Each bucket has a bit indicating number of relevant bits\n\n\n\n\n\n\n\n* Linear Hash Table: Number of buckets grows and shrinks in a linear fashion\n                      Overflow buckets are allowed but uncommon\n                      no of buckets is chosen such that avg no. of records in bucket is a fixed %\n                      Use rightmost bits with logn to identify buckets\n\n\n\n\n\n\n\n\n\n* Collision Handling: how to handle 2 entries being hashed into the same value?\n\n1) Seperate chaining, each entry is now a linked list and will append the newly collided with entry\n\n2) Open-Addressin/Probing (can be linear or quadratic or of any kind) skip a given interval by the hash\n   function forward until you find an empty space/ a value you were looking for, the gap between\n   intervals is what dictates whether its linear or quadratic etc...\n\n3) Double hashing: Hash again using a different function = less likely to have collisions",
-			"lineHeight": 1.25,
-			"baseline": 993
-		},
-		{
-			"type": "text",
-			"version": 598,
-			"versionNonce": 566774016,
-			"isDeleted": false,
-			"id": "FEanZRAS",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -442.090179548377,
-			"y": 2063.7018697523117,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 1034.75390625,
-			"height": 40,
-			"seed": 1411973344,
-			"groupIds": [],
-			"frameId": "b_1TbCMgdUTnFqfQI9cBH",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "Shallow split: When your current block's parity bit is smaller than relevant one, split them into 2 and add your entry\nDeep split: When 1 bucket is full and we add 1 more to it, we need to split it in 2 and add a relevant bucket bit +double buckets",
-			"rawText": "Shallow split: When your current block's parity bit is smaller than relevant one, split them into 2 and add your entry\nDeep split: When 1 bucket is full and we add 1 more to it, we need to split it in 2 and add a relevant bucket bit +double buckets",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Shallow split: When your current block's parity bit is smaller than relevant one, split them into 2 and add your entry\nDeep split: When 1 bucket is full and we add 1 more to it, we need to split it in 2 and add a relevant bucket bit +double buckets",
-			"lineHeight": 1.25,
-			"baseline": 34
-		},
-		{
-			"type": "text",
-			"version": 623,
-			"versionNonce": 1954334464,
-			"isDeleted": false,
-			"id": "lNWvL08f",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -443.1064806790763,
-			"y": 2104.513323287779,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 961.5189819335938,
-			"height": 100,
-			"seed": 79642848,
-			"groupIds": [],
-			"frameId": "b_1TbCMgdUTnFqfQI9cBH",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Insertion: Compute hash, only i leftmost bits are relevant, attempt to add to matching bucket:\n          1) If theres space, add it and end\n          2) If no space + your bucket parity is smaller than relevant, shallow split\n          3) If no space + your bucket is full, deep split, add another relevant bit, then rehash",
-			"rawText": "Insertion: Compute hash, only i leftmost bits are relevant, attempt to add to matching bucket:\n          1) If theres space, add it and end\n          2) If no space + your bucket parity is smaller than relevant, shallow split\n          3) If no space + your bucket is full, deep split, add another relevant bit, then rehash",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Insertion: Compute hash, only i leftmost bits are relevant, attempt to add to matching bucket:\n          1) If theres space, add it and end\n          2) If no space + your bucket parity is smaller than relevant, shallow split\n          3) If no space + your bucket is full, deep split, add another relevant bit, then rehash",
-			"lineHeight": 1.25,
-			"baseline": 93
-		},
-		{
-			"type": "text",
-			"version": 358,
-			"versionNonce": 869738752,
-			"isDeleted": false,
-			"id": "JRmfn5nE",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -398.5468719871682,
-			"y": 2203.908807216014,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 931.98583984375,
-			"height": 20,
-			"seed": 985682208,
-			"groupIds": [],
-			"frameId": "b_1TbCMgdUTnFqfQI9cBH",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"fontSize": 16,
-			"fontFamily": 1,
-			"text": "rehashing is expensive, 2^i buckets can get out of hand, non-Uniform key distribution can lead to many empty buckets",
-			"rawText": "rehashing is expensive, 2^i buckets can get out of hand, non-Uniform key distribution can lead to many empty buckets",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "rehashing is expensive, 2^i buckets can get out of hand, non-Uniform key distribution can lead to many empty buckets",
-			"lineHeight": 1.25,
-			"baseline": 14
-		},
-		{
-			"type": "text",
-			"version": 923,
-			"versionNonce": 2001463040,
-			"isDeleted": false,
-			"id": "yFCklXqs",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -436.07030377176415,
-			"y": 2326.638565764496,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 987.3190307617188,
-			"height": 175,
-			"seed": 271718624,
-			"groupIds": [],
-			"frameId": "b_1TbCMgdUTnFqfQI9cBH",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Insertion: Compute hash, take in i rightmost bits and use it as integer, attempt to insert:\n          1) If m is less than number of buckets then insert into m\n          2) otherwise bucket doesnt exist yet, hash it with i-1 bits and insert it into that number\n          3) if no space then overflow bucket\n          4) check if ratio of record to buckets is too high and add one more bucket n+1\n          5) if bucket id starts with 1 from left then rehash the matching bucket with 0 on left\n          6) if n>2^i add a relevant bit!",
-			"rawText": "Insertion: Compute hash, take in i rightmost bits and use it as integer, attempt to insert:\n          1) If m is less than number of buckets then insert into m\n          2) otherwise bucket doesnt exist yet, hash it with i-1 bits and insert it into that number\n          3) if no space then overflow bucket\n          4) check if ratio of record to buckets is too high and add one more bucket n+1\n          5) if bucket id starts with 1 from left then rehash the matching bucket with 0 on left\n          6) if n>2^i add a relevant bit!",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Insertion: Compute hash, take in i rightmost bits and use it as integer, attempt to insert:\n          1) If m is less than number of buckets then insert into m\n          2) otherwise bucket doesnt exist yet, hash it with i-1 bits and insert it into that number\n          3) if no space then overflow bucket\n          4) check if ratio of record to buckets is too high and add one more bucket n+1\n          5) if bucket id starts with 1 from left then rehash the matching bucket with 0 on left\n          6) if n>2^i add a relevant bit!",
-			"lineHeight": 1.25,
-			"baseline": 168
-		},
-		{
-			"type": "frame",
-			"version": 881,
-			"versionNonce": 1945076767,
-			"isDeleted": false,
-			"id": "b_1TbCMgdUTnFqfQI9cBH",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -448.3665096797742,
-			"y": 1729.5008593749446,
-			"strokeColor": "#bbb",
-			"backgroundColor": "transparent",
-			"width": 1039.816207,
-			"height": 1047.7451583032455,
-			"seed": 1743998176,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1708109812667,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"frameColor": {
-					"stroke": "#D4D4D4",
-					"fill": "#ADADAD",
-					"nameColor": "#7A7A7A"
-				}
-			},
-			"name": "Hashtable"
-		},
-		{
-			"type": "image",
-			"version": 85,
-			"versionNonce": 322373376,
-			"isDeleted": false,
-			"id": "bv1v5zLW",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -209.6198559780638,
-			"y": 1339.5168977483152,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 230.7872813453316,
-			"height": 48.39088157240823,
-			"seed": 61344,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "90eAvxoFEs-Fgy4Fx96lO",
-					"type": "arrow"
-				}
-			],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "a58cd73ef3bed69510280133b96839429f932af3",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "image",
-			"version": 63,
-			"versionNonce": 618719488,
-			"isDeleted": false,
-			"id": "tCjUDWal",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 92.35723637406164,
-			"y": 1344.1299605221905,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 200.84281778044775,
-			"height": 43.425474114691404,
-			"seed": 34552,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "90eAvxoFEs-Fgy4Fx96lO",
-					"type": "arrow"
-				}
-			],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "4aec195030d826533a9d87973fb7659168e72766",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "image",
-			"version": 208,
-			"versionNonce": 1153312512,
-			"isDeleted": false,
-			"id": "5g3UVeDF",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -215.49938956692475,
-			"y": 1423.2112320133099,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 336.3004608976919,
-			"height": 33.10729925935827,
-			"seed": 89980,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "U0imCHIhhtEDN0USYHdnJ",
-					"type": "arrow"
-				}
-			],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "367f1c88858a860bb223e436019ab3d8293beae8",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "arrow",
-			"version": 520,
-			"versionNonce": 182176000,
-			"isDeleted": false,
-			"id": "U0imCHIhhtEDN0USYHdnJ",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 127.72537088091109,
-			"y": 1446.1379507799215,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "transparent",
-			"width": 65.34449929540894,
-			"height": 0.42640206856526675,
-			"seed": 1996050656,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"startBinding": {
-				"elementId": "5g3UVeDF",
-				"gap": 6.9242995501439,
-				"focus": 0.38987589623025315
-			},
-			"endBinding": {
-				"elementId": "j54NqzL8",
-				"gap": 11.100273531221447,
-				"focus": -0.03852881206058803
-			},
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					65.34449929540894,
-					0.42640206856526675
-				]
-			]
-		},
-		{
-			"type": "image",
-			"version": 127,
-			"versionNonce": 2019641088,
-			"isDeleted": false,
-			"id": "j54NqzL8",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 204.17014370754143,
-			"y": 1421.4720585646014,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 197.34471072244105,
-			"height": 49.65447560113033,
-			"seed": 57678,
-			"groupIds": [],
-			"frameId": "8fflGC4npLQpnt2x1wR5t",
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "U0imCHIhhtEDN0USYHdnJ",
-					"type": "arrow"
-				},
-				{
-					"id": "DgZZUYivLaBfQcvyRIn0z",
-					"type": "arrow"
-				}
-			],
-			"updated": 1707838436486,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "195a1d7e6fed779e02e175231979720fd674a9f4",
-			"scale": [
-				1,
-				1
-			]
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#e03131",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 1,
-		"currentItemFontSize": 16,
-		"currentItemTextAlign": "center",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 2769.8158225576726,
-		"scrollY": 911.8317902680478,
-		"zoom": {
-			"value": 0.25
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		}
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+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=
 ```
 %%
