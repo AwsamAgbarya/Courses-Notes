@@ -6,7 +6,8 @@ Notes and summaries of the lectures I am currently partaking in including:
 2. Machine Learning 1&2
 3. Computer graphics 1&2
 4. Database Technologies
-5. Architecture of machine learning systems (WIP)
+5. Architecture of machine learning systems
+6. Introduction to space geodesy (WIP)
 
 You need to install obsidian and the following community plugins in order to view these canvases properly:
 #### MAKE SURE TO ENABLE THE PLUGINS IN THE SETTINGS AFTER INSTALL
