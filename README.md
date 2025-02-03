@@ -6,14 +6,14 @@ Notes and summaries of the lectures I am currently partaking in including:
 2. Machine Learning 1&2
 3. Computer graphics 1&2
 4. Database Technologies
-5. Architecture of machine learning systems
+5. Architecture of machine learning systems & Data integration and large scale analysis
 6. Introduction to space geodesy (WIP)
 
 You need to install obsidian and the following community plugins in order to view these canvases properly:
 #### MAKE SURE TO ENABLE THE PLUGINS IN THE SETTINGS AFTER INSTALL
-1. Excalidraw: Visual notes (Without this you cannot view 95% of the notes)
+1. Excalidraw (IMPORTANT): Visual notes (Without this you cannot view 95% of the notes)
 2. Latex Suite: Latex integration (Without this the latex format might be a little different, im not 100% sure)
-3. Spaced repition: Study cards (Without this you cannot view any future cards I make, Currently there are none though)
+3. Spaced repition: Study cards (Without this you cannot view any future cards I make, Currently there arent many)
 
 QoL plugins I use but are not necessary:
 1. Better Word Count: Estimating word count in files and folders better
