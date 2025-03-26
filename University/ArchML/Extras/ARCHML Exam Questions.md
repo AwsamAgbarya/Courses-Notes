@@ -1,6 +1,6 @@
 ---
 tags:
-  - flashcards
+  - AMLS
 ---
 What are the Driving factors for ML systems
 ?
