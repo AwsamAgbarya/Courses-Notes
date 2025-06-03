@@ -7,7 +7,8 @@ Notes and summaries of the lectures I am currently partaking in including:
 3. Computer graphics 1&2
 4. Database Technologies
 5. Architecture of machine learning systems & Data integration and large scale analysis
-6. Introduction to space geodesy (WIP)
+6. Introduction to space geodesy
+7. Automatic Image analysis (Computer Vision)
 
 You need to install obsidian and the following community plugins in order to view these canvases properly:
 #### MAKE SURE TO ENABLE THE PLUGINS IN THE SETTINGS AFTER INSTALL
